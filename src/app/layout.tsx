@@ -9,8 +9,8 @@ const sans = Inter({ subsets: ["latin"], variable: "--font-sans-loaded" });
 const display = Cinzel({ subsets: ["latin"], variable: "--font-display-loaded", weight: ["600", "700"] });
 
 export const metadata: Metadata = {
-  title: { default: "Team AION 2", template: "%s · Team AION 2" },
-  description: "Builds détaillés et progression de la team sur AION 2 (serveur global).",
+  title: { default: "WARLORD · AION 2", template: "%s · WARLORD" },
+  description: "WARLORD — builds détaillés et progression de la team sur AION 2 (serveur global).",
   robots: { index: false, follow: false },
 };
 

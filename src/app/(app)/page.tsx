@@ -40,7 +40,7 @@ export default async function DashboardPage() {
     <div className="space-y-8">
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
-          <h1 className="font-display text-3xl font-bold">État des lieux de la team</h1>
+          <h1 className="font-display text-3xl font-bold">État des lieux de WARLORD</h1>
           <p className="text-muted-foreground">
             {rows.length} joueurs · {capped} au niveau 45 · item level moyen {formatNumber(avgIl)}
           </p>

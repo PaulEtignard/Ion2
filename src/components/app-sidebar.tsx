@@ -80,13 +80,11 @@ export function AppSidebar({
           <SidebarMenuItem>
             <SidebarMenuButton size="lg" asChild>
               <Link href={member ? "/" : "/builds"}>
-                <div className="bg-sidebar-primary text-sidebar-primary-foreground flex aspect-square size-8 items-center justify-center rounded-lg">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/icon.svg" alt="" className="size-8 rounded-lg" />
-                </div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/logo.webp" alt="WARLORD" className="size-8 shrink-0 rounded-lg ring-1 ring-white/10" />
                 <div className="grid grid-cols-1 flex-1 text-left leading-tight">
-                  <span className="font-display text-primary truncate font-bold">Team AION 2</span>
-                  <span className="text-muted-foreground truncate text-xs">Serveur global</span>
+                  <span className="font-display text-primary truncate font-bold tracking-wider">WARLORD</span>
+                  <span className="text-muted-foreground truncate text-xs">AION 2 · serveur global</span>
                 </div>
               </Link>
             </SidebarMenuButton>

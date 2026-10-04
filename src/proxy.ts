@@ -17,5 +17,5 @@ export async function proxy(request: NextRequest) {
 
 export const config = {
   // .well-known : les clients MCP y cherchent une config OAuth ; il faut un 404, pas la page de login
-  matcher: ["/((?!login|api/mcp|_next/static|_next/image|game/|\\.well-known|favicon.ico|icon.svg).*)"],
+  matcher: ["/((?!login|api/mcp|_next/static|_next/image|game/|\\.well-known|favicon.ico|icon|apple-icon|opengraph-image|logo\\.webp).*)"],
 };

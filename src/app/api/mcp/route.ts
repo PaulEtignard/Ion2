@@ -67,7 +67,7 @@ async function requirePlayer(idOrName: string) {
 
 const classIdSchema = z.enum(CLASS_IDS);
 
-const INSTRUCTIONS = `Serveur de la team AION 2 (version GLOBALE / occidentale, pas coréenne).
+const INSTRUCTIONS = `Serveur de la team WARLORD sur AION 2 (version GLOBALE / occidentale, pas coréenne).
 Données de jeu lues depuis le client global (${GAME_META.source}, synchro ${GAME_META.syncedAt.slice(0, 10)}).
 Pour créer un build : 1) get_class_data pour récupérer les IDs exacts des compétences, spécialisations et stigmas
 ainsi que les statistiques des meilleurs joueurs ; 2) search_items pour l'équipement ; 3) create_build.
@@ -393,7 +393,7 @@ const handler = createMcpHandler(
     );
   },
   {
-    serverInfo: { name: "aion2-team", version: "1.0.0" },
+    serverInfo: { name: "warlord-aion2", version: "1.0.0" },
     instructions: INSTRUCTIONS,
   },
 );

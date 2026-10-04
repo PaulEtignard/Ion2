@@ -13,9 +13,9 @@ export default async function LoginPage({ searchParams }: { searchParams: Promis
       <Card className="w-full max-w-sm">
         <CardHeader className="text-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/icon.svg" alt="" className="mx-auto mb-2 size-14 rounded-xl" />
-          <CardTitle className="font-display text-primary text-2xl">Team AION 2</CardTitle>
-          <CardDescription>Espace réservé à la team : progression, activités et objectifs.</CardDescription>
+          <img src="/logo.webp" alt="WARLORD" className="logo-fade mx-auto size-40" />
+          <CardTitle className="font-display text-primary text-3xl tracking-widest">WARLORD</CardTitle>
+          <CardDescription>Espace réservé à la team : progression, activités et objectifs sur AION 2.</CardDescription>
         </CardHeader>
         <CardContent>
           <LoginForm next={next ?? "/"} />

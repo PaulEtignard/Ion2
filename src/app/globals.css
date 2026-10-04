@@ -109,6 +109,11 @@
   scrollbar-width: none;
 }
 
+/* Logo WARLORD (fond noir d'origine) : bords fondus dans le décor */
+.logo-fade {
+  mask-image: radial-gradient(circle at 50% 50%, #000 58%, transparent 71%);
+}
+
 /* Halo discret derrière le contenu principal */
 .app-backdrop {
   background-image:

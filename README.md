@@ -1,6 +1,8 @@
-# Team AION 2
+<p align="center"><img src="public/logo.webp" alt="WARLORD" width="160" /></p>
 
-Site privé de la team (5 joueurs) sur **AION 2 — serveur global** :
+# WARLORD
+
+Site de la team **WARLORD** (5 joueurs) sur **AION 2 — serveur global** :
 
 - **Builds** très détaillés par classe, avec les vraies icônes du jeu : compétences et ordre des points, spécialisations, 4 stigmas + alternatives, rotations, plateaux Daevanion, équipement par emplacement (source + enchantement), pierres de mana, théostone, arcanes, stats, ajustements PvP.
 - **Classes** : les 35 compétences et 60 spécialisations de chaque classe, et la méta des meilleurs joueurs du serveur global (équipement porté, enchantements, stats, nœuds Daevanion).
