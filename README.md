@@ -64,6 +64,12 @@ claude mcp add --transport http aion2 https://votre-site.vercel.app/api/mcp --he
 
 Le fichier `.mcp.json` du projet fait la même chose avec les variables `AION2_MCP_URL` et `AION2_MCP_KEY`.
 
+claude.ai / Claude Desktop (connecteur personnalisé, qui ne permet pas d'ajouter un en-tête) : utiliser l'URL
+`https://votre-site.vercel.app/api/mcp?key=<MCP_API_KEY>`.
+
+Utilisez le domaine public du projet (ex. `ion2-three.vercel.app`) : les URLs de déploiement
+`*-pauletignard-*.vercel.app` sont protégées par l'authentification Vercel et bloquent le MCP.
+
 Outils exposés :
 
 | Outil | Rôle |

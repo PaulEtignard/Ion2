@@ -4,7 +4,7 @@
  *
  *   claude mcp add --transport http aion2 https://<site>/api/mcp --header "Authorization: Bearer <MCP_API_KEY>"
  */
-import { createMcpHandler, withMcpAuth } from "mcp-handler";
+import { createMcpHandler } from "mcp-handler";
 import { z } from "zod";
 import { ACTIVITIES, CONQUEST_TIERS, EXPEDITION_GEAR, NIGHTMARE_LAYERS, STIGMA_SLOT_LEVELS, TRANSCENDENCE } from "@/data/activities";
 import { buildDataSchema, buildInputSchema, CLASS_IDS, GEAR_SLOTS, type ClassIdT } from "@/lib/build-schema";
@@ -398,14 +398,24 @@ const handler = createMcpHandler(
   },
 );
 
-const authed = withMcpAuth(
-  handler,
-  (_req, token) => {
-    const key = process.env.MCP_API_KEY;
-    if (!key || !token || !safeEqual(token, key)) return undefined;
-    return { token, clientId: "aion2-team", scopes: ["builds:write"] };
-  },
-  { required: true },
-);
+/**
+ * Authentification par clé partagée : en-tête `Authorization: Bearer <clé>` ou paramètre `?key=<clé>`
+ * (pour les clients qui ne permettent pas d'ajouter un en-tête, comme les connecteurs claude.ai).
+ * Volontairement sans découverte OAuth : un 401 « OAuth » pousse les clients à chercher un serveur
+ * d'autorisation qui n'existe pas, et la connexion échoue.
+ */
+const authError = (status: number, message: string) =>
+  Response.json({ jsonrpc: "2.0", id: null, error: { code: -32001, message } }, { status });
+
+async function authed(req: Request) {
+  const expected = process.env.MCP_API_KEY;
+  if (!expected) return authError(500, "MCP_API_KEY n'est pas configuré sur le serveur (variables d'environnement Vercel).");
+  const header = req.headers.get("authorization")?.match(/^Bearer\s+(.+)$/i)?.[1]?.trim();
+  const query = new URL(req.url).searchParams.get("key")?.trim();
+  const token = header ?? query;
+  if (!token) return authError(401, "Clé MCP manquante : en-tête Authorization: Bearer <clé> ou ?key=<clé>.");
+  if (!safeEqual(token, expected)) return authError(401, "Clé MCP invalide.");
+  return handler(req);
+}
 
 export { authed as GET, authed as POST, authed as DELETE };

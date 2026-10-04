@@ -545,5 +545,10 @@ await fs.writeFile(
   path.join(OUT, "meta.json"),
   JSON.stringify({ source: "metabot.gg (client global AION 2)", syncedAt: new Date().toISOString(), classes: index }, null, 1),
 );
+// Icônes des activités (tickets) référencées dans src/data/activities.ts
+{
+  const src = await fs.readFile(path.join(ROOT, "src", "data", "activities.ts"), "utf8");
+  for (const m of src.matchAll(/"\/game\/items\/([a-z0-9_]+\.webp)"/g)) icon(`${BASE}/web/aion2/items/${m[1]}`, "items");
+}
 if (!NO_ICONS) await downloadIcons();
 console.log("Terminé.");
