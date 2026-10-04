@@ -1,7 +1,8 @@
 "use client";
 
 import * as React from "react";
-import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
+import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 
 export type IconTooltip = {
@@ -12,6 +13,7 @@ export type IconTooltip = {
   color?: string;
 };
 
+/** Icône du jeu dans un cadre coloré par la rareté, avec fiche détaillée au survol (HoverCard shadcn). */
 export function GameIcon({
   src,
   alt,
@@ -33,7 +35,7 @@ export function GameIcon({
 }) {
   const icon = (
     <span
-      className={cn("game-icon inline-block", dim && "opacity-40 grayscale", className)}
+      className={cn("game-icon", dim && "opacity-40 grayscale", className)}
       style={{ width: size, height: size, ["--rarity" as string]: rarity }}
     >
       {src ? (
@@ -43,32 +45,45 @@ export function GameIcon({
         <span className="text-muted-foreground flex h-full w-full items-center justify-center text-[10px]">?</span>
       )}
       {badge != null && (
-        <span className="absolute right-0 bottom-0 rounded-tl bg-black/80 px-1 text-[10px] leading-tight font-bold text-white">{badge}</span>
+        <span className="absolute right-0 bottom-0 rounded-tl bg-black/80 px-1 text-[10px] leading-tight font-bold text-white tabular-nums">
+          {badge}
+        </span>
       )}
     </span>
   );
   if (!tooltip) return icon;
+
+  const lines = tooltip.lines?.filter(Boolean) ?? [];
   return (
-    <Tooltip>
-      <TooltipTrigger asChild>
-        <button type="button" className="cursor-help rounded-md focus-visible:outline-2" aria-label={alt}>
+    <HoverCard openDelay={80} closeDelay={40}>
+      <HoverCardTrigger asChild>
+        <span tabIndex={0} role="img" aria-label={alt} className="inline-flex cursor-help rounded-md outline-none focus-visible:ring-2 focus-visible:ring-ring">
           {icon}
-        </button>
-      </TooltipTrigger>
-      <TooltipContent>
-        <div className="space-y-1">
-          <div className="text-sm font-semibold" style={{ color: tooltip.color }}>
-            {tooltip.title}
+        </span>
+      </HoverCardTrigger>
+      <HoverCardContent className="w-80" side="top">
+        <div className="flex gap-3">
+          <span className="game-icon" style={{ width: 44, height: 44, ["--rarity" as string]: rarity }}>
+            {src && (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img src={src} alt="" width={44} height={44} />
+            )}
+          </span>
+          <div className="min-w-0 space-y-0.5">
+            <p className="text-sm leading-tight font-semibold" style={{ color: tooltip.color }}>
+              {tooltip.title}
+            </p>
+            {tooltip.subtitle && <p className="text-muted-foreground text-xs">{tooltip.subtitle}</p>}
           </div>
-          {tooltip.subtitle && <div className="text-muted-foreground">{tooltip.subtitle}</div>}
-          {tooltip.lines?.filter(Boolean).map((l, i) => (
-            <div key={i} className="text-muted-foreground">
-              {l}
-            </div>
-          ))}
-          {tooltip.body && <p className="pt-1 leading-relaxed">{tooltip.body}</p>}
         </div>
-      </TooltipContent>
-    </Tooltip>
+        {(tooltip.body || lines.length > 0) && <Separator className="my-3" />}
+        {tooltip.body && <p className="text-sm leading-relaxed">{tooltip.body}</p>}
+        {lines.map((l, i) => (
+          <p key={i} className="text-muted-foreground mt-2 text-xs">
+            {l}
+          </p>
+        ))}
+      </HoverCardContent>
+    </HoverCard>
   );
 }

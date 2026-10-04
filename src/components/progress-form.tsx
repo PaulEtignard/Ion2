@@ -1,7 +1,9 @@
 "use client";
 
-import { useActionState } from "react";
+import { useActionState, useEffect } from "react";
+import { toast } from "sonner";
 import { saveProgress } from "@/app/actions";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { GameIcon } from "@/components/game/game-icon";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -46,6 +48,9 @@ const BOARDS = [
 export function ProgressForm(props: ProgressFormProps) {
   const { initial } = props;
   const [state, action, pending] = useActionState(saveProgress.bind(null, props.playerId), null);
+  useEffect(() => {
+    if (state?.ok) toast.success("État des lieux enregistré", { description: "Les recommandations sont à jour." });
+  }, [state]);
 
   return (
     <form action={action} className="space-y-4">
@@ -63,27 +68,18 @@ export function ProgressForm(props: ProgressFormProps) {
             <Field label="Niveau" name="level" defaultValue={initial.level} min={1} max={60} />
             <Field label="Item level (total)" name="itemLevel" defaultValue={initial.itemLevel} min={0} />
             <Field label="Puissance de combat" name="combatPower" defaultValue={initial.combatPower} min={0} />
-            <div className="space-y-2">
-              <Label htmlFor="ascensionStep">Quêtes d&apos;Ascension terminées</Label>
-              <select id="ascensionStep" name="ascensionStep" defaultValue={initial.ascensionStep} className="border-input h-9 w-full rounded-md border bg-black/20 px-3 text-sm">
-                {[0, 1, 2, 3, 4, 5].map((n) => (
-                  <option key={n} value={n}>
-                    {n} / 5
-                  </option>
-                ))}
-              </select>
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="buildId">Build suivi</Label>
-              <select id="buildId" name="buildId" defaultValue={initial.buildId ?? "none"} className="border-input h-9 w-full rounded-md border bg-black/20 px-3 text-sm">
-                <option value="none">Aucun</option>
-                {props.builds.map((b) => (
-                  <option key={b.id} value={b.id}>
-                    {b.title}
-                  </option>
-                ))}
-              </select>
-            </div>
+            <FormSelect
+              label="Quêtes d'Ascension terminées"
+              name="ascensionStep"
+              defaultValue={String(initial.ascensionStep)}
+              options={[0, 1, 2, 3, 4, 5].map((n) => ({ value: String(n), label: `${n} / 5` }))}
+            />
+            <FormSelect
+              label="Build suivi"
+              name="buildId"
+              defaultValue={initial.buildId ?? "none"}
+              options={[{ value: "none", label: "Aucun" }, ...props.builds.map((b) => ({ value: b.id, label: b.title }))]}
+            />
             <Field label="Couche du Cauchemar atteinte" name="nightmare.layer" defaultValue={initial.nightmareLayer} min={0} max={4} />
             <div className="space-y-2 sm:col-span-2">
               <Label htmlFor="notes">Notes</Label>
@@ -138,19 +134,16 @@ export function ProgressForm(props: ProgressFormProps) {
             <p className="mb-2 text-sm font-medium">Meilleur palier de Transcendance réussi</p>
             <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-5">
               {props.transcendence.map((t) => (
-                <div key={t.slug} className="space-y-2">
-                  <Label className="text-xs" htmlFor={`tr-${t.slug}`}>
-                    {t.name}
-                  </Label>
-                  <select id={`tr-${t.slug}`} name={`transcendence.${t.slug}`} defaultValue={initial.transcendence[t.slug] ?? 0} className="border-input h-9 w-full rounded-md border bg-black/20 px-3 text-sm">
-                    <option value={0}>Aucun</option>
-                    {t.stages.map((il, i) => (
-                      <option key={i} value={i + 1}>
-                        Palier {i + 1} (IL {il.toLocaleString("fr-FR")})
-                      </option>
-                    ))}
-                  </select>
-                </div>
+                <FormSelect
+                  key={t.slug}
+                  label={t.name}
+                  name={`transcendence.${t.slug}`}
+                  defaultValue={String(initial.transcendence[t.slug] ?? 0)}
+                  options={[
+                    { value: "0", label: "Aucun" },
+                    ...t.stages.map((il, i) => ({ value: String(i + 1), label: `Palier ${i + 1} (IL ${il.toLocaleString("fr-FR")})` })),
+                  ]}
+                />
               ))}
             </div>
           </div>
@@ -161,9 +154,29 @@ export function ProgressForm(props: ProgressFormProps) {
         <Button type="submit" disabled={pending}>
           {pending ? "Enregistrement…" : "Enregistrer l'état des lieux"}
         </Button>
-        {state?.ok && <span className="text-success text-sm">Enregistré — recommandations mises à jour.</span>}
       </div>
     </form>
+  );
+}
+
+/** Select shadcn branché sur le formulaire (Radix rend un <select> natif caché portant `name`) */
+function FormSelect({ label, name, defaultValue, options }: { label: string; name: string; defaultValue: string; options: { value: string; label: string }[] }) {
+  return (
+    <div className="grid gap-2">
+      <Label className="text-xs">{label}</Label>
+      <Select name={name} defaultValue={defaultValue}>
+        <SelectTrigger className="w-full">
+          <SelectValue />
+        </SelectTrigger>
+        <SelectContent>
+          {options.map((o) => (
+            <SelectItem key={o.value} value={o.value}>
+              {o.label}
+            </SelectItem>
+          ))}
+        </SelectContent>
+      </Select>
+    </div>
   );
 }
 

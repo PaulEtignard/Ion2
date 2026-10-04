@@ -9,7 +9,10 @@ Site privé de la team (5 joueurs) sur **AION 2 — serveur global** :
 - **Checklist** quotidienne / hebdomadaire de toute la team (reset le mercredi).
 - **Serveur MCP** (`/api/mcp`) pour que Claude crée et mette à jour les builds et la progression.
 
-Stack : Next.js 16 (App Router) · shadcn/ui · Tailwind 4 · Prisma 7 · PostgreSQL · mcp-handler.
+**Accès** : les pages **Builds** et **Classes** sont publiques (lecture seule, partageables). Le tableau de bord,
+la progression, les activités et l'équipe demandent le mot de passe de la team.
+
+Stack : Next.js 16 (App Router) · shadcn/ui (composants officiels via le CLI, `Sidebar`, `HoverCard`…) · Tailwind 4 · Prisma 7 · PostgreSQL · mcp-handler.
 
 ## Données de jeu
 

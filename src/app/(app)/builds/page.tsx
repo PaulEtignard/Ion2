@@ -62,7 +62,7 @@ export default async function BuildsPage({ searchParams }: { searchParams: Promi
                     <CardDescription className="flex flex-wrap gap-1.5 pt-1">
                       <Badge>{MODE_LABEL[b.mode]}</Badge>
                       {b.role && <Badge variant="secondary">{b.role}</Badge>}
-                      {b.featured && <Badge variant="success">Recommandé</Badge>}
+                      {b.featured && <Badge className="bg-success/15 text-success">Recommandé</Badge>}
                       {b.tags.map((t) => (
                         <Badge key={t} variant="outline">
                           {t}

@@ -5,10 +5,12 @@ import { ArrowRight, ChevronRight, Gem, Shield, ShieldAlert, Star, ThumbsDown, T
 import { FollowBuildButton } from "@/components/follow-build-button";
 import { ClassIcon, ItemIcon, ItemName, SkillIcon, SpecIcon } from "@/components/game/icons";
 import { Badge } from "@/components/ui/badge";
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { STIGMA_SLOT_LEVELS, DAEVANION_BOARD_LEVELS } from "@/data/activities";
 import { GEAR_SLOT_LABELS, GEAR_SLOTS, type BuildData, type ClassIdT } from "@/lib/build-schema";
+import { isTeamMember } from "@/lib/auth";
 import { getCurrentPlayerContext } from "@/lib/current";
 import { CLASS_INFO, getClass, getSkill } from "@/lib/game-data";
 import { getBuild, skillPointCost } from "@/lib/services";
@@ -23,7 +25,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function BuildPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const [build, { current }] = await Promise.all([getBuild(slug), getCurrentPlayerContext()]);
+  const member = await isTeamMember();
+  const [build, { current }] = await Promise.all([getBuild(slug), member ? getCurrentPlayerContext() : Promise.resolve({ current: null })]);
   if (!build) notFound();
   const data = build.data as BuildData;
   const classId = build.classId as ClassIdT;
@@ -50,9 +53,25 @@ export default async function BuildPage({ params }: { params: Promise<{ slug: st
 
   return (
     <div className="space-y-6">
-      <Link href={`/builds?classe=${classId}`} className="text-muted-foreground hover:text-foreground inline-flex items-center gap-1 text-sm">
-        Builds <ChevronRight className="size-3" /> {info.fr}
-      </Link>
+      <Breadcrumb>
+        <BreadcrumbList>
+          <BreadcrumbItem>
+            <BreadcrumbLink asChild>
+              <Link href="/builds">Builds</Link>
+            </BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbLink asChild>
+              <Link href={`/builds?classe=${classId}`}>{info.fr}</Link>
+            </BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbPage>{build.title}</BreadcrumbPage>
+          </BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>
 
       {/* ------------------------------------------------------------ en-tête */}
       <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
@@ -74,14 +93,14 @@ export default async function BuildPage({ params }: { params: Promise<{ slug: st
             <p className="text-muted-foreground text-xs">
               Par {build.author} · mis à jour le {build.updatedAt.toLocaleDateString("fr-FR")}
               {build.patch && ` · version ${build.patch}`}
-              {build.followers.length > 0 && ` · suivi par ${build.followers.map((f) => f.player.name).join(", ")}`}
+              {member && build.followers.length > 0 && ` · suivi par ${build.followers.map((f) => f.player.name).join(", ")}`}
             </p>
           </div>
         </div>
         {current && current.classId === classId && <FollowBuildButton playerId={current.id} buildId={build.id} following={isFollowing} />}
       </div>
 
-      <nav className="bg-background/80 sticky top-[53px] z-20 -mx-1 flex gap-1 overflow-x-auto border-b px-1 py-2 backdrop-blur">
+      <nav className="bg-background/80 sticky top-14 z-20 -mx-1 flex gap-1 overflow-x-auto border-b px-1 py-2 backdrop-blur">
         {sections.map(([id, label]) => (
           <a key={id} href={`#${id}`} className="text-muted-foreground hover:bg-accent hover:text-foreground rounded-md px-3 py-1 text-sm whitespace-nowrap">
             {label}

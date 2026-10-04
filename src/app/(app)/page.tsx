@@ -152,7 +152,7 @@ function Bar({ label, value }: { label: string; value: number }) {
         <span className="text-muted-foreground">{label}</span>
         <span className="tabular-nums">{pct}%</span>
       </div>
-      <Progress value={pct} indicatorClassName={pct >= 100 ? "bg-success" : undefined} />
+      <Progress value={pct} className={pct >= 100 ? "[&>[data-slot=progress-indicator]]:bg-success" : undefined} />
     </div>
   );
 }

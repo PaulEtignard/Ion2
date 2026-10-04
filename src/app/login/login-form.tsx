@@ -1,20 +1,28 @@
 "use client";
 
 import { useActionState } from "react";
+import { AlertCircle } from "lucide-react";
 import { login } from "@/app/actions";
+import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 
 export function LoginForm({ next }: { next: string }) {
   const [state, action, pending] = useActionState(login, null);
   return (
-    <form action={action} className="bg-card/80 space-y-3 rounded-xl border p-5 text-left backdrop-blur">
+    <form action={action} className="grid gap-4">
       <input type="hidden" name="next" value={next} />
-      <label className="text-sm font-medium" htmlFor="password">
-        Mot de passe de la team
-      </label>
-      <Input id="password" name="password" type="password" autoFocus required autoComplete="current-password" />
-      {state?.error && <p className="text-destructive text-sm">{state.error}</p>}
+      <div className="grid gap-2">
+        <Label htmlFor="password">Mot de passe de la team</Label>
+        <Input id="password" name="password" type="password" autoFocus required autoComplete="current-password" />
+      </div>
+      {state?.error && (
+        <Alert variant="destructive">
+          <AlertCircle />
+          <AlertDescription>{state.error}</AlertDescription>
+        </Alert>
+      )}
       <Button type="submit" className="w-full" disabled={pending}>
         {pending ? "Connexion…" : "Entrer"}
       </Button>

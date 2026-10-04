@@ -1,13 +1,17 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { SESSION_COOKIE, verifySessionToken } from "@/lib/session";
 
-// Toutes les pages exigent le mot de passe d'équipe, sauf /login.
-// /api/mcp a sa propre authentification (clé Bearer).
+// Consultables par tout le monde (lecture seule) : builds et classes.
+// Le reste (tableau de bord, progression, activités, équipe) exige le mot de passe de la team.
+const PUBLIC_PREFIXES = ["/builds", "/classes"];
+
 export async function proxy(request: NextRequest) {
+  const { pathname } = request.nextUrl;
+  if (PUBLIC_PREFIXES.some((p) => pathname === p || pathname.startsWith(p + "/"))) return NextResponse.next();
   const ok = await verifySessionToken(request.cookies.get(SESSION_COOKIE)?.value);
   if (ok) return NextResponse.next();
   const url = new URL("/login", request.url);
-  if (request.nextUrl.pathname !== "/") url.searchParams.set("next", request.nextUrl.pathname);
+  if (pathname !== "/") url.searchParams.set("next", pathname);
   return NextResponse.redirect(url);
 }
 

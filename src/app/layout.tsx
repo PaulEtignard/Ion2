@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Cinzel, Inter } from "next/font/google";
+import { ThemeProvider } from "next-themes";
+import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import "./globals.css";
 
@@ -8,15 +10,20 @@ const display = Cinzel({ subsets: ["latin"], variable: "--font-display-loaded", 
 
 export const metadata: Metadata = {
   title: { default: "Team AION 2", template: "%s · Team AION 2" },
-  description: "Builds, progression et objectifs de la team sur AION 2 (serveur global).",
+  description: "Builds détaillés et progression de la team sur AION 2 (serveur global).",
   robots: { index: false, follow: false },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="fr" className={`dark ${sans.variable} ${display.variable}`}>
+    <html lang="fr" className={`${sans.variable} ${display.variable}`} suppressHydrationWarning>
       <body className="font-sans">
-        <TooltipProvider>{children}</TooltipProvider>
+        <ThemeProvider attribute="class" forcedTheme="dark" disableTransitionOnChange>
+          <TooltipProvider>
+            {children}
+            <Toaster richColors position="bottom-right" />
+          </TooltipProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
