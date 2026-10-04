@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "aion2": {
+      "type": "http",
+      "url": "${AION2_MCP_URL:-http://localhost:3000/api/mcp}",
+      "headers": {
+        "Authorization": "Bearer ${AION2_MCP_KEY}"
+      }
+    }
+  }
+}

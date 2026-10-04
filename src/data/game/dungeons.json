@@ -1,0 +1,2107 @@
+[
+ {
+  "slug": "abyssal-horn-den",
+  "name": "Abyssal Horn Den",
+  "type": "Party Dungeon",
+  "bosses": [
+   "Gargaum",
+   "Kapu"
+  ],
+  "image": "/game/dungeons/abyssal-horn-den.webp",
+  "partySize": 5
+ },
+ {
+  "slug": "azure-breath-island",
+  "name": "Azure Breath Island",
+  "type": "Party Dungeon",
+  "bosses": [
+   "Awakened Alturadon",
+   "Wise Baumnute"
+  ],
+  "image": "/game/dungeons/azure-breath-island.webp",
+  "partySize": 5
+ },
+ {
+  "slug": "citadel-of-the-fallen-daeva",
+  "name": "Citadel of the Fallen Daeva",
+  "type": "Party Dungeon",
+  "bosses": [
+   "Willful Turgen",
+   "Forbidden Hexbeast Griosa"
+  ],
+  "image": "/game/dungeons/citadel-of-the-fallen-daeva.webp",
+  "partySize": 5
+ },
+ {
+  "slug": "cradle-of-nihility",
+  "name": "Cradle of Nihility",
+  "type": "Party Dungeon",
+  "bosses": [
+   "Afflicted Bakarma",
+   "Multiverse Veltiras"
+  ],
+  "image": "/game/dungeons/cradle-of-nihility.webp",
+  "partySize": 5
+ },
+ {
+  "slug": "deus-research-base",
+  "name": "Deus Research Base",
+  "type": "Party Dungeon",
+  "bosses": [
+   "Atiel",
+   "Gelcos"
+  ],
+  "image": "/game/dungeons/deus-research-base.webp",
+  "partySize": 5
+ },
+ {
+  "slug": "draupnir",
+  "name": "Draupnir",
+  "type": "Party Dungeon",
+  "bosses": [
+   "Transcendent Bakarma",
+   "Afflicted Bakarma"
+  ],
+  "image": "/game/dungeons/draupnir.webp",
+  "partySize": 5
+ },
+ {
+  "slug": "dying-dramatas-nest",
+  "name": "Dying Dramata's Nest",
+  "type": "Party Dungeon",
+  "bosses": [
+   "Manager Nasium",
+   "Broodkeeper Nayatman"
+  ],
+  "image": "/game/dungeons/dying-dramatas-nest.webp",
+  "partySize": 5
+ },
+ {
+  "slug": "ferocious-horn-den",
+  "name": "Ferocious Horn Den",
+  "type": "Party Dungeon",
+  "bosses": [
+   "Ferocious Horn Nuakum",
+   "Watchdog Kwapo"
+  ],
+  "image": "/game/dungeons/ferocious-horn-den.webp",
+  "partySize": 5
+ },
+ {
+  "slug": "fire-temple",
+  "name": "Fire Temple",
+  "type": "Party Dungeon",
+  "bosses": [],
+  "image": "/game/dungeons/fire-temple.webp",
+  "partySize": 5
+ },
+ {
+  "slug": "hall-of-illusion",
+  "name": "Hall of Illusion",
+  "type": "Party Dungeon",
+  "bosses": [
+   "Nathara",
+   "Nazarak"
+  ],
+  "image": "/game/dungeons/hall-of-illusion.webp",
+  "partySize": 5
+ },
+ {
+  "slug": "krao-cave",
+  "name": "Krao Cave",
+  "type": "Party Dungeon",
+  "bosses": [
+   "Ultimate Berk",
+   "Enhanced Harcon"
+  ],
+  "image": "/game/dungeons/krao-cave.webp",
+  "partySize": 5
+ },
+ {
+  "slug": "mirror-of-scarlet-desire",
+  "name": "Mirror of Scarlet Desire",
+  "type": "Party Dungeon",
+  "bosses": [
+   "Kromede's Desolation",
+   "Robstino"
+  ],
+  "image": null,
+  "partySize": 5
+ },
+ {
+  "slug": "shattered-arkanis",
+  "name": "Shattered Arkanis",
+  "type": "Party Dungeon",
+  "bosses": [
+   "Talisra of the Void",
+   "Siliator of Deceit"
+  ],
+  "image": "/game/dungeons/shattered-arkanis.webp",
+  "partySize": 5
+ },
+ {
+  "slug": "submerged-life-temple",
+  "name": "Submerged Life Temple",
+  "type": "Party Dungeon",
+  "bosses": [
+   "Submerged Emon",
+   "Singing Ellyde"
+  ],
+  "image": "/game/dungeons/submerged-life-temple.webp",
+  "partySize": 5
+ },
+ {
+  "slug": "urugugu-canyon",
+  "name": "Urugugu Canyon",
+  "type": "Party Dungeon",
+  "bosses": [
+   "Judge Urahum",
+   "Guardian Captain Raur"
+  ],
+  "image": "/game/dungeons/urugugu-canyon.webp",
+  "partySize": 5
+ },
+ {
+  "slug": "vakron-sky-island",
+  "name": "Vakron Sky Island",
+  "type": "Party Dungeon",
+  "bosses": [
+   "Vakron",
+   "Tiere"
+  ],
+  "image": "/game/dungeons/vakron-sky-island.webp",
+  "partySize": 5
+ },
+ {
+  "slug": "abyssal-forge-ludra",
+  "name": "Abyssal Forge: Ludra",
+  "type": "Raid",
+  "bosses": [
+   "Eternal Ludra",
+   "Abyssal Wings Ketu"
+  ],
+  "image": "/game/dungeons/abyssal-forge-ludra.webp",
+  "partySize": 10
+ },
+ {
+  "slug": "chalice-of-muspel",
+  "name": "Chalice of Muspel",
+  "type": "Raid",
+  "bosses": [
+   "Iscariel",
+   "Kaldrix"
+  ],
+  "image": "/game/dungeons/chalice-of-muspel.webp",
+  "partySize": 10
+ },
+ {
+  "slug": "corroded-decontamination-facility",
+  "name": "Corroded Decontamination Facility",
+  "type": "Raid",
+  "bosses": [
+   "Hydraulic Press",
+   "Terminator Bargott"
+  ],
+  "image": "/game/dungeons/corroded-decontamination-facility.webp",
+  "partySize": 10
+ },
+ {
+  "slug": "chamber-of-the-dead",
+  "name": "Chamber of the Dead",
+  "type": "Ascension Trial",
+  "bosses": [
+   "Eloen"
+  ],
+  "image": "/game/dungeons/chamber-of-the-dead.webp",
+  "region": "Eloen"
+ },
+ {
+  "slug": "chamber-of-the-dead-doom",
+  "name": "Chamber of the Dead (Doom)",
+  "type": "Ascension Trial",
+  "bosses": [
+   "Eloen"
+  ],
+  "image": "/game/dungeons/chamber-of-the-dead-doom.webp",
+  "region": "Eloen"
+ },
+ {
+  "slug": "depository-of-fates",
+  "name": "Depository of Fates",
+  "type": "Ascension Trial",
+  "bosses": [
+   "Claudia"
+  ],
+  "image": "/game/dungeons/depository-of-fates.webp",
+  "region": "Claudia"
+ },
+ {
+  "slug": "forgotten-repository",
+  "name": "Forgotten Repository",
+  "type": "Ascension Trial",
+  "bosses": [
+   "Karlix"
+  ],
+  "image": "/game/dungeons/forgotten-repository.webp",
+  "region": "Karlix"
+ },
+ {
+  "slug": "forgotten-repository-doom",
+  "name": "Forgotten Repository (Doom)",
+  "type": "Ascension Trial",
+  "bosses": [
+   "Karlix"
+  ],
+  "image": "/game/dungeons/forgotten-repository-doom.webp",
+  "region": "Karlix"
+ },
+ {
+  "slug": "nightmare-altar",
+  "name": "Nightmare Altar",
+  "type": "Ascension Trial",
+  "bosses": [
+   "Divided Aponos"
+  ],
+  "image": "/game/dungeons/nightmare-altar.webp"
+ },
+ {
+  "slug": "sanctum-of-loathing",
+  "name": "Sanctum of Loathing",
+  "type": "Ascension Trial",
+  "bosses": [
+   "Featherstorm Duduri",
+   "Watchful Raptor Dodori"
+  ],
+  "image": "/game/dungeons/sanctum-of-loathing.webp"
+ },
+ {
+  "slug": "tyrants-hideout",
+  "name": "Tyrant's Hideout",
+  "type": "Ascension Trial",
+  "bosses": [
+   "Menoch"
+  ],
+  "image": "/game/dungeons/tyrants-hideout.webp",
+  "region": "Menoch"
+ },
+ {
+  "slug": "fafnite-amphitheater",
+  "name": "Fafnite Amphitheater",
+  "type": "Growth Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45
+ },
+ {
+  "slug": "silent-graveyard",
+  "name": "Silent Graveyard",
+  "type": "Growth Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45
+ },
+ {
+  "slug": "crobakhis-secret-depository",
+  "name": "Crobakhi's Secret Depository",
+  "type": "Daily Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 30
+ },
+ {
+  "slug": "daeva-bio-research-base",
+  "name": "Daeva Bio-Research Base",
+  "type": "Daily Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 30
+ },
+ {
+  "slug": "odylium-repository",
+  "name": "Odylium Repository",
+  "type": "Daily Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 30
+ },
+ {
+  "slug": "abandoned-ones-grave",
+  "name": "Abandoned One's Grave",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Scion Behit"
+  ],
+  "image": null,
+  "level": 10,
+  "region": "Altgard"
+ },
+ {
+  "slug": "cave-of-the-desperate",
+  "name": "Cave of the Desperate",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 10,
+  "region": "Verteron"
+ },
+ {
+  "slug": "chilly-hideout",
+  "name": "Chilly Hideout",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Toblini"
+  ],
+  "image": null,
+  "level": 10,
+  "region": "Verteron"
+ },
+ {
+  "slug": "dratona-cave",
+  "name": "Dratona Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Mature Baratuna"
+  ],
+  "image": null,
+  "level": 10,
+  "region": "Altgard"
+ },
+ {
+  "slug": "dusk-pit",
+  "name": "Dusk Pit",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Legion Outlaws Leader"
+  ],
+  "image": null,
+  "level": 10,
+  "region": "Altgard"
+ },
+ {
+  "slug": "hidden-vein-cave",
+  "name": "Hidden Vein Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 10,
+  "region": "Altgard"
+ },
+ {
+  "slug": "lost-ruins",
+  "name": "Lost Ruins",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 10,
+  "region": "Altgard"
+ },
+ {
+  "slug": "lupyllini-habitat",
+  "name": "Lupyllini Habitat",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 10,
+  "region": "Verteron"
+ },
+ {
+  "slug": "mysterious-mushroom-cave",
+  "name": "Mysterious Mushroom Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 10,
+  "region": "Verteron"
+ },
+ {
+  "slug": "old-graveyard",
+  "name": "Old Graveyard",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 10,
+  "region": "Altgard"
+ },
+ {
+  "slug": "ossuary-of-the-noble",
+  "name": "Ossuary of the Noble",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 10,
+  "region": "Altgard"
+ },
+ {
+  "slug": "poachers-den",
+  "name": "Poacher's Den",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Poacher Captain"
+  ],
+  "image": null,
+  "level": 10,
+  "region": "Verteron"
+ },
+ {
+  "slug": "poisonous-plant-habitat",
+  "name": "Poisonous Plant Habitat",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 10,
+  "region": "Altgard"
+ },
+ {
+  "slug": "smugglers-cave",
+  "name": "Smuggler's Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Cruel Sumakhi"
+  ],
+  "image": null,
+  "level": 10,
+  "region": "Altgard"
+ },
+ {
+  "slug": "treasure-hunters-residence",
+  "name": "Treasure Hunter's Residence",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 10,
+  "region": "Altgard"
+ },
+ {
+  "slug": "tricksters-den",
+  "name": "Trickster's Den",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Trickster Boss Korhe"
+  ],
+  "image": null,
+  "level": 10,
+  "region": "Altgard"
+ },
+ {
+  "slug": "valkas-nest",
+  "name": "Valka's Nest",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Mutated Insectoid Valka"
+  ],
+  "image": null,
+  "level": 10,
+  "region": "Altgard"
+ },
+ {
+  "slug": "watchers-temporary-outpost",
+  "name": "Watcher's Temporary Outpost",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 10,
+  "region": "Altgard"
+ },
+ {
+  "slug": "abandoned-archon-jail",
+  "name": "Abandoned Archon Jail",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 15,
+  "region": "Altgard"
+ },
+ {
+  "slug": "akilo-thieves-den",
+  "name": "Akilo Thieves Den",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 15,
+  "region": "Verteron"
+ },
+ {
+  "slug": "anguish-hideout",
+  "name": "Anguish Hideout",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Lieutenant Sineora"
+  ],
+  "image": null,
+  "level": 15,
+  "region": "Verteron"
+ },
+ {
+  "slug": "bibliophiles-grave",
+  "name": "Bibliophile's Grave",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 15,
+  "region": "Verteron"
+ },
+ {
+  "slug": "bloodsoaked-confessional",
+  "name": "Bloodsoaked Confessional",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Balhash"
+  ],
+  "image": null,
+  "level": 15,
+  "region": "Altgard"
+ },
+ {
+  "slug": "blue-dragons-trap",
+  "name": "Blue Dragon's Trap",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Sentinel Nuraka"
+  ],
+  "image": null,
+  "level": 15,
+  "region": "Altgard"
+ },
+ {
+  "slug": "corrupted-spiritmasters-residence",
+  "name": "Corrupted Spiritmaster's Residence",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Corrupted Deios"
+  ],
+  "image": null,
+  "level": 15,
+  "region": "Verteron"
+ },
+ {
+  "slug": "cursed-hideout",
+  "name": "Cursed Hideout",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 15,
+  "region": "Verteron"
+ },
+ {
+  "slug": "deep-underground-cave",
+  "name": "Deep Underground Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 15,
+  "region": "Verteron"
+ },
+ {
+  "slug": "fafnite-storage-room",
+  "name": "Fafnite Storage Room",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 15,
+  "region": "Altgard"
+ },
+ {
+  "slug": "fanatics-den",
+  "name": "Fanatics' Den",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 15,
+  "region": "Altgard"
+ },
+ {
+  "slug": "filth-pit",
+  "name": "Filth Pit",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 15,
+  "region": "Verteron"
+ },
+ {
+  "slug": "forest-library",
+  "name": "Forest Library",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 15,
+  "region": "Verteron"
+ },
+ {
+  "slug": "fortunetellers-grave",
+  "name": "Fortuneteller's Grave",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 15,
+  "region": "Altgard"
+ },
+ {
+  "slug": "homishs-prison-compound",
+  "name": "Homish's Prison Compound",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Prison Compound Warden Homish"
+  ],
+  "image": null,
+  "level": 15,
+  "region": "Altgard"
+ },
+ {
+  "slug": "howling-den",
+  "name": "Howling Den",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 15,
+  "region": "Altgard"
+ },
+ {
+  "slug": "library-of-foresight",
+  "name": "Library of Foresight",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 15,
+  "region": "Altgard"
+ },
+ {
+  "slug": "looted-repository",
+  "name": "Looted Repository",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Captain Nagto"
+  ],
+  "image": null,
+  "level": 15,
+  "region": "Verteron"
+ },
+ {
+  "slug": "marsh-library",
+  "name": "Marsh Library",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 15,
+  "region": "Verteron"
+ },
+ {
+  "slug": "prison-of-oblivion",
+  "name": "Prison of Oblivion",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 15,
+  "region": "Altgard"
+ },
+ {
+  "slug": "spirit-flower-cave",
+  "name": "Spirit Flower Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 15,
+  "region": "Verteron"
+ },
+ {
+  "slug": "victims-cave",
+  "name": "Victims' Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Desperate Robere's Apparition"
+  ],
+  "image": null,
+  "level": 15,
+  "region": "Altgard"
+ },
+ {
+  "slug": "abandoned-memorial-room",
+  "name": "Abandoned Memorial Room",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Priestess Soirel"
+  ],
+  "image": null,
+  "level": 20,
+  "region": "Altgard"
+ },
+ {
+  "slug": "closed-hideout",
+  "name": "Closed Hideout",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 20,
+  "region": "Altgard"
+ },
+ {
+  "slug": "collapsed-fortress-basement",
+  "name": "Collapsed Fortress Basement",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 20,
+  "region": "Verteron"
+ },
+ {
+  "slug": "destroyed-scriptorium",
+  "name": "Destroyed Scriptorium",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 20,
+  "region": "Altgard"
+ },
+ {
+  "slug": "distorted-cave",
+  "name": "Distorted Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 20,
+  "region": "Verteron"
+ },
+ {
+  "slug": "fortress-grave",
+  "name": "Fortress Grave",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 20,
+  "region": "Verteron"
+ },
+ {
+  "slug": "fortress-jail",
+  "name": "Fortress Jail",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 20,
+  "region": "Verteron"
+ },
+ {
+  "slug": "hidden-ruins-altar",
+  "name": "Hidden Ruins Altar",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Vanguard Captain Vamana"
+  ],
+  "image": null,
+  "level": 20,
+  "region": "Verteron"
+ },
+ {
+  "slug": "karats-nest",
+  "name": "Karat's Nest",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Queen Karat"
+  ],
+  "image": null,
+  "level": 20,
+  "region": "Verteron"
+ },
+ {
+  "slug": "lamnah-base",
+  "name": "Lamnah Base",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Scouts Captain Lamnah"
+  ],
+  "image": null,
+  "level": 20,
+  "region": "Altgard"
+ },
+ {
+  "slug": "predators-lair",
+  "name": "Predator's Lair",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 20,
+  "region": "Altgard"
+ },
+ {
+  "slug": "unstable-cave",
+  "name": "Unstable Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Daine of Tears"
+  ],
+  "image": null,
+  "level": 20,
+  "region": "Altgard"
+ },
+ {
+  "slug": "worshipers-underground-cave",
+  "name": "Worshiper's Underground Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 20,
+  "region": "Altgard"
+ },
+ {
+  "slug": "abandoned-odylium-cave",
+  "name": "Abandoned Odylium Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 25,
+  "region": "Verteron"
+ },
+ {
+  "slug": "aullaeu-oratory",
+  "name": "Aullaeu Oratory",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Fanatic Ullimus"
+  ],
+  "image": null,
+  "level": 25,
+  "region": "Verteron"
+ },
+ {
+  "slug": "cave-storage",
+  "name": "Cave Storage",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 25,
+  "region": "Verteron"
+ },
+ {
+  "slug": "dark-root-cave",
+  "name": "Dark Root Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 25,
+  "region": "Altgard"
+ },
+ {
+  "slug": "deadly-poison-den",
+  "name": "Deadly Poison Den",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Venomous Insect Sram"
+  ],
+  "image": null,
+  "level": 25,
+  "region": "Verteron"
+ },
+ {
+  "slug": "drana-depository",
+  "name": "Drana Depository",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Depository Manager Arya"
+  ],
+  "image": null,
+  "level": 25,
+  "region": "Altgard"
+ },
+ {
+  "slug": "fissure-cave",
+  "name": "Fissure Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 25,
+  "region": "Verteron"
+ },
+ {
+  "slug": "herb-cave",
+  "name": "Herb Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Enraged Kernon"
+  ],
+  "image": null,
+  "level": 25,
+  "region": "Verteron"
+ },
+ {
+  "slug": "hidden-valley",
+  "name": "Hidden Valley",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 25,
+  "region": "Verteron"
+ },
+ {
+  "slug": "high-priests-ruins",
+  "name": "High Priest's Ruins",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 25,
+  "region": "Altgard"
+ },
+ {
+  "slug": "konutins-cave",
+  "name": "Konutin's Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 25,
+  "region": "Verteron"
+ },
+ {
+  "slug": "prison-of-exiles",
+  "name": "Prison of Exiles",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 25,
+  "region": "Verteron"
+ },
+ {
+  "slug": "red-dragon-altar",
+  "name": "Red Dragon Altar",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 25,
+  "region": "Verteron"
+ },
+ {
+  "slug": "skurv-laborer-den",
+  "name": "Skurv Laborer Den",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 25,
+  "region": "Altgard"
+ },
+ {
+  "slug": "solitary-rock-tomb",
+  "name": "Solitary Rock Tomb",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Pilgrim Santian"
+  ],
+  "image": null,
+  "level": 25,
+  "region": "Verteron"
+ },
+ {
+  "slug": "twisted-pit",
+  "name": "Twisted Pit",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 25,
+  "region": "Altgard"
+ },
+ {
+  "slug": "wild-biruta-habitat",
+  "name": "Wild Biruta Habitat",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 25,
+  "region": "Verteron"
+ },
+ {
+  "slug": "wild-kuru-habitat",
+  "name": "Wild Kuru Habitat",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 25,
+  "region": "Verteron"
+ },
+ {
+  "slug": "all-curing-cave",
+  "name": "All-Curing Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Rare Fungpus"
+  ],
+  "image": null,
+  "level": 30,
+  "region": "Altgard"
+ },
+ {
+  "slug": "altar-of-hope",
+  "name": "Altar of Hope",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Forgotten Lenara"
+  ],
+  "image": null,
+  "level": 30,
+  "region": "Verteron"
+ },
+ {
+  "slug": "balaur-scouts-outpost",
+  "name": "Balaur Scouts Outpost",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 30,
+  "region": "Verteron"
+ },
+ {
+  "slug": "broken-hall-of-knowledge",
+  "name": "Broken Hall of Knowledge",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 30,
+  "region": "Verteron"
+ },
+ {
+  "slug": "canyon-library",
+  "name": "Canyon Library",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 30,
+  "region": "Verteron"
+ },
+ {
+  "slug": "deep-and-dark-pit",
+  "name": "Deep and Dark Pit",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Seyron of the Lake"
+  ],
+  "image": null,
+  "level": 30,
+  "region": "Verteron"
+ },
+ {
+  "slug": "dratona-assembly-area",
+  "name": "Dratona Assembly Area",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 30,
+  "region": "Altgard"
+ },
+ {
+  "slug": "experimental-prison-compound",
+  "name": "Experimental Prison Compound",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 30,
+  "region": "Verteron"
+ },
+ {
+  "slug": "final-haven",
+  "name": "Final Haven",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 30,
+  "region": "Altgard"
+ },
+ {
+  "slug": "guardians-armory",
+  "name": "Guardian's Armory",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Quartermaster Tyius"
+  ],
+  "image": null,
+  "level": 30,
+  "region": "Verteron"
+ },
+ {
+  "slug": "insectoid-tunnel",
+  "name": "Insectoid Tunnel",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 30,
+  "region": "Altgard"
+ },
+ {
+  "slug": "kidnappers-hold",
+  "name": "Kidnapper's Hold",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Reaver Lisansa"
+  ],
+  "image": null,
+  "level": 30,
+  "region": "Verteron"
+ },
+ {
+  "slug": "kius-residence",
+  "name": "Kius' Residence",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Wanted Criminal Kius"
+  ],
+  "image": null,
+  "level": 30,
+  "region": "Verteron"
+ },
+ {
+  "slug": "klaw-den",
+  "name": "Klaw Den",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 30,
+  "region": "Verteron"
+ },
+ {
+  "slug": "krakas-altar",
+  "name": "Kraka's Altar",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Kraka Ritualist"
+  ],
+  "image": null,
+  "level": 30,
+  "region": "Verteron"
+ },
+ {
+  "slug": "library-of-patience",
+  "name": "Library of Patience",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 30,
+  "region": "Altgard"
+ },
+ {
+  "slug": "library-of-wisdom",
+  "name": "Library of Wisdom",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 30,
+  "region": "Altgard"
+ },
+ {
+  "slug": "looted-pilgrims-rest",
+  "name": "Looted Pilgrim's Rest",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 30,
+  "region": "Verteron"
+ },
+ {
+  "slug": "renegade-base",
+  "name": "Renegade Base",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 30,
+  "region": "Verteron"
+ },
+ {
+  "slug": "rift-cave",
+  "name": "Rift Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 30,
+  "region": "Verteron"
+ },
+ {
+  "slug": "rift-fissure",
+  "name": "Rift Fissure",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 30,
+  "region": "Altgard"
+ },
+ {
+  "slug": "scribes-room",
+  "name": "Scribe's Room",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 30,
+  "region": "Verteron"
+ },
+ {
+  "slug": "targoths-cave",
+  "name": "Targoth's Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Corpse-Eating Targoth"
+  ],
+  "image": null,
+  "level": 30,
+  "region": "Verteron"
+ },
+ {
+  "slug": "balaur-scouts-campsite",
+  "name": "Balaur Scouts Campsite",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Scouts Captain Nahram"
+  ],
+  "image": null,
+  "level": 35,
+  "region": "Verteron"
+ },
+ {
+  "slug": "cave-of-the-defeated",
+  "name": "Cave of the Defeated",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 35,
+  "region": "Verteron"
+ },
+ {
+  "slug": "destruction-archons-armory",
+  "name": "Destruction Archons Armory",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 35,
+  "region": "Altgard"
+ },
+ {
+  "slug": "dratona-outpost",
+  "name": "Dratona Outpost",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Mutant Dratona"
+  ],
+  "image": null,
+  "level": 35,
+  "region": "Verteron"
+ },
+ {
+  "slug": "empty-cave",
+  "name": "Empty Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 35,
+  "region": "Altgard"
+ },
+ {
+  "slug": "fungie-habitat",
+  "name": "Fungie Habitat",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 35,
+  "region": "Altgard"
+ },
+ {
+  "slug": "laborers-training-ground",
+  "name": "Laborers Training Ground",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Caretaker Sinandash"
+  ],
+  "image": null,
+  "level": 35,
+  "region": "Verteron"
+ },
+ {
+  "slug": "lonely-rock-chasm",
+  "name": "Lonely Rock Chasm",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Informant Zibro"
+  ],
+  "image": null,
+  "level": 35,
+  "region": "Altgard"
+ },
+ {
+  "slug": "odylium-marauder-den",
+  "name": "Odylium Marauder Den",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 35,
+  "region": "Altgard"
+ },
+ {
+  "slug": "pirates-treasure-storage",
+  "name": "Pirate's Treasure Storage",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Custodian Chakkerman"
+  ],
+  "image": null,
+  "level": 35,
+  "region": "Altgard"
+ },
+ {
+  "slug": "place-of-rest",
+  "name": "Place of Rest",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 35,
+  "region": "Altgard"
+ },
+ {
+  "slug": "rock-cave",
+  "name": "Rock Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 35,
+  "region": "Altgard"
+ },
+ {
+  "slug": "scale-altar",
+  "name": "Scale Altar",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Warrior Wasti"
+  ],
+  "image": null,
+  "level": 35,
+  "region": "Altgard"
+ },
+ {
+  "slug": "shulak-cave",
+  "name": "Shulak Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Mad Lazekhi"
+  ],
+  "image": null,
+  "level": 35,
+  "region": "Altgard"
+ },
+ {
+  "slug": "ascetics-cave",
+  "name": "Ascetic's Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Reckless Jonas"
+  ],
+  "image": null,
+  "level": 40,
+  "region": "Altgard"
+ },
+ {
+  "slug": "dehinons-hideout",
+  "name": "Dehinon's Hideout",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Mutated Dehinon"
+  ],
+  "image": null,
+  "level": 40,
+  "region": "Verteron"
+ },
+ {
+  "slug": "den-of-exiles",
+  "name": "Den of Exiles",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 40,
+  "region": "Altgard"
+ },
+ {
+  "slug": "grave-of-the-wrathful-dead",
+  "name": "Grave of the Wrathful Dead",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Rampaging Neparan's Soul"
+  ],
+  "image": null,
+  "level": 40,
+  "region": "Verteron"
+ },
+ {
+  "slug": "illusionary-ruins",
+  "name": "Illusionary Ruins",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Guardian Spirit Drant"
+  ],
+  "image": null,
+  "level": 40,
+  "region": "Verteron"
+ },
+ {
+  "slug": "krall-barracks",
+  "name": "Krall Barracks",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 40,
+  "region": "Verteron"
+ },
+ {
+  "slug": "kumbahums-cave",
+  "name": "Kumbahum's Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Shaman Kumbahum"
+  ],
+  "image": null,
+  "level": 40,
+  "region": "Altgard"
+ },
+ {
+  "slug": "lagta-fafnite-storage",
+  "name": "Lagta Fafnite Storage",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Supervisor Sinah"
+  ],
+  "image": null,
+  "level": 40,
+  "region": "Altgard"
+ },
+ {
+  "slug": "plantation-storage",
+  "name": "Plantation Storage",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Plantation Storage Supply Captain"
+  ],
+  "image": null,
+  "level": 40,
+  "region": "Verteron"
+ },
+ {
+  "slug": "spider-cave",
+  "name": "Spider Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 40,
+  "region": "Altgard"
+ },
+ {
+  "slug": "tayga-breeding-ground",
+  "name": "Tayga Breeding Ground",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 40,
+  "region": "Altgard"
+ },
+ {
+  "slug": "warriors-rest",
+  "name": "Warriors' Rest",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 40,
+  "region": "Altgard"
+ },
+ {
+  "slug": "abandoned-kromede-base",
+  "name": "Abandoned Kromede Base",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Morheim"
+ },
+ {
+  "slug": "abandoned-life-hideout",
+  "name": "Abandoned Life Hideout",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Eltnen"
+ },
+ {
+  "slug": "barrier-tower-fortress-vault",
+  "name": "Barrier Tower Fortress Vault",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Eltnen"
+ },
+ {
+  "slug": "blades-base",
+  "name": "Blades Base",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Morheim"
+ },
+ {
+  "slug": "blades-secret-repository",
+  "name": "Blades Secret Repository",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Morheim"
+ },
+ {
+  "slug": "camouflaged-fate-archon-base",
+  "name": "Camouflaged Fate Archon Base",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Morheim"
+ },
+ {
+  "slug": "cave-of-the-exiled-ones",
+  "name": "Cave of the Exiled Ones",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Leader Korin"
+  ],
+  "image": null,
+  "level": 45,
+  "region": "Morheim"
+ },
+ {
+  "slug": "cave-of-the-stranded",
+  "name": "Cave of the Stranded",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Lamiphedon"
+  ],
+  "image": null,
+  "level": 45,
+  "region": "Morheim"
+ },
+ {
+  "slug": "defunct-creion-laboratory",
+  "name": "Defunct Creion Laboratory",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Mutated Malgerre"
+  ],
+  "image": null,
+  "level": 45,
+  "region": "Eltnen"
+ },
+ {
+  "slug": "drok-the-outlaws-den",
+  "name": "Drok the Outlaw's Den",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Eiron Outlaw Drok"
+  ],
+  "image": null,
+  "level": 45,
+  "region": "Eltnen"
+ },
+ {
+  "slug": "fallen-haven",
+  "name": "Fallen Haven",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Revenant Tifus"
+  ],
+  "image": null,
+  "level": 45,
+  "region": "Eltnen"
+ },
+ {
+  "slug": "fate-temple",
+  "name": "Fate Temple",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Morheim"
+ },
+ {
+  "slug": "filthy-cave",
+  "name": "Filthy Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Filthy Grollack"
+  ],
+  "image": null,
+  "level": 45,
+  "region": "Eltnen"
+ },
+ {
+  "slug": "fire-cave",
+  "name": "Fire Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Morheim"
+ },
+ {
+  "slug": "forgotten-fire-altar",
+  "name": "Forgotten Fire Altar",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Morheim"
+ },
+ {
+  "slug": "forgotten-spring",
+  "name": "Forgotten Spring",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Eltnen"
+ },
+ {
+  "slug": "frozen-land-of-fate",
+  "name": "Frozen Land of Fate",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Morheim"
+ },
+ {
+  "slug": "fugitive-hideout",
+  "name": "Fugitive Hideout",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Eltnen"
+ },
+ {
+  "slug": "gravarax-research-center",
+  "name": "Gravarax Research Center",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Eltnen"
+ },
+ {
+  "slug": "guardian-statues-cave",
+  "name": "Guardian Statues' Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Morheim"
+ },
+ {
+  "slug": "hidden-lepharist-research-center",
+  "name": "Hidden Lepharist Research Center",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Eltnen"
+ },
+ {
+  "slug": "iagoshs-secret-storage",
+  "name": "Iagosh's Secret Storage",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Eltnen"
+ },
+ {
+  "slug": "indnath-secret-base",
+  "name": "Indnath Secret Base",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Morheim"
+ },
+ {
+  "slug": "iralcig-naga-cave",
+  "name": "Iralcig Naga Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Morheim"
+ },
+ {
+  "slug": "ishtar-logistics-base",
+  "name": "Ishtar Logistics Base",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Eltnen"
+ },
+ {
+  "slug": "kurpak-special-operations-unit-base",
+  "name": "Kurpak Special Operations Unit Base",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Morheim"
+ },
+ {
+  "slug": "land-of-raging-flame",
+  "name": "Land of Raging Flame",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Enraged Avelcatus"
+  ],
+  "image": null,
+  "level": 45,
+  "region": "Morheim"
+ },
+ {
+  "slug": "lepharist-special-operations-research-center",
+  "name": "Lepharist Special Operations Research Center",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Eltnen"
+ },
+ {
+  "slug": "life-awakening-site",
+  "name": "Life Awakening Site",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Eltnen"
+ },
+ {
+  "slug": "life-daeva-library",
+  "name": "Life Daeva Library",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Librarian Messa"
+  ],
+  "image": null,
+  "level": 45,
+  "region": "Eltnen"
+ },
+ {
+  "slug": "manduri-habitat",
+  "name": "Manduri Habitat",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Eltnen"
+ },
+ {
+  "slug": "mutated-drana-plantation",
+  "name": "Mutated Drana Plantation",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Eltnen"
+ },
+ {
+  "slug": "patamor-marauder-base",
+  "name": "Patamor Marauder Base",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Morheim"
+ },
+ {
+  "slug": "patamor-underwater-cave",
+  "name": "Patamor Underwater Cave",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Morheim"
+ },
+ {
+  "slug": "predators-nest",
+  "name": "Predator's Nest",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Giant Karnif Istan"
+  ],
+  "image": null,
+  "level": 45,
+  "region": "Morheim"
+ },
+ {
+  "slug": "pure-spring",
+  "name": "Pure Spring",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Steaming Arbellune"
+  ],
+  "image": null,
+  "level": 45,
+  "region": "Morheim"
+ },
+ {
+  "slug": "ratcatchers-base",
+  "name": "Ratcatchers Base",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Eltnen"
+ },
+ {
+  "slug": "ruins-of-the-ancient-city-of-roah",
+  "name": "Ruins of the Ancient City of Roah",
+  "type": "Sealed Dungeon",
+  "bosses": [
+   "Idris",
+   "Power-Possessed Kianah"
+  ],
+  "image": null,
+  "level": 45,
+  "region": "Verteron"
+ },
+ {
+  "slug": "sunken-ancient-legacy",
+  "name": "Sunken Ancient Legacy",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Eltnen"
+ },
+ {
+  "slug": "sunken-temple",
+  "name": "Sunken Temple",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Eltnen"
+ },
+ {
+  "slug": "verdandis-oratory",
+  "name": "Verdandi's Oratory",
+  "type": "Sealed Dungeon",
+  "bosses": [],
+  "image": null,
+  "level": 45,
+  "region": "Morheim"
+ },
+ {
+  "slug": "beritra-brigade-fortress",
+  "name": "Beritra Brigade Fortress",
+  "type": "Arena",
+  "bosses": [
+   "High Commander Nahid",
+   "Division Commander Radbima"
+  ],
+  "image": null
+ },
+ {
+  "slug": "fafnite-forge",
+  "name": "Fafnite Forge",
+  "type": "Arena",
+  "bosses": [
+   "Quartermaster General Advir",
+   "Resource Warden Kabira"
+  ],
+  "image": null
+ },
+ {
+  "slug": "fire-temple-arena",
+  "name": "Fire Temple Arena",
+  "type": "Arena",
+  "bosses": [],
+  "image": null,
+  "region": "Verteron"
+ },
+ {
+  "slug": "impetusium-arena",
+  "name": "Impetusium Arena",
+  "type": "Arena",
+  "bosses": [],
+  "image": null
+ },
+ {
+  "slug": "odyle-shard-cradle",
+  "name": "Odyle Shard Cradle",
+  "type": "Arena",
+  "bosses": [],
+  "image": null
+ },
+ {
+  "slug": "orcuss-grave",
+  "name": "Orcus's Grave",
+  "type": "Arena",
+  "bosses": [
+   "Quartermaster General Advir",
+   "Resource Warden Kabira"
+  ],
+  "image": null
+ },
+ {
+  "slug": "sandstorm-temple",
+  "name": "Sandstorm Temple",
+  "type": "Arena",
+  "bosses": [],
+  "image": null
+ },
+ {
+  "slug": "stormslumber-snowfield",
+  "name": "Stormslumber Snowfield",
+  "type": "Arena",
+  "bosses": [],
+  "image": null
+ },
+ {
+  "slug": "subjugation-closed",
+  "name": "Subjugation Closed",
+  "type": "Arena",
+  "bosses": [
+   "High Commander Nahid",
+   "Division Commander Radbima"
+  ],
+  "image": null
+ },
+ {
+  "slug": "altgard-legion-airship",
+  "name": "Altgard Legion Airship",
+  "type": "Legion Content",
+  "bosses": [],
+  "image": null
+ },
+ {
+  "slug": "eltnen-legion-airship",
+  "name": "Eltnen Legion Airship",
+  "type": "Legion Content",
+  "bosses": [],
+  "image": null
+ },
+ {
+  "slug": "morheim-legion-airship",
+  "name": "Morheim Legion Airship",
+  "type": "Legion Content",
+  "bosses": [],
+  "image": null
+ },
+ {
+  "slug": "verteron-legion-airship",
+  "name": "Verteron Legion Airship",
+  "type": "Legion Content",
+  "bosses": [],
+  "image": null
+ },
+ {
+  "slug": "chloriss-abyss",
+  "name": "Chloris's Abyss",
+  "type": "Ascension Instance",
+  "bosses": [
+   "Abyssal Chloris"
+  ],
+  "image": null
+ },
+ {
+  "slug": "dream-of-shattered-fragments",
+  "name": "Dream of Shattered Fragments",
+  "type": "Ascension Instance",
+  "bosses": [
+   "Scribe Vellum"
+  ],
+  "image": null
+ },
+ {
+  "slug": "dream-of-torment",
+  "name": "Dream of Torment",
+  "type": "Ascension Instance",
+  "bosses": [],
+  "image": null
+ },
+ {
+  "slug": "dream-remnants",
+  "name": "Dream Remnants",
+  "type": "Ascension Instance",
+  "bosses": [
+   "Dream Guardian Eonos"
+  ],
+  "image": null
+ },
+ {
+  "slug": "forgotten-battlefield",
+  "name": "Forgotten Battlefield",
+  "type": "Ascension Instance",
+  "bosses": [],
+  "image": null
+ },
+ {
+  "slug": "kaisinels-collapsed-sanctum",
+  "name": "Kaisinel's Collapsed Sanctum",
+  "type": "Ascension Instance",
+  "bosses": [
+   "Guardian's Illusion"
+  ],
+  "image": null
+ },
+ {
+  "slug": "kaisinels-distorted-dream",
+  "name": "Kaisinel's Distorted Dream",
+  "type": "Ascension Instance",
+  "bosses": [
+   "Kaisinel's Nightmare"
+  ],
+  "image": null
+ },
+ {
+  "slug": "naruns-dream",
+  "name": "Narun's Dream",
+  "type": "Ascension Instance",
+  "bosses": [
+   "Narun"
+  ],
+  "image": null,
+  "region": "Narun"
+ },
+ {
+  "slug": "sigeberts-abyss",
+  "name": "Sigebert's Abyss",
+  "type": "Ascension Instance",
+  "bosses": [
+   "Abyssal Sigebert"
+  ],
+  "image": null
+ },
+ {
+  "slug": "subspace-of-ascension",
+  "name": "Subspace of Ascension",
+  "type": "Ascension Instance",
+  "bosses": [],
+  "image": null
+ },
+ {
+  "slug": "zikels-collapsed-barracks",
+  "name": "Zikel's Collapsed Barracks",
+  "type": "Ascension Instance",
+  "bosses": [
+   "Sanctuary Guardian"
+  ],
+  "image": null
+ },
+ {
+  "slug": "zikels-distorted-dream",
+  "name": "Zikel's Distorted Dream",
+  "type": "Ascension Instance",
+  "bosses": [
+   "Zikel's Nightmare"
+  ],
+  "image": null
+ },
+ {
+  "slug": "nightmare",
+  "name": "Nightmare",
+  "type": "Boss Challenge",
+  "bosses": [],
+  "image": null
+ }
+]

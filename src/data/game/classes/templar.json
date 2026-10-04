@@ -1,0 +1,1888 @@
+{
+ "id": "templar",
+ "name": "Templar",
+ "icon": "/game/classes/templar.webp",
+ "skills": [
+  {
+   "id": 12010000,
+   "slug": "vicious-strike",
+   "name": "Vicious Strike",
+   "unlockLevel": 1,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Deals 79 (+94.8% Attack) damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+   "icon": "/game/skills/12010000.webp",
+   "type": "active",
+   "meta": {
+    "id": 12010000,
+    "name": "Vicious Strike",
+    "pickRate": 98,
+    "avgLevel": 13.6
+   }
+  },
+  {
+   "id": 12040000,
+   "slug": "pummel",
+   "name": "Pummel",
+   "unlockLevel": 1,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Deals 93 (+119.5% Attack) damage to up to 4 enemies within 4m and increases Enmity. 3 Stagger Gauge Damage",
+   "icon": "/game/skills/12040000.webp",
+   "type": "active",
+   "meta": {
+    "id": 12040000,
+    "name": "Pummel",
+    "pickRate": 95,
+    "avgLevel": 13.3
+   }
+  },
+  {
+   "id": 12130000,
+   "slug": "poach",
+   "name": "Poach",
+   "unlockLevel": 1,
+   "cooldown": "15s",
+   "maxLevel": 40,
+   "effect": "Deals 49 (+87.5% Attack) damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s. 100% chance to inflict Root on NPC…",
+   "icon": "/game/skills/12130000.webp",
+   "type": "active",
+   "meta": {
+    "id": 12130000,
+    "name": "Poach",
+    "pickRate": 98,
+    "avgLevel": 11.6
+   }
+  },
+  {
+   "id": 12100000,
+   "slug": "shield-smite",
+   "name": "Shield Smite",
+   "unlockLevel": 3,
+   "cooldown": "10s",
+   "maxLevel": 40,
+   "effect": "Deals 173 (+175.8% Attack) damage to up to 4 enemies within 4m. Has a 60% chance to inflict Stun on the target for 3s. Triggers [Judgment] for 2s. 100% chance to inflict Stun on…",
+   "icon": "/game/skills/12100000.webp",
+   "type": "active",
+   "meta": {
+    "id": 12100000,
+    "name": "Shield Smite",
+    "pickRate": 96,
+    "avgLevel": 12.2
+   }
+  },
+  {
+   "id": 12240000,
+   "slug": "judgment",
+   "name": "Judgment",
+   "unlockLevel": 4,
+   "cooldown": "5s",
+   "maxLevel": 40,
+   "effect": "Deals 227 (+229.5% Attack) damage to a target within 4m and increases Enmity. 5 Stagger Gauge Damage",
+   "icon": "/game/skills/12240000.webp",
+   "type": "active",
+   "meta": {
+    "id": 12240000,
+    "name": "Judgment",
+    "pickRate": 98,
+    "avgLevel": 13.8
+   }
+  },
+  {
+   "id": 12340000,
+   "slug": "flash-rampage",
+   "name": "Flash Rampage",
+   "unlockLevel": 5,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Deals 152 (+108% Attack) damage to a target afflicted with Stagger within 4m and increases Enmity.",
+   "icon": "/game/skills/12340000.webp",
+   "type": "active",
+   "meta": {
+    "id": 12340000,
+    "name": "Flash Rampage",
+    "pickRate": 88,
+    "avgLevel": 10.4
+   }
+  },
+  {
+   "id": 12270000,
+   "slug": "debilitating-smash",
+   "name": "Debilitating Smash",
+   "unlockLevel": 7,
+   "cooldown": "10s",
+   "maxLevel": 40,
+   "effect": "Deals 336 (+184% Attack) damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block. Debilitate: Reduces Defense by 25% 10 Stagger Gauge Damage",
+   "icon": "/game/skills/12270000.webp",
+   "type": "active",
+   "meta": {
+    "id": 12270000,
+    "name": "Debilitating Smash",
+    "pickRate": 94,
+    "avgLevel": 11.3
+   }
+  },
+  {
+   "id": 12350000,
+   "slug": "warding-strike",
+   "name": "Warding Strike",
+   "unlockLevel": 8,
+   "cooldown": "30s",
+   "maxLevel": 40,
+   "effect": "Deals 388 (+212.5% Attack) damage to up to 4 enemies within 5m of the caster. Immediately restores 180 (+100% Attack)-198 HP and grants Warding to the caster for 10s. Triggers…",
+   "icon": "/game/skills/12350000.webp",
+   "type": "active",
+   "meta": {
+    "id": 12350000,
+    "name": "Warding Strike",
+    "pickRate": 98,
+    "avgLevel": 13.4
+   }
+  },
+  {
+   "id": 12430000,
+   "slug": "shield-rush",
+   "name": "Shield Rush",
+   "unlockLevel": 10,
+   "cooldown": "20s",
+   "maxLevel": 40,
+   "effect": "Rushes to a target within 10m and deals 258 (+105% Attack) damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s. 100%…",
+   "icon": "/game/skills/12430000.webp",
+   "type": "active",
+   "meta": {
+    "id": 12430000,
+    "name": "Shield Rush",
+    "pickRate": 98,
+    "avgLevel": 11.1
+   }
+  },
+  {
+   "id": 12300000,
+   "slug": "annihilate",
+   "name": "Annihilate",
+   "unlockLevel": 12,
+   "cooldown": "20s",
+   "maxLevel": 40,
+   "effect": "Deals 791 (+321.8% Attack) damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s. 100% chance to inflict Knockdown on NPC…",
+   "icon": "/game/skills/12300000.webp",
+   "type": "active",
+   "meta": {
+    "id": 12300000,
+    "name": "Annihilate",
+    "pickRate": 97,
+    "avgLevel": 12
+   }
+  },
+  {
+   "id": 12090000,
+   "slug": "punishment",
+   "name": "Punishment",
+   "unlockLevel": 14,
+   "cooldown": "30s",
+   "maxLevel": 40,
+   "effect": "Selects a target within 20m and deals 1,394 (+430.5% Attack)-4,184 (+1,291.5% Attack) damage to up to 4 enemies within 4m of the target and grants the Executor effect to the…",
+   "icon": "/game/skills/12090000.webp",
+   "type": "active",
+   "meta": {
+    "id": 12090000,
+    "name": "Punishment",
+    "pickRate": 98,
+    "avgLevel": 13.3
+   }
+  },
+  {
+   "id": 12260000,
+   "slug": "defiance-templar",
+   "name": "Defiance",
+   "unlockLevel": 16,
+   "cooldown": "60s",
+   "maxLevel": 40,
+   "effect": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s. Tenacity: Grants Status Effect Immunity Unaffected by cooldown reduction…",
+   "icon": "/game/skills/12260000.webp",
+   "type": "active",
+   "meta": null
+  },
+  {
+   "id": 12710000,
+   "slug": "enhance-health",
+   "name": "Enhance Health",
+   "unlockLevel": 1,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's HP by 250. Increases Max HP by an additional 7.5% and Incoming Heal by 6%.",
+   "icon": "/game/skills/12710000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 12710000,
+    "name": "Enhance Health",
+    "pickRate": 98,
+    "avgLevel": 13.2
+   }
+  },
+  {
+   "id": 12720000,
+   "slug": "warding-shield",
+   "name": "Warding Shield",
+   "unlockLevel": 6,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Block by 200 and restores 53 (+100% Attack)-64 HP on Block. Cooldown: 3s",
+   "icon": "/game/skills/12720000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 12720000,
+    "name": "Warding Shield",
+    "pickRate": 98,
+    "avgLevel": 7.8
+   }
+  },
+  {
+   "id": 12730000,
+   "slug": "punishing-benediction",
+   "name": "Punishing Benediction",
+   "unlockLevel": 9,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Critical Hit by 100 and grants Punishing Benediction for 10s when landing an attack. Punishing Benediction: Has a 50% chance to deal 69 (+38% Attack) extra…",
+   "icon": "/game/skills/12730000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 12730000,
+    "name": "Punishing Benediction",
+    "pickRate": 98,
+    "avgLevel": 12.7
+   }
+  },
+  {
+   "id": 12740000,
+   "slug": "ironclad-defense",
+   "name": "Ironclad Defense",
+   "unlockLevel": 11,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Defense by 7% and Endurance by 1%.",
+   "icon": "/game/skills/12740000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 12740000,
+    "name": "Ironclad Defense",
+    "pickRate": 98,
+    "avgLevel": 12.5
+   }
+  },
+  {
+   "id": 12750000,
+   "slug": "guarding-seal",
+   "name": "Guarding Seal",
+   "unlockLevel": 13,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Grants a Guarding Seal that blocks damage equaling 21% of Max HP for 30s when HP is 50% or less. Cooldown: 60s",
+   "icon": "/game/skills/12750000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 12750000,
+    "name": "Guarding Seal",
+    "pickRate": 98,
+    "avgLevel": 8.3
+   }
+  },
+  {
+   "id": 12760000,
+   "slug": "impact-hit-templar",
+   "name": "Impact Hit",
+   "unlockLevel": 15,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Impact-type Chance by 11.2% and Double Chance by 0.3%.",
+   "icon": "/game/skills/12760000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 12760000,
+    "name": "Impact Hit",
+    "pickRate": 98,
+    "avgLevel": 12.7
+   }
+  },
+  {
+   "id": 12770000,
+   "slug": "insulting-roar",
+   "name": "Insulting Roar",
+   "unlockLevel": 17,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases Enmity Boost by 100% for the caster and increases Attack by 5.5% for 5s on landing a Front Attack. Cooldown: 5s",
+   "icon": "/game/skills/12770000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 12770000,
+    "name": "Insulting Roar",
+    "pickRate": 98,
+    "avgLevel": 13.2
+   }
+  },
+  {
+   "id": 12780000,
+   "slug": "fury",
+   "name": "Fury",
+   "unlockLevel": 21,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases Front Attack Damage Boost by 0.3% for the caster, and increases PvE Damage Boost by 5.5% and PvP Damage Boost by 2.75% for 20s for the caster and party members on…",
+   "icon": "/game/skills/12780000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 12780000,
+    "name": "Fury",
+    "pickRate": 98,
+    "avgLevel": 14
+   }
+  },
+  {
+   "id": 12790000,
+   "slug": "survival-willpower-templar",
+   "name": "Survival Willpower",
+   "unlockLevel": 23,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Status Effect Resist by 17%. Increases PvE Damage Tolerance by 12% and PvP Damage Tolerance by 6% for 5s when afflicted with Stun, Knockdown, Airborne,…",
+   "icon": "/game/skills/12790000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 12790000,
+    "name": "Survival Willpower",
+    "pickRate": 98,
+    "avgLevel": 8.6
+   }
+  },
+  {
+   "id": 12800000,
+   "slug": "block-pain",
+   "name": "Block Pain",
+   "unlockLevel": 25,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Grants Block Pain for 10s when struck by an enemy. Block Pain: Increases PvE Damage Tolerance by 11% and PvP Damage Tolerance by 5.5% Cooldown: 20s",
+   "icon": "/game/skills/12800000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 12800000,
+    "name": "Block Pain",
+    "pickRate": 98,
+    "avgLevel": 10.5
+   }
+  }
+ ],
+ "stigmas": [
+  {
+   "id": 12190000,
+   "slug": "second-skin",
+   "name": "Second Skin",
+   "unlockLevel": 22,
+   "cooldown": "90s",
+   "maxLevel": 25,
+   "effect": "Increases PvE Damage Tolerance by 30% and PvP Damage Tolerance by 15% for 10s. Unaffected by cooldown increase effects.",
+   "icon": "/game/skills/12190000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 12190000,
+    "name": "Second Skin",
+    "pickRate": 9.8,
+    "avgLevel": 3.9
+   }
+  },
+  {
+   "id": 12220000,
+   "slug": "grapple",
+   "name": "Grapple",
+   "unlockLevel": 22,
+   "cooldown": "90s",
+   "maxLevel": 25,
+   "effect": "Selects a target within 20m and deals 1,045 (+182.5% Attack) damage to up to 4 enemies within 7m of the target, pulling them in front of the caster. Inflicts Root for 3s. 20…",
+   "icon": "/game/skills/12220000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 12220000,
+    "name": "Grapple",
+    "pickRate": 7.8,
+    "avgLevel": 2
+   }
+  },
+  {
+   "id": 12310000,
+   "slug": "empyrean-lords-punishment",
+   "name": "Empyrean Lord's Punishment",
+   "unlockLevel": 22,
+   "cooldown": "60s",
+   "maxLevel": 25,
+   "effect": "Selects a target within 20m and deals 939 (+164% Attack) damage to up to 4 enemies within 4m of the target. Has a 50% chance to inflict Stun for 3s. 100% chance to inflict Stun…",
+   "icon": "/game/skills/12310000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 12310000,
+    "name": "Empyrean Lord's Punishment",
+    "pickRate": 67,
+    "avgLevel": 6
+   }
+  },
+  {
+   "id": 12320000,
+   "slug": "nezekans-shield",
+   "name": "Nezekan's Shield",
+   "unlockLevel": 22,
+   "cooldown": "60s",
+   "maxLevel": 25,
+   "effect": "Grants a Protective Shield that blocks damage equaling 41% of Max HP for 3s to the caster and nearby party members within 40m.",
+   "icon": "/game/skills/12320000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 12320000,
+    "name": "Nezekan's Shield",
+    "pickRate": 24,
+    "avgLevel": 4.8
+   }
+  },
+  {
+   "id": 12700000,
+   "slug": "assault-fury",
+   "name": "Assault Fury",
+   "unlockLevel": 22,
+   "cooldown": "120s",
+   "maxLevel": 25,
+   "effect": "Selects a target within 20m and deals 951 (+166% Attack) damage to up to 4 enemies within 4m with a 30% chance to inflict Stun for 3s. 100% chance to inflict Stun on NPC targets.…",
+   "icon": "/game/skills/12700000.webp",
+   "type": "stigma",
+   "meta": null
+  },
+  {
+   "id": 12070000,
+   "slug": "doom-shield",
+   "name": "Doom Shield",
+   "unlockLevel": 22,
+   "cooldown": "30s",
+   "maxLevel": 25,
+   "effect": "Rushes to a target within 20m and deals 1,254 (+219% Attack) damage. Has a 75% chance to inflict Knockdown for 3s. Grants a Protective Shield that blocks damage equaling 5% Max…",
+   "icon": "/game/skills/12070000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 12070000,
+    "name": "Doom Shield",
+    "pickRate": 61,
+    "avgLevel": 5.9
+   }
+  },
+  {
+   "id": 12450000,
+   "slug": "battlefield-banner",
+   "name": "Battlefield Banner",
+   "unlockLevel": 22,
+   "cooldown": "90s",
+   "maxLevel": 25,
+   "effect": "Increases Attack proportional to Defense for 10s.",
+   "icon": "/game/skills/12450000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 12450000,
+    "name": "Battlefield Banner",
+    "pickRate": 65,
+    "avgLevel": 7.8
+   }
+  },
+  {
+   "id": 12110000,
+   "slug": "shield-of-protection",
+   "name": "Shield of Protection",
+   "unlockLevel": 22,
+   "cooldown": "20s",
+   "maxLevel": 25,
+   "effect": "Temporarily increases Block Damage Reduction by 100% and guarantees Block. Restores 110 MP and Stamina once on Block.",
+   "icon": "/game/skills/12110000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 12110000,
+    "name": "Shield of Protection",
+    "pickRate": 61,
+    "avgLevel": 4.8
+   }
+  },
+  {
+   "id": 12230000,
+   "slug": "noble-armor",
+   "name": "Noble Armor",
+   "unlockLevel": 22,
+   "cooldown": "120s",
+   "maxLevel": 25,
+   "effect": "Increases Max HP by 5.4% for 120s and immediately restores HP by 5.4% of Max HP. Not affected by buff dispel effects.",
+   "icon": "/game/skills/12230000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 12230000,
+    "name": "Noble Armor",
+    "pickRate": 37,
+    "avgLevel": 7.1
+   }
+  },
+  {
+   "id": 12410000,
+   "slug": "executing-blade",
+   "name": "Executing Blade",
+   "unlockLevel": 22,
+   "cooldown": "45s",
+   "maxLevel": 25,
+   "effect": "Deals  1,335 (+233% Attack) damage to up to 4 enemies within 4m and reduces Defense by 30% for 5s. Deals 20% more damage on attacking a target inflicted with Impact-type status.…",
+   "icon": "/game/skills/12410000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 12410000,
+    "name": "Executing Blade",
+    "pickRate": 19,
+    "avgLevel": 5.4
+   }
+  },
+  {
+   "id": 12120000,
+   "slug": "taunt",
+   "name": "Taunt",
+   "unlockLevel": 22,
+   "cooldown": "30s",
+   "maxLevel": 25,
+   "effect": "Deals 888 (+155% Attack) damage to a target within 20m and increases Enmity. Inflict Shrink for 15s on hit and has a 50% chance to inflict Taunt for 3s if the target is a player.…",
+   "icon": "/game/skills/12120000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 12120000,
+    "name": "Taunt",
+    "pickRate": 76,
+    "avgLevel": 5.1
+   }
+  },
+  {
+   "id": 12250000,
+   "slug": "comrade-in-arms",
+   "name": "Comrade in Arms",
+   "unlockLevel": 22,
+   "cooldown": "120s",
+   "maxLevel": 25,
+   "effect": "Increases the caster's PvE Damage Tolerance by 20% and PvP Damage Tolerance by 10% and redirects damage taken by a party member within 40m each time they are attacked, sharing…",
+   "icon": "/game/skills/12250000.webp",
+   "type": "stigma",
+   "meta": null
+  },
+  {
+   "id": 12200000,
+   "slug": "armor-of-balance-templar",
+   "name": "Armor of Balance",
+   "unlockLevel": 22,
+   "cooldown": "90s",
+   "maxLevel": 25,
+   "effect": "Increases Impact-type Resist by 50% for 10s.",
+   "icon": "/game/skills/12200000.webp",
+   "type": "stigma",
+   "meta": null
+  }
+ ],
+ "specializations": [
+  {
+   "id": 12010010,
+   "skillId": 12010000,
+   "skillName": "Vicious Strike",
+   "requiredSkillLevel": 8,
+   "effect": "+20% MP restored",
+   "icon": "/game/specs/12010010.webp"
+  },
+  {
+   "id": 12010020,
+   "skillId": 12010000,
+   "skillName": "Vicious Strike",
+   "requiredSkillLevel": 8,
+   "effect": "Absorbs 100, 100% HP",
+   "icon": "/game/specs/12010020.webp"
+  },
+  {
+   "id": 12010030,
+   "skillId": 12010000,
+   "skillName": "Vicious Strike",
+   "requiredSkillLevel": 8,
+   "effect": "+50% Multi-Hit on hit",
+   "icon": "/game/specs/12010030.webp"
+  },
+  {
+   "id": 12040010,
+   "skillId": 12040000,
+   "skillName": "Pummel",
+   "requiredSkillLevel": 8,
+   "effect": "-20% MP consumed",
+   "icon": "/game/specs/12040010.webp"
+  },
+  {
+   "id": 12040020,
+   "skillId": 12040000,
+   "skillName": "Pummel",
+   "requiredSkillLevel": 8,
+   "effect": "[Punishing Strike] absorbs 300, 300% HP",
+   "icon": "/game/specs/12040020.webp"
+  },
+  {
+   "id": 12040030,
+   "skillId": 12040000,
+   "skillName": "Pummel",
+   "requiredSkillLevel": 8,
+   "effect": "Deals up to 12% more damage when less targets are hit",
+   "icon": "/game/specs/12040030.webp"
+  },
+  {
+   "id": 12130010,
+   "skillId": 12130000,
+   "skillName": "Poach",
+   "requiredSkillLevel": 8,
+   "effect": "Moves to the target if target has Incapacitated Immunity",
+   "icon": "/game/specs/12130010.webp"
+  },
+  {
+   "id": 12130020,
+   "skillId": 12130000,
+   "skillName": "Poach",
+   "requiredSkillLevel": 8,
+   "effect": "-20% Status Effect Resist for 5s on hit",
+   "icon": "/game/specs/12130020.webp"
+  },
+  {
+   "id": 12130030,
+   "skillId": 12130000,
+   "skillName": "Poach",
+   "requiredSkillLevel": 8,
+   "effect": "Resets cooldown on defeating an enemy",
+   "icon": "/game/specs/12130030.webp"
+  },
+  {
+   "id": 12100010,
+   "skillId": 12100000,
+   "skillName": "Shield Smite",
+   "requiredSkillLevel": 8,
+   "effect": "+1s Stun duration",
+   "icon": "/game/specs/12100010.webp"
+  },
+  {
+   "id": 12100020,
+   "skillId": 12100000,
+   "skillName": "Shield Smite",
+   "requiredSkillLevel": 8,
+   "effect": "Removes MP Cost and restores 200 MP on hit",
+   "icon": "/game/specs/12100020.webp"
+  },
+  {
+   "id": 12100030,
+   "skillId": 12100000,
+   "skillName": "Shield Smite",
+   "requiredSkillLevel": 8,
+   "effect": "50% chance to trigger [Debilitating Smash] on hit",
+   "icon": "/game/specs/12100030.webp"
+  },
+  {
+   "id": 12240010,
+   "skillId": 12240000,
+   "skillName": "Judgment",
+   "requiredSkillLevel": 8,
+   "effect": "Absorbs 100, 100% HP",
+   "icon": "/game/specs/12240010.webp"
+  },
+  {
+   "id": 12240020,
+   "skillId": 12240000,
+   "skillName": "Judgment",
+   "requiredSkillLevel": 8,
+   "effect": "Deals extra damage on attacking a target afflicted with Impact-type status",
+   "icon": "/game/specs/12240020.webp"
+  },
+  {
+   "id": 12240030,
+   "skillId": 12240000,
+   "skillName": "Judgment",
+   "requiredSkillLevel": 8,
+   "effect": "Extra damage on hit",
+   "icon": "/game/specs/12240030.webp"
+  },
+  {
+   "id": 12340010,
+   "skillId": 12340000,
+   "skillName": "Flash Rampage",
+   "requiredSkillLevel": 8,
+   "effect": "Absorbs 500, 500% HP",
+   "icon": "/game/specs/12340010.webp"
+  },
+  {
+   "id": 12340020,
+   "skillId": 12340000,
+   "skillName": "Flash Rampage",
+   "requiredSkillLevel": 8,
+   "effect": "Restores 120 MP on hit",
+   "icon": "/game/specs/12340020.webp"
+  },
+  {
+   "id": 12340030,
+   "skillId": 12340000,
+   "skillName": "Flash Rampage",
+   "requiredSkillLevel": 8,
+   "effect": "Changes to mobile skill",
+   "icon": "/game/specs/12340030.webp"
+  },
+  {
+   "id": 12270010,
+   "skillId": 12270000,
+   "skillName": "Debilitating Smash",
+   "requiredSkillLevel": 8,
+   "effect": "30% chance to inflict Stun for 3s",
+   "icon": "/game/specs/12270010.webp"
+  },
+  {
+   "id": 12270020,
+   "skillId": 12270000,
+   "skillName": "Debilitating Smash",
+   "requiredSkillLevel": 8,
+   "effect": "+3s Debilitate duration",
+   "icon": "/game/specs/12270020.webp"
+  },
+  {
+   "id": 12270030,
+   "skillId": 12270000,
+   "skillName": "Debilitating Smash",
+   "requiredSkillLevel": 8,
+   "effect": "-60% Incoming Heal during Debilitate",
+   "icon": "/game/specs/12270030.webp"
+  },
+  {
+   "id": 12350010,
+   "skillId": 12350000,
+   "skillName": "Warding Strike",
+   "requiredSkillLevel": 8,
+   "effect": "-5s cooldown",
+   "icon": "/game/specs/12350010.webp"
+  },
+  {
+   "id": 12350020,
+   "skillId": 12350000,
+   "skillName": "Warding Strike",
+   "requiredSkillLevel": 8,
+   "effect": "+100 Block during Warding",
+   "icon": "/game/specs/12350020.webp"
+  },
+  {
+   "id": 12350030,
+   "skillId": 12350000,
+   "skillName": "Warding Strike",
+   "requiredSkillLevel": 8,
+   "effect": "Heal over Time during Warding",
+   "icon": "/game/specs/12350030.webp"
+  },
+  {
+   "id": 12430010,
+   "skillId": 12430000,
+   "skillName": "Shield Rush",
+   "requiredSkillLevel": 8,
+   "effect": "Restores 300 Stamina on hit",
+   "icon": "/game/specs/12430010.webp"
+  },
+  {
+   "id": 12430020,
+   "skillId": 12430000,
+   "skillName": "Shield Rush",
+   "requiredSkillLevel": 8,
+   "effect": "+10m range",
+   "icon": "/game/specs/12430020.webp"
+  },
+  {
+   "id": 12430030,
+   "skillId": 12430000,
+   "skillName": "Shield Rush",
+   "requiredSkillLevel": 8,
+   "effect": "Changes to Charge Skill and deals AoE damage",
+   "icon": "/game/specs/12430030.webp"
+  },
+  {
+   "id": 12300010,
+   "skillId": 12300000,
+   "skillName": "Annihilate",
+   "requiredSkillLevel": 8,
+   "effect": "+50% Multi-Hit on hit",
+   "icon": "/game/specs/12300010.webp"
+  },
+  {
+   "id": 12300020,
+   "skillId": 12300000,
+   "skillName": "Annihilate",
+   "requiredSkillLevel": 8,
+   "effect": "+20% Knockdown Chance",
+   "icon": "/game/specs/12300020.webp"
+  },
+  {
+   "id": 12300030,
+   "skillId": 12300000,
+   "skillName": "Annihilate",
+   "requiredSkillLevel": 8,
+   "effect": "+100% damage to targets with Incapacitated Immunity",
+   "icon": "/game/specs/12300030.webp"
+  },
+  {
+   "id": 12090010,
+   "skillId": 12090000,
+   "skillName": "Punishment",
+   "requiredSkillLevel": 8,
+   "effect": "Absorbs 1000, 1000% HP",
+   "icon": "/game/specs/12090010.webp"
+  },
+  {
+   "id": 12090020,
+   "skillId": 12090000,
+   "skillName": "Punishment",
+   "requiredSkillLevel": 8,
+   "effect": "Inflicts Damage over Time to target on hit",
+   "icon": "/game/specs/12090020.webp"
+  },
+  {
+   "id": 12090030,
+   "skillId": 12090000,
+   "skillName": "Punishment",
+   "requiredSkillLevel": 8,
+   "effect": "+30% Skill Speed",
+   "icon": "/game/specs/12090030.webp"
+  },
+  {
+   "id": 12260010,
+   "skillId": 12260000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 8,
+   "effect": "Adds [Capture] Chain Skill",
+   "icon": "/game/specs/12260010.webp"
+  },
+  {
+   "id": 12260020,
+   "skillId": 12260000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 8,
+   "effect": "Restores 1,000 Stamina on using [Defiance]",
+   "icon": "/game/specs/12260020.webp"
+  },
+  {
+   "id": 12260030,
+   "skillId": 12260000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 8,
+   "effect": "Restores 20% HP on using [Defiance]",
+   "icon": "/game/specs/12260030.webp"
+  },
+  {
+   "id": 12010040,
+   "skillId": 12010000,
+   "skillName": "Vicious Strike",
+   "requiredSkillLevel": 12,
+   "effect": "-2s [Warding Strike] cooldown on hit",
+   "icon": "/game/specs/12010040.webp"
+  },
+  {
+   "id": 12040040,
+   "skillId": 12040000,
+   "skillName": "Pummel",
+   "requiredSkillLevel": 12,
+   "effect": "-1s [Punishment] cooldown on hit",
+   "icon": "/game/specs/12040040.webp"
+  },
+  {
+   "id": 12130040,
+   "skillId": 12130000,
+   "skillName": "Poach",
+   "requiredSkillLevel": 12,
+   "effect": "10% Max HP Protective Shield",
+   "icon": "/game/specs/12130040.webp"
+  },
+  {
+   "id": 12100040,
+   "skillId": 12100000,
+   "skillName": "Shield Smite",
+   "requiredSkillLevel": 12,
+   "effect": "-2s cooldown",
+   "icon": "/game/specs/12100040.webp"
+  },
+  {
+   "id": 12240040,
+   "skillId": 12240000,
+   "skillName": "Judgment",
+   "requiredSkillLevel": 12,
+   "effect": "Critical Hit on hit",
+   "icon": "/game/specs/12240040.webp"
+  },
+  {
+   "id": 12340040,
+   "skillId": 12340000,
+   "skillName": "Flash Rampage",
+   "requiredSkillLevel": 12,
+   "effect": "Multi-Hit on hit",
+   "icon": "/game/specs/12340040.webp"
+  },
+  {
+   "id": 12270040,
+   "skillId": 12270000,
+   "skillName": "Debilitating Smash",
+   "requiredSkillLevel": 12,
+   "effect": "Ignores Block and Evasion and lands as Multi-Hit",
+   "icon": "/game/specs/12270040.webp"
+  },
+  {
+   "id": 12350040,
+   "skillId": 12350000,
+   "skillName": "Warding Strike",
+   "requiredSkillLevel": 12,
+   "effect": "Adds PvE Damage Tolerance and PvP Damage Tolerance increase effect when more targets hit to Warding",
+   "icon": "/game/specs/12350040.webp"
+  },
+  {
+   "id": 12430040,
+   "skillId": 12430000,
+   "skillName": "Shield Rush",
+   "requiredSkillLevel": 12,
+   "effect": "-10s cooldown",
+   "icon": "/game/specs/12430040.webp"
+  },
+  {
+   "id": 12300040,
+   "skillId": 12300000,
+   "skillName": "Annihilate",
+   "requiredSkillLevel": 12,
+   "effect": "-10s cooldown",
+   "icon": "/game/specs/12300040.webp"
+  },
+  {
+   "id": 12090040,
+   "skillId": 12090000,
+   "skillName": "Punishment",
+   "requiredSkillLevel": 12,
+   "effect": "Changes to mobile skill",
+   "icon": "/game/specs/12090040.webp"
+  },
+  {
+   "id": 12260040,
+   "skillId": 12260000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 12,
+   "effect": "+2s Tenacity duration",
+   "icon": "/game/specs/12260040.webp"
+  },
+  {
+   "id": 12010050,
+   "skillId": 12010000,
+   "skillName": "Vicious Strike",
+   "requiredSkillLevel": 16,
+   "effect": "Adds [Threatening Blow] Chain Skill",
+   "icon": "/game/specs/12010050.webp"
+  },
+  {
+   "id": 12040050,
+   "skillId": 12040000,
+   "skillName": "Pummel",
+   "requiredSkillLevel": 16,
+   "effect": "[Punishing Strike] grants extra damage on hit",
+   "icon": "/game/specs/12040050.webp"
+  },
+  {
+   "id": 12130050,
+   "skillId": 12130000,
+   "skillName": "Poach",
+   "requiredSkillLevel": 16,
+   "effect": "50% chance to Stun for 3s",
+   "icon": "/game/specs/12130050.webp"
+  },
+  {
+   "id": 12100050,
+   "skillId": 12100000,
+   "skillName": "Shield Smite",
+   "requiredSkillLevel": 16,
+   "effect": "AoE Stun",
+   "icon": "/game/specs/12100050.webp"
+  },
+  {
+   "id": 12240050,
+   "skillId": 12240000,
+   "skillName": "Judgment",
+   "requiredSkillLevel": 16,
+   "effect": "Remove cooldown",
+   "icon": "/game/specs/12240050.webp"
+  },
+  {
+   "id": 12340050,
+   "skillId": 12340000,
+   "skillName": "Flash Rampage",
+   "requiredSkillLevel": 16,
+   "effect": "-1s to all skill cooldowns on hit",
+   "icon": "/game/specs/12340050.webp"
+  },
+  {
+   "id": 12270050,
+   "skillId": 12270000,
+   "skillName": "Debilitating Smash",
+   "requiredSkillLevel": 16,
+   "effect": "25% chance to reset cooldown on Block",
+   "icon": "/game/specs/12270050.webp"
+  },
+  {
+   "id": 12350050,
+   "skillId": 12350000,
+   "skillName": "Warding Strike",
+   "requiredSkillLevel": 16,
+   "effect": "+10% PvE Damage Tolerance and +5% PvP Damage Tolerance to party members on skill use",
+   "icon": "/game/specs/12350050.webp"
+  },
+  {
+   "id": 12430050,
+   "skillId": 12430000,
+   "skillName": "Shield Rush",
+   "requiredSkillLevel": 16,
+   "effect": "+25% Stun Chance",
+   "icon": "/game/specs/12430050.webp"
+  },
+  {
+   "id": 12300050,
+   "skillId": 12300000,
+   "skillName": "Annihilate",
+   "requiredSkillLevel": 16,
+   "effect": "Changes to AoE Skill",
+   "icon": "/game/specs/12300050.webp"
+  },
+  {
+   "id": 12090050,
+   "skillId": 12090000,
+   "skillName": "Punishment",
+   "requiredSkillLevel": 16,
+   "effect": "Ignores Block and Evasion and lands as a Critical Hit",
+   "icon": "/game/specs/12090050.webp"
+  },
+  {
+   "id": 12260050,
+   "skillId": 12260000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 16,
+   "effect": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration",
+   "icon": "/game/specs/12260050.webp"
+  }
+ ],
+ "meta": {
+  "topPlayersTracked": 1561,
+  "medianCombatPower": 55901,
+  "top10CombatPower": 69760,
+  "avgItemLevel": 1143,
+  "daevanion": {
+   "boards": [
+    {
+     "board": "Nezekan",
+     "commonNodes": 67,
+     "totalNodes": 88
+    },
+    {
+     "board": "Zikel",
+     "commonNodes": 61,
+     "totalNodes": 88
+    },
+    {
+     "board": "Vaizel",
+     "commonNodes": 50,
+     "totalNodes": 88
+    },
+    {
+     "board": "Triniel",
+     "commonNodes": 37,
+     "totalNodes": 116
+    },
+    {
+     "board": "Azphel",
+     "commonNodes": 3,
+     "totalNodes": 152
+    }
+   ],
+   "topSkillNodes": [
+    {
+     "skill": "Punishment",
+     "bonus": 1,
+     "board": "Zikel",
+     "pickRate": 98
+    },
+    {
+     "skill": "Judgment",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 97
+    },
+    {
+     "skill": "Vicious Strike",
+     "bonus": 1,
+     "board": "Zikel",
+     "pickRate": 96
+    },
+    {
+     "skill": "Warding Strike",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 95
+    },
+    {
+     "skill": "Judgment",
+     "bonus": 1,
+     "board": "Zikel",
+     "pickRate": 95
+    },
+    {
+     "skill": "Vicious Strike",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 94
+    },
+    {
+     "skill": "Judgment",
+     "bonus": 1,
+     "board": "Triniel",
+     "pickRate": 93
+    },
+    {
+     "skill": "Punishing Benediction",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 91
+    }
+   ]
+  },
+  "gear": {
+   "Main hand": [
+    {
+     "slug": "spiritforged-longsword",
+     "name": "Spiritforged Longsword",
+     "icon": "/game/items/icon_wp_sw_0078_t05.webp",
+     "pickRate": 42,
+     "avgEnchant": 9.5
+    },
+    {
+     "slug": "spiritforged-longsword",
+     "name": "Spiritforged Longsword",
+     "icon": "/game/items/icon_wp_sw_0078_t05.webp",
+     "pickRate": 35,
+     "avgEnchant": 9.5
+    },
+    {
+     "slug": "aulamus-longsword",
+     "name": "Aulamus Longsword",
+     "icon": "/game/items/icon_wp_sw_0028_t05.webp",
+     "pickRate": 14,
+     "avgEnchant": 9.3
+    }
+   ],
+   "Off-hand": [
+    {
+     "slug": "spiritforged-guard",
+     "name": "Spiritforged Guard",
+     "icon": "/game/items/icon_weapon_guarder_l_001.webp",
+     "pickRate": 44,
+     "avgEnchant": 8.7
+    },
+    {
+     "slug": "spiritforged-guard",
+     "name": "Spiritforged Guard",
+     "icon": "/game/items/icon_weapon_guarder_l_001.webp",
+     "pickRate": 35,
+     "avgEnchant": 8.4
+    },
+    {
+     "slug": "bakarma-guard",
+     "name": "Bakarma Guard",
+     "icon": "/game/items/icon_weapon_guarder_l_011.webp",
+     "pickRate": 8.5,
+     "avgEnchant": 7.9
+    }
+   ],
+   "Helmet": [
+    {
+     "slug": "vakron-helm",
+     "name": "Vakron Helm",
+     "icon": "/game/items/icon_gm_0028_t05_helmet.webp",
+     "pickRate": 22,
+     "avgEnchant": 7.6
+    },
+    {
+     "slug": "divine-canyon-helm",
+     "name": "Divine Canyon Helm",
+     "icon": "/game/items/icon_gm_0072_t05_helmet.webp",
+     "pickRate": 20,
+     "avgEnchant": 2.3
+    },
+    {
+     "slug": "unyielding-helm",
+     "name": "Unyielding Helm",
+     "icon": "/game/items/icon_gm_0049_t05_helmet.webp",
+     "pickRate": 13,
+     "avgEnchant": 2.9
+    }
+   ],
+   "Shoulders": [
+    {
+     "slug": "vakron-pauldrons",
+     "name": "Vakron Pauldrons",
+     "icon": "/game/items/icon_gm_0028_t05_shoulder.webp",
+     "pickRate": 26,
+     "avgEnchant": 7.7
+    },
+    {
+     "slug": "divine-canyon-pauldrons",
+     "name": "Divine Canyon Pauldrons",
+     "icon": "/game/items/icon_gm_0072_t05_shoulder.webp",
+     "pickRate": 23,
+     "avgEnchant": 2.3
+    },
+    {
+     "slug": "unyielding-pauldrons",
+     "name": "Unyielding Pauldrons",
+     "icon": "/game/items/icon_gm_0049_t05_shoulder.webp",
+     "pickRate": 12,
+     "avgEnchant": 2
+    }
+   ],
+   "Chest": [
+    {
+     "slug": "bakarma-breastplate",
+     "name": "Bakarma Breastplate",
+     "icon": "/game/items/icon_gm_0059_t05_torso.webp",
+     "pickRate": 39,
+     "avgEnchant": 6.6
+    },
+    {
+     "slug": "vakron-breastplate",
+     "name": "Vakron Breastplate",
+     "icon": "/game/items/icon_gm_0028_t05_torso.webp",
+     "pickRate": 27,
+     "avgEnchant": 7.3
+    },
+    {
+     "slug": "divine-canyon-breastplate",
+     "name": "Divine Canyon Breastplate",
+     "icon": "/game/items/icon_gm_0072_t05_torso.webp",
+     "pickRate": 12,
+     "avgEnchant": 2.9
+    }
+   ],
+   "Legs": [
+    {
+     "slug": "vakron-greaves",
+     "name": "Vakron Greaves",
+     "icon": "/game/items/icon_gm_0028_t05_pants.webp",
+     "pickRate": 32,
+     "avgEnchant": 7
+    },
+    {
+     "slug": "divine-canyon-greaves",
+     "name": "Divine Canyon Greaves",
+     "icon": "/game/items/icon_gm_0072_t05_pants.webp",
+     "pickRate": 16,
+     "avgEnchant": 2.5
+    },
+    {
+     "slug": "division-greaves",
+     "name": "Division Greaves",
+     "icon": "/game/items/icon_gm_0139_t05_pants.webp",
+     "pickRate": 11,
+     "avgEnchant": 2.5
+    }
+   ],
+   "Gloves": [
+    {
+     "slug": "vakron-gloves",
+     "name": "Vakron Gloves",
+     "icon": "/game/items/icon_gm_0028_t05_gloves.webp",
+     "pickRate": 27,
+     "avgEnchant": 7.5
+    },
+    {
+     "slug": "divine-canyon-gloves",
+     "name": "Divine Canyon Gloves",
+     "icon": "/game/items/icon_gm_0072_t05_gloves.webp",
+     "pickRate": 16,
+     "avgEnchant": 2.1
+    },
+    {
+     "slug": "unyielding-gloves",
+     "name": "Unyielding Gloves",
+     "icon": "/game/items/icon_gm_0049_t05_gloves.webp",
+     "pickRate": 14,
+     "avgEnchant": 2.2
+    }
+   ],
+   "Boots": [
+    {
+     "slug": "vakron-boots",
+     "name": "Vakron Boots",
+     "icon": "/game/items/icon_gm_0028_t05_boots.webp",
+     "pickRate": 25,
+     "avgEnchant": 6.9
+    },
+    {
+     "slug": "divine-canyon-boots",
+     "name": "Divine Canyon Boots",
+     "icon": "/game/items/icon_gm_0072_t05_boots.webp",
+     "pickRate": 20,
+     "avgEnchant": 2.1
+    },
+    {
+     "slug": "unyielding-boots",
+     "name": "Unyielding Boots",
+     "icon": "/game/items/icon_gm_0049_t05_boots.webp",
+     "pickRate": 13,
+     "avgEnchant": 3.3
+    }
+   ],
+   "Cape": [
+    {
+     "slug": "vakron-cloak",
+     "name": "Vakron Cloak",
+     "icon": "/game/items/icon_gm_0028_t05_cape.webp",
+     "pickRate": 28,
+     "avgEnchant": 7.3
+    },
+    {
+     "slug": "divine-canyon-cloak",
+     "name": "Divine Canyon Cloak",
+     "icon": "/game/items/icon_gm_0072_t05_cape.webp",
+     "pickRate": 14,
+     "avgEnchant": 1.9
+    },
+    {
+     "slug": "bakarma-cloak",
+     "name": "Bakarma Cloak",
+     "icon": "/game/items/icon_gm_0059_t05_cape.webp",
+     "pickRate": 14,
+     "avgEnchant": 6.2
+    }
+   ],
+   "Necklace": [
+    {
+     "slug": "aulamus-necklace",
+     "name": "Aulamus Necklace",
+     "icon": "/game/items/icon_acc_nl_0072.webp",
+     "pickRate": 26,
+     "avgEnchant": 7.7
+    },
+    {
+     "slug": "liberator-necklace",
+     "name": "Liberator Necklace",
+     "icon": "/game/items/icon_acc_nl_0071.webp",
+     "pickRate": 23,
+     "avgEnchant": 3.7
+    },
+    {
+     "slug": "pilgrim-necklace",
+     "name": "Pilgrim Necklace",
+     "icon": "/game/items/icon_acc_nl_0071.webp",
+     "pickRate": 20,
+     "avgEnchant": 3.7
+    }
+   ],
+   "Earring": [
+    {
+     "slug": "liberator-earrings",
+     "name": "Liberator Earrings",
+     "icon": "/game/items/icon_acc_er_0071.webp",
+     "pickRate": 37,
+     "avgEnchant": 4.1
+    },
+    {
+     "slug": "aulamus-earrings",
+     "name": "Aulamus Earrings",
+     "icon": "/game/items/icon_acc_er_0072.webp",
+     "pickRate": 34,
+     "avgEnchant": 8
+    },
+    {
+     "slug": "pilgrim-earrings",
+     "name": "Pilgrim Earrings",
+     "icon": "/game/items/icon_acc_er_0071.webp",
+     "pickRate": 34,
+     "avgEnchant": 3.8
+    }
+   ],
+   "Ring": [
+    {
+     "slug": "liberator-ring",
+     "name": "Liberator Ring",
+     "icon": "/game/items/icon_acc_ring_0071.webp",
+     "pickRate": 33,
+     "avgEnchant": 3.8
+    },
+    {
+     "slug": "aulamus-ring",
+     "name": "Aulamus Ring",
+     "icon": "/game/items/icon_acc_ring_0072.webp",
+     "pickRate": 32,
+     "avgEnchant": 7.2
+    },
+    {
+     "slug": "pilgrim-ring",
+     "name": "Pilgrim Ring",
+     "icon": "/game/items/icon_acc_ring_0071.webp",
+     "pickRate": 31,
+     "avgEnchant": 4.3
+    }
+   ],
+   "Bracelet": [
+    {
+     "slug": "ascension-bracelet",
+     "name": "Ascension Bracelet",
+     "icon": "/game/items/icon_acc_bracelet_r_027.webp",
+     "pickRate": 54,
+     "avgEnchant": 9
+    },
+    {
+     "slug": "liberator-bracelet",
+     "name": "Liberator Bracelet",
+     "icon": "/game/items/icon_acc_bracelet_0071.webp",
+     "pickRate": 54,
+     "avgEnchant": 5.7
+    },
+    {
+     "slug": "ascension-bracelet",
+     "name": "Ascension Bracelet",
+     "icon": "/game/items/icon_acc_bracelet_r_027.webp",
+     "pickRate": 44,
+     "avgEnchant": 8.8
+    }
+   ],
+   "Belt": [
+    {
+     "slug": "noble-belt",
+     "name": "Noble Belt",
+     "icon": "/game/items/icon_acc_belt_c_022.webp",
+     "pickRate": 80,
+     "avgEnchant": 0.4
+    },
+    {
+     "slug": "noble-belt-legend",
+     "name": "Noble Belt",
+     "icon": "/game/items/icon_acc_belt_c_021.webp",
+     "pickRate": 16,
+     "avgEnchant": 2.5
+    },
+    {
+     "slug": "noble-belt-rare",
+     "name": "Noble Belt",
+     "icon": "/game/items/icon_acc_belt_c_018.webp",
+     "pickRate": 1.3,
+     "avgEnchant": 5
+    }
+   ],
+   "Amulet": [
+    {
+     "slug": "revelation-amulet",
+     "name": "Revelation Amulet",
+     "icon": "/game/items/icon_item_craft_conversion_crystal_l_lv5_01.webp",
+     "pickRate": 91,
+     "avgEnchant": 0.6
+    },
+    {
+     "slug": "revelation-amulet-legend",
+     "name": "Revelation Amulet",
+     "icon": "/game/items/icon_item_craft_conversion_crystal_l_lv4_01.webp",
+     "pickRate": 6.5,
+     "avgEnchant": 5.9
+    },
+    {
+     "slug": "fierce-battle-amulet-rare",
+     "name": "Fierce Battle Amulet",
+     "icon": "/game/items/icon_equip_eb_emblemd_mi_abyssshop_l_u_001.webp",
+     "pickRate": 0.7,
+     "avgEnchant": 0
+    }
+   ],
+   "Rune": [
+    {
+     "slug": "clash-rune",
+     "name": "Clash Rune",
+     "icon": "/game/items/icon_equip_acc_rune_r_002.webp",
+     "pickRate": 97,
+     "avgEnchant": 2.6
+    }
+   ]
+  },
+  "enchants": {
+   "Main hand": {
+    "avg": 9.4,
+    "most": 10,
+    "mostShare": 69
+   },
+   "Off-hand": {
+    "avg": 8.6,
+    "most": 10,
+    "mostShare": 63
+   },
+   "Helmet": {
+    "avg": 4.5,
+    "most": 5,
+    "mostShare": 33
+   },
+   "Shoulders": {
+    "avg": 4.4,
+    "most": 0,
+    "mostShare": 27
+   },
+   "Chest": {
+    "avg": 5.6,
+    "most": 5,
+    "mostShare": 36
+   },
+   "Legs": {
+    "avg": 4.9,
+    "most": 5,
+    "mostShare": 30
+   },
+   "Gloves": {
+    "avg": 4.4,
+    "most": 5,
+    "mostShare": 31
+   },
+   "Boots": {
+    "avg": 4.4,
+    "most": 5,
+    "mostShare": 33
+   },
+   "Cape": {
+    "avg": 4.7,
+    "most": 5,
+    "mostShare": 29
+   },
+   "Necklace": {
+    "avg": 5.3,
+    "most": 5,
+    "mostShare": 41
+   },
+   "Earring": {
+    "avg": 5.1,
+    "most": 5,
+    "mostShare": 41
+   },
+   "Ring": {
+    "avg": 5.2,
+    "most": 5,
+    "mostShare": 41
+   },
+   "Bracelet": {
+    "avg": 7.3,
+    "most": 10,
+    "mostShare": 48
+   },
+   "Belt": {
+    "avg": 0.8,
+    "most": 0,
+    "mostShare": 79
+   },
+   "Amulet": {
+    "avg": 0.9,
+    "most": 0,
+    "mostShare": 76
+   },
+   "Rune": {
+    "avg": 2.6,
+    "most": 3,
+    "mostShare": 41
+   }
+  },
+  "manastones": [
+   {
+    "stat": "Accuracy Bonus",
+    "pickRate": 100,
+    "avgValue": "6.87"
+   },
+   {
+    "stat": "Defense",
+    "pickRate": 100,
+    "avgValue": "25.74"
+   },
+   {
+    "stat": "Block",
+    "pickRate": 100,
+    "avgValue": "9.93"
+   },
+   {
+    "stat": "Critical Hit",
+    "pickRate": 100,
+    "avgValue": "6.89"
+   },
+   {
+    "stat": "Evasion Bonus",
+    "pickRate": 100,
+    "avgValue": "7"
+   },
+   {
+    "stat": "HP",
+    "pickRate": 100,
+    "avgValue": "55.92"
+   },
+   {
+    "stat": "MP",
+    "pickRate": 100,
+    "avgValue": "28.76"
+   },
+   {
+    "stat": "Attack",
+    "pickRate": 100,
+    "avgValue": "2.8"
+   },
+   {
+    "stat": "Critical Hit Resist",
+    "pickRate": 98,
+    "avgValue": "7.17"
+   },
+   {
+    "stat": "Damage Boost",
+    "pickRate": 12,
+    "avgValue": "0.4%"
+   }
+  ],
+  "arcana": {
+   "Arcana slot 1": [
+    {
+     "slug": "chalice-of-vigor-common",
+     "name": "Chalice of Vigor",
+     "icon": "/game/items/icon_arcana_card_grail_u_pveset2.webp",
+     "pickRate": 16
+    },
+    {
+     "slug": "chalice-of-magic-common",
+     "name": "Chalice of Magic",
+     "icon": "/game/items/icon_arcana_card_grail_u_defenceset2.webp",
+     "pickRate": 5.2
+    }
+   ],
+   "Arcana slot 2": [
+    {
+     "slug": "parchment-of-vigor-common",
+     "name": "Parchment of Vigor",
+     "icon": "/game/items/icon_arcana_card_parchment_u_pveset2.webp",
+     "pickRate": 9.2
+    },
+    {
+     "slug": "parchment-of-magic-common",
+     "name": "Parchment of Magic",
+     "icon": "/game/items/icon_arcana_card_parchment_u_defenceset2.webp",
+     "pickRate": 5.9
+    }
+   ],
+   "Arcana slot 3": [
+    {
+     "slug": "compass-of-vigor-common",
+     "name": "Compass of Vigor",
+     "icon": "/game/items/icon_arcana_card_compass_u_pveset2.webp",
+     "pickRate": 9.8
+    },
+    {
+     "slug": "compass-of-magic-rare",
+     "name": "Compass of Magic",
+     "icon": "/game/items/icon_arcana_card_compass_u_defenceset2.webp",
+     "pickRate": 5.2
+    }
+   ],
+   "Arcana slot 4": [
+    {
+     "slug": "bell-of-magic-common",
+     "name": "Bell of Magic",
+     "icon": "/game/items/icon_arcana_card_bell_u_defenceset2.webp",
+     "pickRate": 7.8
+    },
+    {
+     "slug": "bell-of-vigor-common",
+     "name": "Bell of Vigor",
+     "icon": "/game/items/icon_arcana_card_bell_u_pveset2.webp",
+     "pickRate": 7.2
+    }
+   ],
+   "Arcana slot 5": [
+    {
+     "slug": "mirror-of-vigor-common",
+     "name": "Mirror of Vigor",
+     "icon": "/game/items/icon_arcana_card_mirror_u_pveset2.webp",
+     "pickRate": 7.2
+    },
+    {
+     "slug": "mirror-of-magic-common",
+     "name": "Mirror of Magic",
+     "icon": "/game/items/icon_arcana_card_mirror_u_defenceset2.webp",
+     "pickRate": 5.2
+    }
+   ]
+  },
+  "wings": [
+   {
+    "name": "Ultimate Daeva Wings",
+    "icon": "/game/wings/icon_wingb_001a.webp",
+    "pickRate": 47
+   },
+   {
+    "name": "Superior Daeva Wings",
+    "icon": "/game/wings/icon_wingb_007c.webp",
+    "pickRate": 2
+   },
+   {
+    "name": "Forest Spirit Wings",
+    "icon": "/game/wings/icon_winga_010.webp",
+    "pickRate": 2
+   }
+  ],
+  "pets": [
+   {
+    "name": "Pagati",
+    "icon": "/game/pets/1204.webp",
+    "pickRate": 42
+   },
+   {
+    "name": "Black Dragon",
+    "icon": "/game/pets/1001.webp",
+    "pickRate": 12
+   },
+   {
+    "name": "Papis",
+    "icon": "/game/pets/1066.webp",
+    "pickRate": 3.9
+   },
+   {
+    "name": "Chonky Hamster",
+    "icon": "/game/pets/1278.webp",
+    "pickRate": 2.6
+   },
+   {
+    "name": "Armadon",
+    "icon": "/game/pets/1046.webp",
+    "pickRate": 2
+   }
+  ],
+  "primaryStats": [
+   {
+    "stat": "Might",
+    "avg": 21.6
+   },
+   {
+    "stat": "Constitution",
+    "avg": 4.5
+   },
+   {
+    "stat": "Dexterity",
+    "avg": 4
+   },
+   {
+    "stat": "Willpower",
+    "avg": 3.8
+   },
+   {
+    "stat": "Precision",
+    "avg": 1.2
+   },
+   {
+    "stat": "Intelligence",
+    "avg": 0.8
+   }
+  ],
+  "deityStats": [
+   {
+    "stat": "Time [Siel]",
+    "avg": 39
+   },
+   {
+    "stat": "Justice [Nezekan]",
+    "avg": 38.9
+   },
+   {
+    "stat": "Death [Triniel]",
+    "avg": 33.4
+   },
+   {
+    "stat": "Freedom [Vaizel]",
+    "avg": 24.2
+   },
+   {
+    "stat": "Space [Israphel]",
+    "avg": 16.5
+   },
+   {
+    "stat": "Life [Yustiel]",
+    "avg": 8.5
+   },
+   {
+    "stat": "Destiny [Marchutan]",
+    "avg": 8.4
+   },
+   {
+    "stat": "Illusion [Kaisinel]",
+    "avg": 5.1
+   },
+   {
+    "stat": "Destruction [Zikel]",
+    "avg": 5.1
+   },
+   {
+    "stat": "Wisdom [Lumiel]",
+    "avg": 5.1
+   }
+  ]
+ },
+ "pointsTable": [
+  {
+   "level": 4,
+   "skillPoints": 1,
+   "stigmaPoints": 0,
+   "stigmaSlots": 0
+  },
+  {
+   "level": 10,
+   "skillPoints": 16,
+   "stigmaPoints": 0,
+   "stigmaSlots": 0
+  },
+  {
+   "level": 20,
+   "skillPoints": 61,
+   "stigmaPoints": 0,
+   "stigmaSlots": 0
+  },
+  {
+   "level": 22,
+   "skillPoints": 71,
+   "stigmaPoints": 0,
+   "stigmaSlots": 1
+  },
+  {
+   "level": 27,
+   "skillPoints": 96,
+   "stigmaPoints": 5,
+   "stigmaSlots": 2
+  },
+  {
+   "level": 30,
+   "skillPoints": 111,
+   "stigmaPoints": 8,
+   "stigmaSlots": 2
+  },
+  {
+   "level": 32,
+   "skillPoints": 123,
+   "stigmaPoints": 10,
+   "stigmaSlots": 3
+  },
+  {
+   "level": 37,
+   "skillPoints": 153,
+   "stigmaPoints": 15,
+   "stigmaSlots": 4
+  },
+  {
+   "level": 40,
+   "skillPoints": 171,
+   "stigmaPoints": 19,
+   "stigmaSlots": 4
+  },
+  {
+   "level": 45,
+   "skillPoints": 203,
+   "stigmaPoints": 29,
+   "stigmaSlots": 4
+  }
+ ],
+ "source": "https://metabot.gg/en/aion-2/classes/templar/build"
+}

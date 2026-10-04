@@ -1,0 +1,1837 @@
+{
+ "id": "sorcerer",
+ "name": "Sorcerer",
+ "icon": "/game/classes/sorcerer.webp",
+ "skills": [
+  {
+   "id": 15210000,
+   "slug": "flame-arrow",
+   "name": "Flame Arrow",
+   "unlockLevel": 1,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Deals 62 (+63% Attack) Fire damage to a target within 20m and restores 100 MP.",
+   "icon": "/game/skills/15210000.webp",
+   "type": "active",
+   "meta": {
+    "id": 15210000,
+    "name": "Flame Arrow",
+    "pickRate": 100,
+    "avgLevel": 13.8
+   }
+  },
+  {
+   "id": 15090000,
+   "slug": "ice-chain",
+   "name": "Ice Chain",
+   "unlockLevel": 1,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Selects a target within 20m and deals 79 (+92.5% Attack) Water damage to up to 4 enemies within 4m of the target and inflicts Slow, reducing Move Speed by 40% for 5s. 2 Stagger…",
+   "icon": "/game/skills/15090000.webp",
+   "type": "active",
+   "meta": {
+    "id": 15090000,
+    "name": "Ice Chain",
+    "pickRate": 98,
+    "avgLevel": 11.2
+   }
+  },
+  {
+   "id": 15040000,
+   "slug": "firestorm",
+   "name": "Firestorm",
+   "unlockLevel": 1,
+   "cooldown": "5s",
+   "maxLevel": 40,
+   "effect": "Deals 114 (+192.5% Attack) Fire damage to a target within 20m. 5 Stagger Gauge Damage",
+   "icon": "/game/skills/15040000.webp",
+   "type": "active",
+   "meta": {
+    "id": 15040000,
+    "name": "Firestorm",
+    "pickRate": 100,
+    "avgLevel": 13.7
+   }
+  },
+  {
+   "id": 15280000,
+   "slug": "bittercold-wind",
+   "name": "Bittercold Wind",
+   "unlockLevel": 3,
+   "cooldown": "15s",
+   "maxLevel": 40,
+   "effect": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals 238 (+232.3% Attack) Water damage to up to 4 enemies within 4m of the Bittercold…",
+   "icon": "/game/skills/15280000.webp",
+   "type": "active",
+   "meta": {
+    "id": 15280000,
+    "name": "Bittercold Wind",
+    "pickRate": 100,
+    "avgLevel": 13.1
+   }
+  },
+  {
+   "id": 15050000,
+   "slug": "blaze",
+   "name": "Blaze",
+   "unlockLevel": 4,
+   "cooldown": "5s",
+   "maxLevel": 40,
+   "effect": "Deals 198 (+193.2% Attack) Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP. 7 Stagger Gauge Damage",
+   "icon": "/game/skills/15050000.webp",
+   "type": "active",
+   "meta": {
+    "id": 15050000,
+    "name": "Blaze",
+    "pickRate": 100,
+    "avgLevel": 13.7
+   }
+  },
+  {
+   "id": 15010000,
+   "slug": "flame-scattershot",
+   "name": "Flame Scattershot",
+   "unlockLevel": 5,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Deals 120 (+82.5% Attack) Fire damage to a target afflicted with Stagger within 20m.",
+   "icon": "/game/skills/15010000.webp",
+   "type": "active",
+   "meta": {
+    "id": 15010000,
+    "name": "Flame Scattershot",
+    "pickRate": 98,
+    "avgLevel": 10.6
+   }
+  },
+  {
+   "id": 15150000,
+   "slug": "frost",
+   "name": "Frost",
+   "unlockLevel": 7,
+   "cooldown": "30s",
+   "maxLevel": 40,
+   "effect": "Selects a target within 20m and deals 178 (+94% Attack) Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s. 100%…",
+   "icon": "/game/skills/15150000.webp",
+   "type": "active",
+   "meta": {
+    "id": 15150000,
+    "name": "Frost",
+    "pickRate": 96,
+    "avgLevel": 10.5
+   }
+  },
+  {
+   "id": 15110000,
+   "slug": "winters-shackles",
+   "name": "Winter's Shackles",
+   "unlockLevel": 8,
+   "cooldown": "45s",
+   "maxLevel": 40,
+   "effect": "Selects a target within 20m and deals 275 (+145% Attack) Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+   "icon": "/game/skills/15110000.webp",
+   "type": "active",
+   "meta": {
+    "id": 15110000,
+    "name": "Winter's Shackles",
+    "pickRate": 98,
+    "avgLevel": 12.4
+   }
+  },
+  {
+   "id": 15220000,
+   "slug": "frost-burst",
+   "name": "Frost Burst",
+   "unlockLevel": 10,
+   "cooldown": "10s",
+   "maxLevel": 40,
+   "effect": "Selects a target afflicted with Frost within 20m and deals 395 (+155% Attack) Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a…",
+   "icon": "/game/skills/15220000.webp",
+   "type": "active",
+   "meta": {
+    "id": 15220000,
+    "name": "Frost Burst",
+    "pickRate": 97,
+    "avgLevel": 11.9
+   }
+  },
+  {
+   "id": 15310000,
+   "slug": "wish-of-concentration",
+   "name": "Wish of Concentration",
+   "unlockLevel": 12,
+   "cooldown": "60s",
+   "maxLevel": 40,
+   "effect": "Increases the caster's Attack by 10% and Accuracy by 100 for 10s.",
+   "icon": "/game/skills/15310000.webp",
+   "type": "active",
+   "meta": {
+    "id": 15310000,
+    "name": "Wish of Concentration",
+    "pickRate": 100,
+    "avgLevel": 13.3
+   }
+  },
+  {
+   "id": 15060000,
+   "slug": "hellfire",
+   "name": "Hellfire",
+   "unlockLevel": 14,
+   "cooldown": "45s",
+   "maxLevel": 40,
+   "effect": "Selects a target within 20m and deals 1,137 (+339.3% Attack)-3,412 (+1,017.8% Attack) Fire damage to up to 4 enemies within 4m of the target. Max 3 Charge Levels 20-35 Stagger…",
+   "icon": "/game/skills/15060000.webp",
+   "type": "active",
+   "meta": {
+    "id": 15060000,
+    "name": "Hellfire",
+    "pickRate": 100,
+    "avgLevel": 13.7
+   }
+  },
+  {
+   "id": 15240000,
+   "slug": "defiance-sorcerer",
+   "name": "Defiance",
+   "unlockLevel": 16,
+   "cooldown": "60s",
+   "maxLevel": 40,
+   "effect": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s. Tenacity: Grants Status Effect Immunity Unaffected by cooldown reduction…",
+   "icon": "/game/skills/15240000.webp",
+   "type": "active",
+   "meta": null
+  },
+  {
+   "id": 15710000,
+   "slug": "fire-mark",
+   "name": "Fire Mark",
+   "unlockLevel": 1,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Inflicts Fire Mark for 5s on landing a Fire attack. Fire Mark: Has a 20% chance to take 32 (+55% Attack) extra damage when taking Fire damage while afflicted with Fire Mark.…",
+   "icon": "/game/skills/15710000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 15710000,
+    "name": "Fire Mark",
+    "pickRate": 100,
+    "avgLevel": 12.9
+   }
+  },
+  {
+   "id": 15720000,
+   "slug": "robe-of-earth",
+   "name": "Robe of Earth",
+   "unlockLevel": 6,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases Max MP by 7% and Natural MP Regen by 5. Increases Critical Hit by 105 when MP is 50% or more.",
+   "icon": "/game/skills/15720000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 15720000,
+    "name": "Robe of Earth",
+    "pickRate": 100,
+    "avgLevel": 12.3
+   }
+  },
+  {
+   "id": 15730000,
+   "slug": "cold-snap",
+   "name": "Cold Snap",
+   "unlockLevel": 9,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Has a 50% chance to deal 43 (+23% Attack) extra damage when landing an attack on a target afflicted with Slow. Cooldown: 1s",
+   "icon": "/game/skills/15730000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 15730000,
+    "name": "Cold Snap",
+    "pickRate": 100,
+    "avgLevel": 10.7
+   }
+  },
+  {
+   "id": 15740000,
+   "slug": "robe-of-flame",
+   "name": "Robe of Flame",
+   "unlockLevel": 11,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Accuracy by 100, PvE Damage Boost by 1%, PvP Damage Boost by 0.5%, and Double Chance by 0.2%.",
+   "icon": "/game/skills/15740000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 15740000,
+    "name": "Robe of Flame",
+    "pickRate": 100,
+    "avgLevel": 14.1
+   }
+  },
+  {
+   "id": 15760000,
+   "slug": "absorb-essence",
+   "name": "Absorb Essence",
+   "unlockLevel": 13,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases Ailment-type and Mental-type Chance by 10.7% and restores 25 MP on landing an attack. Cooldown: 1s",
+   "icon": "/game/skills/15760000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 15760000,
+    "name": "Absorb Essence",
+    "pickRate": 100,
+    "avgLevel": 8.5
+   }
+  },
+  {
+   "id": 15770000,
+   "slug": "grace-of-resistance",
+   "name": "Grace of Resistance",
+   "unlockLevel": 15,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Mental-type Resist and Impact-type Resist by 11.2%.",
+   "icon": "/game/skills/15770000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 15770000,
+    "name": "Grace of Resistance",
+    "pickRate": 100,
+    "avgLevel": 6
+   }
+  },
+  {
+   "id": 15750000,
+   "slug": "robe-of-cold",
+   "name": "Robe of Cold",
+   "unlockLevel": 17,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Defense by 1% and Critical Hit Resist by 55 and inflicts Slow on an enemy when struck by them, reducing the enemy's Move Speed by 25% for 2s. Cooldown: 10s",
+   "icon": "/game/skills/15750000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 15750000,
+    "name": "Robe of Cold",
+    "pickRate": 100,
+    "avgLevel": 10.3
+   }
+  },
+  {
+   "id": 15780000,
+   "slug": "grace-of-enhancement",
+   "name": "Grace of Enhancement",
+   "unlockLevel": 21,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal 106 (+18% Attack) damage on landing…",
+   "icon": "/game/skills/15780000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 15780000,
+    "name": "Grace of Enhancement",
+    "pickRate": 100,
+    "avgLevel": 12.5
+   }
+  },
+  {
+   "id": 15790000,
+   "slug": "revitalization-contract-sorcerer",
+   "name": "Revitalization Contract",
+   "unlockLevel": 23,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Status Effect Resist by 17%. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10…",
+   "icon": "/game/skills/15790000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 15790000,
+    "name": "Revitalization Contract",
+    "pickRate": 100,
+    "avgLevel": 8.4
+   }
+  },
+  {
+   "id": 15800000,
+   "slug": "vitality-evaporation",
+   "name": "Vitality Evaporation",
+   "unlockLevel": 25,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Deals 261 (+39% Attack) damage on hit if the target's HP is above 70%. Cooldown: 1s",
+   "icon": "/game/skills/15800000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 15800000,
+    "name": "Vitality Evaporation",
+    "pickRate": 100,
+    "avgLevel": 12.5
+   }
+  }
+ ],
+ "stigmas": [
+  {
+   "id": 15130000,
+   "slug": "soul-freeze",
+   "name": "Soul Freeze",
+   "unlockLevel": 22,
+   "cooldown": "60s",
+   "maxLevel": 25,
+   "effect": "Deals 1,037 (+175.5% Attack) Water damage to a target within 20m with a 75% chance to inflict Seal for 5s. 100% chance to inflict Seal on NPC targets. 20 Stagger Gauge Damage",
+   "icon": "/game/skills/15130000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 15130000,
+    "name": "Soul Freeze",
+    "pickRate": 7.3,
+    "avgLevel": 1.5
+   }
+  },
+  {
+   "id": 15120000,
+   "slug": "glacial-smite",
+   "name": "Glacial Smite",
+   "unlockLevel": 22,
+   "cooldown": "90s",
+   "maxLevel": 25,
+   "effect": "Selects a target within 20m and deals 1,477 (+250% Attack) Water damage to up to 4 enemies within 4m of the target. 20 Stagger Gauge Damage",
+   "icon": "/game/skills/15120000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 15120000,
+    "name": "Glacial Smite",
+    "pickRate": 18,
+    "avgLevel": 5.1
+   }
+  },
+  {
+   "id": 15360000,
+   "slug": "divine-burst",
+   "name": "Divine Burst",
+   "unlockLevel": 22,
+   "cooldown": "60s",
+   "maxLevel": 25,
+   "effect": "Deals 1,140 (+193.1% Attack) Fire damage to a target within 20m. 50 Stagger Gauge Damage",
+   "icon": "/game/skills/15360000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 15360000,
+    "name": "Divine Burst",
+    "pickRate": 34,
+    "avgLevel": 3.1
+   }
+  },
+  {
+   "id": 15700000,
+   "slug": "assault-bombardment",
+   "name": "Assault Bombardment",
+   "unlockLevel": 22,
+   "cooldown": "120s",
+   "maxLevel": 25,
+   "effect": "Selects a target within 20m and deals 886 (+150% Attack) damage to up to 4 enemies within 4m, with a 30% chance to inflict Frost for 3s. 100% chance to land Frost on NPC targets.…",
+   "icon": "/game/skills/15700000.webp",
+   "type": "stigma",
+   "meta": null
+  },
+  {
+   "id": 15160000,
+   "slug": "steel-barrier",
+   "name": "Steel Barrier",
+   "unlockLevel": 22,
+   "cooldown": "60s",
+   "maxLevel": 25,
+   "effect": "Grants a 16% Max HP Protective Shield for 60s. Increases PvE Damage Tolerance by 10% and PvP Damage Tolerance by 5% for the shield's duration, and restores 300 Stamina when the…",
+   "icon": "/game/skills/15160000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 15160000,
+    "name": "Steel Barrier",
+    "pickRate": 35,
+    "avgLevel": 4.6
+   }
+  },
+  {
+   "id": 15200000,
+   "slug": "cold-storm",
+   "name": "Cold Storm",
+   "unlockLevel": 22,
+   "cooldown": "60s",
+   "maxLevel": 25,
+   "effect": "Selects a target within 20m and deals 945 (+160% Attack) Water damage, inflicting Slow on up to 4 enemies within 5m. Summons a Cold Storm at the target's location for 7s,…",
+   "icon": "/game/skills/15200000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 15200000,
+    "name": "Cold Storm",
+    "pickRate": 43,
+    "avgLevel": 4.2
+   }
+  },
+  {
+   "id": 15400000,
+   "slug": "element-enhancement",
+   "name": "Element Enhancement",
+   "unlockLevel": 22,
+   "cooldown": "60s",
+   "maxLevel": 25,
+   "effect": "Increases the caster's Fire Attack by 20% and Water Attack by 20% for 10s.",
+   "icon": "/game/skills/15400000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 15400000,
+    "name": "Element Enhancement",
+    "pickRate": 93,
+    "avgLevel": 9.9
+   }
+  },
+  {
+   "id": 15410000,
+   "slug": "hibernation",
+   "name": "Hibernation",
+   "unlockLevel": 22,
+   "cooldown": "180s",
+   "maxLevel": 25,
+   "effect": "Grants Hibernation to the caster for 5s. The caster becomes immune to damage and status effects while Hibernation is active. Using [Remove Hibernation] while Hibernation is…",
+   "icon": "/game/skills/15410000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 15410000,
+    "name": "Hibernation",
+    "pickRate": 5.3,
+    "avgLevel": 3.3
+   }
+  },
+  {
+   "id": 15390000,
+   "slug": "fire-wall",
+   "name": "Fire Wall",
+   "unlockLevel": 22,
+   "cooldown": "60s",
+   "maxLevel": 25,
+   "effect": "Summon a Fire Wall that lasts for 3s at the location of a target within 20m. Deals 1,300 (+220% Attack) Fire damage and inflicts Embers on up to 4 enemies within the Fire Wall…",
+   "icon": "/game/skills/15390000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 15390000,
+    "name": "Fire Wall",
+    "pickRate": 76,
+    "avgLevel": 6
+   }
+  },
+  {
+   "id": 15300000,
+   "slug": "lumiels-space",
+   "name": "Lumiel's Space",
+   "unlockLevel": 22,
+   "cooldown": "90s",
+   "maxLevel": 25,
+   "effect": "Selects a target within 20m and deals 998 (+169% Attack) damage to up to 4 enemies within 4m of the target, with a 75% chance to inflict Airborne for 3s. 100% chance to inflict…",
+   "icon": "/game/skills/15300000.webp",
+   "type": "stigma",
+   "meta": null
+  },
+  {
+   "id": 15140000,
+   "slug": "curse-tree",
+   "name": "Curse: Tree",
+   "unlockLevel": 22,
+   "cooldown": "90s",
+   "maxLevel": 25,
+   "effect": "Polymorphs a target within 20m into a tree for 10s, reducing their Fire Tolerance by 20%, while the caster moves back. Polymorph is canceled if the target is attacked. 20 Stagger…",
+   "icon": "/game/skills/15140000.webp",
+   "type": "stigma",
+   "meta": null
+  },
+  {
+   "id": 15230000,
+   "slug": "arctic-armor",
+   "name": "Arctic Armor",
+   "unlockLevel": 22,
+   "cooldown": "90s",
+   "maxLevel": 25,
+   "effect": "Increases the caster's PvE Damage Tolerance by 20%, PvP Damage Tolerance by 10%, and grants a 5% chance to inflict Frost for 3s on enemies that attack the caster from within 7m…",
+   "icon": "/game/skills/15230000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 15230000,
+    "name": "Arctic Armor",
+    "pickRate": 9.3,
+    "avgLevel": 4.1
+   }
+  },
+  {
+   "id": 15320000,
+   "slug": "delayed-explosion",
+   "name": "Delayed Explosion",
+   "unlockLevel": 22,
+   "cooldown": "30s",
+   "maxLevel": 25,
+   "effect": "Deals 1,116 (+189% Attack) Fire damage to a target within 20m after 4s. Increases damage taken from the caster by 15% during the delay.",
+   "icon": "/game/skills/15320000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 15320000,
+    "name": "Delayed Explosion",
+    "pickRate": 83,
+    "avgLevel": 6.2
+   }
+  }
+ ],
+ "specializations": [
+  {
+   "id": 15210010,
+   "skillId": 15210000,
+   "skillName": "Flame Arrow",
+   "requiredSkillLevel": 8,
+   "effect": "+20% MP restored",
+   "icon": "/game/specs/15210010.webp"
+  },
+  {
+   "id": 15210020,
+   "skillId": 15210000,
+   "skillName": "Flame Arrow",
+   "requiredSkillLevel": 8,
+   "effect": "Absorbs 100, 100% HP",
+   "icon": "/game/specs/15210020.webp"
+  },
+  {
+   "id": 15210030,
+   "skillId": 15210000,
+   "skillName": "Flame Arrow",
+   "requiredSkillLevel": 8,
+   "effect": "+50% Multi-Hit on hit",
+   "icon": "/game/specs/15210030.webp"
+  },
+  {
+   "id": 15090010,
+   "skillId": 15090000,
+   "skillName": "Ice Chain",
+   "requiredSkillLevel": 8,
+   "effect": "-20% MP Cost",
+   "icon": "/game/specs/15090010.webp"
+  },
+  {
+   "id": 15090020,
+   "skillId": 15090000,
+   "skillName": "Ice Chain",
+   "requiredSkillLevel": 8,
+   "effect": "+20% Skill Speed",
+   "icon": "/game/specs/15090020.webp"
+  },
+  {
+   "id": 15090030,
+   "skillId": 15090000,
+   "skillName": "Ice Chain",
+   "requiredSkillLevel": 8,
+   "effect": "Deals up to 12% more damage when less targets are hit",
+   "icon": "/game/specs/15090030.webp"
+  },
+  {
+   "id": 15040010,
+   "skillId": 15040000,
+   "skillName": "Firestorm",
+   "requiredSkillLevel": 8,
+   "effect": "-50% MP Cost",
+   "icon": "/game/specs/15040010.webp"
+  },
+  {
+   "id": 15040020,
+   "skillId": 15040000,
+   "skillName": "Firestorm",
+   "requiredSkillLevel": 8,
+   "effect": "+20% Skill Speed",
+   "icon": "/game/specs/15040020.webp"
+  },
+  {
+   "id": 15040030,
+   "skillId": 15040000,
+   "skillName": "Firestorm",
+   "requiredSkillLevel": 8,
+   "effect": "-60% Incoming Heal for 5s on hit",
+   "icon": "/game/specs/15040030.webp"
+  },
+  {
+   "id": 15280010,
+   "skillId": 15280000,
+   "skillName": "Bittercold Wind",
+   "requiredSkillLevel": 8,
+   "effect": "+1s [Bittercold Wind] summon duration",
+   "icon": "/game/specs/15280010.webp"
+  },
+  {
+   "id": 15280020,
+   "skillId": 15280000,
+   "skillName": "Bittercold Wind",
+   "requiredSkillLevel": 8,
+   "effect": "Changes to mobile skill",
+   "icon": "/game/specs/15280020.webp"
+  },
+  {
+   "id": 15280030,
+   "skillId": 15280000,
+   "skillName": "Bittercold Wind",
+   "requiredSkillLevel": 8,
+   "effect": "Pull effect",
+   "icon": "/game/specs/15280030.webp"
+  },
+  {
+   "id": 15050010,
+   "skillId": 15050000,
+   "skillName": "Blaze",
+   "requiredSkillLevel": 8,
+   "effect": "Absorbs 300, 300% HP",
+   "icon": "/game/specs/15050010.webp"
+  },
+  {
+   "id": 15050020,
+   "skillId": 15050000,
+   "skillName": "Blaze",
+   "requiredSkillLevel": 8,
+   "effect": "+50% MP restored",
+   "icon": "/game/specs/15050020.webp"
+  },
+  {
+   "id": 15050030,
+   "skillId": 15050000,
+   "skillName": "Blaze",
+   "requiredSkillLevel": 8,
+   "effect": "Delayed Damage after 3s",
+   "icon": "/game/specs/15050030.webp"
+  },
+  {
+   "id": 15010010,
+   "skillId": 15010000,
+   "skillName": "Flame Scattershot",
+   "requiredSkillLevel": 8,
+   "effect": "Absorbs 500, 500% HP",
+   "icon": "/game/specs/15010010.webp"
+  },
+  {
+   "id": 15010020,
+   "skillId": 15010000,
+   "skillName": "Flame Scattershot",
+   "requiredSkillLevel": 8,
+   "effect": "Restores 120 MP",
+   "icon": "/game/specs/15010020.webp"
+  },
+  {
+   "id": 15010030,
+   "skillId": 15010000,
+   "skillName": "Flame Scattershot",
+   "requiredSkillLevel": 8,
+   "effect": "Changes to mobile skill",
+   "icon": "/game/specs/15010030.webp"
+  },
+  {
+   "id": 15150010,
+   "skillId": 15150000,
+   "skillName": "Frost",
+   "requiredSkillLevel": 8,
+   "effect": "Restores 200 MP",
+   "icon": "/game/specs/15150010.webp"
+  },
+  {
+   "id": 15150020,
+   "skillId": 15150000,
+   "skillName": "Frost",
+   "requiredSkillLevel": 8,
+   "effect": "-5s cooldown",
+   "icon": "/game/specs/15150020.webp"
+  },
+  {
+   "id": 15150030,
+   "skillId": 15150000,
+   "skillName": "Frost",
+   "requiredSkillLevel": 8,
+   "effect": "Reset [Frost Burst] cooldown on landing Frost",
+   "icon": "/game/specs/15150030.webp"
+  },
+  {
+   "id": 15110010,
+   "skillId": 15110000,
+   "skillName": "Winter's Shackles",
+   "requiredSkillLevel": 8,
+   "effect": "Changes to mobile skill",
+   "icon": "/game/specs/15110010.webp"
+  },
+  {
+   "id": 15110020,
+   "skillId": 15110000,
+   "skillName": "Winter's Shackles",
+   "requiredSkillLevel": 8,
+   "effect": "30% chance to inflict Frost for 3s on landing [Winter's Shackles]",
+   "icon": "/game/specs/15110020.webp"
+  },
+  {
+   "id": 15110030,
+   "skillId": 15110000,
+   "skillName": "Winter's Shackles",
+   "requiredSkillLevel": 8,
+   "effect": "+20% PvE Damage Boost and +10% PvP Damage Boost for 5s on landing [Winter's Shackles]",
+   "icon": "/game/specs/15110030.webp"
+  },
+  {
+   "id": 15220010,
+   "skillId": 15220000,
+   "skillName": "Frost Burst",
+   "requiredSkillLevel": 8,
+   "effect": "Absorbs 700, 700% HP",
+   "icon": "/game/specs/15220010.webp"
+  },
+  {
+   "id": 15220020,
+   "skillId": 15220000,
+   "skillName": "Frost Burst",
+   "requiredSkillLevel": 8,
+   "effect": "Changes to mobile skill",
+   "icon": "/game/specs/15220020.webp"
+  },
+  {
+   "id": 15220030,
+   "skillId": 15220000,
+   "skillName": "Frost Burst",
+   "requiredSkillLevel": 8,
+   "effect": "75% chance to Knock Back 2m",
+   "icon": "/game/specs/15220030.webp"
+  },
+  {
+   "id": 15310010,
+   "skillId": 15310000,
+   "skillName": "Wish of Concentration",
+   "requiredSkillLevel": 8,
+   "effect": "Reduces MP Cost by 10%",
+   "icon": "/game/specs/15310010.webp"
+  },
+  {
+   "id": 15310020,
+   "skillId": 15310000,
+   "skillName": "Wish of Concentration",
+   "requiredSkillLevel": 8,
+   "effect": "+10% additional Attack",
+   "icon": "/game/specs/15310020.webp"
+  },
+  {
+   "id": 15310030,
+   "skillId": 15310000,
+   "skillName": "Wish of Concentration",
+   "requiredSkillLevel": 8,
+   "effect": "+500 Max MP",
+   "icon": "/game/specs/15310030.webp"
+  },
+  {
+   "id": 15060010,
+   "skillId": 15060000,
+   "skillName": "Hellfire",
+   "requiredSkillLevel": 8,
+   "effect": "+30% Skill Speed",
+   "icon": "/game/specs/15060010.webp"
+  },
+  {
+   "id": 15060020,
+   "skillId": 15060000,
+   "skillName": "Hellfire",
+   "requiredSkillLevel": 8,
+   "effect": "Fire Damage over Time for 10s on hit",
+   "icon": "/game/specs/15060020.webp"
+  },
+  {
+   "id": 15060030,
+   "skillId": 15060000,
+   "skillName": "Hellfire",
+   "requiredSkillLevel": 8,
+   "effect": "Changes to mobile skill",
+   "icon": "/game/specs/15060030.webp"
+  },
+  {
+   "id": 15240010,
+   "skillId": 15240000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 8,
+   "effect": "Adds [Curse: Old Tree] Chain Skill",
+   "icon": "/game/specs/15240010.webp"
+  },
+  {
+   "id": 15240020,
+   "skillId": 15240000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 8,
+   "effect": "Restores 1,000 Stamina on using [Defiance]",
+   "icon": "/game/specs/15240020.webp"
+  },
+  {
+   "id": 15240030,
+   "skillId": 15240000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 8,
+   "effect": "Restores 20% HP on using [Defiance]",
+   "icon": "/game/specs/15240030.webp"
+  },
+  {
+   "id": 15210040,
+   "skillId": 15210000,
+   "skillName": "Flame Arrow",
+   "requiredSkillLevel": 12,
+   "effect": "+5% Fire Damage Boost for 10s on activating [Pyroclasm]",
+   "icon": "/game/specs/15210040.webp"
+  },
+  {
+   "id": 15090040,
+   "skillId": 15090000,
+   "skillName": "Ice Chain",
+   "requiredSkillLevel": 12,
+   "effect": "-1s [Winter's Shackles] cooldown on hit",
+   "icon": "/game/specs/15090040.webp"
+  },
+  {
+   "id": 15040040,
+   "skillId": 15040000,
+   "skillName": "Firestorm",
+   "requiredSkillLevel": 12,
+   "effect": "-2s [Hellfire] cooldown per fireball",
+   "icon": "/game/specs/15040040.webp"
+  },
+  {
+   "id": 15280040,
+   "skillId": 15280000,
+   "skillName": "Bittercold Wind",
+   "requiredSkillLevel": 12,
+   "effect": "Ignores Block and Evasion and lands as a Critical Hit",
+   "icon": "/game/specs/15280040.webp"
+  },
+  {
+   "id": 15050040,
+   "skillId": 15050000,
+   "skillName": "Blaze",
+   "requiredSkillLevel": 12,
+   "effect": "Multi-Hit on hit",
+   "icon": "/game/specs/15050040.webp"
+  },
+  {
+   "id": 15010040,
+   "skillId": 15010000,
+   "skillName": "Flame Scattershot",
+   "requiredSkillLevel": 12,
+   "effect": "Multi-Hit on hit",
+   "icon": "/game/specs/15010040.webp"
+  },
+  {
+   "id": 15150040,
+   "skillId": 15150000,
+   "skillName": "Frost",
+   "requiredSkillLevel": 12,
+   "effect": "+25% PC target Frost Chance",
+   "icon": "/game/specs/15150040.webp"
+  },
+  {
+   "id": 15110040,
+   "skillId": 15110000,
+   "skillName": "Winter's Shackles",
+   "requiredSkillLevel": 12,
+   "effect": "Adds [Winter's Illusion] Chain Skill",
+   "icon": "/game/specs/15110040.webp"
+  },
+  {
+   "id": 15220040,
+   "skillId": 15220000,
+   "skillName": "Frost Burst",
+   "requiredSkillLevel": 12,
+   "effect": "Ignores Block and Evasion and lands as a Critical Hit",
+   "icon": "/game/specs/15220040.webp"
+  },
+  {
+   "id": 15310040,
+   "skillId": 15310000,
+   "skillName": "Wish of Concentration",
+   "requiredSkillLevel": 12,
+   "effect": "+10% Combat Speed",
+   "icon": "/game/specs/15310040.webp"
+  },
+  {
+   "id": 15060040,
+   "skillId": 15060000,
+   "skillName": "Hellfire",
+   "requiredSkillLevel": 12,
+   "effect": "Ignores Block and Evasion and lands as Multi-Hit",
+   "icon": "/game/specs/15060040.webp"
+  },
+  {
+   "id": 15240040,
+   "skillId": 15240000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 12,
+   "effect": "+2s Tenacity duration",
+   "icon": "/game/specs/15240040.webp"
+  },
+  {
+   "id": 15210050,
+   "skillId": 15210000,
+   "skillName": "Flame Arrow",
+   "requiredSkillLevel": 16,
+   "effect": "Reset [Blaze] cooldown on landing [Pyroclasm]",
+   "icon": "/game/specs/15210050.webp"
+  },
+  {
+   "id": 15090050,
+   "skillId": 15090000,
+   "skillName": "Ice Chain",
+   "requiredSkillLevel": 16,
+   "effect": "5% chance to inflict Frost for 2s on landing [Cold Wave]",
+   "icon": "/game/specs/15090050.webp"
+  },
+  {
+   "id": 15040050,
+   "skillId": 15040000,
+   "skillName": "Firestorm",
+   "requiredSkillLevel": 16,
+   "effect": "+15% damage per fireball, up to +75%",
+   "icon": "/game/specs/15040050.webp"
+  },
+  {
+   "id": 15280050,
+   "skillId": 15280000,
+   "skillName": "Bittercold Wind",
+   "requiredSkillLevel": 16,
+   "effect": "-1s [Frost] cooldown on hit",
+   "icon": "/game/specs/15280050.webp"
+  },
+  {
+   "id": 15050050,
+   "skillId": 15050000,
+   "skillName": "Blaze",
+   "requiredSkillLevel": 16,
+   "effect": "-3s [Wish of Concentration] cooldown on hit",
+   "icon": "/game/specs/15050050.webp"
+  },
+  {
+   "id": 15010050,
+   "skillId": 15010000,
+   "skillName": "Flame Scattershot",
+   "requiredSkillLevel": 16,
+   "effect": "-1s all skill cooldowns on hit",
+   "icon": "/game/specs/15010050.webp"
+  },
+  {
+   "id": 15150050,
+   "skillId": 15150000,
+   "skillName": "Frost",
+   "requiredSkillLevel": 16,
+   "effect": "+1s Frost duration",
+   "icon": "/game/specs/15150050.webp"
+  },
+  {
+   "id": 15110050,
+   "skillId": 15110000,
+   "skillName": "Winter's Shackles",
+   "requiredSkillLevel": 16,
+   "effect": "-15s [Winter's Shackles] cooldown",
+   "icon": "/game/specs/15110050.webp"
+  },
+  {
+   "id": 15220050,
+   "skillId": 15220000,
+   "skillName": "Frost Burst",
+   "requiredSkillLevel": 16,
+   "effect": "50% chance to reset cooldown",
+   "icon": "/game/specs/15220050.webp"
+  },
+  {
+   "id": 15310050,
+   "skillId": 15310000,
+   "skillName": "Wish of Concentration",
+   "requiredSkillLevel": 16,
+   "effect": "-10s all skill cooldowns",
+   "icon": "/game/specs/15310050.webp"
+  },
+  {
+   "id": 15060050,
+   "skillId": 15060000,
+   "skillName": "Hellfire",
+   "requiredSkillLevel": 16,
+   "effect": "-15s cooldown",
+   "icon": "/game/specs/15060050.webp"
+  },
+  {
+   "id": 15240050,
+   "skillId": 15240000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 16,
+   "effect": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration",
+   "icon": "/game/specs/15240050.webp"
+  }
+ ],
+ "meta": {
+  "topPlayersTracked": 1559,
+  "medianCombatPower": 56347,
+  "top10CombatPower": 70631,
+  "avgItemLevel": 1154,
+  "daevanion": {
+   "boards": [
+    {
+     "board": "Nezekan",
+     "commonNodes": 65,
+     "totalNodes": 88
+    },
+    {
+     "board": "Zikel",
+     "commonNodes": 55,
+     "totalNodes": 88
+    },
+    {
+     "board": "Vaizel",
+     "commonNodes": 53,
+     "totalNodes": 88
+    },
+    {
+     "board": "Triniel",
+     "commonNodes": 40,
+     "totalNodes": 116
+    },
+    {
+     "board": "Azphel",
+     "commonNodes": 3,
+     "totalNodes": 152
+    }
+   ],
+   "topSkillNodes": [
+    {
+     "skill": "Hellfire",
+     "bonus": 1,
+     "board": "Zikel",
+     "pickRate": 98
+    },
+    {
+     "skill": "Blaze",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 97
+    },
+    {
+     "skill": "Flame Arrow",
+     "bonus": 1,
+     "board": "Zikel",
+     "pickRate": 97
+    },
+    {
+     "skill": "Firestorm",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 96
+    },
+    {
+     "skill": "Hellfire",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 95
+    },
+    {
+     "skill": "Firestorm",
+     "bonus": 1,
+     "board": "Zikel",
+     "pickRate": 95
+    },
+    {
+     "skill": "Flame Arrow",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 94
+    },
+    {
+     "skill": "Wish of Concentration",
+     "bonus": 1,
+     "board": "Vaizel",
+     "pickRate": 94
+    }
+   ]
+  },
+  "gear": {
+   "Main hand": [
+    {
+     "slug": "spiritforged-spellbook",
+     "name": "Spiritforged Spellbook",
+     "icon": "/game/items/icon_wp_mb_0078_t05.webp",
+     "pickRate": 40,
+     "avgEnchant": 9.6
+    },
+    {
+     "slug": "spiritforged-spellbook",
+     "name": "Spiritforged Spellbook",
+     "icon": "/game/items/icon_wp_mb_0078_t05.webp",
+     "pickRate": 28,
+     "avgEnchant": 9.6
+    },
+    {
+     "slug": "rupture-tome",
+     "name": "Rupture Tome",
+     "icon": "/game/items/icon_wp_mb_0031_t06.webp",
+     "pickRate": 17,
+     "avgEnchant": 10.6
+    }
+   ],
+   "Off-hand": [
+    {
+     "slug": "spiritforged-guard",
+     "name": "Spiritforged Guard",
+     "icon": "/game/items/icon_weapon_guarder_l_001.webp",
+     "pickRate": 49,
+     "avgEnchant": 9.1
+    },
+    {
+     "slug": "spiritforged-guard",
+     "name": "Spiritforged Guard",
+     "icon": "/game/items/icon_weapon_guarder_l_001.webp",
+     "pickRate": 34,
+     "avgEnchant": 8.6
+    },
+    {
+     "slug": "bakarma-guard",
+     "name": "Bakarma Guard",
+     "icon": "/game/items/icon_weapon_guarder_l_011.webp",
+     "pickRate": 9.3,
+     "avgEnchant": 8.2
+    }
+   ],
+   "Helmet": [
+    {
+     "slug": "divine-canyon-helm",
+     "name": "Divine Canyon Helm",
+     "icon": "/game/items/icon_gm_0072_t05_helmet.webp",
+     "pickRate": 27,
+     "avgEnchant": 2.9
+    },
+    {
+     "slug": "vakron-helm",
+     "name": "Vakron Helm",
+     "icon": "/game/items/icon_gm_0028_t05_helmet.webp",
+     "pickRate": 23,
+     "avgEnchant": 7.1
+    },
+    {
+     "slug": "bakarma-helm",
+     "name": "Bakarma Helm",
+     "icon": "/game/items/icon_gm_0059_t05_helmet.webp",
+     "pickRate": 15,
+     "avgEnchant": 6.5
+    }
+   ],
+   "Shoulders": [
+    {
+     "slug": "vakron-pauldrons",
+     "name": "Vakron Pauldrons",
+     "icon": "/game/items/icon_gm_0028_t05_shoulder.webp",
+     "pickRate": 28,
+     "avgEnchant": 7.5
+    },
+    {
+     "slug": "divine-canyon-pauldrons",
+     "name": "Divine Canyon Pauldrons",
+     "icon": "/game/items/icon_gm_0072_t05_shoulder.webp",
+     "pickRate": 24,
+     "avgEnchant": 2.2
+    },
+    {
+     "slug": "bakarma-pauldrons",
+     "name": "Bakarma Pauldrons",
+     "icon": "/game/items/icon_gm_0059_t05_shoulder.webp",
+     "pickRate": 15,
+     "avgEnchant": 5.3
+    }
+   ],
+   "Chest": [
+    {
+     "slug": "bakarma-breastplate",
+     "name": "Bakarma Breastplate",
+     "icon": "/game/items/icon_gm_0059_t05_torso.webp",
+     "pickRate": 37,
+     "avgEnchant": 6.9
+    },
+    {
+     "slug": "vakron-breastplate",
+     "name": "Vakron Breastplate",
+     "icon": "/game/items/icon_gm_0028_t05_torso.webp",
+     "pickRate": 21,
+     "avgEnchant": 7.7
+    },
+    {
+     "slug": "divine-canyon-breastplate",
+     "name": "Divine Canyon Breastplate",
+     "icon": "/game/items/icon_gm_0072_t05_torso.webp",
+     "pickRate": 19,
+     "avgEnchant": 2
+    }
+   ],
+   "Legs": [
+    {
+     "slug": "divine-canyon-greaves",
+     "name": "Divine Canyon Greaves",
+     "icon": "/game/items/icon_gm_0072_t05_pants.webp",
+     "pickRate": 25,
+     "avgEnchant": 2.5
+    },
+    {
+     "slug": "bakarma-greaves",
+     "name": "Bakarma Greaves",
+     "icon": "/game/items/icon_gm_0059_t05_pants.webp",
+     "pickRate": 21,
+     "avgEnchant": 6.5
+    },
+    {
+     "slug": "vakron-greaves",
+     "name": "Vakron Greaves",
+     "icon": "/game/items/icon_gm_0028_t05_pants.webp",
+     "pickRate": 15,
+     "avgEnchant": 8.1
+    }
+   ],
+   "Gloves": [
+    {
+     "slug": "vakron-gloves",
+     "name": "Vakron Gloves",
+     "icon": "/game/items/icon_gm_0028_t05_gloves.webp",
+     "pickRate": 29,
+     "avgEnchant": 7.6
+    },
+    {
+     "slug": "divine-canyon-gloves",
+     "name": "Divine Canyon Gloves",
+     "icon": "/game/items/icon_gm_0072_t05_gloves.webp",
+     "pickRate": 20,
+     "avgEnchant": 2.6
+    },
+    {
+     "slug": "bakarma-gloves",
+     "name": "Bakarma Gloves",
+     "icon": "/game/items/icon_gm_0059_t05_gloves.webp",
+     "pickRate": 18,
+     "avgEnchant": 5.6
+    }
+   ],
+   "Boots": [
+    {
+     "slug": "divine-canyon-boots",
+     "name": "Divine Canyon Boots",
+     "icon": "/game/items/icon_gm_0072_t05_boots.webp",
+     "pickRate": 25,
+     "avgEnchant": 3.2
+    },
+    {
+     "slug": "vakron-boots",
+     "name": "Vakron Boots",
+     "icon": "/game/items/icon_gm_0028_t05_boots.webp",
+     "pickRate": 23,
+     "avgEnchant": 7.9
+    },
+    {
+     "slug": "bakarma-boots",
+     "name": "Bakarma Boots",
+     "icon": "/game/items/icon_gm_0059_t05_boots.webp",
+     "pickRate": 13,
+     "avgEnchant": 4.3
+    }
+   ],
+   "Cape": [
+    {
+     "slug": "vakron-cloak",
+     "name": "Vakron Cloak",
+     "icon": "/game/items/icon_gm_0028_t05_cape.webp",
+     "pickRate": 29,
+     "avgEnchant": 7.1
+    },
+    {
+     "slug": "divine-canyon-cloak",
+     "name": "Divine Canyon Cloak",
+     "icon": "/game/items/icon_gm_0072_t05_cape.webp",
+     "pickRate": 23,
+     "avgEnchant": 2.5
+    },
+    {
+     "slug": "bakarma-cloak",
+     "name": "Bakarma Cloak",
+     "icon": "/game/items/icon_gm_0059_t05_cape.webp",
+     "pickRate": 15,
+     "avgEnchant": 5.9
+    }
+   ],
+   "Necklace": [
+    {
+     "slug": "aulamus-necklace",
+     "name": "Aulamus Necklace",
+     "icon": "/game/items/icon_acc_nl_0072.webp",
+     "pickRate": 39,
+     "avgEnchant": 8
+    },
+    {
+     "slug": "liberator-necklace",
+     "name": "Liberator Necklace",
+     "icon": "/game/items/icon_acc_nl_0071.webp",
+     "pickRate": 21,
+     "avgEnchant": 4.2
+    },
+    {
+     "slug": "pilgrim-necklace",
+     "name": "Pilgrim Necklace",
+     "icon": "/game/items/icon_acc_nl_0071.webp",
+     "pickRate": 17,
+     "avgEnchant": 4.6
+    }
+   ],
+   "Earring": [
+    {
+     "slug": "liberator-earrings",
+     "name": "Liberator Earrings",
+     "icon": "/game/items/icon_acc_er_0071.webp",
+     "pickRate": 42,
+     "avgEnchant": 4.5
+    },
+    {
+     "slug": "aulamus-earrings",
+     "name": "Aulamus Earrings",
+     "icon": "/game/items/icon_acc_er_0072.webp",
+     "pickRate": 35,
+     "avgEnchant": 7.5
+    },
+    {
+     "slug": "pilgrim-earrings",
+     "name": "Pilgrim Earrings",
+     "icon": "/game/items/icon_acc_er_0071.webp",
+     "pickRate": 31,
+     "avgEnchant": 5.1
+    }
+   ],
+   "Ring": [
+    {
+     "slug": "aulamus-ring",
+     "name": "Aulamus Ring",
+     "icon": "/game/items/icon_acc_ring_0072.webp",
+     "pickRate": 44,
+     "avgEnchant": 7.6
+    },
+    {
+     "slug": "liberator-ring",
+     "name": "Liberator Ring",
+     "icon": "/game/items/icon_acc_ring_0071.webp",
+     "pickRate": 27,
+     "avgEnchant": 5.1
+    },
+    {
+     "slug": "pilgrim-ring",
+     "name": "Pilgrim Ring",
+     "icon": "/game/items/icon_acc_ring_0071.webp",
+     "pickRate": 25,
+     "avgEnchant": 4.6
+    }
+   ],
+   "Bracelet": [
+    {
+     "slug": "ascension-bracelet",
+     "name": "Ascension Bracelet",
+     "icon": "/game/items/icon_acc_bracelet_r_027.webp",
+     "pickRate": 58,
+     "avgEnchant": 8.8
+    },
+    {
+     "slug": "liberator-bracelet",
+     "name": "Liberator Bracelet",
+     "icon": "/game/items/icon_acc_bracelet_0071.webp",
+     "pickRate": 57,
+     "avgEnchant": 6.4
+    },
+    {
+     "slug": "ascension-bracelet",
+     "name": "Ascension Bracelet",
+     "icon": "/game/items/icon_acc_bracelet_r_027.webp",
+     "pickRate": 42,
+     "avgEnchant": 9
+    }
+   ],
+   "Belt": [
+    {
+     "slug": "noble-belt",
+     "name": "Noble Belt",
+     "icon": "/game/items/icon_acc_belt_c_022.webp",
+     "pickRate": 78,
+     "avgEnchant": 0.1
+    },
+    {
+     "slug": "noble-belt-legend",
+     "name": "Noble Belt",
+     "icon": "/game/items/icon_acc_belt_c_021.webp",
+     "pickRate": 21,
+     "avgEnchant": 3.3
+    },
+    {
+     "slug": "noble-belt-rare",
+     "name": "Noble Belt",
+     "icon": "/game/items/icon_acc_belt_c_018.webp",
+     "pickRate": 0.7,
+     "avgEnchant": 2
+    }
+   ],
+   "Amulet": [
+    {
+     "slug": "revelation-amulet",
+     "name": "Revelation Amulet",
+     "icon": "/game/items/icon_item_craft_conversion_crystal_l_lv5_01.webp",
+     "pickRate": 95,
+     "avgEnchant": 0.4
+    },
+    {
+     "slug": "revelation-amulet-legend",
+     "name": "Revelation Amulet",
+     "icon": "/game/items/icon_item_craft_conversion_crystal_l_lv4_01.webp",
+     "pickRate": 4.7,
+     "avgEnchant": 4.1
+    },
+    {
+     "slug": "fierce-battle-amulet-rare",
+     "name": "Fierce Battle Amulet",
+     "icon": "/game/items/icon_equip_eb_emblemd_mi_abyssshop_l_u_001.webp",
+     "pickRate": 0.7,
+     "avgEnchant": 0
+    }
+   ],
+   "Rune": [
+    {
+     "slug": "clash-rune",
+     "name": "Clash Rune",
+     "icon": "/game/items/icon_equip_acc_rune_r_002.webp",
+     "pickRate": 100,
+     "avgEnchant": 2.5
+    }
+   ]
+  },
+  "enchants": {
+   "Main hand": {
+    "avg": 9.9,
+    "most": 10,
+    "mostShare": 68
+   },
+   "Off-hand": {
+    "avg": 9,
+    "most": 10,
+    "mostShare": 71
+   },
+   "Helmet": {
+    "avg": 4.7,
+    "most": 5,
+    "mostShare": 31
+   },
+   "Shoulders": {
+    "avg": 4.9,
+    "most": 5,
+    "mostShare": 34
+   },
+   "Chest": {
+    "avg": 5.3,
+    "most": 5,
+    "mostShare": 32
+   },
+   "Legs": {
+    "avg": 4.4,
+    "most": 5,
+    "mostShare": 39
+   },
+   "Gloves": {
+    "avg": 4.8,
+    "most": 5,
+    "mostShare": 35
+   },
+   "Boots": {
+    "avg": 4.7,
+    "most": 5,
+    "mostShare": 38
+   },
+   "Cape": {
+    "avg": 4.8,
+    "most": 5,
+    "mostShare": 33
+   },
+   "Necklace": {
+    "avg": 6.3,
+    "most": 10,
+    "mostShare": 31
+   },
+   "Earring": {
+    "avg": 5.7,
+    "most": 5,
+    "mostShare": 40
+   },
+   "Ring": {
+    "avg": 6.2,
+    "most": 5,
+    "mostShare": 37
+   },
+   "Bracelet": {
+    "avg": 7.6,
+    "most": 10,
+    "mostShare": 49
+   },
+   "Belt": {
+    "avg": 0.8,
+    "most": 0,
+    "mostShare": 79
+   },
+   "Amulet": {
+    "avg": 0.6,
+    "most": 0,
+    "mostShare": 80
+   },
+   "Rune": {
+    "avg": 2.5,
+    "most": 2,
+    "mostShare": 37
+   }
+  },
+  "manastones": [],
+  "arcana": {
+   "Arcana slot 1": [
+    {
+     "slug": "chalice-of-vigor-common",
+     "name": "Chalice of Vigor",
+     "icon": "/game/items/icon_arcana_card_grail_u_pveset2.webp",
+     "pickRate": 16
+    },
+    {
+     "slug": "chalice-of-magic-common",
+     "name": "Chalice of Magic",
+     "icon": "/game/items/icon_arcana_card_grail_u_defenceset2.webp",
+     "pickRate": 11
+    }
+   ],
+   "Arcana slot 2": [
+    {
+     "slug": "parchment-of-magic-common",
+     "name": "Parchment of Magic",
+     "icon": "/game/items/icon_arcana_card_parchment_u_defenceset2.webp",
+     "pickRate": 9.3
+    },
+    {
+     "slug": "parchment-of-vigor-common",
+     "name": "Parchment of Vigor",
+     "icon": "/game/items/icon_arcana_card_parchment_u_pveset2.webp",
+     "pickRate": 8
+    }
+   ],
+   "Arcana slot 3": [
+    {
+     "slug": "compass-of-vigor-common",
+     "name": "Compass of Vigor",
+     "icon": "/game/items/icon_arcana_card_compass_u_pveset2.webp",
+     "pickRate": 6.7
+    },
+    {
+     "slug": "compass-of-magic-common",
+     "name": "Compass of Magic",
+     "icon": "/game/items/icon_arcana_card_compass_u_defenceset2.webp",
+     "pickRate": 6.7
+    }
+   ],
+   "Arcana slot 4": [
+    {
+     "slug": "bell-of-magic-common",
+     "name": "Bell of Magic",
+     "icon": "/game/items/icon_arcana_card_bell_u_defenceset2.webp",
+     "pickRate": 8.7
+    },
+    {
+     "slug": "bell-of-vigor-common",
+     "name": "Bell of Vigor",
+     "icon": "/game/items/icon_arcana_card_bell_u_pveset2.webp",
+     "pickRate": 6.7
+    }
+   ],
+   "Arcana slot 5": [
+    {
+     "slug": "mirror-of-vigor-common",
+     "name": "Mirror of Vigor",
+     "icon": "/game/items/icon_arcana_card_mirror_u_pveset2.webp",
+     "pickRate": 8.7
+    },
+    {
+     "slug": "mirror-of-magic-common",
+     "name": "Mirror of Magic",
+     "icon": "/game/items/icon_arcana_card_mirror_u_defenceset2.webp",
+     "pickRate": 7.3
+    }
+   ]
+  },
+  "wings": [
+   {
+    "name": "Ultimate Daeva Wings",
+    "icon": "/game/wings/icon_wingb_001a.webp",
+    "pickRate": 51
+   },
+   {
+    "name": "Forest Spirit Wings",
+    "icon": "/game/wings/icon_winga_010.webp",
+    "pickRate": 2
+   },
+   {
+    "name": "Superior Daeva Wings",
+    "icon": "/game/wings/icon_wingb_007c.webp",
+    "pickRate": 1.3
+   }
+  ],
+  "pets": [
+   {
+    "name": "Pagati",
+    "icon": "/game/pets/1204.webp",
+    "pickRate": 49
+   },
+   {
+    "name": "Black Dragon",
+    "icon": "/game/pets/1001.webp",
+    "pickRate": 11
+   },
+   {
+    "name": "White Bunny",
+    "icon": "/game/pets/1240.webp",
+    "pickRate": 5.3
+   },
+   {
+    "name": "Silver Blade Rotan",
+    "icon": "/game/pets/1192.webp",
+    "pickRate": 3.3
+   },
+   {
+    "name": "Fossa",
+    "icon": "/game/pets/1004.webp",
+    "pickRate": 2.7
+   }
+  ],
+  "primaryStats": [
+   {
+    "stat": "Might",
+    "avg": 21.3
+   },
+   {
+    "stat": "Constitution",
+    "avg": 4.8
+   },
+   {
+    "stat": "Dexterity",
+    "avg": 4.6
+   },
+   {
+    "stat": "Willpower",
+    "avg": 4.2
+   },
+   {
+    "stat": "Precision",
+    "avg": 1.2
+   },
+   {
+    "stat": "Intelligence",
+    "avg": 0.9
+   }
+  ],
+  "deityStats": [
+   {
+    "stat": "Time [Siel]",
+    "avg": 38.7
+   },
+   {
+    "stat": "Justice [Nezekan]",
+    "avg": 38.6
+   },
+   {
+    "stat": "Death [Triniel]",
+    "avg": 34.1
+   },
+   {
+    "stat": "Freedom [Vaizel]",
+    "avg": 24.1
+   },
+   {
+    "stat": "Space [Israphel]",
+    "avg": 17
+   },
+   {
+    "stat": "Life [Yustiel]",
+    "avg": 8.7
+   },
+   {
+    "stat": "Destiny [Marchutan]",
+    "avg": 8.6
+   },
+   {
+    "stat": "Illusion [Kaisinel]",
+    "avg": 5.3
+   },
+   {
+    "stat": "Destruction [Zikel]",
+    "avg": 5.3
+   },
+   {
+    "stat": "Wisdom [Lumiel]",
+    "avg": 5.2
+   }
+  ]
+ },
+ "pointsTable": [
+  {
+   "level": 4,
+   "skillPoints": 1,
+   "stigmaPoints": 0,
+   "stigmaSlots": 0
+  },
+  {
+   "level": 10,
+   "skillPoints": 16,
+   "stigmaPoints": 0,
+   "stigmaSlots": 0
+  },
+  {
+   "level": 20,
+   "skillPoints": 61,
+   "stigmaPoints": 0,
+   "stigmaSlots": 0
+  },
+  {
+   "level": 22,
+   "skillPoints": 71,
+   "stigmaPoints": 0,
+   "stigmaSlots": 1
+  },
+  {
+   "level": 27,
+   "skillPoints": 96,
+   "stigmaPoints": 5,
+   "stigmaSlots": 2
+  },
+  {
+   "level": 30,
+   "skillPoints": 111,
+   "stigmaPoints": 8,
+   "stigmaSlots": 2
+  },
+  {
+   "level": 32,
+   "skillPoints": 123,
+   "stigmaPoints": 10,
+   "stigmaSlots": 3
+  },
+  {
+   "level": 37,
+   "skillPoints": 153,
+   "stigmaPoints": 15,
+   "stigmaSlots": 4
+  },
+  {
+   "level": 40,
+   "skillPoints": 171,
+   "stigmaPoints": 19,
+   "stigmaSlots": 4
+  },
+  {
+   "level": 45,
+   "skillPoints": 203,
+   "stigmaPoints": 29,
+   "stigmaSlots": 4
+  }
+ ],
+ "source": "https://metabot.gg/en/aion-2/classes/sorcerer/build"
+}

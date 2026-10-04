@@ -1,0 +1,46 @@
+{
+ "source": "metabot.gg (client global AION 2)",
+ "syncedAt": "2026-10-04T16:11:59.047Z",
+ "classes": [
+  {
+   "id": "gladiator",
+   "name": "Gladiator",
+   "icon": "/game/classes/gladiator.webp"
+  },
+  {
+   "id": "templar",
+   "name": "Templar",
+   "icon": "/game/classes/templar.webp"
+  },
+  {
+   "id": "assassin",
+   "name": "Assassin",
+   "icon": "/game/classes/assassin.webp"
+  },
+  {
+   "id": "ranger",
+   "name": "Ranger",
+   "icon": "/game/classes/ranger.webp"
+  },
+  {
+   "id": "sorcerer",
+   "name": "Sorcerer",
+   "icon": "/game/classes/sorcerer.webp"
+  },
+  {
+   "id": "spiritmaster",
+   "name": "Spiritmaster",
+   "icon": "/game/classes/spiritmaster.webp"
+  },
+  {
+   "id": "cleric",
+   "name": "Cleric",
+   "icon": "/game/classes/cleric.webp"
+  },
+  {
+   "id": "chanter",
+   "name": "Chanter",
+   "icon": "/game/classes/chanter.webp"
+  }
+ ]
+}

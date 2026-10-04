@@ -1,0 +1,1837 @@
+{
+ "id": "chanter",
+ "name": "Chanter",
+ "icon": "/game/classes/chanter.webp",
+ "skills": [
+  {
+   "id": 18010000,
+   "slug": "onslaught",
+   "name": "Onslaught",
+   "unlockLevel": 1,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Deals 74 (+84.2% Attack) damage to up to 4 enemies within 4m and restores 100 MP.",
+   "icon": "/game/skills/18010000.webp",
+   "type": "active",
+   "meta": {
+    "id": 18010000,
+    "name": "Onslaught",
+    "pickRate": 99,
+    "avgLevel": 13.8
+   }
+  },
+  {
+   "id": 18040000,
+   "slug": "incandescent-blow",
+   "name": "Incandescent Blow",
+   "unlockLevel": 1,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Deals 160 (+228.8% Attack) damage to up to 4 enemies within 4m. 2 Stagger Gauge Damage",
+   "icon": "/game/skills/18040000.webp",
+   "type": "active",
+   "meta": {
+    "id": 18040000,
+    "name": "Incandescent Blow",
+    "pickRate": 99,
+    "avgLevel": 13.5
+   }
+  },
+  {
+   "id": 18090000,
+   "slug": "rushing-smash",
+   "name": "Rushing Smash",
+   "unlockLevel": 1,
+   "cooldown": "15s",
+   "maxLevel": 40,
+   "effect": "Rushes at a target within 20m and deals 112 (+189.8% Attack) damage to up to 4 enemies and restores 100 MP. 10 Stagger Gauge Damage",
+   "icon": "/game/skills/18090000.webp",
+   "type": "active",
+   "meta": {
+    "id": 18090000,
+    "name": "Rushing Smash",
+    "pickRate": 99,
+    "avgLevel": 12.5
+   }
+  },
+  {
+   "id": 18060000,
+   "slug": "impactful-crush",
+   "name": "Impactful Crush",
+   "unlockLevel": 3,
+   "cooldown": "15s",
+   "maxLevel": 40,
+   "effect": "Deals 224 (+218.4% Attack) damage to a target within 20m. Has a 60% chance to inflict Stun for 3s. 100% chance to inflict Stun on NPC targets. [Dark Crush] becomes available for…",
+   "icon": "/game/skills/18060000.webp",
+   "type": "active",
+   "meta": {
+    "id": 18060000,
+    "name": "Impactful Crush",
+    "pickRate": 99,
+    "avgLevel": 12.6
+   }
+  },
+  {
+   "id": 18100000,
+   "slug": "dark-crush",
+   "name": "Dark Crush",
+   "unlockLevel": 4,
+   "cooldown": "5s",
+   "maxLevel": 40,
+   "effect": "Deals 215 (+210.2% Attack) damage to a target within 20m. 5 Stagger Gauge Damage",
+   "icon": "/game/skills/18100000.webp",
+   "type": "active",
+   "meta": {
+    "id": 18100000,
+    "name": "Dark Crush",
+    "pickRate": 99,
+    "avgLevel": 13.9
+   }
+  },
+  {
+   "id": 18300000,
+   "slug": "gust-rampage",
+   "name": "Gust Rampage",
+   "unlockLevel": 5,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Deals 120 (+82.5% Attack) damage to a target afflicted with Stagger within 4m.",
+   "icon": "/game/skills/18300000.webp",
+   "type": "active",
+   "meta": {
+    "id": 18300000,
+    "name": "Gust Rampage",
+    "pickRate": 88,
+    "avgLevel": 9.8
+   }
+  },
+  {
+   "id": 18150000,
+   "slug": "heat-wave-blow",
+   "name": "Heat Wave Blow",
+   "unlockLevel": 7,
+   "cooldown": "10s",
+   "maxLevel": 40,
+   "effect": "Selects a target within 4m and deals 345 (+182% Attack) damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block. 100% chance to inflict Seal on NPC…",
+   "icon": "/game/skills/18150000.webp",
+   "type": "active",
+   "meta": {
+    "id": 18150000,
+    "name": "Heat Wave Blow",
+    "pickRate": 93,
+    "avgLevel": 10.9
+   }
+  },
+  {
+   "id": 18120000,
+   "slug": "recuperation",
+   "name": "Recuperation",
+   "unlockLevel": 8,
+   "cooldown": "15s",
+   "maxLevel": 40,
+   "effect": "Restores 183 (+100% Attack)-201 HP and removes 1, 1 debuff(s) for the caster and party members within 40m. Restores 183 HP every 2s for 8s.",
+   "icon": "/game/skills/18120000.webp",
+   "type": "active",
+   "meta": {
+    "id": 18120000,
+    "name": "Recuperation",
+    "pickRate": 99,
+    "avgLevel": 13.2
+   }
+  },
+  {
+   "id": 18210000,
+   "slug": "tremor-crush",
+   "name": "Tremor Crush",
+   "unlockLevel": 10,
+   "cooldown": "20s",
+   "maxLevel": 40,
+   "effect": "Move to a target within 10m and deal 260 (+102% Attack) damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying. 100% chance to inflict Stun on NPC…",
+   "icon": "/game/skills/18210000.webp",
+   "type": "active",
+   "meta": {
+    "id": 18210000,
+    "name": "Tremor Crush",
+    "pickRate": 99,
+    "avgLevel": 10.3
+   }
+  },
+  {
+   "id": 18080000,
+   "slug": "wave-blow",
+   "name": "Wave Blow",
+   "unlockLevel": 12,
+   "cooldown": "20s",
+   "maxLevel": 40,
+   "effect": "Deals 538 (+211.2% Attack) damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s. Has a 7% chance to trigger on attacking a target with Incapacitated…",
+   "icon": "/game/skills/18080000.webp",
+   "type": "active",
+   "meta": {
+    "id": 18080000,
+    "name": "Wave Blow",
+    "pickRate": 94,
+    "avgLevel": 8.6
+   }
+  },
+  {
+   "id": 18290000,
+   "slug": "spinning-strike",
+   "name": "Spinning Strike",
+   "unlockLevel": 14,
+   "cooldown": "30s",
+   "maxLevel": 40,
+   "effect": "Selects a target within 20m and deals 2,347 (+700.1% Attack) damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2…",
+   "icon": "/game/skills/18290000.webp",
+   "type": "active",
+   "meta": {
+    "id": 18290000,
+    "name": "Spinning Strike",
+    "pickRate": 99,
+    "avgLevel": 13.3
+   }
+  },
+  {
+   "id": 18200000,
+   "slug": "defiance-chanter",
+   "name": "Defiance",
+   "unlockLevel": 16,
+   "cooldown": "60s",
+   "maxLevel": 40,
+   "effect": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s. Tenacity: Grants Status Effect Immunity Unaffected by cooldown reduction…",
+   "icon": "/game/skills/18200000.webp",
+   "type": "active",
+   "meta": null
+  },
+  {
+   "id": 18710000,
+   "slug": "blessing-of-life",
+   "name": "Blessing of Life",
+   "unlockLevel": 1,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's HP by 150. Increases Max HP by an additional 6.5% and Heal Boost by 15,300% of Attack.",
+   "icon": "/game/skills/18710000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 18710000,
+    "name": "Blessing of Life",
+    "pickRate": 99,
+    "avgLevel": 13.2
+   }
+  },
+  {
+   "id": 18720000,
+   "slug": "crossguard",
+   "name": "Crossguard",
+   "unlockLevel": 6,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Block by 200 and restores 53 (+100% Attack)-58 HP on Block. Cooldown: 1s",
+   "icon": "/game/skills/18720000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 18720000,
+    "name": "Crossguard",
+    "pickRate": 99,
+    "avgLevel": 7.2
+   }
+  },
+  {
+   "id": 18730000,
+   "slug": "protection-circle",
+   "name": "Protection Circle",
+   "unlockLevel": 9,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Grants a Protection Circle that lasts for 5s on landing an attack. Removes the Protection Circle at 10 stacks and grants Divine Barrier to the caster and party members, which…",
+   "icon": "/game/skills/18730000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 18730000,
+    "name": "Protection Circle",
+    "pickRate": 99,
+    "avgLevel": 11.2
+   }
+  },
+  {
+   "id": 18740000,
+   "slug": "inspiring-spell",
+   "name": "Inspiring Spell",
+   "unlockLevel": 11,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Critical Hit by 100 and Perfect Chance by 0.5%.",
+   "icon": "/game/skills/18740000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 18740000,
+    "name": "Inspiring Spell",
+    "pickRate": 99,
+    "avgLevel": 13.1
+   }
+  },
+  {
+   "id": 18750000,
+   "slug": "attack-preparation-chanter",
+   "name": "Attack Preparation",
+   "unlockLevel": 13,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's PvE Damage Boost by 5.5%, PvP Damage Boost by 2.75%, Defense by 2%, and Accuracy by 100.",
+   "icon": "/game/skills/18750000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 18750000,
+    "name": "Attack Preparation",
+    "pickRate": 99,
+    "avgLevel": 14.2
+   }
+  },
+  {
+   "id": 18760000,
+   "slug": "impact-hit-chanter",
+   "name": "Impact Hit",
+   "unlockLevel": 15,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Impact-type Chance by 11.2% and Double Chance by 0.3%.",
+   "icon": "/game/skills/18760000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 18760000,
+    "name": "Impact Hit",
+    "pickRate": 99,
+    "avgLevel": 13.2
+   }
+  },
+  {
+   "id": 18770000,
+   "slug": "raging-spell",
+   "name": "Raging Spell",
+   "unlockLevel": 17,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Deals 146 (+34% Attack) extra damage to targets afflicted with Stagger or an Impact-type status. Cooldown: 1s",
+   "icon": "/game/skills/18770000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 18770000,
+    "name": "Raging Spell",
+    "pickRate": 99,
+    "avgLevel": 9.7
+   }
+  },
+  {
+   "id": 18780000,
+   "slug": "earths-promise",
+   "name": "Earth's Promise",
+   "unlockLevel": 21,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Reduces the target's PvE Damage Tolerance by 5.4% and PvP Damage Tolerance by 2.7% for 5s each time an attack lands. [Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect…",
+   "icon": "/game/skills/18780000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 18780000,
+    "name": "Earth's Promise",
+    "pickRate": 99,
+    "avgLevel": 12.6
+   }
+  },
+  {
+   "id": 18790000,
+   "slug": "survival-willpower-chanter",
+   "name": "Survival Willpower",
+   "unlockLevel": 23,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Status Effect Resist by 17%. Increases PvE Damage Tolerance by 12% and PvP Damage Tolerance by 6% for 5s when afflicted with Stun, Knockdown, Airborne,…",
+   "icon": "/game/skills/17790000.webp",
+   "type": "passive",
+   "meta": null
+  },
+  {
+   "id": 18800000,
+   "slug": "winds-promise",
+   "name": "Wind's Promise",
+   "unlockLevel": 25,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Critical Damage Boost by 5.7% and has a 50% chance to deal 554 (+82.6% Attack) extra damage to the target on landing a Critical Hit. Extra Damage Cooldown:…",
+   "icon": "/game/skills/18800000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 18800000,
+    "name": "Wind's Promise",
+    "pickRate": 99,
+    "avgLevel": 13.6
+   }
+  }
+ ],
+ "stigmas": [
+  {
+   "id": 18330000,
+   "slug": "marchutans-wrath",
+   "name": "Marchutan's Wrath",
+   "unlockLevel": 22,
+   "cooldown": "30s",
+   "maxLevel": 25,
+   "effect": "Selects a target within 20m and deals 1,384 (+234.3% Attack) damage to up to 4 enemies within 4m. [Dark Crush] becomes available for 3s on skill use.",
+   "icon": "/game/skills/18330000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 18330000,
+    "name": "Marchutan's Wrath",
+    "pickRate": 47,
+    "avgLevel": 3.5
+   }
+  },
+  {
+   "id": 18420000,
+   "slug": "guardian-blessing",
+   "name": "Guardian Blessing",
+   "unlockLevel": 22,
+   "cooldown": "120s",
+   "maxLevel": 25,
+   "effect": "Increases the caster's Max HP by 5.4% for 120s and immediately restores 5.4% HP. Not affected by buff dispel effects.",
+   "icon": "/game/skills/18420000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 18420000,
+    "name": "Guardian Blessing",
+    "pickRate": 7.3,
+    "avgLevel": 2.7
+   }
+  },
+  {
+   "id": 18220000,
+   "slug": "obliterate",
+   "name": "Obliterate",
+   "unlockLevel": 22,
+   "cooldown": "60s",
+   "maxLevel": 25,
+   "effect": "Deals 1,078 (+182.5% Attack) damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Knockdown. 100% chance to land Knockdown on NPC targets. 50 Stagger…",
+   "icon": "/game/skills/18220000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 18220000,
+    "name": "Obliterate",
+    "pickRate": 29,
+    "avgLevel": 2.2
+   }
+  },
+  {
+   "id": 18190000,
+   "slug": "undefeated-mantra",
+   "name": "Undefeated Mantra",
+   "unlockLevel": 22,
+   "cooldown": "5s",
+   "maxLevel": 25,
+   "effect": "Increases PvE Damage Boost and PvE Damage Tolerance by 10.5% and PvP Damage Boost and PvP Damage Tolerance by 5.25% for the caster and nearby party members. Does not stack with…",
+   "icon": "/game/skills/18190000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 18190000,
+    "name": "Undefeated Mantra",
+    "pickRate": 99,
+    "avgLevel": 12.4
+   }
+  },
+  {
+   "id": 18700000,
+   "slug": "assault-shock",
+   "name": "Assault Shock",
+   "unlockLevel": 22,
+   "cooldown": "120s",
+   "maxLevel": 25,
+   "effect": "Selects a target within 20m and deals 986 (+167% Attack) damage to up to 4 enemies within 4m with a 30% chance to inflict Stun for 3s. 100% chance to inflict Stun on NPC targets.…",
+   "icon": "/game/skills/18700000.webp",
+   "type": "stigma",
+   "meta": null
+  },
+  {
+   "id": 18240000,
+   "slug": "impeding-authority",
+   "name": "Impeding Authority",
+   "unlockLevel": 22,
+   "cooldown": "90s",
+   "maxLevel": 25,
+   "effect": "Grants a Protective Shield that blocks damage equaling 16% of Max HP for 20s to the caster and nearby party members within 40m.",
+   "icon": "/game/skills/18240000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 18240000,
+    "name": "Impeding Authority",
+    "pickRate": 9.3,
+    "avgLevel": 4.5
+   }
+  },
+  {
+   "id": 18440000,
+   "slug": "barrier-spell",
+   "name": "Barrier Spell",
+   "unlockLevel": 22,
+   "cooldown": "180s",
+   "maxLevel": 25,
+   "effect": "Prevents the HP of the caster and party members within 40m from falling below 10% for 3s. Cannot block certain powerful attacks. Unaffected by cooldown increase effects.…",
+   "icon": "/game/skills/18440000.webp",
+   "type": "stigma",
+   "meta": null
+  },
+  {
+   "id": 18140000,
+   "slug": "focused-defense",
+   "name": "Focused Defense",
+   "unlockLevel": 22,
+   "cooldown": "20s",
+   "maxLevel": 25,
+   "effect": "Temporarily increases Block Damage Reduction by 100% and guarantees Block. Restores 110 MP and Stamina once on Block.",
+   "icon": "/game/skills/18140000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 18140000,
+    "name": "Focused Defense",
+    "pickRate": 37,
+    "avgLevel": 3.3
+   }
+  },
+  {
+   "id": 18230000,
+   "slug": "ensnaring-mark",
+   "name": "Ensnaring Mark",
+   "unlockLevel": 22,
+   "cooldown": "60s",
+   "maxLevel": 25,
+   "effect": "Selects a target within 20m and deals 1,034 (+175% Attack) damage to up to 4 enemies within 4m, with a 50% chance to inflict Seal for 5s. 100% chance to inflict Seal on NPC…",
+   "icon": "/game/skills/18230000.webp",
+   "type": "stigma",
+   "meta": null
+  },
+  {
+   "id": 18170000,
+   "slug": "healing-touch",
+   "name": "Healing Touch",
+   "unlockLevel": 22,
+   "cooldown": "30s",
+   "maxLevel": 25,
+   "effect": "Restores 927 (+100% Attack)-1,020 HP for the caster and party members within 40m.",
+   "icon": "/game/skills/18170000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 18170000,
+    "name": "Healing Touch",
+    "pickRate": 13,
+    "avgLevel": 3.9
+   }
+  },
+  {
+   "id": 18160000,
+   "slug": "sprint-mantra",
+   "name": "Sprint Mantra",
+   "unlockLevel": 22,
+   "cooldown": "5s",
+   "maxLevel": 25,
+   "effect": "Increases Move Speed by 10.5% and grants a 15% chance to restore  127 (+100% Attack)-140 HP on landing an attack to the caster and nearby party members. Healing Cooldown: 1s",
+   "icon": "/game/skills/18160000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 18160000,
+    "name": "Sprint Mantra",
+    "pickRate": 95,
+    "avgLevel": 5.1
+   }
+  },
+  {
+   "id": 18250000,
+   "slug": "power-of-the-storm",
+   "name": "Power of the Storm",
+   "unlockLevel": 22,
+   "cooldown": "120s",
+   "maxLevel": 25,
+   "effect": "Increases Combat Speed by 20% and reduces skill cooldowns by 20% for 10s. Increases Combat Speed by 20% and reduces skill cooldowns by 10% for party members within 40m. Cannot…",
+   "icon": "/game/skills/18250000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 18250000,
+    "name": "Power of the Storm",
+    "pickRate": 65,
+    "avgLevel": 4.4
+   }
+  },
+  {
+   "id": 18130000,
+   "slug": "fracturing-blow",
+   "name": "Fracturing Blow",
+   "unlockLevel": 22,
+   "cooldown": "45s",
+   "maxLevel": 25,
+   "effect": "Rushes to a target within 20m and deals 1,288 (+218% Attack) damage and reduces their Defense by 30% for 5s. Increases damage by 20% to targets afflicted with an Impact-type…",
+   "icon": "/game/skills/18130000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 18130000,
+    "name": "Fracturing Blow",
+    "pickRate": 11,
+    "avgLevel": 2.8
+   }
+  }
+ ],
+ "specializations": [
+  {
+   "id": 18010010,
+   "skillId": 18010000,
+   "skillName": "Onslaught",
+   "requiredSkillLevel": 8,
+   "effect": "+20% MP restored",
+   "icon": "/game/specs/18010010.webp"
+  },
+  {
+   "id": 18010020,
+   "skillId": 18010000,
+   "skillName": "Onslaught",
+   "requiredSkillLevel": 8,
+   "effect": "Absorbs 70, 70% HP",
+   "icon": "/game/specs/18010020.webp"
+  },
+  {
+   "id": 18010030,
+   "skillId": 18010000,
+   "skillName": "Onslaught",
+   "requiredSkillLevel": 8,
+   "effect": "+50% Multi-Hit on hit",
+   "icon": "/game/specs/18010030.webp"
+  },
+  {
+   "id": 18040010,
+   "skillId": 18040000,
+   "skillName": "Incandescent Blow",
+   "requiredSkillLevel": 8,
+   "effect": "-20% MP consumed",
+   "icon": "/game/specs/18040010.webp"
+  },
+  {
+   "id": 18040020,
+   "skillId": 18040000,
+   "skillName": "Incandescent Blow",
+   "requiredSkillLevel": 8,
+   "effect": "+200 Block while using skill",
+   "icon": "/game/specs/18040020.webp"
+  },
+  {
+   "id": 18040030,
+   "skillId": 18040000,
+   "skillName": "Incandescent Blow",
+   "requiredSkillLevel": 8,
+   "effect": "Deals up to 12% more damage when less targets are hit",
+   "icon": "/game/specs/18040030.webp"
+  },
+  {
+   "id": 18090010,
+   "skillId": 18090000,
+   "skillName": "Rushing Smash",
+   "requiredSkillLevel": 8,
+   "effect": "-20% target's Impact-type Resist for 5s",
+   "icon": "/game/specs/18090010.webp"
+  },
+  {
+   "id": 18090020,
+   "skillId": 18090000,
+   "skillName": "Rushing Smash",
+   "requiredSkillLevel": 8,
+   "effect": "Changes to Charge Skill, dealing up to 200% more damage",
+   "icon": "/game/specs/18090020.webp"
+  },
+  {
+   "id": 18090030,
+   "skillId": 18090000,
+   "skillName": "Rushing Smash",
+   "requiredSkillLevel": 8,
+   "effect": "50% chance to trigger [Heat Wave Blow] on hit",
+   "icon": "/game/specs/18090030.webp"
+  },
+  {
+   "id": 18060010,
+   "skillId": 18060000,
+   "skillName": "Impactful Crush",
+   "requiredSkillLevel": 8,
+   "effect": "Changes to AoE damage",
+   "icon": "/game/specs/18060010.webp"
+  },
+  {
+   "id": 18060020,
+   "skillId": 18060000,
+   "skillName": "Impactful Crush",
+   "requiredSkillLevel": 8,
+   "effect": "+1s [Impactful Crush] Stun duration",
+   "icon": "/game/specs/18060020.webp"
+  },
+  {
+   "id": 18060030,
+   "skillId": 18060000,
+   "skillName": "Impactful Crush",
+   "requiredSkillLevel": 8,
+   "effect": "Changes to mobile skill",
+   "icon": "/game/specs/18060030.webp"
+  },
+  {
+   "id": 18100010,
+   "skillId": 18100000,
+   "skillName": "Dark Crush",
+   "requiredSkillLevel": 8,
+   "effect": "Absorbs 70, 70% HP",
+   "icon": "/game/specs/18100010.webp"
+  },
+  {
+   "id": 18100020,
+   "skillId": 18100000,
+   "skillName": "Dark Crush",
+   "requiredSkillLevel": 8,
+   "effect": "Deals extra damage on attacking a target afflicted with Impact-type status",
+   "icon": "/game/specs/18100020.webp"
+  },
+  {
+   "id": 18100030,
+   "skillId": 18100000,
+   "skillName": "Dark Crush",
+   "requiredSkillLevel": 8,
+   "effect": "Critical Hit on hit",
+   "icon": "/game/specs/18100030.webp"
+  },
+  {
+   "id": 18300010,
+   "skillId": 18300000,
+   "skillName": "Gust Rampage",
+   "requiredSkillLevel": 8,
+   "effect": "Absorbs 500, 500% HP",
+   "icon": "/game/specs/18300010.webp"
+  },
+  {
+   "id": 18300020,
+   "skillId": 18300000,
+   "skillName": "Gust Rampage",
+   "requiredSkillLevel": 8,
+   "effect": "Restores 120 MP",
+   "icon": "/game/specs/18300020.webp"
+  },
+  {
+   "id": 18300030,
+   "skillId": 18300000,
+   "skillName": "Gust Rampage",
+   "requiredSkillLevel": 8,
+   "effect": "Changes to mobile skill",
+   "icon": "/game/specs/18300030.webp"
+  },
+  {
+   "id": 18150010,
+   "skillId": 18150000,
+   "skillName": "Heat Wave Blow",
+   "requiredSkillLevel": 8,
+   "effect": "40% chance to inflict Stun for 3s",
+   "icon": "/game/specs/18150010.webp"
+  },
+  {
+   "id": 18150020,
+   "skillId": 18150000,
+   "skillName": "Heat Wave Blow",
+   "requiredSkillLevel": 8,
+   "effect": "+20% Seal Chance",
+   "icon": "/game/specs/18150020.webp"
+  },
+  {
+   "id": 18150030,
+   "skillId": 18150000,
+   "skillName": "Heat Wave Blow",
+   "requiredSkillLevel": 8,
+   "effect": "Up to +20% damage when more targets hit",
+   "icon": "/game/specs/18150030.webp"
+  },
+  {
+   "id": 18120010,
+   "skillId": 18120000,
+   "skillName": "Recuperation",
+   "requiredSkillLevel": 8,
+   "effect": "+1 consecutive use and Heal over Time can stack up to 2 times",
+   "icon": "/game/specs/18120010.webp"
+  },
+  {
+   "id": 18120020,
+   "skillId": 18120000,
+   "skillName": "Recuperation",
+   "requiredSkillLevel": 8,
+   "effect": "Removes up to 2, 2 debuffs",
+   "icon": "/game/specs/18120020.webp"
+  },
+  {
+   "id": 18120030,
+   "skillId": 18120000,
+   "skillName": "Recuperation",
+   "requiredSkillLevel": 8,
+   "effect": "+4s healing duration",
+   "icon": "/game/specs/18120030.webp"
+  },
+  {
+   "id": 18210010,
+   "skillId": 18210000,
+   "skillName": "Tremor Crush",
+   "requiredSkillLevel": 8,
+   "effect": "Restores 300 Stamina on hit",
+   "icon": "/game/specs/18210010.webp"
+  },
+  {
+   "id": 18210020,
+   "skillId": 18210000,
+   "skillName": "Tremor Crush",
+   "requiredSkillLevel": 8,
+   "effect": "+10m [Tremor Crush] range",
+   "icon": "/game/specs/18210020.webp"
+  },
+  {
+   "id": 18210030,
+   "skillId": 18210000,
+   "skillName": "Tremor Crush",
+   "requiredSkillLevel": 8,
+   "effect": "+50% Multi-Hit on hit",
+   "icon": "/game/specs/18210030.webp"
+  },
+  {
+   "id": 18080010,
+   "skillId": 18080000,
+   "skillName": "Wave Blow",
+   "requiredSkillLevel": 8,
+   "effect": "Multi-Hit on hit",
+   "icon": "/game/specs/18080010.webp"
+  },
+  {
+   "id": 18080020,
+   "skillId": 18080000,
+   "skillName": "Wave Blow",
+   "requiredSkillLevel": 8,
+   "effect": "+6m Range",
+   "icon": "/game/specs/18080020.webp"
+  },
+  {
+   "id": 18080030,
+   "skillId": 18080000,
+   "skillName": "Wave Blow",
+   "requiredSkillLevel": 8,
+   "effect": "+1s Knockdown duration",
+   "icon": "/game/specs/18080030.webp"
+  },
+  {
+   "id": 18290010,
+   "skillId": 18290000,
+   "skillName": "Spinning Strike",
+   "requiredSkillLevel": 8,
+   "effect": "-5s cooldown",
+   "icon": "/game/specs/18290010.webp"
+  },
+  {
+   "id": 18290020,
+   "skillId": 18290000,
+   "skillName": "Spinning Strike",
+   "requiredSkillLevel": 8,
+   "effect": "+10% Heal Boost (up to 20%)",
+   "icon": "/game/specs/18290020.webp"
+  },
+  {
+   "id": 18290030,
+   "skillId": 18290000,
+   "skillName": "Spinning Strike",
+   "requiredSkillLevel": 8,
+   "effect": "Up to +20% damage when less targets hit",
+   "icon": "/game/specs/18290030.webp"
+  },
+  {
+   "id": 18200010,
+   "skillId": 18200000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 8,
+   "effect": "Adds [Crushing Strike] Chain Skill",
+   "icon": "/game/specs/18200010.webp"
+  },
+  {
+   "id": 18200020,
+   "skillId": 18200000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 8,
+   "effect": "Restores 1,000 Stamina on using [Defiance]",
+   "icon": "/game/specs/18200020.webp"
+  },
+  {
+   "id": 18200030,
+   "skillId": 18200000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 8,
+   "effect": "Restores 10% HP on using [Defiance]",
+   "icon": "/game/specs/18200030.webp"
+  },
+  {
+   "id": 18010040,
+   "skillId": 18010000,
+   "skillName": "Onslaught",
+   "requiredSkillLevel": 12,
+   "effect": "-1s [Spinning Strike] cooldown on hit",
+   "icon": "/game/specs/18010040.webp"
+  },
+  {
+   "id": 18040040,
+   "skillId": 18040000,
+   "skillName": "Incandescent Blow",
+   "requiredSkillLevel": 12,
+   "effect": "-200 enemy Accuracy for 3s on landing Bursting Blow",
+   "icon": "/game/specs/18040040.webp"
+  },
+  {
+   "id": 18090040,
+   "skillId": 18090000,
+   "skillName": "Rushing Smash",
+   "requiredSkillLevel": 12,
+   "effect": "Resets cooldown on defeating an enemy",
+   "icon": "/game/specs/18090040.webp"
+  },
+  {
+   "id": 18060040,
+   "skillId": 18060000,
+   "skillName": "Impactful Crush",
+   "requiredSkillLevel": 12,
+   "effect": "+30% Skill Speed",
+   "icon": "/game/specs/18060040.webp"
+  },
+  {
+   "id": 18100040,
+   "skillId": 18100000,
+   "skillName": "Dark Crush",
+   "requiredSkillLevel": 12,
+   "effect": "Adds [Piercing Strike] Chain Skill",
+   "icon": "/game/specs/18100040.webp"
+  },
+  {
+   "id": 18300040,
+   "skillId": 18300000,
+   "skillName": "Gust Rampage",
+   "requiredSkillLevel": 12,
+   "effect": "Multi-Hit on hit",
+   "icon": "/game/specs/18300040.webp"
+  },
+  {
+   "id": 18150040,
+   "skillId": 18150000,
+   "skillName": "Heat Wave Blow",
+   "requiredSkillLevel": 12,
+   "effect": "Ignores Block and Evasion and lands as Multi-Hit",
+   "icon": "/game/specs/18150040.webp"
+  },
+  {
+   "id": 18120040,
+   "skillId": 18120000,
+   "skillName": "Recuperation",
+   "requiredSkillLevel": 12,
+   "effect": "+5% HP restored",
+   "icon": "/game/specs/18120040.webp"
+  },
+  {
+   "id": 18210040,
+   "skillId": 18210000,
+   "skillName": "Tremor Crush",
+   "requiredSkillLevel": 12,
+   "effect": "Adds [Surging Strike] Chain Skill",
+   "icon": "/game/specs/18210040.webp"
+  },
+  {
+   "id": 18080040,
+   "skillId": 18080000,
+   "skillName": "Wave Blow",
+   "requiredSkillLevel": 12,
+   "effect": "-15% target's PvE Damage Boost and -7.5% PvP Damage Boost for 10s",
+   "icon": "/game/specs/18080040.webp"
+  },
+  {
+   "id": 18290040,
+   "skillId": 18290000,
+   "skillName": "Spinning Strike",
+   "requiredSkillLevel": 12,
+   "effect": "40% chance to inflict Seal for 3s",
+   "icon": "/game/specs/18290040.webp"
+  },
+  {
+   "id": 18200040,
+   "skillId": 18200000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 12,
+   "effect": "+2s Tenacity duration",
+   "icon": "/game/specs/18200040.webp"
+  },
+  {
+   "id": 18010050,
+   "skillId": 18010000,
+   "skillName": "Onslaught",
+   "requiredSkillLevel": 16,
+   "effect": "Adds [Storm Chain] Chain Skill",
+   "icon": "/game/specs/18010050.webp"
+  },
+  {
+   "id": 18040050,
+   "skillId": 18040000,
+   "skillName": "Incandescent Blow",
+   "requiredSkillLevel": 16,
+   "effect": "Ignores Block and Evasion and lands as Multi-Hit",
+   "icon": "/game/specs/18040050.webp"
+  },
+  {
+   "id": 18090050,
+   "skillId": 18090000,
+   "skillName": "Rushing Smash",
+   "requiredSkillLevel": 16,
+   "effect": "Ignores Block and Evasion and lands as Multi-Hit",
+   "icon": "/game/specs/18090050.webp"
+  },
+  {
+   "id": 18060050,
+   "skillId": 18060000,
+   "skillName": "Impactful Crush",
+   "requiredSkillLevel": 16,
+   "effect": "+20% [Impactful Crush] Stun Chance",
+   "icon": "/game/specs/18060050.webp"
+  },
+  {
+   "id": 18100050,
+   "skillId": 18100000,
+   "skillName": "Dark Crush",
+   "requiredSkillLevel": 16,
+   "effect": "Removes [Dark Crush] cooldown",
+   "icon": "/game/specs/18100050.webp"
+  },
+  {
+   "id": 18300050,
+   "skillId": 18300000,
+   "skillName": "Gust Rampage",
+   "requiredSkillLevel": 16,
+   "effect": "-1s all skill cooldowns on hit",
+   "icon": "/game/specs/18300050.webp"
+  },
+  {
+   "id": 18150050,
+   "skillId": 18150000,
+   "skillName": "Heat Wave Blow",
+   "requiredSkillLevel": 16,
+   "effect": "25% chance to reset [Heat Wave Blow] cooldown on Block",
+   "icon": "/game/specs/18150050.webp"
+  },
+  {
+   "id": 18120050,
+   "skillId": 18120000,
+   "skillName": "Recuperation",
+   "requiredSkillLevel": 16,
+   "effect": "-3s cooldown",
+   "icon": "/game/specs/18120050.webp"
+  },
+  {
+   "id": 18210050,
+   "skillId": 18210000,
+   "skillName": "Tremor Crush",
+   "requiredSkillLevel": 16,
+   "effect": "+25% [Tremor Crush] Stun Chance",
+   "icon": "/game/specs/18210050.webp"
+  },
+  {
+   "id": 18080050,
+   "skillId": 18080000,
+   "skillName": "Wave Blow",
+   "requiredSkillLevel": 16,
+   "effect": "-5s cooldown",
+   "icon": "/game/specs/18080050.webp"
+  },
+  {
+   "id": 18290050,
+   "skillId": 18290000,
+   "skillName": "Spinning Strike",
+   "requiredSkillLevel": 16,
+   "effect": "Ignores Block and Evasion and lands as a Critical Hit",
+   "icon": "/game/specs/18290050.webp"
+  },
+  {
+   "id": 18200050,
+   "skillId": 18200000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 16,
+   "effect": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration",
+   "icon": "/game/specs/18200050.webp"
+  }
+ ],
+ "meta": {
+  "topPlayersTracked": 1560,
+  "medianCombatPower": 57927,
+  "top10CombatPower": 71271,
+  "avgItemLevel": 1173,
+  "daevanion": {
+   "boards": [
+    {
+     "board": "Nezekan",
+     "commonNodes": 65,
+     "totalNodes": 88
+    },
+    {
+     "board": "Zikel",
+     "commonNodes": 61,
+     "totalNodes": 88
+    },
+    {
+     "board": "Vaizel",
+     "commonNodes": 55,
+     "totalNodes": 88
+    },
+    {
+     "board": "Triniel",
+     "commonNodes": 42,
+     "totalNodes": 116
+    },
+    {
+     "board": "Azphel",
+     "commonNodes": 3,
+     "totalNodes": 152
+    }
+   ],
+   "topSkillNodes": [
+    {
+     "skill": "Dark Crush",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 99
+    },
+    {
+     "skill": "Dark Crush",
+     "bonus": 1,
+     "board": "Zikel",
+     "pickRate": 95
+    },
+    {
+     "skill": "Onslaught",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 94
+    },
+    {
+     "skill": "Incandescent Blow",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 93
+    },
+    {
+     "skill": "Attack Preparation",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 93
+    },
+    {
+     "skill": "Onslaught",
+     "bonus": 1,
+     "board": "Zikel",
+     "pickRate": 93
+    },
+    {
+     "skill": "Spinning Strike",
+     "bonus": 1,
+     "board": "Zikel",
+     "pickRate": 91
+    },
+    {
+     "skill": "Dark Crush",
+     "bonus": 1,
+     "board": "Triniel",
+     "pickRate": 90
+    }
+   ]
+  },
+  "gear": {
+   "Main hand": [
+    {
+     "slug": "spiritforged-staff",
+     "name": "Spiritforged Staff",
+     "icon": "/game/items/icon_wp_st_0078_t05.webp",
+     "pickRate": 34,
+     "avgEnchant": 9.1
+    },
+    {
+     "slug": "spiritforged-staff",
+     "name": "Spiritforged Staff",
+     "icon": "/game/items/icon_wp_st_0078_t05.webp",
+     "pickRate": 32,
+     "avgEnchant": 9.5
+    },
+    {
+     "slug": "aulamus-staff",
+     "name": "Aulamus Staff",
+     "icon": "/game/items/icon_wp_st_0028_t05.webp",
+     "pickRate": 21,
+     "avgEnchant": 10.1
+    }
+   ],
+   "Off-hand": [
+    {
+     "slug": "spiritforged-guard",
+     "name": "Spiritforged Guard",
+     "icon": "/game/items/icon_weapon_guarder_l_001.webp",
+     "pickRate": 45,
+     "avgEnchant": 7.7
+    },
+    {
+     "slug": "spiritforged-guard",
+     "name": "Spiritforged Guard",
+     "icon": "/game/items/icon_weapon_guarder_l_001.webp",
+     "pickRate": 36,
+     "avgEnchant": 8.1
+    },
+    {
+     "slug": "vakron-guard",
+     "name": "Vakron Guard",
+     "icon": "/game/items/icon_weapon_guarder_u_003.webp",
+     "pickRate": 9.3,
+     "avgEnchant": 9.9
+    }
+   ],
+   "Helmet": [
+    {
+     "slug": "vakron-helm",
+     "name": "Vakron Helm",
+     "icon": "/game/items/icon_gm_0028_t05_helmet.webp",
+     "pickRate": 30,
+     "avgEnchant": 7
+    },
+    {
+     "slug": "divine-canyon-helm",
+     "name": "Divine Canyon Helm",
+     "icon": "/game/items/icon_gm_0072_t05_helmet.webp",
+     "pickRate": 21,
+     "avgEnchant": 2.8
+    },
+    {
+     "slug": "bakarma-helm",
+     "name": "Bakarma Helm",
+     "icon": "/game/items/icon_gm_0059_t05_helmet.webp",
+     "pickRate": 14,
+     "avgEnchant": 6.1
+    }
+   ],
+   "Shoulders": [
+    {
+     "slug": "divine-canyon-pauldrons",
+     "name": "Divine Canyon Pauldrons",
+     "icon": "/game/items/icon_gm_0072_t05_shoulder.webp",
+     "pickRate": 23,
+     "avgEnchant": 2.6
+    },
+    {
+     "slug": "vakron-pauldrons",
+     "name": "Vakron Pauldrons",
+     "icon": "/game/items/icon_gm_0028_t05_shoulder.webp",
+     "pickRate": 20,
+     "avgEnchant": 7.7
+    },
+    {
+     "slug": "bakarma-pauldrons",
+     "name": "Bakarma Pauldrons",
+     "icon": "/game/items/icon_gm_0059_t05_shoulder.webp",
+     "pickRate": 17,
+     "avgEnchant": 6.2
+    }
+   ],
+   "Chest": [
+    {
+     "slug": "bakarma-breastplate",
+     "name": "Bakarma Breastplate",
+     "icon": "/game/items/icon_gm_0059_t05_torso.webp",
+     "pickRate": 39,
+     "avgEnchant": 6.7
+    },
+    {
+     "slug": "vakron-breastplate",
+     "name": "Vakron Breastplate",
+     "icon": "/game/items/icon_gm_0028_t05_torso.webp",
+     "pickRate": 29,
+     "avgEnchant": 7
+    },
+    {
+     "slug": "divine-canyon-breastplate",
+     "name": "Divine Canyon Breastplate",
+     "icon": "/game/items/icon_gm_0072_t05_torso.webp",
+     "pickRate": 14,
+     "avgEnchant": 1.5
+    }
+   ],
+   "Legs": [
+    {
+     "slug": "vakron-greaves",
+     "name": "Vakron Greaves",
+     "icon": "/game/items/icon_gm_0028_t05_pants.webp",
+     "pickRate": 22,
+     "avgEnchant": 7.8
+    },
+    {
+     "slug": "divine-canyon-greaves",
+     "name": "Divine Canyon Greaves",
+     "icon": "/game/items/icon_gm_0072_t05_pants.webp",
+     "pickRate": 21,
+     "avgEnchant": 2
+    },
+    {
+     "slug": "bakarma-greaves",
+     "name": "Bakarma Greaves",
+     "icon": "/game/items/icon_gm_0059_t05_pants.webp",
+     "pickRate": 19,
+     "avgEnchant": 5.8
+    }
+   ],
+   "Gloves": [
+    {
+     "slug": "vakron-gloves",
+     "name": "Vakron Gloves",
+     "icon": "/game/items/icon_gm_0028_t05_gloves.webp",
+     "pickRate": 27,
+     "avgEnchant": 7.8
+    },
+    {
+     "slug": "bakarma-gloves",
+     "name": "Bakarma Gloves",
+     "icon": "/game/items/icon_gm_0059_t05_gloves.webp",
+     "pickRate": 26,
+     "avgEnchant": 5.6
+    },
+    {
+     "slug": "divine-canyon-gloves",
+     "name": "Divine Canyon Gloves",
+     "icon": "/game/items/icon_gm_0072_t05_gloves.webp",
+     "pickRate": 15,
+     "avgEnchant": 2.7
+    }
+   ],
+   "Boots": [
+    {
+     "slug": "vakron-boots",
+     "name": "Vakron Boots",
+     "icon": "/game/items/icon_gm_0028_t05_boots.webp",
+     "pickRate": 31,
+     "avgEnchant": 7
+    },
+    {
+     "slug": "divine-canyon-boots",
+     "name": "Divine Canyon Boots",
+     "icon": "/game/items/icon_gm_0072_t05_boots.webp",
+     "pickRate": 23,
+     "avgEnchant": 2.5
+    },
+    {
+     "slug": "bakarma-boots",
+     "name": "Bakarma Boots",
+     "icon": "/game/items/icon_gm_0059_t05_boots.webp",
+     "pickRate": 15,
+     "avgEnchant": 5.3
+    }
+   ],
+   "Cape": [
+    {
+     "slug": "vakron-cloak",
+     "name": "Vakron Cloak",
+     "icon": "/game/items/icon_gm_0028_t05_cape.webp",
+     "pickRate": 23,
+     "avgEnchant": 7.5
+    },
+    {
+     "slug": "bakarma-cloak",
+     "name": "Bakarma Cloak",
+     "icon": "/game/items/icon_gm_0059_t05_cape.webp",
+     "pickRate": 22,
+     "avgEnchant": 5.8
+    },
+    {
+     "slug": "divine-canyon-cloak",
+     "name": "Divine Canyon Cloak",
+     "icon": "/game/items/icon_gm_0072_t05_cape.webp",
+     "pickRate": 22,
+     "avgEnchant": 1.8
+    }
+   ],
+   "Necklace": [
+    {
+     "slug": "aulamus-necklace",
+     "name": "Aulamus Necklace",
+     "icon": "/game/items/icon_acc_nl_0072.webp",
+     "pickRate": 31,
+     "avgEnchant": 7.2
+    },
+    {
+     "slug": "liberator-necklace",
+     "name": "Liberator Necklace",
+     "icon": "/game/items/icon_acc_nl_0071.webp",
+     "pickRate": 23,
+     "avgEnchant": 3.7
+    },
+    {
+     "slug": "berk-necklace",
+     "name": "Berk Necklace",
+     "icon": "/game/items/icon_acc_nl_0066.webp",
+     "pickRate": 19,
+     "avgEnchant": 6.5
+    }
+   ],
+   "Earring": [
+    {
+     "slug": "aulamus-earrings",
+     "name": "Aulamus Earrings",
+     "icon": "/game/items/icon_acc_er_0072.webp",
+     "pickRate": 39,
+     "avgEnchant": 7.1
+    },
+    {
+     "slug": "liberator-earrings",
+     "name": "Liberator Earrings",
+     "icon": "/game/items/icon_acc_er_0071.webp",
+     "pickRate": 39,
+     "avgEnchant": 3.4
+    },
+    {
+     "slug": "pilgrim-earrings",
+     "name": "Pilgrim Earrings",
+     "icon": "/game/items/icon_acc_er_0071.webp",
+     "pickRate": 35,
+     "avgEnchant": 3.3
+    }
+   ],
+   "Ring": [
+    {
+     "slug": "aulamus-ring",
+     "name": "Aulamus Ring",
+     "icon": "/game/items/icon_acc_ring_0072.webp",
+     "pickRate": 49,
+     "avgEnchant": 7.8
+    },
+    {
+     "slug": "liberator-ring",
+     "name": "Liberator Ring",
+     "icon": "/game/items/icon_acc_ring_0071.webp",
+     "pickRate": 30,
+     "avgEnchant": 4.1
+    },
+    {
+     "slug": "pilgrim-ring",
+     "name": "Pilgrim Ring",
+     "icon": "/game/items/icon_acc_ring_0071.webp",
+     "pickRate": 27,
+     "avgEnchant": 3.6
+    }
+   ],
+   "Bracelet": [
+    {
+     "slug": "ascension-bracelet",
+     "name": "Ascension Bracelet",
+     "icon": "/game/items/icon_acc_bracelet_r_027.webp",
+     "pickRate": 52,
+     "avgEnchant": 9.1
+    },
+    {
+     "slug": "liberator-bracelet",
+     "name": "Liberator Bracelet",
+     "icon": "/game/items/icon_acc_bracelet_0071.webp",
+     "pickRate": 52,
+     "avgEnchant": 5.3
+    },
+    {
+     "slug": "ascension-bracelet",
+     "name": "Ascension Bracelet",
+     "icon": "/game/items/icon_acc_bracelet_r_027.webp",
+     "pickRate": 47,
+     "avgEnchant": 8.9
+    }
+   ],
+   "Belt": [
+    {
+     "slug": "noble-belt",
+     "name": "Noble Belt",
+     "icon": "/game/items/icon_acc_belt_c_022.webp",
+     "pickRate": 78,
+     "avgEnchant": 0.3
+    },
+    {
+     "slug": "noble-belt-legend",
+     "name": "Noble Belt",
+     "icon": "/game/items/icon_acc_belt_c_021.webp",
+     "pickRate": 21,
+     "avgEnchant": 2.1
+    },
+    {
+     "slug": "noble-belt-rare",
+     "name": "Noble Belt",
+     "icon": "/game/items/icon_acc_belt_c_018.webp",
+     "pickRate": 0.7,
+     "avgEnchant": 0
+    }
+   ],
+   "Amulet": [
+    {
+     "slug": "revelation-amulet",
+     "name": "Revelation Amulet",
+     "icon": "/game/items/icon_item_craft_conversion_crystal_l_lv5_01.webp",
+     "pickRate": 93,
+     "avgEnchant": 0.6
+    },
+    {
+     "slug": "revelation-amulet-legend",
+     "name": "Revelation Amulet",
+     "icon": "/game/items/icon_item_craft_conversion_crystal_l_lv4_01.webp",
+     "pickRate": 4,
+     "avgEnchant": 3.8
+    },
+    {
+     "slug": "revelation-amulet-rare",
+     "name": "Revelation Amulet",
+     "icon": "/game/items/icon_item_craft_conversion_crystal_l_lv3_01.webp",
+     "pickRate": 1.3,
+     "avgEnchant": 2.5
+    }
+   ],
+   "Rune": [
+    {
+     "slug": "clash-rune",
+     "name": "Clash Rune",
+     "icon": "/game/items/icon_equip_acc_rune_r_002.webp",
+     "pickRate": 99,
+     "avgEnchant": 2.5
+    }
+   ]
+  },
+  "enchants": {
+   "Main hand": {
+    "avg": 9.5,
+    "most": 10,
+    "mostShare": 65
+   },
+   "Off-hand": {
+    "avg": 8.1,
+    "most": 10,
+    "mostShare": 54
+   },
+   "Helmet": {
+    "avg": 4.5,
+    "most": 5,
+    "mostShare": 30
+   },
+   "Shoulders": {
+    "avg": 4.4,
+    "most": 0,
+    "mostShare": 30
+   },
+   "Chest": {
+    "avg": 5.3,
+    "most": 5,
+    "mostShare": 31
+   },
+   "Legs": {
+    "avg": 4.4,
+    "most": 5,
+    "mostShare": 30
+   },
+   "Gloves": {
+    "avg": 4.9,
+    "most": 5,
+    "mostShare": 32
+   },
+   "Boots": {
+    "avg": 4.5,
+    "most": 5,
+    "mostShare": 30
+   },
+   "Cape": {
+    "avg": 4.4,
+    "most": 0,
+    "mostShare": 31
+   },
+   "Necklace": {
+    "avg": 5.2,
+    "most": 5,
+    "mostShare": 34
+   },
+   "Earring": {
+    "avg": 4.4,
+    "most": 5,
+    "mostShare": 35
+   },
+   "Ring": {
+    "avg": 5.3,
+    "most": 5,
+    "mostShare": 35
+   },
+   "Bracelet": {
+    "avg": 7.2,
+    "most": 10,
+    "mostShare": 46
+   },
+   "Belt": {
+    "avg": 0.7,
+    "most": 0,
+    "mostShare": 81
+   },
+   "Amulet": {
+    "avg": 0.8,
+    "most": 0,
+    "mostShare": 81
+   },
+   "Rune": {
+    "avg": 2.5,
+    "most": 3,
+    "mostShare": 38
+   }
+  },
+  "manastones": [],
+  "arcana": {
+   "Arcana slot 1": [
+    {
+     "slug": "chalice-of-vigor-common",
+     "name": "Chalice of Vigor",
+     "icon": "/game/items/icon_arcana_card_grail_u_pveset2.webp",
+     "pickRate": 15
+    },
+    {
+     "slug": "chalice-of-magic-common",
+     "name": "Chalice of Magic",
+     "icon": "/game/items/icon_arcana_card_grail_u_defenceset2.webp",
+     "pickRate": 8
+    }
+   ],
+   "Arcana slot 2": [
+    {
+     "slug": "parchment-of-vigor-common",
+     "name": "Parchment of Vigor",
+     "icon": "/game/items/icon_arcana_card_parchment_u_pveset2.webp",
+     "pickRate": 12
+    },
+    {
+     "slug": "parchment-of-magic-common",
+     "name": "Parchment of Magic",
+     "icon": "/game/items/icon_arcana_card_parchment_u_defenceset2.webp",
+     "pickRate": 4
+    }
+   ],
+   "Arcana slot 3": [
+    {
+     "slug": "compass-of-vigor-common",
+     "name": "Compass of Vigor",
+     "icon": "/game/items/icon_arcana_card_compass_u_pveset2.webp",
+     "pickRate": 8
+    },
+    {
+     "slug": "compass-of-magic-common",
+     "name": "Compass of Magic",
+     "icon": "/game/items/icon_arcana_card_compass_u_defenceset2.webp",
+     "pickRate": 7.3
+    }
+   ],
+   "Arcana slot 4": [
+    {
+     "slug": "bell-of-magic-common",
+     "name": "Bell of Magic",
+     "icon": "/game/items/icon_arcana_card_bell_u_defenceset2.webp",
+     "pickRate": 8
+    },
+    {
+     "slug": "bell-of-vigor-common",
+     "name": "Bell of Vigor",
+     "icon": "/game/items/icon_arcana_card_bell_u_pveset2.webp",
+     "pickRate": 6
+    }
+   ],
+   "Arcana slot 5": [
+    {
+     "slug": "mirror-of-vigor-common",
+     "name": "Mirror of Vigor",
+     "icon": "/game/items/icon_arcana_card_mirror_u_pveset2.webp",
+     "pickRate": 7.3
+    },
+    {
+     "slug": "mirror-of-magic-common",
+     "name": "Mirror of Magic",
+     "icon": "/game/items/icon_arcana_card_mirror_u_defenceset2.webp",
+     "pickRate": 7.3
+    }
+   ]
+  },
+  "wings": [
+   {
+    "name": "Ultimate Daeva Wings",
+    "icon": "/game/wings/icon_wingb_001a.webp",
+    "pickRate": 45
+   },
+   {
+    "name": "Superior Daeva Wings",
+    "icon": "/game/wings/icon_wingb_007c.webp",
+    "pickRate": 2
+   },
+   {
+    "name": "Forest Spirit Wings",
+    "icon": "/game/wings/icon_winga_010.webp",
+    "pickRate": 2
+   },
+   {
+    "name": "Black Fragment Wings",
+    "icon": "/game/wings/icon_winga_012.webp",
+    "pickRate": 2
+   }
+  ],
+  "pets": [
+   {
+    "name": "Pagati",
+    "icon": "/game/pets/1204.webp",
+    "pickRate": 48
+   },
+   {
+    "name": "Black Dragon",
+    "icon": "/game/pets/1001.webp",
+    "pickRate": 8.7
+   },
+   {
+    "name": "Papis",
+    "icon": "/game/pets/1066.webp",
+    "pickRate": 6
+   },
+   {
+    "name": "Silver Blade Rotan",
+    "icon": "/game/pets/1192.webp",
+    "pickRate": 4
+   },
+   {
+    "name": "Fossa",
+    "icon": "/game/pets/1004.webp",
+    "pickRate": 2.7
+   }
+  ],
+  "primaryStats": [
+   {
+    "stat": "Might",
+    "avg": 21.9
+   },
+   {
+    "stat": "Dexterity",
+    "avg": 4.8
+   },
+   {
+    "stat": "Constitution",
+    "avg": 4.4
+   },
+   {
+    "stat": "Willpower",
+    "avg": 3.7
+   },
+   {
+    "stat": "Precision",
+    "avg": 1.4
+   },
+   {
+    "stat": "Intelligence",
+    "avg": 0.8
+   }
+  ],
+  "deityStats": [
+   {
+    "stat": "Time [Siel]",
+    "avg": 39.4
+   },
+   {
+    "stat": "Justice [Nezekan]",
+    "avg": 39.3
+   },
+   {
+    "stat": "Death [Triniel]",
+    "avg": 34.9
+   },
+   {
+    "stat": "Freedom [Vaizel]",
+    "avg": 24.6
+   },
+   {
+    "stat": "Space [Israphel]",
+    "avg": 17.8
+   },
+   {
+    "stat": "Life [Yustiel]",
+    "avg": 8.9
+   },
+   {
+    "stat": "Destiny [Marchutan]",
+    "avg": 8.5
+   },
+   {
+    "stat": "Illusion [Kaisinel]",
+    "avg": 5.4
+   },
+   {
+    "stat": "Destruction [Zikel]",
+    "avg": 5.4
+   },
+   {
+    "stat": "Wisdom [Lumiel]",
+    "avg": 5.2
+   }
+  ]
+ },
+ "pointsTable": [
+  {
+   "level": 4,
+   "skillPoints": 1,
+   "stigmaPoints": 0,
+   "stigmaSlots": 0
+  },
+  {
+   "level": 10,
+   "skillPoints": 16,
+   "stigmaPoints": 0,
+   "stigmaSlots": 0
+  },
+  {
+   "level": 20,
+   "skillPoints": 61,
+   "stigmaPoints": 0,
+   "stigmaSlots": 0
+  },
+  {
+   "level": 22,
+   "skillPoints": 71,
+   "stigmaPoints": 0,
+   "stigmaSlots": 1
+  },
+  {
+   "level": 27,
+   "skillPoints": 96,
+   "stigmaPoints": 5,
+   "stigmaSlots": 2
+  },
+  {
+   "level": 30,
+   "skillPoints": 111,
+   "stigmaPoints": 8,
+   "stigmaSlots": 2
+  },
+  {
+   "level": 32,
+   "skillPoints": 123,
+   "stigmaPoints": 10,
+   "stigmaSlots": 3
+  },
+  {
+   "level": 37,
+   "skillPoints": 153,
+   "stigmaPoints": 15,
+   "stigmaSlots": 4
+  },
+  {
+   "level": 40,
+   "skillPoints": 171,
+   "stigmaPoints": 19,
+   "stigmaSlots": 4
+  },
+  {
+   "level": 45,
+   "skillPoints": 203,
+   "stigmaPoints": 29,
+   "stigmaSlots": 4
+  }
+ ],
+ "source": "https://metabot.gg/en/aion-2/classes/chanter/build"
+}

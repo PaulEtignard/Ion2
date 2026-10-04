@@ -1,0 +1,132 @@
+// Base de données de la team AION 2 (serveur global).
+// Les données de jeu statiques (compétences, objets, donjons) vivent dans src/data/game/*.json ;
+// la base ne contient que ce qui appartient à la team : joueurs, builds, progression.
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum ClassId {
+  gladiator
+  templar
+  assassin
+  ranger
+  sorcerer
+  spiritmaster
+  cleric
+  chanter
+}
+
+enum Faction {
+  ELYOS
+  ASMODIAN
+}
+
+enum BuildMode {
+  PVE
+  PVP
+  HYBRID
+}
+
+model Player {
+  id        String   @id @default(cuid())
+  name      String   @unique
+  classId   ClassId
+  faction   Faction  @default(ELYOS)
+  server    String?
+  color     String   @default("#38bdf8")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  progress  PlayerProgress?
+  logs      ActivityLog[]
+  snapshots ProgressSnapshot[]
+}
+
+model PlayerProgress {
+  id           String   @id @default(cuid())
+  playerId     String   @unique
+  player       Player   @relation(fields: [playerId], references: [id], onDelete: Cascade)
+
+  level        Int      @default(1)
+  itemLevel    Int      @default(0) // item level total affiché en jeu
+  combatPower  Int      @default(0)
+  ascensionStep Int     @default(0) // 0..5 quêtes d'Ascension terminées
+
+  // Build suivi par le joueur
+  buildId      String?
+  build        Build?   @relation(fields: [buildId], references: [id], onDelete: SetNull)
+
+  // { nezekan: 40, zikel: 12, ... } points investis par plateau
+  daevanion    Json     @default("{}")
+  // { "deus-research-base": 2, "shattered-arkanis": 1 } meilleur palier franchi
+  transcendence Json    @default("{}")
+  // { layer: 1, clearedTier10: ["Gatekeeper Pinopi", ...] }
+  nightmare    Json     @default("{}")
+  // { MainHand: { name, itemLevel, enchant, grade }, ... }
+  gear         Json     @default("{}")
+  // { [skillId]: niveau actuel }
+  skillLevels  Json     @default("{}")
+  // { [stigmaId]: niveau actuel } (stigmas équipés)
+  stigmas      Json     @default("{}")
+  // { "abyssal-forge-ludra": true, ... } boss de fin déjà tués au moins une fois
+  clears       Json     @default("{}")
+  notes        String?
+
+  updatedAt    DateTime @updatedAt
+}
+
+model ProgressSnapshot {
+  id          String   @id @default(cuid())
+  playerId    String
+  player      Player   @relation(fields: [playerId], references: [id], onDelete: Cascade)
+  day         String   // YYYY-MM-DD, un instantané par jour
+  level       Int
+  itemLevel   Int
+  combatPower Int
+  createdAt   DateTime @default(now())
+
+  @@unique([playerId, day])
+}
+
+// Compteur d'une activité récurrente pour une période (jour ou semaine de reset)
+model ActivityLog {
+  id          String   @id @default(cuid())
+  playerId    String
+  player      Player   @relation(fields: [playerId], references: [id], onDelete: Cascade)
+  activityKey String
+  periodKey   String   // "D2026-10-04" ou "W2026-09-30" (date du mercredi de reset)
+  count       Int      @default(0)
+  updatedAt   DateTime @updatedAt
+
+  @@unique([playerId, activityKey, periodKey])
+  @@index([periodKey])
+}
+
+model Build {
+  id          String    @id @default(cuid())
+  slug        String    @unique
+  title       String
+  classId     ClassId
+  mode        BuildMode @default(PVE)
+  role        String?   // "DPS", "Tank", "Soin", "Support"...
+  summary     String
+  description String?   // markdown libre
+  // Contenu structuré du build (voir src/lib/build-schema.ts)
+  data        Json
+  tags        String[]  @default([])
+  author      String    @default("Claude")
+  patch       String?   // version du client global ciblée
+  featured    Boolean   @default(false)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  followers   PlayerProgress[]
+
+  @@index([classId])
+}

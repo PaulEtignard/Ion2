@@ -1,0 +1,1879 @@
+{
+ "id": "assassin",
+ "name": "Assassin",
+ "icon": "/game/classes/assassin.webp",
+ "skills": [
+  {
+   "id": 13010000,
+   "slug": "quick-slice",
+   "name": "Quick Slice",
+   "unlockLevel": 1,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Deals 61 (+70% Attack) damage to up to 4 enemies within 4m and restores 100 MP.",
+   "icon": "/game/skills/13010000.webp",
+   "type": "active",
+   "meta": {
+    "id": 13010000,
+    "name": "Quick Slice",
+    "pickRate": 99,
+    "avgLevel": 13.9
+   }
+  },
+  {
+   "id": 13100000,
+   "slug": "savage-roar",
+   "name": "Savage Roar",
+   "unlockLevel": 1,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Deals 68 (+83.5% Attack) damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s. 2 Stagger Gauge Damage",
+   "icon": "/game/skills/13100000.webp",
+   "type": "active",
+   "meta": {
+    "id": 13100000,
+    "name": "Savage Roar",
+    "pickRate": 97,
+    "avgLevel": 13
+   }
+  },
+  {
+   "id": 13070000,
+   "slug": "shadowstrike",
+   "name": "Shadowstrike",
+   "unlockLevel": 1,
+   "cooldown": "20s",
+   "maxLevel": 40,
+   "effect": "Moves behind a target within 20m and deals 52 (+100% Attack) damage, rotates, and inflicts Stun for 3s. 10 Stagger Gauge Damage",
+   "icon": "/game/skills/13070000.webp",
+   "type": "active",
+   "meta": {
+    "id": 13070000,
+    "name": "Shadowstrike",
+    "pickRate": 99,
+    "avgLevel": 11.6
+   }
+  },
+  {
+   "id": 13060000,
+   "slug": "ambush",
+   "name": "Ambush",
+   "unlockLevel": 3,
+   "cooldown": "10s",
+   "maxLevel": 40,
+   "effect": "Deals 126 (+138% Attack) damage to a target within 4m. Increases damage by 30% on landing as a Back attack. 7 Stagger Gauge Damage",
+   "icon": "/game/skills/13060000.webp",
+   "type": "active",
+   "meta": {
+    "id": 13060000,
+    "name": "Ambush",
+    "pickRate": 95,
+    "avgLevel": 11.6
+   }
+  },
+  {
+   "id": 13350000,
+   "slug": "heart-gore",
+   "name": "Heart Gore",
+   "unlockLevel": 4,
+   "cooldown": "5s",
+   "maxLevel": 40,
+   "effect": "Triggers on landing a Critical Hit, dealing 111 (+122% Attack) damage to up to 4 enemies within 4m and restores 100 MP. 5 Stagger Gauge Damage",
+   "icon": "/game/skills/13350000.webp",
+   "type": "active",
+   "meta": {
+    "id": 13350000,
+    "name": "Heart Gore",
+    "pickRate": 99,
+    "avgLevel": 13.9
+   }
+  },
+  {
+   "id": 13340000,
+   "slug": "storm-rampage",
+   "name": "Storm Rampage",
+   "unlockLevel": 5,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Deals 107 (+82.5% Attack) damage to a target afflicted with Stagger within 4m.",
+   "icon": "/game/skills/13340000.webp",
+   "type": "active",
+   "meta": {
+    "id": 13340000,
+    "name": "Storm Rampage",
+    "pickRate": 95,
+    "avgLevel": 11.3
+   }
+  },
+  {
+   "id": 13210000,
+   "slug": "whirlwind-slice",
+   "name": "Whirlwind Slice",
+   "unlockLevel": 7,
+   "cooldown": "10s",
+   "maxLevel": 40,
+   "effect": "Deals 300 (+177% Attack) damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion. 100% to inflict Stun on NPC targets. 7 Stagger Gauge Damage",
+   "icon": "/game/skills/13210000.webp",
+   "type": "active",
+   "meta": {
+    "id": 13210000,
+    "name": "Whirlwind Slice",
+    "pickRate": 90,
+    "avgLevel": 9.8
+   }
+  },
+  {
+   "id": 13050000,
+   "slug": "flash-slice",
+   "name": "Flash Slice",
+   "unlockLevel": 8,
+   "cooldown": "10s",
+   "maxLevel": 40,
+   "effect": "Moves to the opposite side of a target within 4m and deals 181 (+107% Attack) damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s. 100% chance to inflict Blind…",
+   "icon": "/game/skills/13050000.webp",
+   "type": "active",
+   "meta": {
+    "id": 13050000,
+    "name": "Flash Slice",
+    "pickRate": 99,
+    "avgLevel": 11.5
+   }
+  },
+  {
+   "id": 13360000,
+   "slug": "infiltrate",
+   "name": "Infiltrate",
+   "unlockLevel": 10,
+   "cooldown": "20s",
+   "maxLevel": 40,
+   "effect": "Moves behind a target within 10m and deals 239 (+105% Attack) damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying. 100% chance to inflict Blind…",
+   "icon": "/game/skills/13360000.webp",
+   "type": "active",
+   "meta": {
+    "id": 13360000,
+    "name": "Infiltrate",
+    "pickRate": 99,
+    "avgLevel": 11.3
+   }
+  },
+  {
+   "id": 13220000,
+   "slug": "shadow-fall",
+   "name": "Shadow Fall",
+   "unlockLevel": 12,
+   "cooldown": "20s",
+   "maxLevel": 40,
+   "effect": "Moves to a target afflicted with Stun within 10m, deals 465 (+204% Attack) damage, and inflicts Knockdown for 3s. Has a 5% chance to trigger on attacking a target with…",
+   "icon": "/game/skills/13220000.webp",
+   "type": "active",
+   "meta": {
+    "id": 13220000,
+    "name": "Shadow Fall",
+    "pickRate": 90,
+    "avgLevel": 8.1
+   }
+  },
+  {
+   "id": 13130000,
+   "slug": "insignia-explosion",
+   "name": "Insignia Explosion",
+   "unlockLevel": 14,
+   "cooldown": "10s",
+   "maxLevel": 40,
+   "effect": "Selects a target within 20m and deals 663 (+220% Attack) damage to up to 4 enemies within 4m, inflicting Stun for 3s. Stun chance is doubled on NPC targets. Damage and Stun…",
+   "icon": "/game/skills/13130000.webp",
+   "type": "active",
+   "meta": {
+    "id": 13130000,
+    "name": "Insignia Explosion",
+    "pickRate": 99,
+    "avgLevel": 13.6
+   }
+  },
+  {
+   "id": 13260000,
+   "slug": "defiance-assassin",
+   "name": "Defiance",
+   "unlockLevel": 16,
+   "cooldown": "60s",
+   "maxLevel": 40,
+   "effect": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s. Tenacity: Grants Status Effect Immunity Unaffected by cooldown reduction…",
+   "icon": "/game/skills/13260000.webp",
+   "type": "active",
+   "meta": null
+  },
+  {
+   "id": 13710000,
+   "slug": "heightened-sixth-sense",
+   "name": "Heightened Sixth Sense",
+   "unlockLevel": 1,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Evasion by 200 and HP by 150. Increases Max HP by an extra 6% and restores 85 (+100% Attack)-102 HP on Evasion. Cooldown: 3s",
+   "icon": "/game/skills/13710000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 13710000,
+    "name": "Heightened Sixth Sense",
+    "pickRate": 99,
+    "avgLevel": 11.2
+   }
+  },
+  {
+   "id": 13720000,
+   "slug": "exploit-weakness",
+   "name": "Exploit Weakness",
+   "unlockLevel": 6,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases caster's Critical Hit by 100. Has a 25% chance to increase Attack by 5.5% for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals…",
+   "icon": "/game/skills/13720000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 13720000,
+    "name": "Exploit Weakness",
+    "pickRate": 99,
+    "avgLevel": 13.5
+   }
+  },
+  {
+   "id": 13730000,
+   "slug": "apply-poison",
+   "name": "Apply Poison",
+   "unlockLevel": 9,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Has a 15% chance to reduce the target's Incoming Heal by 12% and inflict Poison for 10s on landing an attack. Poison deals 233 (+138% Attack) Damage over Time every 1s. Cooldown:…",
+   "icon": "/game/skills/13730000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 13730000,
+    "name": "Apply Poison",
+    "pickRate": 99,
+    "avgLevel": 8.3
+   }
+  },
+  {
+   "id": 13740000,
+   "slug": "rear-smite",
+   "name": "Rear Smite",
+   "unlockLevel": 11,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Back Attack Damage Boost by 3%, PvE Damage Boost by 3%, and PvP Damage Boost by 1.5%.",
+   "icon": "/game/skills/13740000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 13740000,
+    "name": "Rear Smite",
+    "pickRate": 99,
+    "avgLevel": 13.7
+   }
+  },
+  {
+   "id": 13750000,
+   "slug": "assault-stance",
+   "name": "Assault Stance",
+   "unlockLevel": 13,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Critical Damage Boost by 6%.",
+   "icon": "/game/skills/13750000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 13750000,
+    "name": "Assault Stance",
+    "pickRate": 99,
+    "avgLevel": 13.6
+   }
+  },
+  {
+   "id": 13760000,
+   "slug": "impact-hit-assassin",
+   "name": "Impact Hit",
+   "unlockLevel": 15,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Impact-type Chance by 11.2% and Double Chance by 0.3%.",
+   "icon": "/game/skills/13760000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 13760000,
+    "name": "Impact Hit",
+    "pickRate": 99,
+    "avgLevel": 12.7
+   }
+  },
+  {
+   "id": 13770000,
+   "slug": "ambush-stance",
+   "name": "Ambush Stance",
+   "unlockLevel": 17,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Grants Ambush Stance for 10s when using skills that rush or involve movement. Ambush Stance: Has a 50% chance to deal 152 (+39% Attack) damage on landing an attack. Cooldown: 1s",
+   "icon": "/game/skills/13770000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 13770000,
+    "name": "Ambush Stance",
+    "pickRate": 99,
+    "avgLevel": 11.9
+   }
+  },
+  {
+   "id": 13780000,
+   "slug": "defense-break",
+   "name": "Defense Break",
+   "unlockLevel": 21,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Reduces the target's Defense by 12% and Status Effect Resist by 11% for 10s when landing an attack on a target afflicted with Stagger or an Impact-type status. Cooldown: 20s",
+   "icon": "/game/skills/13780000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 13780000,
+    "name": "Defense Break",
+    "pickRate": 99,
+    "avgLevel": 11.1
+   }
+  },
+  {
+   "id": 13790000,
+   "slug": "revitalization-contract",
+   "name": "Revitalization Contract",
+   "unlockLevel": 23,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Status Effect Resist by 17%. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10…",
+   "icon": "/game/skills/13790000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 13790000,
+    "name": "Revitalization Contract",
+    "pickRate": 99,
+    "avgLevel": 8.9
+   }
+  },
+  {
+   "id": 13800000,
+   "slug": "determination",
+   "name": "Determination",
+   "unlockLevel": 25,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Deals 228 (+37.5% Attack) damage when landing an attack on a target with 30% HP or less. Cooldown: 1s",
+   "icon": "/game/skills/13800000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 13800000,
+    "name": "Determination",
+    "pickRate": 99,
+    "avgLevel": 12.4
+   }
+  }
+ ],
+ "stigmas": [
+  {
+   "id": 13370000,
+   "slug": "evasion-contract",
+   "name": "Evasion Contract",
+   "unlockLevel": 22,
+   "cooldown": "90s",
+   "maxLevel": 40,
+   "effect": "Removes Slow and Root from the caster and increases the caster's Evasion by 200 for 10s. Grants Slow and Root Immunity. Unaffected by cooldown increase effects.",
+   "icon": "/game/skills/13370000.webp",
+   "type": "stigma",
+   "meta": null
+  },
+  {
+   "id": 13180000,
+   "slug": "shadow-walk",
+   "name": "Shadow Walk",
+   "unlockLevel": 22,
+   "cooldown": "120s",
+   "maxLevel": 40,
+   "effect": "Grants Stealth for 20s. Cannot be used in combat and the effect is removed upon entering combat.",
+   "icon": "/game/skills/13180000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 13180000,
+    "name": "Shadow Walk",
+    "pickRate": 17,
+    "avgLevel": 1.9
+   }
+  },
+  {
+   "id": 13270000,
+   "slug": "savage-fang",
+   "name": "Savage Fang",
+   "unlockLevel": 22,
+   "cooldown": "60s",
+   "maxLevel": 40,
+   "effect": "Deals 1,074 (+200% Attack) damage to up to 4 enemies within 4m and engraves 5 Insignias for 10s. 50 Stagger Gauge Damage",
+   "icon": "/game/skills/13270000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 13270000,
+    "name": "Savage Fang",
+    "pickRate": 77,
+    "avgLevel": 3.6
+   }
+  },
+  {
+   "id": 13700000,
+   "slug": "assault-ambush",
+   "name": "Assault Ambush",
+   "unlockLevel": 22,
+   "cooldown": "120s",
+   "maxLevel": 40,
+   "effect": "Selects a target within 20m and deals 977 (+182% Attack) damage to up to 4 enemies within 4m, with a 30% chance to inflict Blind for 5s. 100% chance to inflict Blind on NPC…",
+   "icon": "/game/skills/13700000.webp",
+   "type": "stigma",
+   "meta": null
+  },
+  {
+   "id": 13390000,
+   "slug": "swift-contract",
+   "name": "Swift Contract",
+   "unlockLevel": 22,
+   "cooldown": "60s",
+   "maxLevel": 40,
+   "effect": "Increases the caster's Combat Speed by 20% for 10s.",
+   "icon": "/game/skills/13390000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 13390000,
+    "name": "Swift Contract",
+    "pickRate": 90,
+    "avgLevel": 6.8
+   }
+  },
+  {
+   "id": 13020000,
+   "slug": "throw-shadowblade",
+   "name": "Throw Shadowblade",
+   "unlockLevel": 22,
+   "cooldown": "30s",
+   "maxLevel": 40,
+   "effect": "Deals 778 (+145% Attack) damage to a target within 20m and inflicts Slow, which reduces Move Speed by 40% for 5s. 15 Stagger Gauge Damage",
+   "icon": "/game/skills/13020000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 13020000,
+    "name": "Throw Shadowblade",
+    "pickRate": 24,
+    "avgLevel": 5.7
+   }
+  },
+  {
+   "id": 13140000,
+   "slug": "shadowstep",
+   "name": "Shadowstep",
+   "unlockLevel": 22,
+   "cooldown": "45s",
+   "maxLevel": 40,
+   "effect": "Deals 832 (+155% Attack) damage to a target within 4m. The caster moves back and gains Stealth for 3s.",
+   "icon": "/game/skills/13140000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 13140000,
+    "name": "Shadowstep",
+    "pickRate": 2,
+    "avgLevel": 5
+   }
+  },
+  {
+   "id": 13250000,
+   "slug": "smoke-bomb",
+   "name": "Smoke Bomb",
+   "unlockLevel": 22,
+   "cooldown": "30s",
+   "maxLevel": 40,
+   "effect": "Deals 966 (+180% Attack) to a target within 10m and inflicts Blind for 5s. 15 Stagger Gauge Damage",
+   "icon": "/game/skills/13250000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 13250000,
+    "name": "Smoke Bomb",
+    "pickRate": 2,
+    "avgLevel": 1.7
+   }
+  },
+  {
+   "id": 13300000,
+   "slug": "triniels-dagger",
+   "name": "Triniel's Dagger",
+   "unlockLevel": 22,
+   "cooldown": "45s",
+   "maxLevel": 40,
+   "effect": "Deals 1,374 (+256% Attack) damage to a target within 4m and increases all of the target's skill cooldowns by 5% of their duration. Increases damage by 30% if attacking from…",
+   "icon": "/game/skills/13300000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 13300000,
+    "name": "Triniel's Dagger",
+    "pickRate": 71,
+    "avgLevel": 6.9
+   }
+  },
+  {
+   "id": 13230000,
+   "slug": "aerial-bind",
+   "name": "Aerial Bind",
+   "unlockLevel": 22,
+   "cooldown": "120s",
+   "maxLevel": 40,
+   "effect": "Deals 837 (+156% Attack) damage to a target within 4m, with a 50% chance to inflict Airborne for 3s. Has a 100% chance to inflict Airborne for 3s on targets with 5 stacks of…",
+   "icon": "/game/skills/13230000.webp",
+   "type": "stigma",
+   "meta": null
+  },
+  {
+   "id": 13080000,
+   "slug": "evasion-stance",
+   "name": "Evasion Stance",
+   "unlockLevel": 22,
+   "cooldown": "20s",
+   "maxLevel": 40,
+   "effect": "Grants guaranteed evasion of all damage for a brief duration. Restores 110 MP and Stamina once on Evasion.",
+   "icon": "/game/skills/13080000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 13080000,
+    "name": "Evasion Stance",
+    "pickRate": 39,
+    "avgLevel": 3.5
+   }
+  },
+  {
+   "id": 13310000,
+   "slug": "illusive-clone",
+   "name": "Illusive Clone",
+   "unlockLevel": 22,
+   "cooldown": "90s",
+   "maxLevel": 40,
+   "effect": "Removes [Heart Gore] cooldown and deals 20% of damage dealt as extra damage for 10s.",
+   "icon": "/game/skills/13310000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 13310000,
+    "name": "Illusive Clone",
+    "pickRate": 95,
+    "avgLevel": 9.4
+   }
+  },
+  {
+   "id": 13280000,
+   "slug": "spiral-slice",
+   "name": "Spiral Slice",
+   "unlockLevel": 22,
+   "cooldown": "90s",
+   "maxLevel": 40,
+   "effect": "Rushes to a target within 20m and deals 1,074 (+200% Attack) damage, removing 1 buff. Deals 386 (+72% Attack) extra damage based on the number of buffs removed. 20 Stagger Gauge…",
+   "icon": "/game/skills/13280000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 13280000,
+    "name": "Spiral Slice",
+    "pickRate": 6,
+    "avgLevel": 2.3
+   }
+  }
+ ],
+ "specializations": [
+  {
+   "id": 13010010,
+   "skillId": 13010000,
+   "skillName": "Quick Slice",
+   "requiredSkillLevel": 8,
+   "effect": "+20% MP restored",
+   "icon": "/game/specs/13010010.webp"
+  },
+  {
+   "id": 13010020,
+   "skillId": 13010000,
+   "skillName": "Quick Slice",
+   "requiredSkillLevel": 8,
+   "effect": "Absorbs 70, 70% HP",
+   "icon": "/game/specs/13010020.webp"
+  },
+  {
+   "id": 13010030,
+   "skillId": 13010000,
+   "skillName": "Quick Slice",
+   "requiredSkillLevel": 8,
+   "effect": "+50% Multi-Hit on hit",
+   "icon": "/game/specs/13010030.webp"
+  },
+  {
+   "id": 13100010,
+   "skillId": 13100000,
+   "skillName": "Savage Roar",
+   "requiredSkillLevel": 8,
+   "effect": "-20% MP consumed",
+   "icon": "/game/specs/13100010.webp"
+  },
+  {
+   "id": 13100020,
+   "skillId": 13100000,
+   "skillName": "Savage Roar",
+   "requiredSkillLevel": 8,
+   "effect": "+20% Skill Speed",
+   "icon": "/game/specs/13100020.webp"
+  },
+  {
+   "id": 13100030,
+   "skillId": 13100000,
+   "skillName": "Savage Roar",
+   "requiredSkillLevel": 8,
+   "effect": "Deals up to 12% more damage when less targets are hit",
+   "icon": "/game/specs/13100030.webp"
+  },
+  {
+   "id": 13070010,
+   "skillId": 13070000,
+   "skillName": "Shadowstrike",
+   "requiredSkillLevel": 8,
+   "effect": "+1s Stun duration",
+   "icon": "/game/specs/13070010.webp"
+  },
+  {
+   "id": 13070020,
+   "skillId": 13070000,
+   "skillName": "Shadowstrike",
+   "requiredSkillLevel": 8,
+   "effect": "+20% caster Critical Damage Boost for 10s on hit",
+   "icon": "/game/specs/13070020.webp"
+  },
+  {
+   "id": 13070030,
+   "skillId": 13070000,
+   "skillName": "Shadowstrike",
+   "requiredSkillLevel": 8,
+   "effect": "50% chance to inflict Seal for 5s on hit",
+   "icon": "/game/specs/13070030.webp"
+  },
+  {
+   "id": 13060010,
+   "skillId": 13060000,
+   "skillName": "Ambush",
+   "requiredSkillLevel": 8,
+   "effect": "Engraves 2 Insignias for 10s on landing as a Back attack",
+   "icon": "/game/specs/13060010.webp"
+  },
+  {
+   "id": 13060020,
+   "skillId": 13060000,
+   "skillName": "Ambush",
+   "requiredSkillLevel": 8,
+   "effect": "Absorbs 300, 300% HP",
+   "icon": "/game/specs/13060020.webp"
+  },
+  {
+   "id": 13060030,
+   "skillId": 13060000,
+   "skillName": "Ambush",
+   "requiredSkillLevel": 8,
+   "effect": "Breaks Protective Shields on hit",
+   "icon": "/game/specs/13060030.webp"
+  },
+  {
+   "id": 13350010,
+   "skillId": 13350000,
+   "skillName": "Heart Gore",
+   "requiredSkillLevel": 8,
+   "effect": "Absorbs 70, 70% HP",
+   "icon": "/game/specs/13350010.webp"
+  },
+  {
+   "id": 13350020,
+   "skillId": 13350000,
+   "skillName": "Heart Gore",
+   "requiredSkillLevel": 8,
+   "effect": "Engraves 1 Insignia for 10s on hit",
+   "icon": "/game/specs/13350020.webp"
+  },
+  {
+   "id": 13350030,
+   "skillId": 13350000,
+   "skillName": "Heart Gore",
+   "requiredSkillLevel": 8,
+   "effect": "Up to +20% Critical Hit when less targets hit",
+   "icon": "/game/specs/13350030.webp"
+  },
+  {
+   "id": 13340010,
+   "skillId": 13340000,
+   "skillName": "Storm Rampage",
+   "requiredSkillLevel": 8,
+   "effect": "Absorbs 500, 500% HP",
+   "icon": "/game/specs/13340010.webp"
+  },
+  {
+   "id": 13340020,
+   "skillId": 13340000,
+   "skillName": "Storm Rampage",
+   "requiredSkillLevel": 8,
+   "effect": "Restores 120 MP on hit",
+   "icon": "/game/specs/13340020.webp"
+  },
+  {
+   "id": 13340030,
+   "skillId": 13340000,
+   "skillName": "Storm Rampage",
+   "requiredSkillLevel": 8,
+   "effect": "Changes to mobile skill",
+   "icon": "/game/specs/13340030.webp"
+  },
+  {
+   "id": 13210010,
+   "skillId": 13210000,
+   "skillName": "Whirlwind Slice",
+   "requiredSkillLevel": 8,
+   "effect": "+50% Multi-Hit on hit",
+   "icon": "/game/specs/13210010.webp"
+  },
+  {
+   "id": 13210020,
+   "skillId": 13210000,
+   "skillName": "Whirlwind Slice",
+   "requiredSkillLevel": 8,
+   "effect": "Changes to AoE damage",
+   "icon": "/game/specs/13210020.webp"
+  },
+  {
+   "id": 13210030,
+   "skillId": 13210000,
+   "skillName": "Whirlwind Slice",
+   "requiredSkillLevel": 8,
+   "effect": "+16m range",
+   "icon": "/game/specs/13210030.webp"
+  },
+  {
+   "id": 13050010,
+   "skillId": 13050000,
+   "skillName": "Flash Slice",
+   "requiredSkillLevel": 8,
+   "effect": "+2s Blind duration",
+   "icon": "/game/specs/13050010.webp"
+  },
+  {
+   "id": 13050020,
+   "skillId": 13050000,
+   "skillName": "Flash Slice",
+   "requiredSkillLevel": 8,
+   "effect": "+6m Range",
+   "icon": "/game/specs/13050020.webp"
+  },
+  {
+   "id": 13050030,
+   "skillId": 13050000,
+   "skillName": "Flash Slice",
+   "requiredSkillLevel": 8,
+   "effect": "Up to +20% damage when more targets hit",
+   "icon": "/game/specs/13050030.webp"
+  },
+  {
+   "id": 13360010,
+   "skillId": 13360000,
+   "skillName": "Infiltrate",
+   "requiredSkillLevel": 8,
+   "effect": "Restores 300 Stamina on landing [Infiltrate]",
+   "icon": "/game/specs/13360010.webp"
+  },
+  {
+   "id": 13360020,
+   "skillId": 13360000,
+   "skillName": "Infiltrate",
+   "requiredSkillLevel": 8,
+   "effect": "+10m [Infiltrate] range",
+   "icon": "/game/specs/13360020.webp"
+  },
+  {
+   "id": 13360030,
+   "skillId": 13360000,
+   "skillName": "Infiltrate",
+   "requiredSkillLevel": 8,
+   "effect": "Breaks Protective Shields on landing [Infiltrate]",
+   "icon": "/game/specs/13360030.webp"
+  },
+  {
+   "id": 13220010,
+   "skillId": 13220000,
+   "skillName": "Shadow Fall",
+   "requiredSkillLevel": 8,
+   "effect": "Absorbs 1000, 1000% HP",
+   "icon": "/game/specs/13220010.webp"
+  },
+  {
+   "id": 13220020,
+   "skillId": 13220000,
+   "skillName": "Shadow Fall",
+   "requiredSkillLevel": 8,
+   "effect": "Engraves 3 Insignias for 10s on hit",
+   "icon": "/game/specs/13220020.webp"
+  },
+  {
+   "id": 13220030,
+   "skillId": 13220000,
+   "skillName": "Shadow Fall",
+   "requiredSkillLevel": 8,
+   "effect": "-5s cooldown",
+   "icon": "/game/specs/13220030.webp"
+  },
+  {
+   "id": 13130010,
+   "skillId": 13130000,
+   "skillName": "Insignia Explosion",
+   "requiredSkillLevel": 8,
+   "effect": "Adds rotate effect",
+   "icon": "/game/specs/13130010.webp"
+  },
+  {
+   "id": 13130020,
+   "skillId": 13130000,
+   "skillName": "Insignia Explosion",
+   "requiredSkillLevel": 8,
+   "effect": "+50% Multi-Hit on hit",
+   "icon": "/game/specs/13130020.webp"
+  },
+  {
+   "id": 13130030,
+   "skillId": 13130000,
+   "skillName": "Insignia Explosion",
+   "requiredSkillLevel": 8,
+   "effect": "Keep 2 stacks of Insignias after [Insignia Explosion]",
+   "icon": "/game/specs/13130030.webp"
+  },
+  {
+   "id": 13260010,
+   "skillId": 13260000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 8,
+   "effect": "Adds [Storm Slice] Chain Skill",
+   "icon": "/game/specs/13260010.webp"
+  },
+  {
+   "id": 13260020,
+   "skillId": 13260000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 8,
+   "effect": "Restores 1,000 Stamina on using [Defiance]",
+   "icon": "/game/specs/13260020.webp"
+  },
+  {
+   "id": 13260030,
+   "skillId": 13260000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 8,
+   "effect": "Restores 20% HP on using [Defiance]",
+   "icon": "/game/specs/13260030.webp"
+  },
+  {
+   "id": 13010040,
+   "skillId": 13010000,
+   "skillName": "Quick Slice",
+   "requiredSkillLevel": 12,
+   "effect": "-1s [Insignia Explosion] cooldown on hit",
+   "icon": "/game/specs/13010040.webp"
+  },
+  {
+   "id": 13100040,
+   "skillId": 13100000,
+   "skillName": "Savage Roar",
+   "requiredSkillLevel": 12,
+   "effect": "-1s [Shadowstrike] cooldown on hit",
+   "icon": "/game/specs/13100040.webp"
+  },
+  {
+   "id": 13070040,
+   "skillId": 13070000,
+   "skillName": "Shadowstrike",
+   "requiredSkillLevel": 12,
+   "effect": "50% chance to inflict Root for 5s on hit",
+   "icon": "/game/specs/13070040.webp"
+  },
+  {
+   "id": 13060040,
+   "skillId": 13060000,
+   "skillName": "Ambush",
+   "requiredSkillLevel": 12,
+   "effect": "50% chance to trigger [Whirlwind Slice] on hit",
+   "icon": "/game/specs/13060040.webp"
+  },
+  {
+   "id": 13350040,
+   "skillId": 13350000,
+   "skillName": "Heart Gore",
+   "requiredSkillLevel": 12,
+   "effect": "Multi-Hit on hit",
+   "icon": "/game/specs/13350040.webp"
+  },
+  {
+   "id": 13340040,
+   "skillId": 13340000,
+   "skillName": "Storm Rampage",
+   "requiredSkillLevel": 12,
+   "effect": "Multi-Hit on hit",
+   "icon": "/game/specs/13340040.webp"
+  },
+  {
+   "id": 13210040,
+   "skillId": 13210000,
+   "skillName": "Whirlwind Slice",
+   "requiredSkillLevel": 12,
+   "effect": "+20% Stun Chance",
+   "icon": "/game/specs/13210040.webp"
+  },
+  {
+   "id": 13050040,
+   "skillId": 13050000,
+   "skillName": "Flash Slice",
+   "requiredSkillLevel": 12,
+   "effect": "+1 consecutive use",
+   "icon": "/game/specs/13050040.webp"
+  },
+  {
+   "id": 13360040,
+   "skillId": 13360000,
+   "skillName": "Infiltrate",
+   "requiredSkillLevel": 12,
+   "effect": "Adds [Dark Strike] Chain Skill",
+   "icon": "/game/specs/13360040.webp"
+  },
+  {
+   "id": 13220040,
+   "skillId": 13220000,
+   "skillName": "Shadow Fall",
+   "requiredSkillLevel": 12,
+   "effect": "+1s Knockdown duration",
+   "icon": "/game/specs/13220040.webp"
+  },
+  {
+   "id": 13130040,
+   "skillId": 13130000,
+   "skillName": "Insignia Explosion",
+   "requiredSkillLevel": 12,
+   "effect": "+1s Stun duration",
+   "icon": "/game/specs/13130040.webp"
+  },
+  {
+   "id": 13260040,
+   "skillId": 13260000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 12,
+   "effect": "+2s Tenacity duration",
+   "icon": "/game/specs/13260040.webp"
+  },
+  {
+   "id": 13010050,
+   "skillId": 13010000,
+   "skillName": "Quick Slice",
+   "requiredSkillLevel": 16,
+   "effect": "Ignores Block and Evasion and lands as a Critical Hit",
+   "icon": "/game/specs/13010050.webp"
+  },
+  {
+   "id": 13100050,
+   "skillId": 13100000,
+   "skillName": "Savage Roar",
+   "requiredSkillLevel": 16,
+   "effect": "Pulls nearby targets on using [Savage Smash]",
+   "icon": "/game/specs/13100050.webp"
+  },
+  {
+   "id": 13070050,
+   "skillId": 13070000,
+   "skillName": "Shadowstrike",
+   "requiredSkillLevel": 16,
+   "effect": "Changes to AoE Skill",
+   "icon": "/game/specs/13070050.webp"
+  },
+  {
+   "id": 13060050,
+   "skillId": 13060000,
+   "skillName": "Ambush",
+   "requiredSkillLevel": 16,
+   "effect": "+2 consecutive uses",
+   "icon": "/game/specs/13060050.webp"
+  },
+  {
+   "id": 13350050,
+   "skillId": 13350000,
+   "skillName": "Heart Gore",
+   "requiredSkillLevel": 16,
+   "effect": "Resets [Heart Gore] cooldown on landing a Critical Hit",
+   "icon": "/game/specs/13350050.webp"
+  },
+  {
+   "id": 13340050,
+   "skillId": 13340000,
+   "skillName": "Storm Rampage",
+   "requiredSkillLevel": 16,
+   "effect": "-1s all skill cooldowns on hit",
+   "icon": "/game/specs/13340050.webp"
+  },
+  {
+   "id": 13210050,
+   "skillId": 13210000,
+   "skillName": "Whirlwind Slice",
+   "requiredSkillLevel": 16,
+   "effect": "25% chance to reset [Whirlwind Slice] cooldown on Evasion",
+   "icon": "/game/specs/13210050.webp"
+  },
+  {
+   "id": 13050050,
+   "skillId": 13050000,
+   "skillName": "Flash Slice",
+   "requiredSkillLevel": 16,
+   "effect": "50% chance to rotate and inflict Stun for 3s on hitting a target afflicted with Blind",
+   "icon": "/game/specs/13050050.webp"
+  },
+  {
+   "id": 13360050,
+   "skillId": 13360000,
+   "skillName": "Infiltrate",
+   "requiredSkillLevel": 16,
+   "effect": "+20% [Infiltrate] Blind Chance",
+   "icon": "/game/specs/13360050.webp"
+  },
+  {
+   "id": 13220050,
+   "skillId": 13220000,
+   "skillName": "Shadow Fall",
+   "requiredSkillLevel": 16,
+   "effect": "Can be used on targets afflicted with Blind",
+   "icon": "/game/specs/13220050.webp"
+  },
+  {
+   "id": 13130050,
+   "skillId": 13130000,
+   "skillName": "Insignia Explosion",
+   "requiredSkillLevel": 16,
+   "effect": "-3s cooldown",
+   "icon": "/game/specs/13130050.webp"
+  },
+  {
+   "id": 13260050,
+   "skillId": 13260000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 16,
+   "effect": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration",
+   "icon": "/game/specs/13260050.webp"
+  }
+ ],
+ "meta": {
+  "topPlayersTracked": 1560,
+  "medianCombatPower": 56040,
+  "top10CombatPower": 70275,
+  "avgItemLevel": 1154,
+  "daevanion": {
+   "boards": [
+    {
+     "board": "Nezekan",
+     "commonNodes": 63,
+     "totalNodes": 88
+    },
+    {
+     "board": "Zikel",
+     "commonNodes": 58,
+     "totalNodes": 88
+    },
+    {
+     "board": "Vaizel",
+     "commonNodes": 55,
+     "totalNodes": 88
+    },
+    {
+     "board": "Triniel",
+     "commonNodes": 41,
+     "totalNodes": 116
+    },
+    {
+     "board": "Azphel",
+     "commonNodes": 3,
+     "totalNodes": 152
+    }
+   ],
+   "topSkillNodes": [
+    {
+     "skill": "Heart Gore",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 98
+    },
+    {
+     "skill": "Insignia Explosion",
+     "bonus": 1,
+     "board": "Zikel",
+     "pickRate": 98
+    },
+    {
+     "skill": "Heart Gore",
+     "bonus": 1,
+     "board": "Zikel",
+     "pickRate": 97
+    },
+    {
+     "skill": "Quick Slice",
+     "bonus": 1,
+     "board": "Zikel",
+     "pickRate": 95
+    },
+    {
+     "skill": "Quick Slice",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 94
+    },
+    {
+     "skill": "Heart Gore",
+     "bonus": 1,
+     "board": "Triniel",
+     "pickRate": 93
+    },
+    {
+     "skill": "Heart Gore",
+     "bonus": 1,
+     "board": "Vaizel",
+     "pickRate": 93
+    },
+    {
+     "skill": "Insignia Explosion",
+     "bonus": 1,
+     "board": "Vaizel",
+     "pickRate": 93
+    }
+   ]
+  },
+  "gear": {
+   "Main hand": [
+    {
+     "slug": "spiritforged-dagger",
+     "name": "Spiritforged Dagger",
+     "icon": "/game/items/icon_wp_da_0078_t05.webp",
+     "pickRate": 44,
+     "avgEnchant": 9.7
+    },
+    {
+     "slug": "spiritforged-dagger",
+     "name": "Spiritforged Dagger",
+     "icon": "/game/items/icon_wp_da_0078_t05.webp",
+     "pickRate": 32,
+     "avgEnchant": 9.6
+    },
+    {
+     "slug": "aulamus-dagger",
+     "name": "Aulamus Dagger",
+     "icon": "/game/items/icon_wp_da_0028_t05.webp",
+     "pickRate": 13,
+     "avgEnchant": 10.6
+    }
+   ],
+   "Off-hand": [
+    {
+     "slug": "spiritforged-guard",
+     "name": "Spiritforged Guard",
+     "icon": "/game/items/icon_weapon_guarder_l_001.webp",
+     "pickRate": 51,
+     "avgEnchant": 8.8
+    },
+    {
+     "slug": "spiritforged-guard",
+     "name": "Spiritforged Guard",
+     "icon": "/game/items/icon_weapon_guarder_l_001.webp",
+     "pickRate": 29,
+     "avgEnchant": 9.2
+    },
+    {
+     "slug": "bakarma-guard",
+     "name": "Bakarma Guard",
+     "icon": "/game/items/icon_weapon_guarder_l_011.webp",
+     "pickRate": 9.3,
+     "avgEnchant": 9.7
+    }
+   ],
+   "Helmet": [
+    {
+     "slug": "vakron-helm",
+     "name": "Vakron Helm",
+     "icon": "/game/items/icon_gm_0028_t05_helmet.webp",
+     "pickRate": 26,
+     "avgEnchant": 7.1
+    },
+    {
+     "slug": "divine-canyon-helm",
+     "name": "Divine Canyon Helm",
+     "icon": "/game/items/icon_gm_0072_t05_helmet.webp",
+     "pickRate": 19,
+     "avgEnchant": 1.7
+    },
+    {
+     "slug": "unyielding-helm",
+     "name": "Unyielding Helm",
+     "icon": "/game/items/icon_gm_0049_t05_helmet.webp",
+     "pickRate": 19,
+     "avgEnchant": 2.4
+    }
+   ],
+   "Shoulders": [
+    {
+     "slug": "vakron-pauldrons",
+     "name": "Vakron Pauldrons",
+     "icon": "/game/items/icon_gm_0028_t05_shoulder.webp",
+     "pickRate": 27,
+     "avgEnchant": 7.2
+    },
+    {
+     "slug": "divine-canyon-pauldrons",
+     "name": "Divine Canyon Pauldrons",
+     "icon": "/game/items/icon_gm_0072_t05_shoulder.webp",
+     "pickRate": 20,
+     "avgEnchant": 2
+    },
+    {
+     "slug": "bakarma-pauldrons",
+     "name": "Bakarma Pauldrons",
+     "icon": "/game/items/icon_gm_0059_t05_shoulder.webp",
+     "pickRate": 18,
+     "avgEnchant": 5.5
+    }
+   ],
+   "Chest": [
+    {
+     "slug": "bakarma-breastplate",
+     "name": "Bakarma Breastplate",
+     "icon": "/game/items/icon_gm_0059_t05_torso.webp",
+     "pickRate": 37,
+     "avgEnchant": 6.3
+    },
+    {
+     "slug": "vakron-breastplate",
+     "name": "Vakron Breastplate",
+     "icon": "/game/items/icon_gm_0028_t05_torso.webp",
+     "pickRate": 27,
+     "avgEnchant": 7.2
+    },
+    {
+     "slug": "unyielding-breastplate",
+     "name": "Unyielding Breastplate",
+     "icon": "/game/items/icon_gm_0049_t05_torso.webp",
+     "pickRate": 10,
+     "avgEnchant": 1.7
+    }
+   ],
+   "Legs": [
+    {
+     "slug": "vakron-greaves",
+     "name": "Vakron Greaves",
+     "icon": "/game/items/icon_gm_0028_t05_pants.webp",
+     "pickRate": 28,
+     "avgEnchant": 6.6
+    },
+    {
+     "slug": "bakarma-greaves",
+     "name": "Bakarma Greaves",
+     "icon": "/game/items/icon_gm_0059_t05_pants.webp",
+     "pickRate": 20,
+     "avgEnchant": 5.9
+    },
+    {
+     "slug": "unyielding-greaves",
+     "name": "Unyielding Greaves",
+     "icon": "/game/items/icon_gm_0049_t05_pants.webp",
+     "pickRate": 16,
+     "avgEnchant": 1.8
+    }
+   ],
+   "Gloves": [
+    {
+     "slug": "vakron-gloves",
+     "name": "Vakron Gloves",
+     "icon": "/game/items/icon_gm_0028_t05_gloves.webp",
+     "pickRate": 29,
+     "avgEnchant": 6.9
+    },
+    {
+     "slug": "bakarma-gloves",
+     "name": "Bakarma Gloves",
+     "icon": "/game/items/icon_gm_0059_t05_gloves.webp",
+     "pickRate": 20,
+     "avgEnchant": 5.7
+    },
+    {
+     "slug": "divine-canyon-gloves",
+     "name": "Divine Canyon Gloves",
+     "icon": "/game/items/icon_gm_0072_t05_gloves.webp",
+     "pickRate": 13,
+     "avgEnchant": 2.6
+    }
+   ],
+   "Boots": [
+    {
+     "slug": "vakron-boots",
+     "name": "Vakron Boots",
+     "icon": "/game/items/icon_gm_0028_t05_boots.webp",
+     "pickRate": 21,
+     "avgEnchant": 7.5
+    },
+    {
+     "slug": "unyielding-boots",
+     "name": "Unyielding Boots",
+     "icon": "/game/items/icon_gm_0049_t05_boots.webp",
+     "pickRate": 20,
+     "avgEnchant": 2.1
+    },
+    {
+     "slug": "divine-canyon-boots",
+     "name": "Divine Canyon Boots",
+     "icon": "/game/items/icon_gm_0072_t05_boots.webp",
+     "pickRate": 16,
+     "avgEnchant": 2.1
+    }
+   ],
+   "Cape": [
+    {
+     "slug": "vakron-cloak",
+     "name": "Vakron Cloak",
+     "icon": "/game/items/icon_gm_0028_t05_cape.webp",
+     "pickRate": 26,
+     "avgEnchant": 7.2
+    },
+    {
+     "slug": "unyielding-cloak",
+     "name": "Unyielding Cloak",
+     "icon": "/game/items/icon_gm_0049_t05_cape.webp",
+     "pickRate": 18,
+     "avgEnchant": 2.6
+    },
+    {
+     "slug": "divine-canyon-cloak",
+     "name": "Divine Canyon Cloak",
+     "icon": "/game/items/icon_gm_0072_t05_cape.webp",
+     "pickRate": 16,
+     "avgEnchant": 2.2
+    }
+   ],
+   "Necklace": [
+    {
+     "slug": "liberator-necklace",
+     "name": "Liberator Necklace",
+     "icon": "/game/items/icon_acc_nl_0071.webp",
+     "pickRate": 29,
+     "avgEnchant": 4.2
+    },
+    {
+     "slug": "aulamus-necklace",
+     "name": "Aulamus Necklace",
+     "icon": "/game/items/icon_acc_nl_0072.webp",
+     "pickRate": 22,
+     "avgEnchant": 8.5
+    },
+    {
+     "slug": "pilgrim-necklace",
+     "name": "Pilgrim Necklace",
+     "icon": "/game/items/icon_acc_nl_0071.webp",
+     "pickRate": 19,
+     "avgEnchant": 4.2
+    }
+   ],
+   "Earring": [
+    {
+     "slug": "liberator-earrings",
+     "name": "Liberator Earrings",
+     "icon": "/game/items/icon_acc_er_0071.webp",
+     "pickRate": 52,
+     "avgEnchant": 4.1
+    },
+    {
+     "slug": "pilgrim-earrings",
+     "name": "Pilgrim Earrings",
+     "icon": "/game/items/icon_acc_er_0071.webp",
+     "pickRate": 31,
+     "avgEnchant": 4.3
+    },
+    {
+     "slug": "aulamus-earrings",
+     "name": "Aulamus Earrings",
+     "icon": "/game/items/icon_acc_er_0072.webp",
+     "pickRate": 25,
+     "avgEnchant": 8.4
+    }
+   ],
+   "Ring": [
+    {
+     "slug": "liberator-ring",
+     "name": "Liberator Ring",
+     "icon": "/game/items/icon_acc_ring_0071.webp",
+     "pickRate": 40,
+     "avgEnchant": 4.2
+    },
+    {
+     "slug": "aulamus-ring",
+     "name": "Aulamus Ring",
+     "icon": "/game/items/icon_acc_ring_0072.webp",
+     "pickRate": 29,
+     "avgEnchant": 8.8
+    },
+    {
+     "slug": "berk-ring",
+     "name": "Berk Ring",
+     "icon": "/game/items/icon_acc_ring_0066.webp",
+     "pickRate": 23,
+     "avgEnchant": 6.8
+    }
+   ],
+   "Bracelet": [
+    {
+     "slug": "ascension-bracelet",
+     "name": "Ascension Bracelet",
+     "icon": "/game/items/icon_acc_bracelet_r_027.webp",
+     "pickRate": 61,
+     "avgEnchant": 9
+    },
+    {
+     "slug": "liberator-bracelet",
+     "name": "Liberator Bracelet",
+     "icon": "/game/items/icon_acc_bracelet_0071.webp",
+     "pickRate": 61,
+     "avgEnchant": 6.1
+    },
+    {
+     "slug": "ascension-bracelet",
+     "name": "Ascension Bracelet",
+     "icon": "/game/items/icon_acc_bracelet_r_027.webp",
+     "pickRate": 39,
+     "avgEnchant": 9.1
+    }
+   ],
+   "Belt": [
+    {
+     "slug": "noble-belt",
+     "name": "Noble Belt",
+     "icon": "/game/items/icon_acc_belt_c_022.webp",
+     "pickRate": 81,
+     "avgEnchant": 0.4
+    },
+    {
+     "slug": "noble-belt-legend",
+     "name": "Noble Belt",
+     "icon": "/game/items/icon_acc_belt_c_021.webp",
+     "pickRate": 18,
+     "avgEnchant": 3.9
+    }
+   ],
+   "Amulet": [
+    {
+     "slug": "revelation-amulet",
+     "name": "Revelation Amulet",
+     "icon": "/game/items/icon_item_craft_conversion_crystal_l_lv5_01.webp",
+     "pickRate": 97,
+     "avgEnchant": 0.8
+    },
+    {
+     "slug": "revelation-amulet-legend",
+     "name": "Revelation Amulet",
+     "icon": "/game/items/icon_item_craft_conversion_crystal_l_lv4_01.webp",
+     "pickRate": 2,
+     "avgEnchant": 5.3
+    }
+   ],
+   "Rune": [
+    {
+     "slug": "clash-rune",
+     "name": "Clash Rune",
+     "icon": "/game/items/icon_equip_acc_rune_r_002.webp",
+     "pickRate": 99,
+     "avgEnchant": 2.7
+    }
+   ]
+  },
+  "enchants": {
+   "Main hand": {
+    "avg": 9.9,
+    "most": 10,
+    "mostShare": 66
+   },
+   "Off-hand": {
+    "avg": 9.2,
+    "most": 10,
+    "mostShare": 69
+   },
+   "Helmet": {
+    "avg": 4.3,
+    "most": 5,
+    "mostShare": 35
+   },
+   "Shoulders": {
+    "avg": 4.6,
+    "most": 5,
+    "mostShare": 34
+   },
+   "Chest": {
+    "avg": 5.3,
+    "most": 5,
+    "mostShare": 34
+   },
+   "Legs": {
+    "avg": 4.6,
+    "most": 5,
+    "mostShare": 36
+   },
+   "Gloves": {
+    "avg": 4.8,
+    "most": 5,
+    "mostShare": 28
+   },
+   "Boots": {
+    "avg": 4.2,
+    "most": 5,
+    "mostShare": 31
+   },
+   "Cape": {
+    "avg": 4.5,
+    "most": 5,
+    "mostShare": 37
+   },
+   "Necklace": {
+    "avg": 5.9,
+    "most": 5,
+    "mostShare": 39
+   },
+   "Earring": {
+    "avg": 5.2,
+    "most": 5,
+    "mostShare": 39
+   },
+   "Ring": {
+    "avg": 5.5,
+    "most": 5,
+    "mostShare": 38
+   },
+   "Bracelet": {
+    "avg": 7.5,
+    "most": 10,
+    "mostShare": 50
+   },
+   "Belt": {
+    "avg": 1,
+    "most": 0,
+    "mostShare": 74
+   },
+   "Amulet": {
+    "avg": 0.9,
+    "most": 0,
+    "mostShare": 71
+   },
+   "Rune": {
+    "avg": 2.7,
+    "most": 3,
+    "mostShare": 46
+   }
+  },
+  "manastones": [
+   {
+    "stat": "Accuracy Bonus",
+    "pickRate": 100,
+    "avgValue": "6.88"
+   },
+   {
+    "stat": "Block",
+    "pickRate": 100,
+    "avgValue": "9.99"
+   },
+   {
+    "stat": "Critical Hit Resist",
+    "pickRate": 100,
+    "avgValue": "7.04"
+   },
+   {
+    "stat": "HP",
+    "pickRate": 100,
+    "avgValue": "57.83"
+   },
+   {
+    "stat": "MP",
+    "pickRate": 100,
+    "avgValue": "28.18"
+   },
+   {
+    "stat": "Attack",
+    "pickRate": 100,
+    "avgValue": "2.92"
+   },
+   {
+    "stat": "Critical Hit",
+    "pickRate": 98,
+    "avgValue": "7.06"
+   },
+   {
+    "stat": "Evasion Bonus",
+    "pickRate": 98,
+    "avgValue": "7.1"
+   },
+   {
+    "stat": "Defense",
+    "pickRate": 96,
+    "avgValue": "28.94"
+   },
+   {
+    "stat": "Critical Damage Boost",
+    "pickRate": 10,
+    "avgValue": "0.5%"
+   }
+  ],
+  "arcana": {
+   "Arcana slot 1": [
+    {
+     "slug": "chalice-of-vigor-common",
+     "name": "Chalice of Vigor",
+     "icon": "/game/items/icon_arcana_card_grail_u_pveset2.webp",
+     "pickRate": 13
+    },
+    {
+     "slug": "chalice-of-magic-common",
+     "name": "Chalice of Magic",
+     "icon": "/game/items/icon_arcana_card_grail_u_defenceset2.webp",
+     "pickRate": 6.7
+    }
+   ],
+   "Arcana slot 2": [
+    {
+     "slug": "parchment-of-vigor-common",
+     "name": "Parchment of Vigor",
+     "icon": "/game/items/icon_arcana_card_parchment_u_pveset2.webp",
+     "pickRate": 6.7
+    },
+    {
+     "slug": "parchment-of-magic-common",
+     "name": "Parchment of Magic",
+     "icon": "/game/items/icon_arcana_card_parchment_u_defenceset2.webp",
+     "pickRate": 5.3
+    }
+   ],
+   "Arcana slot 3": [
+    {
+     "slug": "compass-of-vigor-common",
+     "name": "Compass of Vigor",
+     "icon": "/game/items/icon_arcana_card_compass_u_pveset2.webp",
+     "pickRate": 8
+    },
+    {
+     "slug": "compass-of-magic-common",
+     "name": "Compass of Magic",
+     "icon": "/game/items/icon_arcana_card_compass_u_defenceset2.webp",
+     "pickRate": 6
+    }
+   ],
+   "Arcana slot 4": [
+    {
+     "slug": "bell-of-magic-common",
+     "name": "Bell of Magic",
+     "icon": "/game/items/icon_arcana_card_bell_u_defenceset2.webp",
+     "pickRate": 6.7
+    },
+    {
+     "slug": "bell-of-vigor-common",
+     "name": "Bell of Vigor",
+     "icon": "/game/items/icon_arcana_card_bell_u_pveset2.webp",
+     "pickRate": 5.3
+    }
+   ],
+   "Arcana slot 5": [
+    {
+     "slug": "mirror-of-vigor-common",
+     "name": "Mirror of Vigor",
+     "icon": "/game/items/icon_arcana_card_mirror_u_pveset2.webp",
+     "pickRate": 6.7
+    },
+    {
+     "slug": "mirror-of-magic-rare",
+     "name": "Mirror of Magic",
+     "icon": "/game/items/icon_arcana_card_mirror_u_defenceset2.webp",
+     "pickRate": 4
+    }
+   ]
+  },
+  "wings": [
+   {
+    "name": "Ultimate Daeva Wings",
+    "icon": "/game/wings/icon_wingb_001a.webp",
+    "pickRate": 53
+   },
+   {
+    "name": "Forest Spirit Wings",
+    "icon": "/game/wings/icon_winga_010.webp",
+    "pickRate": 2.7
+   },
+   {
+    "name": "Lesser Daeva Wings",
+    "icon": "/game/wings/icon_wingb_006.webp",
+    "pickRate": 1.3
+   },
+   {
+    "name": "Superior Daeva Wings",
+    "icon": "/game/wings/icon_wingb_007c.webp",
+    "pickRate": 1.3
+   }
+  ],
+  "pets": [
+   {
+    "name": "Pagati",
+    "icon": "/game/pets/1204.webp",
+    "pickRate": 41
+   },
+   {
+    "name": "Black Dragon",
+    "icon": "/game/pets/1001.webp",
+    "pickRate": 13
+   },
+   {
+    "name": "Fossa",
+    "icon": "/game/pets/1004.webp",
+    "pickRate": 4
+   },
+   {
+    "name": "Silver Blade Rotan",
+    "icon": "/game/pets/1192.webp",
+    "pickRate": 4
+   },
+   {
+    "name": "Papis",
+    "icon": "/game/pets/1066.webp",
+    "pickRate": 3.3
+   }
+  ],
+  "primaryStats": [
+   {
+    "stat": "Might",
+    "avg": 21.4
+   },
+   {
+    "stat": "Dexterity",
+    "avg": 5
+   },
+   {
+    "stat": "Constitution",
+    "avg": 4.8
+   },
+   {
+    "stat": "Willpower",
+    "avg": 4.5
+   },
+   {
+    "stat": "Precision",
+    "avg": 1.3
+   },
+   {
+    "stat": "Intelligence",
+    "avg": 0.7
+   }
+  ],
+  "deityStats": [
+   {
+    "stat": "Time [Siel]",
+    "avg": 38.6
+   },
+   {
+    "stat": "Justice [Nezekan]",
+    "avg": 38.4
+   },
+   {
+    "stat": "Death [Triniel]",
+    "avg": 33.9
+   },
+   {
+    "stat": "Freedom [Vaizel]",
+    "avg": 24
+   },
+   {
+    "stat": "Space [Israphel]",
+    "avg": 16.8
+   },
+   {
+    "stat": "Life [Yustiel]",
+    "avg": 8.7
+   },
+   {
+    "stat": "Destiny [Marchutan]",
+    "avg": 8.5
+   },
+   {
+    "stat": "Illusion [Kaisinel]",
+    "avg": 5.3
+   },
+   {
+    "stat": "Destruction [Zikel]",
+    "avg": 5.2
+   },
+   {
+    "stat": "Wisdom [Lumiel]",
+    "avg": 5.2
+   }
+  ]
+ },
+ "pointsTable": [
+  {
+   "level": 4,
+   "skillPoints": 1,
+   "stigmaPoints": 0,
+   "stigmaSlots": 0
+  },
+  {
+   "level": 10,
+   "skillPoints": 16,
+   "stigmaPoints": 0,
+   "stigmaSlots": 0
+  },
+  {
+   "level": 20,
+   "skillPoints": 61,
+   "stigmaPoints": 0,
+   "stigmaSlots": 0
+  },
+  {
+   "level": 22,
+   "skillPoints": 71,
+   "stigmaPoints": 0,
+   "stigmaSlots": 1
+  },
+  {
+   "level": 27,
+   "skillPoints": 96,
+   "stigmaPoints": 5,
+   "stigmaSlots": 2
+  },
+  {
+   "level": 30,
+   "skillPoints": 111,
+   "stigmaPoints": 8,
+   "stigmaSlots": 2
+  },
+  {
+   "level": 32,
+   "skillPoints": 123,
+   "stigmaPoints": 10,
+   "stigmaSlots": 3
+  },
+  {
+   "level": 37,
+   "skillPoints": 153,
+   "stigmaPoints": 15,
+   "stigmaSlots": 4
+  },
+  {
+   "level": 40,
+   "skillPoints": 171,
+   "stigmaPoints": 19,
+   "stigmaSlots": 4
+  },
+  {
+   "level": 45,
+   "skillPoints": 203,
+   "stigmaPoints": 29,
+   "stigmaSlots": 4
+  }
+ ],
+ "source": "https://metabot.gg/en/aion-2/classes/assassin/build"
+}

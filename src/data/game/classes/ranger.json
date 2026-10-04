@@ -1,0 +1,1886 @@
+{
+ "id": "ranger",
+ "name": "Ranger",
+ "icon": "/game/classes/ranger.webp",
+ "skills": [
+  {
+   "id": 14020000,
+   "slug": "snipe",
+   "name": "Snipe",
+   "unlockLevel": 1,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Deals 47 (+39.6% Attack) Wind damage to a target within 20m and restores 120 MP.",
+   "icon": "/game/skills/14020000.webp",
+   "type": "active",
+   "meta": {
+    "id": 14020000,
+    "name": "Snipe",
+    "pickRate": 99,
+    "avgLevel": 13.7
+   }
+  },
+  {
+   "id": 14340000,
+   "slug": "tempest-shot",
+   "name": "Tempest Shot",
+   "unlockLevel": 1,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Selects a target within 20m and deals 56 (+56.7% Attack) Wind damage to up to 4 enemies within 4m of the target. 1 Stagger Gauge Damage",
+   "icon": "/game/skills/14340000.webp",
+   "type": "active",
+   "meta": {
+    "id": 14340000,
+    "name": "Tempest Shot",
+    "pickRate": 99,
+    "avgLevel": 13.7
+   }
+  },
+  {
+   "id": 14130000,
+   "slug": "snare-shot",
+   "name": "Snare Shot",
+   "unlockLevel": 1,
+   "cooldown": "15s",
+   "maxLevel": 40,
+   "effect": "Selects a target within 20m and deals 60 (+109% Attack) Earth damage to up to 4 enemies within 4m of the target. Inflicts Slow, reducing Move Speed by 40% for 5s. 10 Stagger…",
+   "icon": "/game/skills/14130000.webp",
+   "type": "active",
+   "meta": {
+    "id": 14130000,
+    "name": "Snare Shot",
+    "pickRate": 96,
+    "avgLevel": 11.8
+   }
+  },
+  {
+   "id": 14090000,
+   "slug": "marking-shot",
+   "name": "Marking Shot",
+   "unlockLevel": 3,
+   "cooldown": "10s",
+   "maxLevel": 40,
+   "effect": "Deals 142 (+146.3% Attack) Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s. Precision: Increases Critical Hit by 300 7…",
+   "icon": "/game/skills/14090000.webp",
+   "type": "active",
+   "meta": {
+    "id": 14090000,
+    "name": "Marking Shot",
+    "pickRate": 99,
+    "avgLevel": 12.2
+   }
+  },
+  {
+   "id": 14050000,
+   "slug": "drill-dart",
+   "name": "Drill Dart",
+   "unlockLevel": 4,
+   "cooldown": "5s",
+   "maxLevel": 40,
+   "effect": "Selects a target within 20m and deals 112 (+115.5% Attack) Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on…",
+   "icon": "/game/skills/14050000.webp",
+   "type": "active",
+   "meta": {
+    "id": 14050000,
+    "name": "Drill Dart",
+    "pickRate": 99,
+    "avgLevel": 13.4
+   }
+  },
+  {
+   "id": 14330000,
+   "slug": "arrow-scattershot",
+   "name": "Arrow Scattershot",
+   "unlockLevel": 5,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Deals 96 (+70% Attack) Wind damage to a target afflicted with Stagger within 20m.",
+   "icon": "/game/skills/14330000.webp",
+   "type": "active",
+   "meta": {
+    "id": 14330000,
+    "name": "Arrow Scattershot",
+    "pickRate": 75,
+    "avgLevel": 9.5
+   }
+  },
+  {
+   "id": 14110000,
+   "slug": "gale-arrow",
+   "name": "Gale Arrow",
+   "unlockLevel": 7,
+   "cooldown": "20s",
+   "maxLevel": 40,
+   "effect": "Selects a target within 20m and deals 365 (+203.5% Attack) Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s. Gale: Increases Combat Speed…",
+   "icon": "/game/skills/14110000.webp",
+   "type": "active",
+   "meta": {
+    "id": 14110000,
+    "name": "Gale Arrow",
+    "pickRate": 99,
+    "avgLevel": 13.3
+   }
+  },
+  {
+   "id": 14170000,
+   "slug": "explosion-trap",
+   "name": "Explosion Trap",
+   "unlockLevel": 8,
+   "cooldown": "20s",
+   "maxLevel": 40,
+   "effect": "Sets an explosive trap at the caster's location. The trap lasts for 10 seconds and deals 344 (+192% Attack) Earth damage to up to 4 enemies within 5m when stepped on. Has a 40%…",
+   "icon": "/game/skills/14170000.webp",
+   "type": "active",
+   "meta": {
+    "id": 14170000,
+    "name": "Explosion Trap",
+    "pickRate": 94,
+    "avgLevel": 8.4
+   }
+  },
+  {
+   "id": 14080000,
+   "slug": "burst-arrow",
+   "name": "Burst Arrow",
+   "unlockLevel": 10,
+   "cooldown": "20s",
+   "maxLevel": 40,
+   "effect": "Selects a target afflicted with Slow or Root within 20m and deals 544 (+225.5% Attack) Wind damage to up to 4 enemies within 4m of the target. 15 Stagger Gauge Damage",
+   "icon": "/game/skills/14080000.webp",
+   "type": "active",
+   "meta": {
+    "id": 14080000,
+    "name": "Burst Arrow",
+    "pickRate": 99,
+    "avgLevel": 13.2
+   }
+  },
+  {
+   "id": 14070000,
+   "slug": "suppressing-arrow",
+   "name": "Suppressing Arrow",
+   "unlockLevel": 12,
+   "cooldown": "20s",
+   "maxLevel": 40,
+   "effect": "Deals 362 (+150% Attack) Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active. 100% chance to inflict Stun on NPC targets. 10…",
+   "icon": "/game/skills/14070000.webp",
+   "type": "active",
+   "meta": {
+    "id": 14070000,
+    "name": "Suppressing Arrow",
+    "pickRate": 83,
+    "avgLevel": 8.8
+   }
+  },
+  {
+   "id": 14010000,
+   "slug": "deadshot",
+   "name": "Deadshot",
+   "unlockLevel": 14,
+   "cooldown": "20s",
+   "maxLevel": 40,
+   "effect": "Deals 599 (+188.3% Attack)-1,798 (+564.8% Attack) Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision. Max 3 Charge Levels 10-16 Stagger Gauge…",
+   "icon": "/game/skills/14010000.webp",
+   "type": "active",
+   "meta": {
+    "id": 14010000,
+    "name": "Deadshot",
+    "pickRate": 99,
+    "avgLevel": 13.3
+   }
+  },
+  {
+   "id": 14260000,
+   "slug": "defiance-ranger",
+   "name": "Defiance",
+   "unlockLevel": 16,
+   "cooldown": "60s",
+   "maxLevel": 40,
+   "effect": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s. Tenacity: Grants Status Effect Immunity Unaffected by cooldown reduction…",
+   "icon": "/game/skills/14260000.webp",
+   "type": "active",
+   "meta": null
+  },
+  {
+   "id": 14710000,
+   "slug": "vigilant-eye",
+   "name": "Vigilant Eye",
+   "unlockLevel": 1,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Evasion by 200, Max HP by 6%, and restores 85 (+100% Attack)-102 HP on Evasion. Cooldown: 3s",
+   "icon": "/game/skills/14710000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 14710000,
+    "name": "Vigilant Eye",
+    "pickRate": 99,
+    "avgLevel": 10.5
+   }
+  },
+  {
+   "id": 14720000,
+   "slug": "concentrated-fire",
+   "name": "Concentrated Fire",
+   "unlockLevel": 6,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Has a 50% chance to deal 56 (+31.2% Attack) Wind damage to a target taking Damage over Time. Cooldown: 1s",
+   "icon": "/game/skills/14720000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 14720000,
+    "name": "Concentrated Fire",
+    "pickRate": 99,
+    "avgLevel": 12.3
+   }
+  },
+  {
+   "id": 14730000,
+   "slug": "wind-vigor",
+   "name": "Wind Vigor",
+   "unlockLevel": 9,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases Max Stamina by 15. Increases Move Speed by 10% for 1s when attacked. Cooldown: 5s",
+   "icon": "/game/skills/14730000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 14730000,
+    "name": "Wind Vigor",
+    "pickRate": 99,
+    "avgLevel": 9.9
+   }
+  },
+  {
+   "id": 14740000,
+   "slug": "focused-eye",
+   "name": "Focused Eye",
+   "unlockLevel": 11,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Accuracy by 100, PvE Damage Boost by 1%, PvP Damage Boost by 0.5%, and Double Chance by 0.2%.",
+   "icon": "/game/skills/14740000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 14740000,
+    "name": "Focused Eye",
+    "pickRate": 99,
+    "avgLevel": 14
+   }
+  },
+  {
+   "id": 14750000,
+   "slug": "hunters-resolve",
+   "name": "Hunter's Resolve",
+   "unlockLevel": 13,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Critical Damage Boost by 6%.",
+   "icon": "/game/skills/14750000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 14750000,
+    "name": "Hunter's Resolve",
+    "pickRate": 99,
+    "avgLevel": 13.8
+   }
+  },
+  {
+   "id": 14760000,
+   "slug": "unyielding-resolve",
+   "name": "Unyielding Resolve",
+   "unlockLevel": 15,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Ailment-type Resist and Impact-type Resist by 11.2%.",
+   "icon": "/game/skills/14760000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 14760000,
+    "name": "Unyielding Resolve",
+    "pickRate": 99,
+    "avgLevel": 7.3
+   }
+  },
+  {
+   "id": 14770000,
+   "slug": "rooting-eye",
+   "name": "Rooting Eye",
+   "unlockLevel": 17,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Has a 50% chance to deal 143 (+35% Attack) Wind damage when landing an attack on a target afflicted with Slow or Root. Cooldown: 1s",
+   "icon": "/game/skills/14770000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 14770000,
+    "name": "Rooting Eye",
+    "pickRate": 99,
+    "avgLevel": 11.7
+   }
+  },
+  {
+   "id": 14780000,
+   "slug": "melee-fire",
+   "name": "Melee Fire",
+   "unlockLevel": 21,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Has a 25% chance to inflict 148 (+26.4% Attack) extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.…",
+   "icon": "/game/skills/14780000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 14780000,
+    "name": "Melee Fire",
+    "pickRate": 99,
+    "avgLevel": 11.4
+   }
+  },
+  {
+   "id": 14790000,
+   "slug": "revitalization-contract-ranger",
+   "name": "Revitalization Contract",
+   "unlockLevel": 23,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Status Effect Resist by 17%. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10…",
+   "icon": "/game/skills/14790000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 14790000,
+    "name": "Revitalization Contract",
+    "pickRate": 99,
+    "avgLevel": 8.7
+   }
+  },
+  {
+   "id": 14800000,
+   "slug": "hunters-soul",
+   "name": "Hunter's Soul",
+   "unlockLevel": 25,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Has a 50% chance to deal 344 (+53.8% Attack) Wind damage on a Critical Hit. Cooldown: 1s",
+   "icon": "/game/skills/14800000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 14800000,
+    "name": "Hunter's Soul",
+    "pickRate": 99,
+    "avgLevel": 13.5
+   }
+  }
+ ],
+ "stigmas": [
+  {
+   "id": 14360000,
+   "slug": "explosive-arrow",
+   "name": "Explosive Arrow",
+   "unlockLevel": 22,
+   "cooldown": "45s",
+   "maxLevel": 40,
+   "effect": "Selects a target within 20m and deals 1,426 (+253% Attack) Fire damage to up to 4 enemies within 4m. Increases damage by 20% to targets afflicted with Slow or Root. 20 Stagger…",
+   "icon": "/game/skills/14360000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 14360000,
+    "name": "Explosive Arrow",
+    "pickRate": 37,
+    "avgLevel": 5
+   }
+  },
+  {
+   "id": 14150000,
+   "slug": "illusory-arrow",
+   "name": "Illusory Arrow",
+   "unlockLevel": 22,
+   "cooldown": "30s",
+   "maxLevel": 40,
+   "effect": "Deals 1,099 (+195% Attack) Wind damage to a target within 20m and inflicts Blind for 3s. 15 Stagger Gauge Damage",
+   "icon": "/game/skills/14150000.webp",
+   "type": "stigma",
+   "meta": null
+  },
+  {
+   "id": 14270000,
+   "slug": "arrow-storm",
+   "name": "Arrow Storm",
+   "unlockLevel": 22,
+   "cooldown": "60s",
+   "maxLevel": 40,
+   "effect": "Selects a target within 20m and deals 1,184 (+210% Attack) Wind damage to up to 4 enemies within 4m of the target. Has a 50% chance to inflict Stun for 3s. 100% chance to inflict…",
+   "icon": "/game/skills/14270000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 14270000,
+    "name": "Arrow Storm",
+    "pickRate": 26,
+    "avgLevel": 3.1
+   }
+  },
+  {
+   "id": 14310000,
+   "slug": "vaizels-authority",
+   "name": "Vaizel's Authority",
+   "unlockLevel": 22,
+   "cooldown": "60s",
+   "maxLevel": 40,
+   "effect": "Increases the caster's Attack by 20% for 10s.",
+   "icon": "/game/skills/14310000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 14310000,
+    "name": "Vaizel's Authority",
+    "pickRate": 93,
+    "avgLevel": 8.7
+   }
+  },
+  {
+   "id": 14190000,
+   "slug": "stealth",
+   "name": "Stealth",
+   "unlockLevel": 22,
+   "cooldown": "120s",
+   "maxLevel": 40,
+   "effect": "Enter Stealth for 10s. Cannot be used in combat and the Stealth effect is removed upon entering combat.",
+   "icon": "/game/skills/14190000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 14190000,
+    "name": "Stealth",
+    "pickRate": 2,
+    "avgLevel": 4
+   }
+  },
+  {
+   "id": 14700000,
+   "slug": "assault-smite",
+   "name": "Assault Smite",
+   "unlockLevel": 22,
+   "cooldown": "120s",
+   "maxLevel": 40,
+   "effect": "Selects a target within 20m and deals 902 (+160% Attack) Wind damage to up to 4 enemies within 4m of the target. Has a 30% chance to inflict Stun for 3s. 100% chance to inflict…",
+   "icon": "/game/skills/14700000.webp",
+   "type": "stigma",
+   "meta": null
+  },
+  {
+   "id": 14380000,
+   "slug": "supporting-fire",
+   "name": "Supporting Fire",
+   "unlockLevel": 22,
+   "cooldown": "90s",
+   "maxLevel": 40,
+   "effect": "Summons an orb that provides supporting fire for 15s near the caster. The orb has a 25% chance to fire a shot dealing 243 (+43.2% Attack) Wind damage and absorbing 150, 150% HP.…",
+   "icon": "/game/skills/14380000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 14380000,
+    "name": "Supporting Fire",
+    "pickRate": 75,
+    "avgLevel": 7.2
+   }
+  },
+  {
+   "id": 14220000,
+   "slug": "bow-of-blessing",
+   "name": "Bow of Blessing",
+   "unlockLevel": 22,
+   "cooldown": "120s",
+   "maxLevel": 40,
+   "effect": "Increases the caster's Critical Hit by 200 and Accuracy by 100 for 10s.",
+   "icon": "/game/skills/14220000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 14220000,
+    "name": "Bow of Blessing",
+    "pickRate": 87,
+    "avgLevel": 7.2
+   }
+  },
+  {
+   "id": 14160000,
+   "slug": "sealing-arrow",
+   "name": "Sealing Arrow",
+   "unlockLevel": 22,
+   "cooldown": "60s",
+   "maxLevel": 40,
+   "effect": "Deals 1,043 (+185% Attack) Wind damage to a target within 20m. Has a 75% chance to inflict Seal for 5s. 100% chance to inflict Seal on NPC targets. 20 Stagger Gauge Damage",
+   "icon": "/game/skills/14160000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 14160000,
+    "name": "Sealing Arrow",
+    "pickRate": 2,
+    "avgLevel": 3.3
+   }
+  },
+  {
+   "id": 14120000,
+   "slug": "ambush-kick",
+   "name": "Ambush Kick",
+   "unlockLevel": 22,
+   "cooldown": "30s",
+   "maxLevel": 40,
+   "effect": "Moves behind a target within 5m and deals 857 (+152% Attack) Wind damage and inflicts Knock Back. The caster moves back.",
+   "icon": "/game/skills/14120000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 14120000,
+    "name": "Ambush Kick",
+    "pickRate": 1.3,
+    "avgLevel": 2.5
+   }
+  },
+  {
+   "id": 14350000,
+   "slug": "mother-natures-breath",
+   "name": "Mother Nature's Breath",
+   "unlockLevel": 22,
+   "cooldown": "90s",
+   "maxLevel": 40,
+   "effect": "Increases the caster's PvE Damage Tolerance by 20%, PvP Damage Tolerance by 10%, and Critical Hit Resist by 200 for 6s. Grants Mother Nature's Embrace for the duration. Mother…",
+   "icon": "/game/skills/14350000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 14350000,
+    "name": "Mother Nature's Breath",
+    "pickRate": 2,
+    "avgLevel": 0
+   }
+  },
+  {
+   "id": 14060000,
+   "slug": "griffon-arrow",
+   "name": "Griffon Arrow",
+   "unlockLevel": 22,
+   "cooldown": "45s",
+   "maxLevel": 40,
+   "effect": "Selects a target within 20m and deals 964 (+171% Attack) Fire damage to up to 4 enemies within 4m. Inflicts Crimson Flames for 10s. Crimson Flames: Takes 482 (+85.5% Attack) Fire…",
+   "icon": "/game/skills/14060000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 14060000,
+    "name": "Griffon Arrow",
+    "pickRate": 60,
+    "avgLevel": 5.5
+   }
+  },
+  {
+   "id": 14180000,
+   "slug": "ensnaring-trap",
+   "name": "Ensnaring Trap",
+   "unlockLevel": 22,
+   "cooldown": "90s",
+   "maxLevel": 40,
+   "effect": "Sets an explosive trap at the caster's location. The trap lasts for 30 seconds and deals 1,218 (+216% Attack) Earth damage to up to 4 enemies within 5m when stepped on. Inflicts…",
+   "icon": "/game/skills/14180000.webp",
+   "type": "stigma",
+   "meta": null
+  }
+ ],
+ "specializations": [
+  {
+   "id": 14020010,
+   "skillId": 14020000,
+   "skillName": "Snipe",
+   "requiredSkillLevel": 8,
+   "effect": "+20% MP restored",
+   "icon": "/game/specs/14020010.webp"
+  },
+  {
+   "id": 14020020,
+   "skillId": 14020000,
+   "skillName": "Snipe",
+   "requiredSkillLevel": 8,
+   "effect": "Absorbs 70, 70% HP",
+   "icon": "/game/specs/14020020.webp"
+  },
+  {
+   "id": 14020030,
+   "skillId": 14020000,
+   "skillName": "Snipe",
+   "requiredSkillLevel": 8,
+   "effect": "+50% Multi-Hit on hit",
+   "icon": "/game/specs/14020030.webp"
+  },
+  {
+   "id": 14340010,
+   "skillId": 14340000,
+   "skillName": "Tempest Shot",
+   "requiredSkillLevel": 8,
+   "effect": "-20% MP consumed",
+   "icon": "/game/specs/14340010.webp"
+  },
+  {
+   "id": 14340020,
+   "skillId": 14340000,
+   "skillName": "Tempest Shot",
+   "requiredSkillLevel": 8,
+   "effect": "+10% skill Critical Hit",
+   "icon": "/game/specs/14340020.webp"
+  },
+  {
+   "id": 14340030,
+   "skillId": 14340000,
+   "skillName": "Tempest Shot",
+   "requiredSkillLevel": 8,
+   "effect": "Deals up to 12% more damage when less targets are hit",
+   "icon": "/game/specs/14340030.webp"
+  },
+  {
+   "id": 14130010,
+   "skillId": 14130000,
+   "skillName": "Snare Shot",
+   "requiredSkillLevel": 8,
+   "effect": "+20% Move Speed reduction",
+   "icon": "/game/specs/14130010.webp"
+  },
+  {
+   "id": 14130020,
+   "skillId": 14130000,
+   "skillName": "Snare Shot",
+   "requiredSkillLevel": 8,
+   "effect": "+20% Skill Speed",
+   "icon": "/game/specs/14130020.webp"
+  },
+  {
+   "id": 14130030,
+   "skillId": 14130000,
+   "skillName": "Snare Shot",
+   "requiredSkillLevel": 8,
+   "effect": "Changes to mobile skill",
+   "icon": "/game/specs/14130030.webp"
+  },
+  {
+   "id": 14090010,
+   "skillId": 14090000,
+   "skillName": "Marking Shot",
+   "requiredSkillLevel": 8,
+   "effect": "+5% Perfect Chance for the duration",
+   "icon": "/game/specs/14090010.webp"
+  },
+  {
+   "id": 14090020,
+   "skillId": 14090000,
+   "skillName": "Marking Shot",
+   "requiredSkillLevel": 8,
+   "effect": "30% chance to inflict Knock Back on hit",
+   "icon": "/game/specs/14090020.webp"
+  },
+  {
+   "id": 14090030,
+   "skillId": 14090000,
+   "skillName": "Marking Shot",
+   "requiredSkillLevel": 8,
+   "effect": "+5s duration",
+   "icon": "/game/specs/14090030.webp"
+  },
+  {
+   "id": 14050010,
+   "skillId": 14050000,
+   "skillName": "Drill Dart",
+   "requiredSkillLevel": 8,
+   "effect": "Absorbs 300, 300% HP",
+   "icon": "/game/specs/14050010.webp"
+  },
+  {
+   "id": 14050020,
+   "skillId": 14050000,
+   "skillName": "Drill Dart",
+   "requiredSkillLevel": 8,
+   "effect": "+2s Bleed duration",
+   "icon": "/game/specs/14050020.webp"
+  },
+  {
+   "id": 14050030,
+   "skillId": 14050000,
+   "skillName": "Drill Dart",
+   "requiredSkillLevel": 8,
+   "effect": "+20% Skill Speed",
+   "icon": "/game/specs/14050030.webp"
+  },
+  {
+   "id": 14330010,
+   "skillId": 14330000,
+   "skillName": "Arrow Scattershot",
+   "requiredSkillLevel": 8,
+   "effect": "Absorbs 500, 500% HP",
+   "icon": "/game/specs/14330010.webp"
+  },
+  {
+   "id": 14330020,
+   "skillId": 14330000,
+   "skillName": "Arrow Scattershot",
+   "requiredSkillLevel": 8,
+   "effect": "Restores 120 MP on hit",
+   "icon": "/game/specs/14330020.webp"
+  },
+  {
+   "id": 14330030,
+   "skillId": 14330000,
+   "skillName": "Arrow Scattershot",
+   "requiredSkillLevel": 8,
+   "effect": "Changes to mobile skill",
+   "icon": "/game/specs/14330030.webp"
+  },
+  {
+   "id": 14110010,
+   "skillId": 14110000,
+   "skillName": "Gale Arrow",
+   "requiredSkillLevel": 8,
+   "effect": "+5s duration",
+   "icon": "/game/specs/14110010.webp"
+  },
+  {
+   "id": 14110020,
+   "skillId": 14110000,
+   "skillName": "Gale Arrow",
+   "requiredSkillLevel": 8,
+   "effect": "50% chance to inflict Knock Back on hit",
+   "icon": "/game/specs/14110020.webp"
+  },
+  {
+   "id": 14110030,
+   "skillId": 14110000,
+   "skillName": "Gale Arrow",
+   "requiredSkillLevel": 8,
+   "effect": "Changes to mobile skill",
+   "icon": "/game/specs/14110030.webp"
+  },
+  {
+   "id": 14170010,
+   "skillId": 14170000,
+   "skillName": "Explosion Trap",
+   "requiredSkillLevel": 8,
+   "effect": "Pulls enemies on explosion",
+   "icon": "/game/specs/14170010.webp"
+  },
+  {
+   "id": 14170020,
+   "skillId": 14170000,
+   "skillName": "Explosion Trap",
+   "requiredSkillLevel": 8,
+   "effect": "+1s Stun duration",
+   "icon": "/game/specs/14170020.webp"
+  },
+  {
+   "id": 14170030,
+   "skillId": 14170000,
+   "skillName": "Explosion Trap",
+   "requiredSkillLevel": 8,
+   "effect": "Extra damage after 3s on hit",
+   "icon": "/game/specs/14170030.webp"
+  },
+  {
+   "id": 14080010,
+   "skillId": 14080000,
+   "skillName": "Burst Arrow",
+   "requiredSkillLevel": 8,
+   "effect": "Absorbs 1000, 1000% HP",
+   "icon": "/game/specs/14080010.webp"
+  },
+  {
+   "id": 14080020,
+   "skillId": 14080000,
+   "skillName": "Burst Arrow",
+   "requiredSkillLevel": 8,
+   "effect": "+50% Multi-Hit on hit",
+   "icon": "/game/specs/14080020.webp"
+  },
+  {
+   "id": 14080030,
+   "skillId": 14080000,
+   "skillName": "Burst Arrow",
+   "requiredSkillLevel": 8,
+   "effect": "Changes to mobile skill",
+   "icon": "/game/specs/14080030.webp"
+  },
+  {
+   "id": 14070010,
+   "skillId": 14070000,
+   "skillName": "Suppressing Arrow",
+   "requiredSkillLevel": 8,
+   "effect": "+50% Multi-Hit on hit",
+   "icon": "/game/specs/14070010.webp"
+  },
+  {
+   "id": 14070020,
+   "skillId": 14070000,
+   "skillName": "Suppressing Arrow",
+   "requiredSkillLevel": 8,
+   "effect": "+1s Stun duration",
+   "icon": "/game/specs/14070020.webp"
+  },
+  {
+   "id": 14070030,
+   "skillId": 14070000,
+   "skillName": "Suppressing Arrow",
+   "requiredSkillLevel": 8,
+   "effect": "+20% Skill Speed",
+   "icon": "/game/specs/14070030.webp"
+  },
+  {
+   "id": 14010010,
+   "skillId": 14010000,
+   "skillName": "Deadshot",
+   "requiredSkillLevel": 8,
+   "effect": "Removes MP consumed",
+   "icon": "/game/specs/14010010.webp"
+  },
+  {
+   "id": 14010020,
+   "skillId": 14010000,
+   "skillName": "Deadshot",
+   "requiredSkillLevel": 8,
+   "effect": "+30% Skill Speed",
+   "icon": "/game/specs/14010020.webp"
+  },
+  {
+   "id": 14010030,
+   "skillId": 14010000,
+   "skillName": "Deadshot",
+   "requiredSkillLevel": 8,
+   "effect": "Changes to mobile skill",
+   "icon": "/game/specs/14010030.webp"
+  },
+  {
+   "id": 14260010,
+   "skillId": 14260000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 8,
+   "effect": "Adds [Lightning Arrow] Chain Skill",
+   "icon": "/game/specs/14260010.webp"
+  },
+  {
+   "id": 14260020,
+   "skillId": 14260000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 8,
+   "effect": "Restores 1,000 Stamina on using [Defiance]",
+   "icon": "/game/specs/14260020.webp"
+  },
+  {
+   "id": 14260030,
+   "skillId": 14260000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 8,
+   "effect": "Restores 20% HP on using [Defiance]",
+   "icon": "/game/specs/14260030.webp"
+  },
+  {
+   "id": 14020040,
+   "skillId": 14020000,
+   "skillName": "Snipe",
+   "requiredSkillLevel": 12,
+   "effect": "-1s [Deadshot] cooldown on hit",
+   "icon": "/game/specs/14020040.webp"
+  },
+  {
+   "id": 14340040,
+   "skillId": 14340000,
+   "skillName": "Tempest Shot",
+   "requiredSkillLevel": 12,
+   "effect": "5% chance to inflict Knock Back on Critical Hit",
+   "icon": "/game/specs/14340040.webp"
+  },
+  {
+   "id": 14130040,
+   "skillId": 14130000,
+   "skillName": "Snare Shot",
+   "requiredSkillLevel": 12,
+   "effect": "Adds [Shackling Arrow] Chain Skill",
+   "icon": "/game/specs/14130040.webp"
+  },
+  {
+   "id": 14090040,
+   "skillId": 14090000,
+   "skillName": "Marking Shot",
+   "requiredSkillLevel": 12,
+   "effect": "+1 consecutive use",
+   "icon": "/game/specs/14090040.webp"
+  },
+  {
+   "id": 14050040,
+   "skillId": 14050000,
+   "skillName": "Drill Dart",
+   "requiredSkillLevel": 12,
+   "effect": "Multi-Hit on hit",
+   "icon": "/game/specs/14050040.webp"
+  },
+  {
+   "id": 14330040,
+   "skillId": 14330000,
+   "skillName": "Arrow Scattershot",
+   "requiredSkillLevel": 12,
+   "effect": "Multi-Hit on hit",
+   "icon": "/game/specs/14330040.webp"
+  },
+  {
+   "id": 14110040,
+   "skillId": 14110000,
+   "skillName": "Gale Arrow",
+   "requiredSkillLevel": 12,
+   "effect": "Increases Combat Speed, PvE Damage Boost, and PvP Damage Boost when less targets hit",
+   "icon": "/game/specs/14110040.webp"
+  },
+  {
+   "id": 14170040,
+   "skillId": 14170000,
+   "skillName": "Explosion Trap",
+   "requiredSkillLevel": 12,
+   "effect": "+20% Stun Chance",
+   "icon": "/game/specs/14170040.webp"
+  },
+  {
+   "id": 14080040,
+   "skillId": 14080000,
+   "skillName": "Burst Arrow",
+   "requiredSkillLevel": 12,
+   "effect": "Up to +20% damage when less targets hit",
+   "icon": "/game/specs/14080040.webp"
+  },
+  {
+   "id": 14070040,
+   "skillId": 14070000,
+   "skillName": "Suppressing Arrow",
+   "requiredSkillLevel": 12,
+   "effect": "+20% Stun Chance",
+   "icon": "/game/specs/14070040.webp"
+  },
+  {
+   "id": 14010040,
+   "skillId": 14010000,
+   "skillName": "Deadshot",
+   "requiredSkillLevel": 12,
+   "effect": "Ignores Block and Evasion and lands as Multi-Hit",
+   "icon": "/game/specs/14010040.webp"
+  },
+  {
+   "id": 14260040,
+   "skillId": 14260000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 12,
+   "effect": "+2s Tenacity duration",
+   "icon": "/game/specs/14260040.webp"
+  },
+  {
+   "id": 14020050,
+   "skillId": 14020000,
+   "skillName": "Snipe",
+   "requiredSkillLevel": 16,
+   "effect": "Adds [Tempest Arrow] Chain Skill",
+   "icon": "/game/specs/14020050.webp"
+  },
+  {
+   "id": 14340050,
+   "skillId": 14340000,
+   "skillName": "Tempest Shot",
+   "requiredSkillLevel": 16,
+   "effect": "+20% Skill Speed",
+   "icon": "/game/specs/14340050.webp"
+  },
+  {
+   "id": 14130050,
+   "skillId": 14130000,
+   "skillName": "Snare Shot",
+   "requiredSkillLevel": 16,
+   "effect": "+2s Slow and Root duration",
+   "icon": "/game/specs/14130050.webp"
+  },
+  {
+   "id": 14090050,
+   "skillId": 14090000,
+   "skillName": "Marking Shot",
+   "requiredSkillLevel": 16,
+   "effect": "Ignores Block and Evasion and lands as a Critical Hit",
+   "icon": "/game/specs/14090050.webp"
+  },
+  {
+   "id": 14050050,
+   "skillId": 14050000,
+   "skillName": "Drill Dart",
+   "requiredSkillLevel": 16,
+   "effect": "Activates [Drill Dart] 1 extra time",
+   "icon": "/game/specs/14050050.webp"
+  },
+  {
+   "id": 14330050,
+   "skillId": 14330000,
+   "skillName": "Arrow Scattershot",
+   "requiredSkillLevel": 16,
+   "effect": "-1s all cooldowns on hit",
+   "icon": "/game/specs/14330050.webp"
+  },
+  {
+   "id": 14110050,
+   "skillId": 14110000,
+   "skillName": "Gale Arrow",
+   "requiredSkillLevel": 16,
+   "effect": "-10s cooldown",
+   "icon": "/game/specs/14110050.webp"
+  },
+  {
+   "id": 14170050,
+   "skillId": 14170000,
+   "skillName": "Explosion Trap",
+   "requiredSkillLevel": 16,
+   "effect": "+1 consecutive use",
+   "icon": "/game/specs/14170050.webp"
+  },
+  {
+   "id": 14080050,
+   "skillId": 14080000,
+   "skillName": "Burst Arrow",
+   "requiredSkillLevel": 16,
+   "effect": "25% chance to reset cooldown on hit",
+   "icon": "/game/specs/14080050.webp"
+  },
+  {
+   "id": 14070050,
+   "skillId": 14070000,
+   "skillName": "Suppressing Arrow",
+   "requiredSkillLevel": 16,
+   "effect": "25% chance to reset cooldown on hit",
+   "icon": "/game/specs/14070050.webp"
+  },
+  {
+   "id": 14010050,
+   "skillId": 14010000,
+   "skillName": "Deadshot",
+   "requiredSkillLevel": 16,
+   "effect": "[Deadshot] grants extra damage on hit",
+   "icon": "/game/specs/14010050.webp"
+  },
+  {
+   "id": 14260050,
+   "skillId": 14260000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 16,
+   "effect": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration",
+   "icon": "/game/specs/14260050.webp"
+  }
+ ],
+ "meta": {
+  "topPlayersTracked": 1559,
+  "medianCombatPower": 58429,
+  "top10CombatPower": 70509,
+  "avgItemLevel": 1181,
+  "daevanion": {
+   "boards": [
+    {
+     "board": "Nezekan",
+     "commonNodes": 63,
+     "totalNodes": 88
+    },
+    {
+     "board": "Zikel",
+     "commonNodes": 51,
+     "totalNodes": 88
+    },
+    {
+     "board": "Vaizel",
+     "commonNodes": 51,
+     "totalNodes": 88
+    },
+    {
+     "board": "Triniel",
+     "commonNodes": 41,
+     "totalNodes": 116
+    },
+    {
+     "board": "Azphel",
+     "commonNodes": 3,
+     "totalNodes": 152
+    }
+   ],
+   "topSkillNodes": [
+    {
+     "skill": "Tempest Shot",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 97
+    },
+    {
+     "skill": "Drill Dart",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 95
+    },
+    {
+     "skill": "Snipe",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 95
+    },
+    {
+     "skill": "Snipe",
+     "bonus": 1,
+     "board": "Zikel",
+     "pickRate": 95
+    },
+    {
+     "skill": "Deadshot",
+     "bonus": 1,
+     "board": "Zikel",
+     "pickRate": 95
+    },
+    {
+     "skill": "Tempest Shot",
+     "bonus": 1,
+     "board": "Zikel",
+     "pickRate": 94
+    },
+    {
+     "skill": "Gale Arrow",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 93
+    },
+    {
+     "skill": "Gale Arrow",
+     "bonus": 1,
+     "board": "Zikel",
+     "pickRate": 93
+    }
+   ]
+  },
+  "gear": {
+   "Main hand": [
+    {
+     "slug": "spiritforged-bow",
+     "name": "Spiritforged Bow",
+     "icon": "/game/items/icon_wp_bw_0078_t05.webp",
+     "pickRate": 36,
+     "avgEnchant": 9.5
+    },
+    {
+     "slug": "spiritforged-bow",
+     "name": "Spiritforged Bow",
+     "icon": "/game/items/icon_wp_bw_0078_t05.webp",
+     "pickRate": 35,
+     "avgEnchant": 9.9
+    },
+    {
+     "slug": "aulamus-bow",
+     "name": "Aulamus Bow",
+     "icon": "/game/items/icon_wp_bw_0028_t05.webp",
+     "pickRate": 19,
+     "avgEnchant": 10.2
+    }
+   ],
+   "Off-hand": [
+    {
+     "slug": "spiritforged-guard",
+     "name": "Spiritforged Guard",
+     "icon": "/game/items/icon_weapon_guarder_l_001.webp",
+     "pickRate": 41,
+     "avgEnchant": 8.9
+    },
+    {
+     "slug": "spiritforged-guard",
+     "name": "Spiritforged Guard",
+     "icon": "/game/items/icon_weapon_guarder_l_001.webp",
+     "pickRate": 40,
+     "avgEnchant": 8.4
+    },
+    {
+     "slug": "bakarma-guard",
+     "name": "Bakarma Guard",
+     "icon": "/game/items/icon_weapon_guarder_l_011.webp",
+     "pickRate": 8.6,
+     "avgEnchant": 10
+    }
+   ],
+   "Helmet": [
+    {
+     "slug": "divine-canyon-helm",
+     "name": "Divine Canyon Helm",
+     "icon": "/game/items/icon_gm_0072_t05_helmet.webp",
+     "pickRate": 28,
+     "avgEnchant": 2.1
+    },
+    {
+     "slug": "vakron-helm",
+     "name": "Vakron Helm",
+     "icon": "/game/items/icon_gm_0028_t05_helmet.webp",
+     "pickRate": 23,
+     "avgEnchant": 7.2
+    },
+    {
+     "slug": "bakarma-helm",
+     "name": "Bakarma Helm",
+     "icon": "/game/items/icon_gm_0059_t05_helmet.webp",
+     "pickRate": 11,
+     "avgEnchant": 6.6
+    }
+   ],
+   "Shoulders": [
+    {
+     "slug": "divine-canyon-pauldrons",
+     "name": "Divine Canyon Pauldrons",
+     "icon": "/game/items/icon_gm_0072_t05_shoulder.webp",
+     "pickRate": 25,
+     "avgEnchant": 2.4
+    },
+    {
+     "slug": "vakron-pauldrons",
+     "name": "Vakron Pauldrons",
+     "icon": "/game/items/icon_gm_0028_t05_shoulder.webp",
+     "pickRate": 23,
+     "avgEnchant": 7.8
+    },
+    {
+     "slug": "unyielding-pauldrons",
+     "name": "Unyielding Pauldrons",
+     "icon": "/game/items/icon_gm_0049_t05_shoulder.webp",
+     "pickRate": 15,
+     "avgEnchant": 3.5
+    }
+   ],
+   "Chest": [
+    {
+     "slug": "bakarma-breastplate",
+     "name": "Bakarma Breastplate",
+     "icon": "/game/items/icon_gm_0059_t05_torso.webp",
+     "pickRate": 37,
+     "avgEnchant": 6.3
+    },
+    {
+     "slug": "vakron-breastplate",
+     "name": "Vakron Breastplate",
+     "icon": "/game/items/icon_gm_0028_t05_torso.webp",
+     "pickRate": 21,
+     "avgEnchant": 7.9
+    },
+    {
+     "slug": "divine-canyon-breastplate",
+     "name": "Divine Canyon Breastplate",
+     "icon": "/game/items/icon_gm_0072_t05_torso.webp",
+     "pickRate": 14,
+     "avgEnchant": 2
+    }
+   ],
+   "Legs": [
+    {
+     "slug": "vakron-greaves",
+     "name": "Vakron Greaves",
+     "icon": "/game/items/icon_gm_0028_t05_pants.webp",
+     "pickRate": 26,
+     "avgEnchant": 7.5
+    },
+    {
+     "slug": "bakarma-greaves",
+     "name": "Bakarma Greaves",
+     "icon": "/game/items/icon_gm_0059_t05_pants.webp",
+     "pickRate": 21,
+     "avgEnchant": 7.6
+    },
+    {
+     "slug": "divine-canyon-greaves",
+     "name": "Divine Canyon Greaves",
+     "icon": "/game/items/icon_gm_0072_t05_pants.webp",
+     "pickRate": 19,
+     "avgEnchant": 2.4
+    }
+   ],
+   "Gloves": [
+    {
+     "slug": "vakron-gloves",
+     "name": "Vakron Gloves",
+     "icon": "/game/items/icon_gm_0028_t05_gloves.webp",
+     "pickRate": 26,
+     "avgEnchant": 7.7
+    },
+    {
+     "slug": "divine-canyon-gloves",
+     "name": "Divine Canyon Gloves",
+     "icon": "/game/items/icon_gm_0072_t05_gloves.webp",
+     "pickRate": 21,
+     "avgEnchant": 2.5
+    },
+    {
+     "slug": "bakarma-gloves",
+     "name": "Bakarma Gloves",
+     "icon": "/game/items/icon_gm_0059_t05_gloves.webp",
+     "pickRate": 15,
+     "avgEnchant": 6
+    }
+   ],
+   "Boots": [
+    {
+     "slug": "divine-canyon-boots",
+     "name": "Divine Canyon Boots",
+     "icon": "/game/items/icon_gm_0072_t05_boots.webp",
+     "pickRate": 22,
+     "avgEnchant": 2.3
+    },
+    {
+     "slug": "vakron-boots",
+     "name": "Vakron Boots",
+     "icon": "/game/items/icon_gm_0028_t05_boots.webp",
+     "pickRate": 19,
+     "avgEnchant": 7.5
+    },
+    {
+     "slug": "unyielding-boots",
+     "name": "Unyielding Boots",
+     "icon": "/game/items/icon_gm_0049_t05_boots.webp",
+     "pickRate": 15,
+     "avgEnchant": 3.3
+    }
+   ],
+   "Cape": [
+    {
+     "slug": "vakron-cloak",
+     "name": "Vakron Cloak",
+     "icon": "/game/items/icon_gm_0028_t05_cape.webp",
+     "pickRate": 26,
+     "avgEnchant": 7.8
+    },
+    {
+     "slug": "divine-canyon-cloak",
+     "name": "Divine Canyon Cloak",
+     "icon": "/game/items/icon_gm_0072_t05_cape.webp",
+     "pickRate": 19,
+     "avgEnchant": 3
+    },
+    {
+     "slug": "bakarma-cloak",
+     "name": "Bakarma Cloak",
+     "icon": "/game/items/icon_gm_0059_t05_cape.webp",
+     "pickRate": 17,
+     "avgEnchant": 6
+    }
+   ],
+   "Necklace": [
+    {
+     "slug": "aulamus-necklace",
+     "name": "Aulamus Necklace",
+     "icon": "/game/items/icon_acc_nl_0072.webp",
+     "pickRate": 25,
+     "avgEnchant": 7.9
+    },
+    {
+     "slug": "pilgrim-necklace",
+     "name": "Pilgrim Necklace",
+     "icon": "/game/items/icon_acc_nl_0071.webp",
+     "pickRate": 23,
+     "avgEnchant": 4.3
+    },
+    {
+     "slug": "berk-necklace",
+     "name": "Berk Necklace",
+     "icon": "/game/items/icon_acc_nl_0066.webp",
+     "pickRate": 21,
+     "avgEnchant": 6.5
+    }
+   ],
+   "Earring": [
+    {
+     "slug": "pilgrim-earrings",
+     "name": "Pilgrim Earrings",
+     "icon": "/game/items/icon_acc_er_0071.webp",
+     "pickRate": 34,
+     "avgEnchant": 4.5
+    },
+    {
+     "slug": "liberator-earrings",
+     "name": "Liberator Earrings",
+     "icon": "/game/items/icon_acc_er_0071.webp",
+     "pickRate": 34,
+     "avgEnchant": 4.4
+    },
+    {
+     "slug": "aulamus-earrings",
+     "name": "Aulamus Earrings",
+     "icon": "/game/items/icon_acc_er_0072.webp",
+     "pickRate": 33,
+     "avgEnchant": 7.6
+    }
+   ],
+   "Ring": [
+    {
+     "slug": "aulamus-ring",
+     "name": "Aulamus Ring",
+     "icon": "/game/items/icon_acc_ring_0072.webp",
+     "pickRate": 42,
+     "avgEnchant": 8
+    },
+    {
+     "slug": "liberator-ring",
+     "name": "Liberator Ring",
+     "icon": "/game/items/icon_acc_ring_0071.webp",
+     "pickRate": 28,
+     "avgEnchant": 4.4
+    },
+    {
+     "slug": "pilgrim-ring",
+     "name": "Pilgrim Ring",
+     "icon": "/game/items/icon_acc_ring_0071.webp",
+     "pickRate": 25,
+     "avgEnchant": 4.2
+    }
+   ],
+   "Bracelet": [
+    {
+     "slug": "ascension-bracelet",
+     "name": "Ascension Bracelet",
+     "icon": "/game/items/icon_acc_bracelet_r_027.webp",
+     "pickRate": 50,
+     "avgEnchant": 9.1
+    },
+    {
+     "slug": "liberator-bracelet",
+     "name": "Liberator Bracelet",
+     "icon": "/game/items/icon_acc_bracelet_0071.webp",
+     "pickRate": 50,
+     "avgEnchant": 6.5
+    },
+    {
+     "slug": "ascension-bracelet",
+     "name": "Ascension Bracelet",
+     "icon": "/game/items/icon_acc_bracelet_r_027.webp",
+     "pickRate": 49,
+     "avgEnchant": 8.8
+    }
+   ],
+   "Belt": [
+    {
+     "slug": "noble-belt",
+     "name": "Noble Belt",
+     "icon": "/game/items/icon_acc_belt_c_022.webp",
+     "pickRate": 81,
+     "avgEnchant": 0.2
+    },
+    {
+     "slug": "noble-belt-legend",
+     "name": "Noble Belt",
+     "icon": "/game/items/icon_acc_belt_c_021.webp",
+     "pickRate": 17,
+     "avgEnchant": 2.7
+    },
+    {
+     "slug": "noble-belt-rare",
+     "name": "Noble Belt",
+     "icon": "/game/items/icon_acc_belt_c_018.webp",
+     "pickRate": 1.3,
+     "avgEnchant": 3
+    }
+   ],
+   "Amulet": [
+    {
+     "slug": "revelation-amulet",
+     "name": "Revelation Amulet",
+     "icon": "/game/items/icon_item_craft_conversion_crystal_l_lv5_01.webp",
+     "pickRate": 97,
+     "avgEnchant": 0.4
+    },
+    {
+     "slug": "revelation-amulet-legend",
+     "name": "Revelation Amulet",
+     "icon": "/game/items/icon_item_craft_conversion_crystal_l_lv4_01.webp",
+     "pickRate": 2,
+     "avgEnchant": 4
+    }
+   ],
+   "Rune": [
+    {
+     "slug": "clash-rune",
+     "name": "Clash Rune",
+     "icon": "/game/items/icon_equip_acc_rune_r_002.webp",
+     "pickRate": 99,
+     "avgEnchant": 2.6
+    }
+   ]
+  },
+  "enchants": {
+   "Main hand": {
+    "avg": 9.8,
+    "most": 10,
+    "mostShare": 73
+   },
+   "Off-hand": {
+    "avg": 8.9,
+    "most": 10,
+    "mostShare": 65
+   },
+   "Helmet": {
+    "avg": 4.5,
+    "most": 5,
+    "mostShare": 37
+   },
+   "Shoulders": {
+    "avg": 4.8,
+    "most": 5,
+    "mostShare": 35
+   },
+   "Chest": {
+    "avg": 5.3,
+    "most": 5,
+    "mostShare": 33
+   },
+   "Legs": {
+    "avg": 5.1,
+    "most": 5,
+    "mostShare": 33
+   },
+   "Gloves": {
+    "avg": 4.8,
+    "most": 5,
+    "mostShare": 31
+   },
+   "Boots": {
+    "avg": 4.5,
+    "most": 5,
+    "mostShare": 33
+   },
+   "Cape": {
+    "avg": 5,
+    "most": 5,
+    "mostShare": 36
+   },
+   "Necklace": {
+    "avg": 5.6,
+    "most": 5,
+    "mostShare": 41
+   },
+   "Earring": {
+    "avg": 5.3,
+    "most": 5,
+    "mostShare": 39
+   },
+   "Ring": {
+    "avg": 5.7,
+    "most": 5,
+    "mostShare": 40
+   },
+   "Bracelet": {
+    "avg": 7.5,
+    "most": 10,
+    "mostShare": 50
+   },
+   "Belt": {
+    "avg": 0.6,
+    "most": 0,
+    "mostShare": 80
+   },
+   "Amulet": {
+    "avg": 0.5,
+    "most": 0,
+    "mostShare": 78
+   },
+   "Rune": {
+    "avg": 2.6,
+    "most": 3,
+    "mostShare": 42
+   }
+  },
+  "manastones": [
+   {
+    "stat": "Accuracy Bonus",
+    "pickRate": 100,
+    "avgValue": "6.93"
+   },
+   {
+    "stat": "Defense",
+    "pickRate": 100,
+    "avgValue": "25.39"
+   },
+   {
+    "stat": "Critical Hit",
+    "pickRate": 100,
+    "avgValue": "6.84"
+   },
+   {
+    "stat": "Critical Hit Resist",
+    "pickRate": 100,
+    "avgValue": "6.78"
+   },
+   {
+    "stat": "Evasion Bonus",
+    "pickRate": 100,
+    "avgValue": "6.65"
+   },
+   {
+    "stat": "HP",
+    "pickRate": 100,
+    "avgValue": "54.38"
+   },
+   {
+    "stat": "MP",
+    "pickRate": 100,
+    "avgValue": "28.07"
+   },
+   {
+    "stat": "Attack",
+    "pickRate": 100,
+    "avgValue": "2.58"
+   },
+   {
+    "stat": "Block",
+    "pickRate": 98,
+    "avgValue": "9.66"
+   },
+   {
+    "stat": "Weapon Damage Boost",
+    "pickRate": 8,
+    "avgValue": "0.4%"
+   }
+  ],
+  "arcana": {
+   "Arcana slot 1": [
+    {
+     "slug": "chalice-of-vigor-common",
+     "name": "Chalice of Vigor",
+     "icon": "/game/items/icon_arcana_card_grail_u_pveset2.webp",
+     "pickRate": 9.9
+    },
+    {
+     "slug": "chalice-of-magic-common",
+     "name": "Chalice of Magic",
+     "icon": "/game/items/icon_arcana_card_grail_u_defenceset2.webp",
+     "pickRate": 6.6
+    }
+   ],
+   "Arcana slot 2": [
+    {
+     "slug": "parchment-of-vigor-common",
+     "name": "Parchment of Vigor",
+     "icon": "/game/items/icon_arcana_card_parchment_u_pveset2.webp",
+     "pickRate": 5.3
+    },
+    {
+     "slug": "parchment-of-magic-rare",
+     "name": "Parchment of Magic",
+     "icon": "/game/items/icon_arcana_card_parchment_u_defenceset2.webp",
+     "pickRate": 3.3
+    }
+   ],
+   "Arcana slot 3": [
+    {
+     "slug": "compass-of-vigor-common",
+     "name": "Compass of Vigor",
+     "icon": "/game/items/icon_arcana_card_compass_u_pveset2.webp",
+     "pickRate": 9.3
+    },
+    {
+     "slug": "compass-of-magic-rare",
+     "name": "Compass of Magic",
+     "icon": "/game/items/icon_arcana_card_compass_u_defenceset2.webp",
+     "pickRate": 2
+    }
+   ],
+   "Arcana slot 4": [
+    {
+     "slug": "bell-of-vigor-common",
+     "name": "Bell of Vigor",
+     "icon": "/game/items/icon_arcana_card_bell_u_pveset2.webp",
+     "pickRate": 5.3
+    },
+    {
+     "slug": "bell-of-magic-common",
+     "name": "Bell of Magic",
+     "icon": "/game/items/icon_arcana_card_bell_u_defenceset2.webp",
+     "pickRate": 4.6
+    }
+   ],
+   "Arcana slot 5": [
+    {
+     "slug": "mirror-of-magic-common",
+     "name": "Mirror of Magic",
+     "icon": "/game/items/icon_arcana_card_mirror_u_defenceset2.webp",
+     "pickRate": 7.3
+    },
+    {
+     "slug": "mirror-of-vigor-common",
+     "name": "Mirror of Vigor",
+     "icon": "/game/items/icon_arcana_card_mirror_u_pveset2.webp",
+     "pickRate": 4
+    }
+   ]
+  },
+  "wings": [
+   {
+    "name": "Ultimate Daeva Wings",
+    "icon": "/game/wings/icon_wingb_001a.webp",
+    "pickRate": 44
+   },
+   {
+    "name": "Forest Spirit Wings",
+    "icon": "/game/wings/icon_winga_010.webp",
+    "pickRate": 2.6
+   },
+   {
+    "name": "Superior Daeva Wings",
+    "icon": "/game/wings/icon_wingb_007c.webp",
+    "pickRate": 2.6
+   },
+   {
+    "name": "Ancient Aullaeu Wings",
+    "icon": "/game/wings/icon_winge_002.webp",
+    "pickRate": 1.3
+   }
+  ],
+  "pets": [
+   {
+    "name": "Pagati",
+    "icon": "/game/pets/1204.webp",
+    "pickRate": 53
+   },
+   {
+    "name": "Black Dragon",
+    "icon": "/game/pets/1001.webp",
+    "pickRate": 13
+   },
+   {
+    "name": "Papis",
+    "icon": "/game/pets/1066.webp",
+    "pickRate": 7.3
+   },
+   {
+    "name": "Fossa",
+    "icon": "/game/pets/1004.webp",
+    "pickRate": 2
+   },
+   {
+    "name": "Armadon",
+    "icon": "/game/pets/1046.webp",
+    "pickRate": 1.3
+   }
+  ],
+  "primaryStats": [
+   {
+    "stat": "Might",
+    "avg": 22.1
+   },
+   {
+    "stat": "Constitution",
+    "avg": 4.6
+   },
+   {
+    "stat": "Dexterity",
+    "avg": 4.3
+   },
+   {
+    "stat": "Willpower",
+    "avg": 4.1
+   },
+   {
+    "stat": "Precision",
+    "avg": 1.3
+   },
+   {
+    "stat": "Intelligence",
+    "avg": 0.7
+   }
+  ],
+  "deityStats": [
+   {
+    "stat": "Time [Siel]",
+    "avg": 39.1
+   },
+   {
+    "stat": "Justice [Nezekan]",
+    "avg": 39
+   },
+   {
+    "stat": "Death [Triniel]",
+    "avg": 34.7
+   },
+   {
+    "stat": "Freedom [Vaizel]",
+    "avg": 24.5
+   },
+   {
+    "stat": "Space [Israphel]",
+    "avg": 17.7
+   },
+   {
+    "stat": "Life [Yustiel]",
+    "avg": 9.1
+   },
+   {
+    "stat": "Destiny [Marchutan]",
+    "avg": 8.7
+   },
+   {
+    "stat": "Illusion [Kaisinel]",
+    "avg": 5.5
+   },
+   {
+    "stat": "Destruction [Zikel]",
+    "avg": 5.4
+   },
+   {
+    "stat": "Wisdom [Lumiel]",
+    "avg": 5.3
+   }
+  ]
+ },
+ "pointsTable": [
+  {
+   "level": 4,
+   "skillPoints": 1,
+   "stigmaPoints": 0,
+   "stigmaSlots": 0
+  },
+  {
+   "level": 10,
+   "skillPoints": 16,
+   "stigmaPoints": 0,
+   "stigmaSlots": 0
+  },
+  {
+   "level": 20,
+   "skillPoints": 61,
+   "stigmaPoints": 0,
+   "stigmaSlots": 0
+  },
+  {
+   "level": 22,
+   "skillPoints": 71,
+   "stigmaPoints": 0,
+   "stigmaSlots": 1
+  },
+  {
+   "level": 27,
+   "skillPoints": 96,
+   "stigmaPoints": 5,
+   "stigmaSlots": 2
+  },
+  {
+   "level": 30,
+   "skillPoints": 111,
+   "stigmaPoints": 8,
+   "stigmaSlots": 2
+  },
+  {
+   "level": 32,
+   "skillPoints": 123,
+   "stigmaPoints": 10,
+   "stigmaSlots": 3
+  },
+  {
+   "level": 37,
+   "skillPoints": 153,
+   "stigmaPoints": 15,
+   "stigmaSlots": 4
+  },
+  {
+   "level": 40,
+   "skillPoints": 171,
+   "stigmaPoints": 19,
+   "stigmaSlots": 4
+  },
+  {
+   "level": 45,
+   "skillPoints": 203,
+   "stigmaPoints": 29,
+   "stigmaSlots": 4
+  }
+ ],
+ "source": "https://metabot.gg/en/aion-2/classes/ranger/build"
+}

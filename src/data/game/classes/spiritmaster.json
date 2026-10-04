@@ -1,0 +1,1881 @@
+{
+ "id": "spiritmaster",
+ "name": "Spiritmaster",
+ "icon": "/game/classes/spiritmaster.webp",
+ "skills": [
+  {
+   "id": 16010000,
+   "slug": "cold-shock",
+   "name": "Cold Shock",
+   "unlockLevel": 1,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Deals 54 (+51.5% Attack) Water damage to a target within 20m and restores 100 MP.",
+   "icon": "/game/skills/16010000.webp",
+   "type": "active",
+   "meta": {
+    "id": 16010000,
+    "name": "Cold Shock",
+    "pickRate": 99,
+    "avgLevel": 13.5
+   }
+  },
+  {
+   "id": 16040000,
+   "slug": "combustion",
+   "name": "Combustion",
+   "unlockLevel": 1,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Selects a target within 20m and deals 63 (+67.3% Attack) Fire damage to up to 4 enemies within 4m of the target. 3 Stagger Gauge Damage",
+   "icon": "/game/skills/16040000.webp",
+   "type": "active",
+   "meta": {
+    "id": 16040000,
+    "name": "Combustion",
+    "pickRate": 99,
+    "avgLevel": 13.7
+   }
+  },
+  {
+   "id": 16100000,
+   "slug": "summon-fire-spirit",
+   "name": "Summon: Fire Spirit",
+   "unlockLevel": 1,
+   "cooldown": "15s",
+   "maxLevel": 40,
+   "effect": "Summons a Fire Spirit. The Fire Spirit rushes towards a target within 20m and uses a skill that deals 68 (+120% Attack) damage to up to 4 enemies within 5m. The Fire Spirit…",
+   "icon": "/game/skills/16100000.webp",
+   "type": "active",
+   "meta": {
+    "id": 16100000,
+    "name": "Summon: Fire Spirit",
+    "pickRate": 99,
+    "avgLevel": 13.4
+   }
+  },
+  {
+   "id": 16110000,
+   "slug": "summon-water-spirit",
+   "name": "Summon: Water Spirit",
+   "unlockLevel": 3,
+   "cooldown": "15s",
+   "maxLevel": 40,
+   "effect": "Summons a Water Spirit. The Water Spirit uses a skill that deals 143 (+145% Attack) Water damage to a target within 20m. The Water Spirit fights alongside the caster using basic…",
+   "icon": "/game/skills/16110000.webp",
+   "type": "active",
+   "meta": {
+    "id": 16110000,
+    "name": "Summon: Water Spirit",
+    "pickRate": 98,
+    "avgLevel": 12.8
+   }
+  },
+  {
+   "id": 16140000,
+   "slug": "jointstrike-curse",
+   "name": "Jointstrike: Curse",
+   "unlockLevel": 4,
+   "cooldown": "10s",
+   "maxLevel": 40,
+   "effect": "Selects a target within 20m and deals 74 (+75% Attack) damage to up to 4 enemies within 4m of the target, and inflicts Curse. Curse: Deals 148 (+150% Attack) Damage over Time…",
+   "icon": "/game/skills/16140000.webp",
+   "type": "active",
+   "meta": {
+    "id": 16140000,
+    "name": "Jointstrike: Curse",
+    "pickRate": 99,
+    "avgLevel": 13.2
+   }
+  },
+  {
+   "id": 16340000,
+   "slug": "rapid-scattershot",
+   "name": "Rapid Scattershot",
+   "unlockLevel": 5,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Deals 116 (+82.5% Attack) damage to a target afflicted with Stagger within 20m.",
+   "icon": "/game/skills/16340000.webp",
+   "type": "active",
+   "meta": {
+    "id": 16340000,
+    "name": "Rapid Scattershot",
+    "pickRate": 89,
+    "avgLevel": 9.6
+   }
+  },
+  {
+   "id": 16130000,
+   "slug": "summon-earth-spirit",
+   "name": "Summon: Earth Spirit",
+   "unlockLevel": 7,
+   "cooldown": "15s",
+   "maxLevel": 40,
+   "effect": "Summons an Earth Spirit. The Earth Spirit uses a skill that deals 247 (+135% Attack) Earth damage to a target within 20m and increases Enmity by 3,750. Has a 30% chance to…",
+   "icon": "/game/skills/16130000.webp",
+   "type": "active",
+   "meta": {
+    "id": 16130000,
+    "name": "Summon: Earth Spirit",
+    "pickRate": 96,
+    "avgLevel": 11.8
+   }
+  },
+  {
+   "id": 16330000,
+   "slug": "dimensional-control",
+   "name": "Dimensional Control",
+   "unlockLevel": 8,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "A skill that is triggered briefly each time a Spirit uses its skill. Selects a target within 20m and deals 157 (+86% Attack) damage to up to 4 enemies within 4m of the target and…",
+   "icon": "/game/skills/16330000.webp",
+   "type": "active",
+   "meta": {
+    "id": 16330000,
+    "name": "Dimensional Control",
+    "pickRate": 99,
+    "avgLevel": 13.3
+   }
+  },
+  {
+   "id": 16120000,
+   "slug": "summon-wind-spirit",
+   "name": "Summon: Wind Spirit",
+   "unlockLevel": 10,
+   "cooldown": "15s",
+   "maxLevel": 40,
+   "effect": "Summons a Wind Spirit. The Wind Spirit selects a target within 20m and uses a skill that deals 273 (+111% Attack) Wind damage to up to 4 enemies within 5m of the target and…",
+   "icon": "/game/skills/16120000.webp",
+   "type": "active",
+   "meta": {
+    "id": 16120000,
+    "name": "Summon: Wind Spirit",
+    "pickRate": 83,
+    "avgLevel": 9.4
+   }
+  },
+  {
+   "id": 16070000,
+   "slug": "souls-cry",
+   "name": "Soul's Cry",
+   "unlockLevel": 12,
+   "cooldown": "45s",
+   "maxLevel": 40,
+   "effect": "Deals 246 (+100% Attack) damage to a target within 20m, with a 70% chance to inflict Fear for 5s. 100% chance to inflict Fear on NPC targets. 15 Stagger Gauge Damage",
+   "icon": "/game/skills/16070000.webp",
+   "type": "active",
+   "meta": {
+    "id": 16070000,
+    "name": "Soul's Cry",
+    "pickRate": 85,
+    "avgLevel": 7.3
+   }
+  },
+  {
+   "id": 16300000,
+   "slug": "elemental-fusion",
+   "name": "Elemental Fusion",
+   "unlockLevel": 14,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "The Spiritmaster receives an element each time a Spirit uses its skill. Grants Four Elements status and the ability to use the [Elemental Fusion] skill upon reaching 4 stacks.…",
+   "icon": "/game/skills/16300000.webp",
+   "type": "active",
+   "meta": {
+    "id": 16300000,
+    "name": "Elemental Fusion",
+    "pickRate": 99,
+    "avgLevel": 13.4
+   }
+  },
+  {
+   "id": 16200000,
+   "slug": "defiance-spiritmaster",
+   "name": "Defiance",
+   "unlockLevel": 16,
+   "cooldown": "60s",
+   "maxLevel": 40,
+   "effect": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s. Tenacity: Grants Status Effect Immunity Unaffected by cooldown reduction…",
+   "icon": "/game/skills/16200000.webp",
+   "type": "active",
+   "meta": null
+  },
+  {
+   "id": 16710000,
+   "slug": "spirit-strike",
+   "name": "Spirit Strike",
+   "unlockLevel": 1,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's PvE Damage Boost by 6%, PvP Damage Boost by 3%, and Perfect Chance by 0.4%. Increases the Spirit's PvE Damage Boost by 6%, PvP Damage Boost by 3%, and…",
+   "icon": "/game/skills/16710000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 16710000,
+    "name": "Spirit Strike",
+    "pickRate": 99,
+    "avgLevel": 14.4
+   }
+  },
+  {
+   "id": 16720000,
+   "slug": "spirit-protection",
+   "name": "Spirit Protection",
+   "unlockLevel": 6,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Defense by 2% and Spirit's Defense by 2%.",
+   "icon": "/game/skills/16720000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 16720000,
+    "name": "Spirit Protection",
+    "pickRate": 99,
+    "avgLevel": 11.8
+   }
+  },
+  {
+   "id": 16730000,
+   "slug": "spirits-descent",
+   "name": "Spirit's Descent",
+   "unlockLevel": 9,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Has a 50% chance to deal 47 (+26% Attack) extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an…",
+   "icon": "/game/skills/16730000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 16730000,
+    "name": "Spirit's Descent",
+    "pickRate": 99,
+    "avgLevel": 12.4
+   }
+  },
+  {
+   "id": 16740000,
+   "slug": "corrode",
+   "name": "Corrode",
+   "unlockLevel": 11,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Critical Hit by 100, with a 50% chance to deal 124 (+50.5% Attack) damage on landing a Critical Hit. Cooldown: 1s",
+   "icon": "/game/skills/16740000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 16740000,
+    "name": "Corrode",
+    "pickRate": 99,
+    "avgLevel": 12.7
+   }
+  },
+  {
+   "id": 16750000,
+   "slug": "spirit-revitalization",
+   "name": "Spirit Revitalization",
+   "unlockLevel": 13,
+   "cooldown": "30s",
+   "maxLevel": 40,
+   "effect": "Has a 11% chance to reduce the cooldown of Spirit summon skills by 1s on hit. Immediately heals the Spirit for 12% of its Max HP when its HP is 50% or less. Cooldown: 1s Spirit…",
+   "icon": "/game/skills/16750000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 16750000,
+    "name": "Spirit Revitalization",
+    "pickRate": 99,
+    "avgLevel": 11.3
+   }
+  },
+  {
+   "id": 16760000,
+   "slug": "mental-focus",
+   "name": "Mental Focus",
+   "unlockLevel": 15,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Mental-type Chance(s) by 11% and Double Chance by 0.3%.",
+   "icon": "/game/skills/16760000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 16760000,
+    "name": "Mental Focus",
+    "pickRate": 99,
+    "avgLevel": 13.5
+   }
+  },
+  {
+   "id": 16800000,
+   "slug": "consecutive-countercurrent",
+   "name": "Consecutive Countercurrent",
+   "unlockLevel": 17,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Has a 50% chance to deal 97 (+23.5% Attack) extra damage on landing an attack on a target that is taking Damage over Time. Cooldown: 1s",
+   "icon": "/game/skills/16800000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 16800000,
+    "name": "Consecutive Countercurrent",
+    "pickRate": 99,
+    "avgLevel": 11.3
+   }
+  },
+  {
+   "id": 16770000,
+   "slug": "spirit-communion",
+   "name": "Spirit Communion",
+   "unlockLevel": 21,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by 182 (+100% Attack)-200 when landing an attack. Cooldown: 1s",
+   "icon": "/game/skills/16770000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 16770000,
+    "name": "Spirit Communion",
+    "pickRate": 99,
+    "avgLevel": 9
+   }
+  },
+  {
+   "id": 16790000,
+   "slug": "revitalization-contract-spiritmaster",
+   "name": "Revitalization Contract",
+   "unlockLevel": 23,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Status Effect Resist by 17%. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10…",
+   "icon": "/game/skills/16790000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 16790000,
+    "name": "Revitalization Contract",
+    "pickRate": 99,
+    "avgLevel": 7.5
+   }
+  },
+  {
+   "id": 16780000,
+   "slug": "element-unification",
+   "name": "Element Unification",
+   "unlockLevel": 25,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases Critical Damage Boost by 1.1% for the caster and Spirit for 10s upon landing a Spirit skill attack. Stacks up to 5 times. Cooldown: 1s",
+   "icon": "/game/skills/16780000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 16780000,
+    "name": "Element Unification",
+    "pickRate": 99,
+    "avgLevel": 13.2
+   }
+  }
+ ],
+ "stigmas": [
+  {
+   "id": 16360000,
+   "slug": "kaisinels-power",
+   "name": "Kaisinel's Power",
+   "unlockLevel": 22,
+   "cooldown": "60s",
+   "maxLevel": 25,
+   "effect": "Increases Status Effect Chance by 20% and Status Effect Resist by 20% for the caster for 10s.",
+   "icon": "/game/skills/16360000.webp",
+   "type": "stigma",
+   "meta": null
+  },
+  {
+   "id": 16260000,
+   "slug": "magic-block",
+   "name": "Magic Block",
+   "unlockLevel": 22,
+   "cooldown": "60s",
+   "maxLevel": 25,
+   "effect": "Deals 1,071 (+187% Attack) damage to a target within 20m, with a 75% chance to inflict Seal for 5s. 20 Stagger Gauge Damage",
+   "icon": "/game/skills/16260000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 16260000,
+    "name": "Magic Block",
+    "pickRate": 0.7,
+    "avgLevel": 8
+   }
+  },
+  {
+   "id": 16240000,
+   "slug": "jointstrike-destructive-attack",
+   "name": "Jointstrike: Destructive Attack",
+   "unlockLevel": 22,
+   "cooldown": "60s",
+   "maxLevel": 25,
+   "effect": "Deals 573 (+100% Attack) damage to a target within 20m. The Spirit joins you in a coordinated assault. Fire: 664 (+116% Attack) AoE damage Water: 797 (+139.2% Attack) damage…",
+   "icon": "/game/skills/16240000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 16240000,
+    "name": "Jointstrike: Destructive Attack",
+    "pickRate": 30,
+    "avgLevel": 3.6
+   }
+  },
+  {
+   "id": 16190000,
+   "slug": "enhance-spirits-benediction",
+   "name": "Enhance: Spirit's Benediction",
+   "unlockLevel": 22,
+   "cooldown": "60s",
+   "maxLevel": 25,
+   "effect": "Increases PvE Damage Boost by 20%, PvP Damage Boost by 10%, PvE Damage Tolerance by 20%, PvP Damage Tolerance by 10%, and restores 1,850-2,035 HP every 1s for 10s to the caster…",
+   "icon": "/game/skills/16190000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 16190000,
+    "name": "Enhance: Spirit's Benediction",
+    "pickRate": 95,
+    "avgLevel": 6.9
+   }
+  },
+  {
+   "id": 16700000,
+   "slug": "assault-terror",
+   "name": "Assault Terror",
+   "unlockLevel": 22,
+   "cooldown": "120s",
+   "maxLevel": 25,
+   "effect": "Selects a target within 20m and deals 939 (+164% Attack) damage to up to 4 enemies within 4m of the target, with a 30% chance to inflict Fear for 5s. 100% chance to inflict Fear…",
+   "icon": "/game/skills/16700000.webp",
+   "type": "stigma",
+   "meta": null
+  },
+  {
+   "id": 16060000,
+   "slug": "siphon",
+   "name": "Siphon",
+   "unlockLevel": 22,
+   "cooldown": "30s",
+   "maxLevel": 25,
+   "effect": "Deals 1,180 (+206% Attack) damage and 300 MP damage to a target within 20m. Absorbs 1000, 1000% HP and restores 300 MP.",
+   "icon": "/game/skills/16060000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 16060000,
+    "name": "Siphon",
+    "pickRate": 14,
+    "avgLevel": 4
+   }
+  },
+  {
+   "id": 16170000,
+   "slug": "command-proxy",
+   "name": "Command: Proxy",
+   "unlockLevel": 22,
+   "cooldown": "60s",
+   "maxLevel": 25,
+   "effect": "Increases the Spirit's PvE Damage Tolerance by 20% and PvP Damage Tolerance by 10% for 4s, and redirects damage taken each time the Spiritmaster is attacked, sharing 50% to the…",
+   "icon": "/game/skills/16170000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 16170000,
+    "name": "Command: Proxy",
+    "pickRate": 4.6,
+    "avgLevel": 1.9
+   }
+  },
+  {
+   "id": 16370000,
+   "slug": "flame-blessing",
+   "name": "Flame Blessing",
+   "unlockLevel": 22,
+   "cooldown": "60s",
+   "maxLevel": 25,
+   "effect": "Has a 50% chance to deal 234 (+41% Attack) extra damage to enemies on landing an attack for 10s. Cooldown: 1s",
+   "icon": "/game/skills/16370000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 16370000,
+    "name": "Flame Blessing",
+    "pickRate": 74,
+    "avgLevel": 5.1
+   }
+  },
+  {
+   "id": 16080000,
+   "slug": "cry-of-terror",
+   "name": "Cry of Terror",
+   "unlockLevel": 22,
+   "cooldown": "90s",
+   "maxLevel": 25,
+   "effect": "Selects a target within 20m and deals 859 (+150% Attack) damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Fear for 5s. 100% chance to inflict Fear…",
+   "icon": "/game/skills/16080000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 16080000,
+    "name": "Cry of Terror",
+    "pickRate": 2,
+    "avgLevel": 3.3
+   }
+  },
+  {
+   "id": 16220000,
+   "slug": "cursed-cloud",
+   "name": "Cursed Cloud",
+   "unlockLevel": 22,
+   "cooldown": "90s",
+   "maxLevel": 25,
+   "effect": "Selects a target within 20m and deals 601 (+105% Attack) damage to up to 4 enemies within 4m, and deals 1,203 (+210% Attack) Damage over Time every 1s for 10s. 20 Stagger Gauge…",
+   "icon": "/game/skills/16220000.webp",
+   "type": "stigma",
+   "meta": null
+  },
+  {
+   "id": 16250000,
+   "slug": "summon-ancient-spirit",
+   "name": "Summon: Ancient Spirit",
+   "unlockLevel": 22,
+   "cooldown": "90s",
+   "maxLevel": 25,
+   "effect": "Summons an Ancient Spirit for 30s and grants Four Elements status each time the Ancient Spirit uses its skill. The Ancient Spirit uses a skill on a target within 20m, dealing…",
+   "icon": "/game/skills/16250000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 16250000,
+    "name": "Summon: Ancient Spirit",
+    "pickRate": 96,
+    "avgLevel": 9.8
+   }
+  },
+  {
+   "id": 16230000,
+   "slug": "seize-magic",
+   "name": "Seize Magic",
+   "unlockLevel": 22,
+   "cooldown": "90s",
+   "maxLevel": 25,
+   "effect": "Selects a target within 20m and deals 1,031 (+180% Attack) damage to up to 4 enemies within 4m of the target, removing up to 2 buffs. Deals 371 (+64.8% Attack)-495 (+86.4%…",
+   "icon": "/game/skills/16230000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 16230000,
+    "name": "Seize Magic",
+    "pickRate": 1.3,
+    "avgLevel": 5.5
+   }
+  },
+  {
+   "id": 16150000,
+   "slug": "jointstrike-corrode",
+   "name": "Jointstrike: Corrode",
+   "unlockLevel": 22,
+   "cooldown": "45s",
+   "maxLevel": 25,
+   "effect": "Selects a target within 20m and deals 429 (+75% Attack) damage to up to 4 enemies within 4m of the target, inflicting Corrode for 20s. Corrode: Increases damage taken from the…",
+   "icon": "/game/skills/16150000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 16150000,
+    "name": "Jointstrike: Corrode",
+    "pickRate": 83,
+    "avgLevel": 5.2
+   }
+  }
+ ],
+ "specializations": [
+  {
+   "id": 16010010,
+   "skillId": 16010000,
+   "skillName": "Cold Shock",
+   "requiredSkillLevel": 8,
+   "effect": "+20% MP restored",
+   "icon": "/game/specs/16010010.webp"
+  },
+  {
+   "id": 16010020,
+   "skillId": 16010000,
+   "skillName": "Cold Shock",
+   "requiredSkillLevel": 8,
+   "effect": "Absorbs 100, 100% HP",
+   "icon": "/game/specs/16010020.webp"
+  },
+  {
+   "id": 16010030,
+   "skillId": 16010000,
+   "skillName": "Cold Shock",
+   "requiredSkillLevel": 8,
+   "effect": "+50% Multi-Hit on hit",
+   "icon": "/game/specs/16010030.webp"
+  },
+  {
+   "id": 16040010,
+   "skillId": 16040000,
+   "skillName": "Combustion",
+   "requiredSkillLevel": 8,
+   "effect": "-20% MP consumed",
+   "icon": "/game/specs/16040010.webp"
+  },
+  {
+   "id": 16040020,
+   "skillId": 16040000,
+   "skillName": "Combustion",
+   "requiredSkillLevel": 8,
+   "effect": "Deals up to 12% more damage when less targets are hit",
+   "icon": "/game/specs/16040020.webp"
+  },
+  {
+   "id": 16040030,
+   "skillId": 16040000,
+   "skillName": "Combustion",
+   "requiredSkillLevel": 8,
+   "effect": "+100 Skill Accuracy",
+   "icon": "/game/specs/16040030.webp"
+  },
+  {
+   "id": 16100010,
+   "skillId": 16100000,
+   "skillName": "Summon: Fire Spirit",
+   "requiredSkillLevel": 8,
+   "effect": "-50% MP Cost",
+   "icon": "/game/specs/16100010.webp"
+  },
+  {
+   "id": 16100020,
+   "skillId": 16100000,
+   "skillName": "Summon: Fire Spirit",
+   "requiredSkillLevel": 8,
+   "effect": "+20% Fire Spirit Critical Hit damage",
+   "icon": "/game/specs/16100020.webp"
+  },
+  {
+   "id": 16100030,
+   "skillId": 16100000,
+   "skillName": "Summon: Fire Spirit",
+   "requiredSkillLevel": 8,
+   "effect": "10% chance to activate skill when Fire Spirit lands attack",
+   "icon": "/game/specs/16100030.webp"
+  },
+  {
+   "id": 16110010,
+   "skillId": 16110000,
+   "skillName": "Summon: Water Spirit",
+   "requiredSkillLevel": 8,
+   "effect": "-50% MP Cost",
+   "icon": "/game/specs/16110010.webp"
+  },
+  {
+   "id": 16110020,
+   "skillId": 16110000,
+   "skillName": "Summon: Water Spirit",
+   "requiredSkillLevel": 8,
+   "effect": "+10% Water Spirit Attack",
+   "icon": "/game/specs/16110020.webp"
+  },
+  {
+   "id": 16110030,
+   "skillId": 16110000,
+   "skillName": "Summon: Water Spirit",
+   "requiredSkillLevel": 8,
+   "effect": "10% chance to activate skill when Water Spirit lands attack",
+   "icon": "/game/specs/16110030.webp"
+  },
+  {
+   "id": 16140010,
+   "skillId": 16140000,
+   "skillName": "Jointstrike: Curse",
+   "requiredSkillLevel": 8,
+   "effect": "+2s Curse duration",
+   "icon": "/game/specs/16140010.webp"
+  },
+  {
+   "id": 16140020,
+   "skillId": 16140000,
+   "skillName": "Jointstrike: Curse",
+   "requiredSkillLevel": 8,
+   "effect": "+50% Multi-Hit on hit",
+   "icon": "/game/specs/16140020.webp"
+  },
+  {
+   "id": 16140030,
+   "skillId": 16140000,
+   "skillName": "Jointstrike: Curse",
+   "requiredSkillLevel": 8,
+   "effect": "Changes to mobile skill",
+   "icon": "/game/specs/16140030.webp"
+  },
+  {
+   "id": 16340010,
+   "skillId": 16340000,
+   "skillName": "Rapid Scattershot",
+   "requiredSkillLevel": 8,
+   "effect": "Absorbs 500, 500% HP",
+   "icon": "/game/specs/16340010.webp"
+  },
+  {
+   "id": 16340020,
+   "skillId": 16340000,
+   "skillName": "Rapid Scattershot",
+   "requiredSkillLevel": 8,
+   "effect": "Restores 120 MP",
+   "icon": "/game/specs/16340020.webp"
+  },
+  {
+   "id": 16340030,
+   "skillId": 16340000,
+   "skillName": "Rapid Scattershot",
+   "requiredSkillLevel": 8,
+   "effect": "Changes to mobile skill",
+   "icon": "/game/specs/16340030.webp"
+  },
+  {
+   "id": 16130010,
+   "skillId": 16130000,
+   "skillName": "Summon: Earth Spirit",
+   "requiredSkillLevel": 8,
+   "effect": "-50% MP Cost",
+   "icon": "/game/specs/16130010.webp"
+  },
+  {
+   "id": 16130020,
+   "skillId": 16130000,
+   "skillName": "Summon: Earth Spirit",
+   "requiredSkillLevel": 8,
+   "effect": "+20% PvE Damage Tolerance and +10 PvP Damage Tolerance to Earth Spirit",
+   "icon": "/game/specs/16130020.webp"
+  },
+  {
+   "id": 16130030,
+   "skillId": 16130000,
+   "skillName": "Summon: Earth Spirit",
+   "requiredSkillLevel": 8,
+   "effect": "10% chance to activate skill when Earth Spirit lands attack",
+   "icon": "/game/specs/16130030.webp"
+  },
+  {
+   "id": 16330010,
+   "skillId": 16330000,
+   "skillName": "Dimensional Control",
+   "requiredSkillLevel": 8,
+   "effect": "+20% Slow effect",
+   "icon": "/game/specs/16330010.webp"
+  },
+  {
+   "id": 16330020,
+   "skillId": 16330000,
+   "skillName": "Dimensional Control",
+   "requiredSkillLevel": 8,
+   "effect": "Extra damage after 3s on hit",
+   "icon": "/game/specs/16330020.webp"
+  },
+  {
+   "id": 16330030,
+   "skillId": 16330000,
+   "skillName": "Dimensional Control",
+   "requiredSkillLevel": 8,
+   "effect": "+50% Multi-Hit chance on hit",
+   "icon": "/game/specs/16330030.webp"
+  },
+  {
+   "id": 16120010,
+   "skillId": 16120000,
+   "skillName": "Summon: Wind Spirit",
+   "requiredSkillLevel": 8,
+   "effect": "-50% MP Cost",
+   "icon": "/game/specs/16120010.webp"
+  },
+  {
+   "id": 16120020,
+   "skillId": 16120000,
+   "skillName": "Summon: Wind Spirit",
+   "requiredSkillLevel": 8,
+   "effect": "+20% Wind Spirit Critical Hit",
+   "icon": "/game/specs/16120020.webp"
+  },
+  {
+   "id": 16120030,
+   "skillId": 16120000,
+   "skillName": "Summon: Wind Spirit",
+   "requiredSkillLevel": 8,
+   "effect": "10% chance to activate skill when Wind Spirit lands attack",
+   "icon": "/game/specs/16120030.webp"
+  },
+  {
+   "id": 16070010,
+   "skillId": 16070000,
+   "skillName": "Soul's Cry",
+   "requiredSkillLevel": 8,
+   "effect": "+50% Multi-Hit on hit",
+   "icon": "/game/specs/16070010.webp"
+  },
+  {
+   "id": 16070020,
+   "skillId": 16070000,
+   "skillName": "Soul's Cry",
+   "requiredSkillLevel": 8,
+   "effect": "Inflicts Root for 5s",
+   "icon": "/game/specs/16070020.webp"
+  },
+  {
+   "id": 16070030,
+   "skillId": 16070000,
+   "skillName": "Soul's Cry",
+   "requiredSkillLevel": 8,
+   "effect": "Changes to mobile skill",
+   "icon": "/game/specs/16070030.webp"
+  },
+  {
+   "id": 16300010,
+   "skillId": 16300000,
+   "skillName": "Elemental Fusion",
+   "requiredSkillLevel": 8,
+   "effect": "Changes to AoE Skill",
+   "icon": "/game/specs/16300010.webp"
+  },
+  {
+   "id": 16300020,
+   "skillId": 16300000,
+   "skillName": "Elemental Fusion",
+   "requiredSkillLevel": 8,
+   "effect": "Extra damage after 3s on hit",
+   "icon": "/game/specs/16300020.webp"
+  },
+  {
+   "id": 16300030,
+   "skillId": 16300000,
+   "skillName": "Elemental Fusion",
+   "requiredSkillLevel": 8,
+   "effect": "+10 all Element Boost on hit",
+   "icon": "/game/specs/16300030.webp"
+  },
+  {
+   "id": 16200010,
+   "skillId": 16200000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 8,
+   "effect": "Adds [Curse of Despair] Chain Skill",
+   "icon": "/game/specs/16200010.webp"
+  },
+  {
+   "id": 16200020,
+   "skillId": 16200000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 8,
+   "effect": "Restores 1,000 Stamina on using [Defiance]",
+   "icon": "/game/specs/16200020.webp"
+  },
+  {
+   "id": 16200030,
+   "skillId": 16200000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 8,
+   "effect": "Restores 20% HP on using [Defiance]",
+   "icon": "/game/specs/16200030.webp"
+  },
+  {
+   "id": 16010040,
+   "skillId": 16010000,
+   "skillName": "Cold Shock",
+   "requiredSkillLevel": 12,
+   "effect": "+2% Attack on landing [Earth Tremor] (Up to 5 stacks)",
+   "icon": "/game/specs/16010040.webp"
+  },
+  {
+   "id": 16040040,
+   "skillId": 16040000,
+   "skillName": "Combustion",
+   "requiredSkillLevel": 12,
+   "effect": "+20% Skill Speed",
+   "icon": "/game/specs/16040040.webp"
+  },
+  {
+   "id": 16100040,
+   "skillId": 16100000,
+   "skillName": "Summon: Fire Spirit",
+   "requiredSkillLevel": 12,
+   "effect": "5% chance to inflict Knockdown for 3s on landing Fire Spirit attack",
+   "icon": "/game/specs/16100040.webp"
+  },
+  {
+   "id": 16110040,
+   "skillId": 16110000,
+   "skillName": "Summon: Water Spirit",
+   "requiredSkillLevel": 12,
+   "effect": "5% chance to inflict Root for 2s on landing Water Spirit attack",
+   "icon": "/game/specs/16110040.webp"
+  },
+  {
+   "id": 16140040,
+   "skillId": 16140000,
+   "skillName": "Jointstrike: Curse",
+   "requiredSkillLevel": 12,
+   "effect": "-2s cooldown",
+   "icon": "/game/specs/16140040.webp"
+  },
+  {
+   "id": 16340040,
+   "skillId": 16340000,
+   "skillName": "Rapid Scattershot",
+   "requiredSkillLevel": 12,
+   "effect": "Multi-Hit on hit",
+   "icon": "/game/specs/16340040.webp"
+  },
+  {
+   "id": 16130040,
+   "skillId": 16130000,
+   "skillName": "Summon: Earth Spirit",
+   "requiredSkillLevel": 12,
+   "effect": "5% chance to restore 5% of Spirit HP when landing Earth Spirit attack",
+   "icon": "/game/specs/16130040.webp"
+  },
+  {
+   "id": 16330040,
+   "skillId": 16330000,
+   "skillName": "Dimensional Control",
+   "requiredSkillLevel": 12,
+   "effect": "Pull in nearby targets",
+   "icon": "/game/specs/16330040.webp"
+  },
+  {
+   "id": 16120040,
+   "skillId": 16120000,
+   "skillName": "Summon: Wind Spirit",
+   "requiredSkillLevel": 12,
+   "effect": "5% chance to reduce enemy Attack Speed by 30% for 10s on landing Wind Spirit attack",
+   "icon": "/game/specs/16120040.webp"
+  },
+  {
+   "id": 16070040,
+   "skillId": 16070000,
+   "skillName": "Soul's Cry",
+   "requiredSkillLevel": 12,
+   "effect": "-10s cooldown",
+   "icon": "/game/specs/16070040.webp"
+  },
+  {
+   "id": 16300040,
+   "skillId": 16300000,
+   "skillName": "Elemental Fusion",
+   "requiredSkillLevel": 12,
+   "effect": "Changes to Charge Skill, dealing up to 200% more damage",
+   "icon": "/game/specs/16300040.webp"
+  },
+  {
+   "id": 16200040,
+   "skillId": 16200000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 12,
+   "effect": "+2s Tenacity duration",
+   "icon": "/game/specs/16200040.webp"
+  },
+  {
+   "id": 16010050,
+   "skillId": 16010000,
+   "skillName": "Cold Shock",
+   "requiredSkillLevel": 16,
+   "effect": "10% chance to remove 1 buff on landing [Earth Tremor]",
+   "icon": "/game/specs/16010050.webp"
+  },
+  {
+   "id": 16040050,
+   "skillId": 16040000,
+   "skillName": "Combustion",
+   "requiredSkillLevel": 16,
+   "effect": "Adds [Ashy Call] Chain Skill",
+   "icon": "/game/specs/16040050.webp"
+  },
+  {
+   "id": 16100050,
+   "skillId": 16100000,
+   "skillName": "Summon: Fire Spirit",
+   "requiredSkillLevel": 16,
+   "effect": "+20% Fire Spirit Stats",
+   "icon": "/game/specs/16100050.webp"
+  },
+  {
+   "id": 16110050,
+   "skillId": 16110000,
+   "skillName": "Summon: Water Spirit",
+   "requiredSkillLevel": 16,
+   "effect": "+20% Water Spirit Stats",
+   "icon": "/game/specs/16110050.webp"
+  },
+  {
+   "id": 16140050,
+   "skillId": 16140000,
+   "skillName": "Jointstrike: Curse",
+   "requiredSkillLevel": 16,
+   "effect": "[Jointstrike: Curse] ignores Block and Evasion and lands as a Critical Hit",
+   "icon": "/game/specs/16140050.webp"
+  },
+  {
+   "id": 16340050,
+   "skillId": 16340000,
+   "skillName": "Rapid Scattershot",
+   "requiredSkillLevel": 16,
+   "effect": "-1s all skill cooldowns on hit",
+   "icon": "/game/specs/16340050.webp"
+  },
+  {
+   "id": 16130050,
+   "skillId": 16130000,
+   "skillName": "Summon: Earth Spirit",
+   "requiredSkillLevel": 16,
+   "effect": "+20% Earth Spirit Stats",
+   "icon": "/game/specs/16130050.webp"
+  },
+  {
+   "id": 16330050,
+   "skillId": 16330000,
+   "skillName": "Dimensional Control",
+   "requiredSkillLevel": 16,
+   "effect": "30% chance to inflict Root for 3s on hit",
+   "icon": "/game/specs/16330050.webp"
+  },
+  {
+   "id": 16120050,
+   "skillId": 16120000,
+   "skillName": "Summon: Wind Spirit",
+   "requiredSkillLevel": 16,
+   "effect": "+20% Wind Spirit Stats",
+   "icon": "/game/specs/16120050.webp"
+  },
+  {
+   "id": 16070050,
+   "skillId": 16070000,
+   "skillName": "Soul's Cry",
+   "requiredSkillLevel": 16,
+   "effect": "+2s Fear duration",
+   "icon": "/game/specs/16070050.webp"
+  },
+  {
+   "id": 16300050,
+   "skillId": 16300000,
+   "skillName": "Elemental Fusion",
+   "requiredSkillLevel": 16,
+   "effect": "25% chance to regain Four Elements",
+   "icon": "/game/specs/16300050.webp"
+  },
+  {
+   "id": 16200050,
+   "skillId": 16200000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 16,
+   "effect": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration",
+   "icon": "/game/specs/16200050.webp"
+  }
+ ],
+ "meta": {
+  "topPlayersTracked": 1560,
+  "medianCombatPower": 58354,
+  "top10CombatPower": 71054,
+  "avgItemLevel": 1168,
+  "daevanion": {
+   "boards": [
+    {
+     "board": "Nezekan",
+     "commonNodes": 62,
+     "totalNodes": 88
+    },
+    {
+     "board": "Zikel",
+     "commonNodes": 55,
+     "totalNodes": 88
+    },
+    {
+     "board": "Vaizel",
+     "commonNodes": 59,
+     "totalNodes": 88
+    },
+    {
+     "board": "Triniel",
+     "commonNodes": 39,
+     "totalNodes": 116
+    },
+    {
+     "board": "Azphel",
+     "commonNodes": 2,
+     "totalNodes": 152
+    }
+   ],
+   "topSkillNodes": [
+    {
+     "skill": "Combustion",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 95
+    },
+    {
+     "skill": "Elemental Fusion",
+     "bonus": 1,
+     "board": "Zikel",
+     "pickRate": 95
+    },
+    {
+     "skill": "Elemental Fusion",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 93
+    },
+    {
+     "skill": "Spirit Strike",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 91
+    },
+    {
+     "skill": "Cold Shock",
+     "bonus": 1,
+     "board": "Zikel",
+     "pickRate": 91
+    },
+    {
+     "skill": "Combustion",
+     "bonus": 1,
+     "board": "Zikel",
+     "pickRate": 91
+    },
+    {
+     "skill": "Summon: Fire Spirit",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 91
+    },
+    {
+     "skill": "Spirit's Descent",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 90
+    }
+   ]
+  },
+  "gear": {
+   "Main hand": [
+    {
+     "slug": "spiritforged-orb",
+     "name": "Spiritforged Orb",
+     "icon": "/game/items/icon_wp_or_0078_t05.webp",
+     "pickRate": 35,
+     "avgEnchant": 9.7
+    },
+    {
+     "slug": "spiritforged-orb",
+     "name": "Spiritforged Orb",
+     "icon": "/game/items/icon_wp_or_0078_t05.webp",
+     "pickRate": 34,
+     "avgEnchant": 9.1
+    },
+    {
+     "slug": "aulamus-orb",
+     "name": "Aulamus Orb",
+     "icon": "/game/items/icon_wp_or_0028_t05.webp",
+     "pickRate": 19,
+     "avgEnchant": 9.6
+    }
+   ],
+   "Off-hand": [
+    {
+     "slug": "spiritforged-guard",
+     "name": "Spiritforged Guard",
+     "icon": "/game/items/icon_weapon_guarder_l_001.webp",
+     "pickRate": 42,
+     "avgEnchant": 8.2
+    },
+    {
+     "slug": "spiritforged-guard",
+     "name": "Spiritforged Guard",
+     "icon": "/game/items/icon_weapon_guarder_l_001.webp",
+     "pickRate": 40,
+     "avgEnchant": 9
+    },
+    {
+     "slug": "bakarma-guard",
+     "name": "Bakarma Guard",
+     "icon": "/game/items/icon_weapon_guarder_l_011.webp",
+     "pickRate": 9.9,
+     "avgEnchant": 9.3
+    }
+   ],
+   "Helmet": [
+    {
+     "slug": "divine-canyon-helm",
+     "name": "Divine Canyon Helm",
+     "icon": "/game/items/icon_gm_0072_t05_helmet.webp",
+     "pickRate": 26,
+     "avgEnchant": 2.5
+    },
+    {
+     "slug": "bakarma-helm",
+     "name": "Bakarma Helm",
+     "icon": "/game/items/icon_gm_0059_t05_helmet.webp",
+     "pickRate": 25,
+     "avgEnchant": 4.3
+    },
+    {
+     "slug": "vakron-helm",
+     "name": "Vakron Helm",
+     "icon": "/game/items/icon_gm_0028_t05_helmet.webp",
+     "pickRate": 17,
+     "avgEnchant": 6.6
+    }
+   ],
+   "Shoulders": [
+    {
+     "slug": "divine-canyon-pauldrons",
+     "name": "Divine Canyon Pauldrons",
+     "icon": "/game/items/icon_gm_0072_t05_shoulder.webp",
+     "pickRate": 25,
+     "avgEnchant": 2
+    },
+    {
+     "slug": "vakron-pauldrons",
+     "name": "Vakron Pauldrons",
+     "icon": "/game/items/icon_gm_0028_t05_shoulder.webp",
+     "pickRate": 21,
+     "avgEnchant": 6.3
+    },
+    {
+     "slug": "unyielding-pauldrons",
+     "name": "Unyielding Pauldrons",
+     "icon": "/game/items/icon_gm_0049_t05_shoulder.webp",
+     "pickRate": 15,
+     "avgEnchant": 2.3
+    }
+   ],
+   "Chest": [
+    {
+     "slug": "bakarma-breastplate",
+     "name": "Bakarma Breastplate",
+     "icon": "/game/items/icon_gm_0059_t05_torso.webp",
+     "pickRate": 36,
+     "avgEnchant": 5.8
+    },
+    {
+     "slug": "divine-canyon-breastplate",
+     "name": "Divine Canyon Breastplate",
+     "icon": "/game/items/icon_gm_0072_t05_torso.webp",
+     "pickRate": 21,
+     "avgEnchant": 1.3
+    },
+    {
+     "slug": "vakron-breastplate",
+     "name": "Vakron Breastplate",
+     "icon": "/game/items/icon_gm_0028_t05_torso.webp",
+     "pickRate": 19,
+     "avgEnchant": 7.1
+    }
+   ],
+   "Legs": [
+    {
+     "slug": "vakron-greaves",
+     "name": "Vakron Greaves",
+     "icon": "/game/items/icon_gm_0028_t05_pants.webp",
+     "pickRate": 22,
+     "avgEnchant": 6.2
+    },
+    {
+     "slug": "divine-canyon-greaves",
+     "name": "Divine Canyon Greaves",
+     "icon": "/game/items/icon_gm_0072_t05_pants.webp",
+     "pickRate": 22,
+     "avgEnchant": 2.8
+    },
+    {
+     "slug": "unyielding-greaves",
+     "name": "Unyielding Greaves",
+     "icon": "/game/items/icon_gm_0049_t05_pants.webp",
+     "pickRate": 13,
+     "avgEnchant": 2.4
+    }
+   ],
+   "Gloves": [
+    {
+     "slug": "vakron-gloves",
+     "name": "Vakron Gloves",
+     "icon": "/game/items/icon_gm_0028_t05_gloves.webp",
+     "pickRate": 23,
+     "avgEnchant": 5.4
+    },
+    {
+     "slug": "divine-canyon-gloves",
+     "name": "Divine Canyon Gloves",
+     "icon": "/game/items/icon_gm_0072_t05_gloves.webp",
+     "pickRate": 23,
+     "avgEnchant": 2.4
+    },
+    {
+     "slug": "bakarma-gloves",
+     "name": "Bakarma Gloves",
+     "icon": "/game/items/icon_gm_0059_t05_gloves.webp",
+     "pickRate": 19,
+     "avgEnchant": 4.4
+    }
+   ],
+   "Boots": [
+    {
+     "slug": "divine-canyon-boots",
+     "name": "Divine Canyon Boots",
+     "icon": "/game/items/icon_gm_0072_t05_boots.webp",
+     "pickRate": 25,
+     "avgEnchant": 2.1
+    },
+    {
+     "slug": "vakron-boots",
+     "name": "Vakron Boots",
+     "icon": "/game/items/icon_gm_0028_t05_boots.webp",
+     "pickRate": 18,
+     "avgEnchant": 6.6
+    },
+    {
+     "slug": "division-boots",
+     "name": "Division Boots",
+     "icon": "/game/items/icon_gm_0139_t05_boots.webp",
+     "pickRate": 13,
+     "avgEnchant": 2.5
+    }
+   ],
+   "Cape": [
+    {
+     "slug": "vakron-cloak",
+     "name": "Vakron Cloak",
+     "icon": "/game/items/icon_gm_0028_t05_cape.webp",
+     "pickRate": 26,
+     "avgEnchant": 6.5
+    },
+    {
+     "slug": "divine-canyon-cloak",
+     "name": "Divine Canyon Cloak",
+     "icon": "/game/items/icon_gm_0072_t05_cape.webp",
+     "pickRate": 21,
+     "avgEnchant": 2.1
+    },
+    {
+     "slug": "bakarma-cloak",
+     "name": "Bakarma Cloak",
+     "icon": "/game/items/icon_gm_0059_t05_cape.webp",
+     "pickRate": 19,
+     "avgEnchant": 4.6
+    }
+   ],
+   "Necklace": [
+    {
+     "slug": "aulamus-necklace",
+     "name": "Aulamus Necklace",
+     "icon": "/game/items/icon_acc_nl_0072.webp",
+     "pickRate": 38,
+     "avgEnchant": 6.8
+    },
+    {
+     "slug": "berk-necklace",
+     "name": "Berk Necklace",
+     "icon": "/game/items/icon_acc_nl_0066.webp",
+     "pickRate": 19,
+     "avgEnchant": 6.3
+    },
+    {
+     "slug": "pilgrim-necklace",
+     "name": "Pilgrim Necklace",
+     "icon": "/game/items/icon_acc_nl_0071.webp",
+     "pickRate": 19,
+     "avgEnchant": 3.5
+    }
+   ],
+   "Earring": [
+    {
+     "slug": "aulamus-earrings",
+     "name": "Aulamus Earrings",
+     "icon": "/game/items/icon_acc_er_0072.webp",
+     "pickRate": 48,
+     "avgEnchant": 6.2
+    },
+    {
+     "slug": "pilgrim-earrings",
+     "name": "Pilgrim Earrings",
+     "icon": "/game/items/icon_acc_er_0071.webp",
+     "pickRate": 36,
+     "avgEnchant": 3.8
+    },
+    {
+     "slug": "liberator-earrings",
+     "name": "Liberator Earrings",
+     "icon": "/game/items/icon_acc_er_0071.webp",
+     "pickRate": 32,
+     "avgEnchant": 3.7
+    }
+   ],
+   "Ring": [
+    {
+     "slug": "aulamus-ring",
+     "name": "Aulamus Ring",
+     "icon": "/game/items/icon_acc_ring_0072.webp",
+     "pickRate": 48,
+     "avgEnchant": 7.1
+    },
+    {
+     "slug": "berk-ring",
+     "name": "Berk Ring",
+     "icon": "/game/items/icon_acc_ring_0066.webp",
+     "pickRate": 29,
+     "avgEnchant": 6.7
+    },
+    {
+     "slug": "pilgrim-ring",
+     "name": "Pilgrim Ring",
+     "icon": "/game/items/icon_acc_ring_0071.webp",
+     "pickRate": 25,
+     "avgEnchant": 3.8
+    }
+   ],
+   "Bracelet": [
+    {
+     "slug": "ascension-bracelet",
+     "name": "Ascension Bracelet",
+     "icon": "/game/items/icon_acc_bracelet_r_027.webp",
+     "pickRate": 51,
+     "avgEnchant": 9.3
+    },
+    {
+     "slug": "liberator-bracelet",
+     "name": "Liberator Bracelet",
+     "icon": "/game/items/icon_acc_bracelet_0071.webp",
+     "pickRate": 51,
+     "avgEnchant": 6.4
+    },
+    {
+     "slug": "ascension-bracelet",
+     "name": "Ascension Bracelet",
+     "icon": "/game/items/icon_acc_bracelet_r_027.webp",
+     "pickRate": 48,
+     "avgEnchant": 9.4
+    }
+   ],
+   "Belt": [
+    {
+     "slug": "noble-belt",
+     "name": "Noble Belt",
+     "icon": "/game/items/icon_acc_belt_c_022.webp",
+     "pickRate": 67,
+     "avgEnchant": 0.4
+    },
+    {
+     "slug": "noble-belt-legend",
+     "name": "Noble Belt",
+     "icon": "/game/items/icon_acc_belt_c_021.webp",
+     "pickRate": 31,
+     "avgEnchant": 2.5
+    },
+    {
+     "slug": "noble-belt-rare",
+     "name": "Noble Belt",
+     "icon": "/game/items/icon_acc_belt_c_018.webp",
+     "pickRate": 1.3,
+     "avgEnchant": 2
+    }
+   ],
+   "Amulet": [
+    {
+     "slug": "revelation-amulet",
+     "name": "Revelation Amulet",
+     "icon": "/game/items/icon_item_craft_conversion_crystal_l_lv5_01.webp",
+     "pickRate": 95,
+     "avgEnchant": 0.4
+    },
+    {
+     "slug": "revelation-amulet-legend",
+     "name": "Revelation Amulet",
+     "icon": "/game/items/icon_item_craft_conversion_crystal_l_lv4_01.webp",
+     "pickRate": 4,
+     "avgEnchant": 3.2
+    }
+   ],
+   "Rune": [
+    {
+     "slug": "clash-rune",
+     "name": "Clash Rune",
+     "icon": "/game/items/icon_equip_acc_rune_r_002.webp",
+     "pickRate": 99,
+     "avgEnchant": 2.4
+    }
+   ]
+  },
+  "enchants": {
+   "Main hand": {
+    "avg": 9.5,
+    "most": 10,
+    "mostShare": 69
+   },
+   "Off-hand": {
+    "avg": 8.7,
+    "most": 10,
+    "mostShare": 63
+   },
+   "Helmet": {
+    "avg": 3.8,
+    "most": 5,
+    "mostShare": 34
+   },
+   "Shoulders": {
+    "avg": 3.6,
+    "most": 5,
+    "mostShare": 31
+   },
+   "Chest": {
+    "avg": 4.4,
+    "most": 5,
+    "mostShare": 33
+   },
+   "Legs": {
+    "avg": 3.9,
+    "most": 5,
+    "mostShare": 33
+   },
+   "Gloves": {
+    "avg": 3.5,
+    "most": 5,
+    "mostShare": 33
+   },
+   "Boots": {
+    "avg": 3.4,
+    "most": 0,
+    "mostShare": 34
+   },
+   "Cape": {
+    "avg": 3.9,
+    "most": 5,
+    "mostShare": 29
+   },
+   "Necklace": {
+    "avg": 5.4,
+    "most": 5,
+    "mostShare": 37
+   },
+   "Earring": {
+    "avg": 4.8,
+    "most": 5,
+    "mostShare": 35
+   },
+   "Ring": {
+    "avg": 5.4,
+    "most": 5,
+    "mostShare": 40
+   },
+   "Bracelet": {
+    "avg": 7.8,
+    "most": 10,
+    "mostShare": 51
+   },
+   "Belt": {
+    "avg": 1,
+    "most": 0,
+    "mostShare": 73
+   },
+   "Amulet": {
+    "avg": 0.5,
+    "most": 0,
+    "mostShare": 83
+   },
+   "Rune": {
+    "avg": 2.4,
+    "most": 3,
+    "mostShare": 40
+   }
+  },
+  "manastones": [
+   {
+    "stat": "Accuracy Bonus",
+    "pickRate": 100,
+    "avgValue": "7.24"
+   },
+   {
+    "stat": "Defense",
+    "pickRate": 100,
+    "avgValue": "30.75"
+   },
+   {
+    "stat": "Critical Hit",
+    "pickRate": 100,
+    "avgValue": "6.94"
+   },
+   {
+    "stat": "Critical Hit Resist",
+    "pickRate": 100,
+    "avgValue": "6.83"
+   },
+   {
+    "stat": "Evasion Bonus",
+    "pickRate": 100,
+    "avgValue": "6.89"
+   },
+   {
+    "stat": "HP",
+    "pickRate": 100,
+    "avgValue": "58.2"
+   },
+   {
+    "stat": "MP",
+    "pickRate": 100,
+    "avgValue": "29.87"
+   },
+   {
+    "stat": "Attack",
+    "pickRate": 100,
+    "avgValue": "2.86"
+   },
+   {
+    "stat": "Block",
+    "pickRate": 98,
+    "avgValue": "9.89"
+   },
+   {
+    "stat": "Front Attack Damage Boost",
+    "pickRate": 10,
+    "avgValue": "0.3%"
+   }
+  ],
+  "arcana": {
+   "Arcana slot 1": [
+    {
+     "slug": "chalice-of-vigor-common",
+     "name": "Chalice of Vigor",
+     "icon": "/game/items/icon_arcana_card_grail_u_pveset2.webp",
+     "pickRate": 11
+    },
+    {
+     "slug": "chalice-of-magic-common",
+     "name": "Chalice of Magic",
+     "icon": "/game/items/icon_arcana_card_grail_u_defenceset2.webp",
+     "pickRate": 4.6
+    }
+   ],
+   "Arcana slot 2": [
+    {
+     "slug": "parchment-of-vigor-common",
+     "name": "Parchment of Vigor",
+     "icon": "/game/items/icon_arcana_card_parchment_u_pveset2.webp",
+     "pickRate": 9.9
+    },
+    {
+     "slug": "parchment-of-magic-rare",
+     "name": "Parchment of Magic",
+     "icon": "/game/items/icon_arcana_card_parchment_u_defenceset2.webp",
+     "pickRate": 4
+    }
+   ],
+   "Arcana slot 3": [
+    {
+     "slug": "compass-of-magic-common",
+     "name": "Compass of Magic",
+     "icon": "/game/items/icon_arcana_card_compass_u_defenceset2.webp",
+     "pickRate": 5.3
+    },
+    {
+     "slug": "compass-of-vigor-common",
+     "name": "Compass of Vigor",
+     "icon": "/game/items/icon_arcana_card_compass_u_pveset2.webp",
+     "pickRate": 4
+    }
+   ],
+   "Arcana slot 4": [
+    {
+     "slug": "bell-of-vigor-rare",
+     "name": "Bell of Vigor",
+     "icon": "/game/items/icon_arcana_card_bell_u_pveset2.webp",
+     "pickRate": 5.3
+    },
+    {
+     "slug": "bell-of-magic-rare",
+     "name": "Bell of Magic",
+     "icon": "/game/items/icon_arcana_card_bell_u_defenceset2.webp",
+     "pickRate": 2
+    }
+   ],
+   "Arcana slot 5": [
+    {
+     "slug": "mirror-of-vigor-common",
+     "name": "Mirror of Vigor",
+     "icon": "/game/items/icon_arcana_card_mirror_u_pveset2.webp",
+     "pickRate": 6.6
+    },
+    {
+     "slug": "mirror-of-magic-common",
+     "name": "Mirror of Magic",
+     "icon": "/game/items/icon_arcana_card_mirror_u_defenceset2.webp",
+     "pickRate": 4
+    }
+   ]
+  },
+  "wings": [
+   {
+    "name": "Ultimate Daeva Wings",
+    "icon": "/game/wings/icon_wingb_001a.webp",
+    "pickRate": 48
+   },
+   {
+    "name": "Forest Spirit Wings",
+    "icon": "/game/wings/icon_winga_010.webp",
+    "pickRate": 1.3
+   },
+   {
+    "name": "Superior Daeva Wings",
+    "icon": "/game/wings/icon_wingb_007c.webp",
+    "pickRate": 1.3
+   }
+  ],
+  "pets": [
+   {
+    "name": "Pagati",
+    "icon": "/game/pets/1204.webp",
+    "pickRate": 53
+   },
+   {
+    "name": "Papis",
+    "icon": "/game/pets/1066.webp",
+    "pickRate": 7.3
+   },
+   {
+    "name": "Black Dragon",
+    "icon": "/game/pets/1001.webp",
+    "pickRate": 4.6
+   },
+   {
+    "name": "Fossa",
+    "icon": "/game/pets/1004.webp",
+    "pickRate": 4
+   },
+   {
+    "name": "Silver Blade Rotan",
+    "icon": "/game/pets/1192.webp",
+    "pickRate": 2.6
+   }
+  ],
+  "primaryStats": [
+   {
+    "stat": "Might",
+    "avg": 22.1
+   },
+   {
+    "stat": "Dexterity",
+    "avg": 4.1
+   },
+   {
+    "stat": "Constitution",
+    "avg": 4.1
+   },
+   {
+    "stat": "Willpower",
+    "avg": 3.9
+   },
+   {
+    "stat": "Precision",
+    "avg": 1.4
+   },
+   {
+    "stat": "Intelligence",
+    "avg": 0.9
+   }
+  ],
+  "deityStats": [
+   {
+    "stat": "Justice [Nezekan]",
+    "avg": 39.4
+   },
+   {
+    "stat": "Time [Siel]",
+    "avg": 39.4
+   },
+   {
+    "stat": "Death [Triniel]",
+    "avg": 34.9
+   },
+   {
+    "stat": "Freedom [Vaizel]",
+    "avg": 24.5
+   },
+   {
+    "stat": "Space [Israphel]",
+    "avg": 17.7
+   },
+   {
+    "stat": "Life [Yustiel]",
+    "avg": 8.8
+   },
+   {
+    "stat": "Destiny [Marchutan]",
+    "avg": 8.4
+   },
+   {
+    "stat": "Illusion [Kaisinel]",
+    "avg": 5.4
+   },
+   {
+    "stat": "Destruction [Zikel]",
+    "avg": 5.2
+   },
+   {
+    "stat": "Wisdom [Lumiel]",
+    "avg": 5
+   }
+  ]
+ },
+ "pointsTable": [
+  {
+   "level": 4,
+   "skillPoints": 1,
+   "stigmaPoints": 0,
+   "stigmaSlots": 0
+  },
+  {
+   "level": 10,
+   "skillPoints": 16,
+   "stigmaPoints": 0,
+   "stigmaSlots": 0
+  },
+  {
+   "level": 20,
+   "skillPoints": 61,
+   "stigmaPoints": 0,
+   "stigmaSlots": 0
+  },
+  {
+   "level": 22,
+   "skillPoints": 71,
+   "stigmaPoints": 0,
+   "stigmaSlots": 1
+  },
+  {
+   "level": 27,
+   "skillPoints": 96,
+   "stigmaPoints": 5,
+   "stigmaSlots": 2
+  },
+  {
+   "level": 30,
+   "skillPoints": 111,
+   "stigmaPoints": 8,
+   "stigmaSlots": 2
+  },
+  {
+   "level": 32,
+   "skillPoints": 123,
+   "stigmaPoints": 10,
+   "stigmaSlots": 3
+  },
+  {
+   "level": 37,
+   "skillPoints": 153,
+   "stigmaPoints": 15,
+   "stigmaSlots": 4
+  },
+  {
+   "level": 40,
+   "skillPoints": 171,
+   "stigmaPoints": 19,
+   "stigmaSlots": 4
+  },
+  {
+   "level": 45,
+   "skillPoints": 203,
+   "stigmaPoints": 29,
+   "stigmaSlots": 4
+  }
+ ],
+ "source": "https://metabot.gg/en/aion-2/classes/spiritmaster/build"
+}

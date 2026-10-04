@@ -1,0 +1,1837 @@
+{
+ "id": "cleric",
+ "name": "Cleric",
+ "icon": "/game/classes/cleric.webp",
+ "skills": [
+  {
+   "id": 17010000,
+   "slug": "earths-retribution",
+   "name": "Earth's Retribution",
+   "unlockLevel": 1,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Deals 50 (+48.3% Attack) Earth damage to a target within 20m and restores 110 MP.",
+   "icon": "/game/skills/17010000.webp",
+   "type": "active",
+   "meta": {
+    "id": 17010000,
+    "name": "Earth's Retribution",
+    "pickRate": 99,
+    "avgLevel": 13.1
+   }
+  },
+  {
+   "id": 17040000,
+   "slug": "judgment-thunder",
+   "name": "Judgment Thunder",
+   "unlockLevel": 1,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Selects a target within 20m and deals 81 (+108.6% Attack) Wind damage to up to 4 enemies within 4m of the target. 2 Stagger Gauge Damage",
+   "icon": "/game/skills/17040000.webp",
+   "type": "active",
+   "meta": {
+    "id": 17040000,
+    "name": "Judgment Thunder",
+    "pickRate": 99,
+    "avgLevel": 13.4
+   }
+  },
+  {
+   "id": 17080000,
+   "slug": "debilitating-mark",
+   "name": "Debilitating Mark",
+   "unlockLevel": 1,
+   "cooldown": "10s",
+   "maxLevel": 40,
+   "effect": "Selects a target within 20m and deals 59 (+113.3% Attack) Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%,…",
+   "icon": "/game/skills/17080000.webp",
+   "type": "active",
+   "meta": {
+    "id": 17080000,
+    "name": "Debilitating Mark",
+    "pickRate": 97,
+    "avgLevel": 13
+   }
+  },
+  {
+   "id": 17150000,
+   "slug": "divine-aura",
+   "name": "Divine Aura",
+   "unlockLevel": 3,
+   "cooldown": "30s",
+   "maxLevel": 40,
+   "effect": "Summons a Divine Aura near the caster that lasts for 5s. The Aura is stationary and periodically deals 394 (+431.1% Attack) Earth damage to a selected target within 20m.",
+   "icon": "/game/skills/17150000.webp",
+   "type": "active",
+   "meta": {
+    "id": 17150000,
+    "name": "Divine Aura",
+    "pickRate": 99,
+    "avgLevel": 12.6
+   }
+  },
+  {
+   "id": 17070000,
+   "slug": "chain-of-torment",
+   "name": "Chain of Torment",
+   "unlockLevel": 4,
+   "cooldown": "20s",
+   "maxLevel": 40,
+   "effect": "Selects a target within 20m and deals 138 (+151.8% Attack) Earth damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Tolerance by 5%, PvP Damage Tolerance…",
+   "icon": "/game/skills/17070000.webp",
+   "type": "active",
+   "meta": {
+    "id": 17070000,
+    "name": "Chain of Torment",
+    "pickRate": 99,
+    "avgLevel": 13.1
+   }
+  },
+  {
+   "id": 17370000,
+   "slug": "lightning-strike-scattershot",
+   "name": "Lightning Strike Scattershot",
+   "unlockLevel": 5,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Deals 147 (+113% Attack) damage to a target afflicted with Stagger within 20m.",
+   "icon": "/game/skills/17370000.webp",
+   "type": "active",
+   "meta": {
+    "id": 17370000,
+    "name": "Lightning Strike Scattershot",
+    "pickRate": 90,
+    "avgLevel": 10.5
+   }
+  },
+  {
+   "id": 17090000,
+   "slug": "light-of-regeneration",
+   "name": "Light of Regeneration",
+   "unlockLevel": 7,
+   "cooldown": "30s",
+   "maxLevel": 40,
+   "effect": "Restores 616-739 HP every 2s for 30s to the caster and party members within 40m.",
+   "icon": "/game/skills/17090000.webp",
+   "type": "active",
+   "meta": {
+    "id": 17090000,
+    "name": "Light of Regeneration",
+    "pickRate": 99,
+    "avgLevel": 13.1
+   }
+  },
+  {
+   "id": 17350000,
+   "slug": "condemnation",
+   "name": "Condemnation",
+   "unlockLevel": 8,
+   "cooldown": "3s",
+   "maxLevel": 40,
+   "effect": "Selects a target within 20m afflicted with Chain of Torment and deals 325 (+192.1% Attack) Earth damage to up to 4 enemies within 4m of the target. 7 Stagger Gauge Damage",
+   "icon": "/game/skills/17350000.webp",
+   "type": "active",
+   "meta": {
+    "id": 17350000,
+    "name": "Condemnation",
+    "pickRate": 99,
+    "avgLevel": 13.5
+   }
+  },
+  {
+   "id": 17100000,
+   "slug": "healing-light",
+   "name": "Healing Light",
+   "unlockLevel": 10,
+   "cooldown": "6s",
+   "maxLevel": 40,
+   "effect": "Restores 192 (+100% Attack)-211 HP to the caster and the party member with the lowest HP within 40m.",
+   "icon": "/game/skills/17100000.webp",
+   "type": "active",
+   "meta": {
+    "id": 17100000,
+    "name": "Healing Light",
+    "pickRate": 99,
+    "avgLevel": 13.1
+   }
+  },
+  {
+   "id": 17120000,
+   "slug": "radiant-recovery",
+   "name": "Radiant Recovery",
+   "unlockLevel": 12,
+   "cooldown": "12s",
+   "maxLevel": 40,
+   "effect": "Restores 379 (+100% Attack)-417 HP and removes 1 debuff for the caster and party members within 40m.",
+   "icon": "/game/skills/17120000.webp",
+   "type": "active",
+   "meta": {
+    "id": 17120000,
+    "name": "Radiant Recovery",
+    "pickRate": 99,
+    "avgLevel": 13
+   }
+  },
+  {
+   "id": 17060000,
+   "slug": "bolt",
+   "name": "Bolt",
+   "unlockLevel": 14,
+   "cooldown": "45s",
+   "maxLevel": 40,
+   "effect": "Selects a target within 20m and deals 987 (+327.6% Attack)-2,963 (+982.8% Attack) Wind damage to up to 4 enemies within 4m of the target. Max 3 Charge Levels 20-35 Stagger Gauge…",
+   "icon": "/game/skills/17060000.webp",
+   "type": "active",
+   "meta": {
+    "id": 17060000,
+    "name": "Bolt",
+    "pickRate": 97,
+    "avgLevel": 12.1
+   }
+  },
+  {
+   "id": 17240000,
+   "slug": "defiance-cleric",
+   "name": "Defiance",
+   "unlockLevel": 16,
+   "cooldown": "60s",
+   "maxLevel": 40,
+   "effect": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s. Tenacity: Grants Status Effect Immunity Unaffected by cooldown reduction…",
+   "icon": "/game/skills/17240000.webp",
+   "type": "active",
+   "meta": null
+  },
+  {
+   "id": 17710000,
+   "slug": "warm-benediction",
+   "name": "Warm Benediction",
+   "unlockLevel": 1,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Max HP by 6% and Max MP by 7.",
+   "icon": "/game/skills/17710000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 17710000,
+    "name": "Warm Benediction",
+    "pickRate": 99,
+    "avgLevel": 12.6
+   }
+  },
+  {
+   "id": 17720000,
+   "slug": "empyrean-lords-benediction",
+   "name": "Empyrean Lords' Benediction",
+   "unlockLevel": 6,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Block by 200 and restores 53 (+100% Attack)-64 HP on Block. Cooldown: 3s",
+   "icon": "/game/skills/17720000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 17720000,
+    "name": "Empyrean Lords' Benediction",
+    "pickRate": 99,
+    "avgLevel": 7.4
+   }
+  },
+  {
+   "id": 17730000,
+   "slug": "empyrean-lords-grace",
+   "name": "Empyrean Lord's Grace",
+   "unlockLevel": 9,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Critical Hit by 100, Double Chance by 0.2% and deals 71 (+42% Attack) extra damage on landing an attack on a target. Cooldown: 1s",
+   "icon": "/game/skills/17730000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 17730000,
+    "name": "Empyrean Lord's Grace",
+    "pickRate": 99,
+    "avgLevel": 13.5
+   }
+  },
+  {
+   "id": 17740000,
+   "slug": "healing-enhancement",
+   "name": "Healing Enhancement",
+   "unlockLevel": 11,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Heal Boost by 22,400% of Attack.",
+   "icon": "/game/skills/17740000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 17740000,
+    "name": "Healing Enhancement",
+    "pickRate": 99,
+    "avgLevel": 12.7
+   }
+  },
+  {
+   "id": 17750000,
+   "slug": "immortal-veil",
+   "name": "Immortal Veil",
+   "unlockLevel": 13,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Defense by 2% and Critical Hit Resist by 100.",
+   "icon": "/game/skills/17750000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 17750000,
+    "name": "Immortal Veil",
+    "pickRate": 99,
+    "avgLevel": 11.8
+   }
+  },
+  {
+   "id": 17760000,
+   "slug": "heal-block",
+   "name": "Heal Block",
+   "unlockLevel": 15,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Has a 7% chance to reduce the target's Incoming Heal by 32% for 5s on landing an attack. Cooldown: 5s",
+   "icon": "/game/skills/17760000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 17760000,
+    "name": "Heal Block",
+    "pickRate": 99,
+    "avgLevel": 4.9
+   }
+  },
+  {
+   "id": 17770000,
+   "slug": "prayer-of-concentration",
+   "name": "Prayer of Concentration",
+   "unlockLevel": 17,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Forms a Protective Shield which blocks 424 damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less. Cooldown: 60s",
+   "icon": "/game/skills/17770000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 17770000,
+    "name": "Prayer of Concentration",
+    "pickRate": 99,
+    "avgLevel": 9
+   }
+  },
+  {
+   "id": 17780000,
+   "slug": "earths-grace",
+   "name": "Earth's Grace",
+   "unlockLevel": 21,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Critical Damage Boost by 10.5% and Accuracy by 100.",
+   "icon": "/game/skills/17780000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 17780000,
+    "name": "Earth's Grace",
+    "pickRate": 99,
+    "avgLevel": 12.9
+   }
+  },
+  {
+   "id": 17790000,
+   "slug": "survival-willpower-cleric",
+   "name": "Survival Willpower",
+   "unlockLevel": 23,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Increases the caster's Status Effect Resist by 17%. Increases PvE Damage Tolerance by 12% and PvP Damage Tolerance by 6% for 5s when afflicted with Stun, Knockdown, Airborne,…",
+   "icon": "/game/skills/17790000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 17790000,
+    "name": "Survival Willpower",
+    "pickRate": 99,
+    "avgLevel": 9.3
+   }
+  },
+  {
+   "id": 17800000,
+   "slug": "radiant-benediction",
+   "name": "Radiant Benediction",
+   "unlockLevel": 25,
+   "cooldown": null,
+   "maxLevel": 40,
+   "effect": "Restores 384 (+100% Attack)-461 HP to the caster and party members within 40m on landing an attack. Cooldown: 5s",
+   "icon": "/game/skills/17800000.webp",
+   "type": "passive",
+   "meta": {
+    "id": 17800000,
+    "name": "Radiant Benediction",
+    "pickRate": 99,
+    "avgLevel": 10.9
+   }
+  }
+ ],
+ "stigmas": [
+  {
+   "id": 17300000,
+   "slug": "voice-of-doom",
+   "name": "Voice of Doom",
+   "unlockLevel": 22,
+   "cooldown": "60s",
+   "maxLevel": 25,
+   "effect": "Selects a target within 20m and deals 1,100 (+205% Attack) Earth damage to up to 4 enemies within 4m of the target. Deals 2,862 (+533% Attack) damage every 1s and reduces enemy…",
+   "icon": "/game/skills/17300000.webp",
+   "type": "stigma",
+   "meta": null
+  },
+  {
+   "id": 17400000,
+   "slug": "earth-punishment",
+   "name": "Earth Punishment",
+   "unlockLevel": 22,
+   "cooldown": "30s",
+   "maxLevel": 25,
+   "effect": "Deals 1,186 (+221% Attack) Earth damage to a target within 20m and 1,186 (+221% Attack) damage every 1s for 10s. 20 Stagger Gauge Damage",
+   "icon": "/game/skills/17400000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 17400000,
+    "name": "Earth Punishment",
+    "pickRate": 65,
+    "avgLevel": 7.2
+   }
+  },
+  {
+   "id": 17280000,
+   "slug": "power-burst",
+   "name": "Power Burst",
+   "unlockLevel": 22,
+   "cooldown": "60s",
+   "maxLevel": 25,
+   "effect": "Deals 1,154 (+215% Attack) Earth damage to a target within 20m. 50 Stagger Gauge Damage",
+   "icon": "/game/skills/17280000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 17280000,
+    "name": "Power Burst",
+    "pickRate": 20,
+    "avgLevel": 2.5
+   }
+  },
+  {
+   "id": 17290000,
+   "slug": "absolution",
+   "name": "Absolution",
+   "unlockLevel": 22,
+   "cooldown": "90s",
+   "maxLevel": 25,
+   "effect": "Removes up to 2 debuffs and restores 1,602 (+100% Attack)-1,762 HP to the caster and party members within 40m.",
+   "icon": "/game/skills/17290000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 17290000,
+    "name": "Absolution",
+    "pickRate": 23,
+    "avgLevel": 5
+   }
+  },
+  {
+   "id": 17270000,
+   "slug": "salvation",
+   "name": "Salvation",
+   "unlockLevel": 22,
+   "cooldown": "150s",
+   "maxLevel": 25,
+   "effect": "The caster is immune to damage and status effects for 3s. Cannot block certain powerful attacks. Unaffected by cooldown increase effects. Tenaciousness, Salvation, Barrier Spell…",
+   "icon": "/game/skills/17270000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 17270000,
+    "name": "Salvation",
+    "pickRate": 16,
+    "avgLevel": 2.2
+   }
+  },
+  {
+   "id": 17700000,
+   "slug": "assault-mark",
+   "name": "Assault Mark",
+   "unlockLevel": 22,
+   "cooldown": "120s",
+   "maxLevel": 25,
+   "effect": "Selects a target within 20m and deals 891 (+166% Attack) damage to up to 4 enemies within 4m with a 30% chance to inflict Root. 100% chance to inflict Root on NPC targets.…",
+   "icon": "/game/skills/17700000.webp",
+   "type": "stigma",
+   "meta": null
+  },
+  {
+   "id": 17440000,
+   "slug": "noble-aura",
+   "name": "Noble Aura",
+   "unlockLevel": 22,
+   "cooldown": "60s",
+   "maxLevel": 25,
+   "effect": "Summons a Noble Aura near the caster that lasts for 300s. The Aura follows the caster and attacks their target together. Deals 472 (+88% Attack) damage to a target within 20m.…",
+   "icon": "/game/skills/17440000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 17440000,
+    "name": "Noble Aura",
+    "pickRate": 79,
+    "avgLevel": 5.5
+   }
+  },
+  {
+   "id": 17160000,
+   "slug": "benevolence",
+   "name": "Benevolence",
+   "unlockLevel": 22,
+   "cooldown": "90s",
+   "maxLevel": 25,
+   "effect": "Grants Benevolence to the caster for 20s. Restores 90 (+100% Attack)-100 HP every 2s to the caster and party members within 40m for the duration.",
+   "icon": "/game/skills/17160000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 17160000,
+    "name": "Benevolence",
+    "pickRate": 13,
+    "avgLevel": 4.6
+   }
+  },
+  {
+   "id": 17190000,
+   "slug": "root",
+   "name": "Root",
+   "unlockLevel": 22,
+   "cooldown": "60s",
+   "maxLevel": 25,
+   "effect": "Selects a target within 20m and deals 939 (+175% Attack) Earth damage to up to 4 enemies within 4m of the target. Has a 75% chance to inflict Root for 10s. 100% chance to inflict…",
+   "icon": "/game/skills/17190000.webp",
+   "type": "stigma",
+   "meta": null
+  },
+  {
+   "id": 17430000,
+   "slug": "prayer-of-amplification",
+   "name": "Prayer of Amplification",
+   "unlockLevel": 22,
+   "cooldown": "60s",
+   "maxLevel": 25,
+   "effect": "Increases Attack by 20% for 10s.",
+   "icon": "/game/skills/17430000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 17430000,
+    "name": "Prayer of Amplification",
+    "pickRate": 50,
+    "avgLevel": 5.3
+   }
+  },
+  {
+   "id": 17410000,
+   "slug": "light-of-protection",
+   "name": "Light of Protection",
+   "unlockLevel": 22,
+   "cooldown": "5s",
+   "maxLevel": 25,
+   "effect": "Increases PvE Damage Boost and PvE Damage Tolerance by 10.5% and PvP Damage Boost and PvP Damage Tolerance by 5.25% for the caster and nearby party members. Does not stack with…",
+   "icon": "/game/skills/17410000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 17410000,
+    "name": "Light of Protection",
+    "pickRate": 87,
+    "avgLevel": 9.3
+   }
+  },
+  {
+   "id": 17420000,
+   "slug": "yustiels-power",
+   "name": "Yustiel's Power",
+   "unlockLevel": 22,
+   "cooldown": "60s",
+   "maxLevel": 25,
+   "effect": "Increases PvE Damage Tolerance by 20% and PvP Damage Tolerance by 10% for 10s for the caster and party members within 40m. Unaffected by cooldown increase effects.",
+   "icon": "/game/skills/17420000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 17420000,
+    "name": "Yustiel's Power",
+    "pickRate": 9.3,
+    "avgLevel": 3.6
+   }
+  },
+  {
+   "id": 17390000,
+   "slug": "summon-resurrection",
+   "name": "Summon Resurrection",
+   "unlockLevel": 22,
+   "cooldown": "120s",
+   "maxLevel": 25,
+   "effect": "Resurrects a fallen party member within 40m of the caster.",
+   "icon": "/game/skills/17390000.webp",
+   "type": "stigma",
+   "meta": {
+    "id": 17390000,
+    "name": "Summon Resurrection",
+    "pickRate": 64,
+    "avgLevel": 3
+   }
+  }
+ ],
+ "specializations": [
+  {
+   "id": 17010010,
+   "skillId": 17010000,
+   "skillName": "Earth's Retribution",
+   "requiredSkillLevel": 8,
+   "effect": "+20% MP restored",
+   "icon": "/game/specs/17010010.webp"
+  },
+  {
+   "id": 17010020,
+   "skillId": 17010000,
+   "skillName": "Earth's Retribution",
+   "requiredSkillLevel": 8,
+   "effect": "+20% [Discharge] Chain Skill trigger chance",
+   "icon": "/game/specs/17010020.webp"
+  },
+  {
+   "id": 17010030,
+   "skillId": 17010000,
+   "skillName": "Earth's Retribution",
+   "requiredSkillLevel": 8,
+   "effect": "+50% Multi-Hit on hit",
+   "icon": "/game/specs/17010030.webp"
+  },
+  {
+   "id": 17040010,
+   "skillId": 17040000,
+   "skillName": "Judgment Thunder",
+   "requiredSkillLevel": 8,
+   "effect": "-20% MP consumed",
+   "icon": "/game/specs/17040010.webp"
+  },
+  {
+   "id": 17040020,
+   "skillId": 17040000,
+   "skillName": "Judgment Thunder",
+   "requiredSkillLevel": 8,
+   "effect": "Deals up to 12% more damage when less targets are hit",
+   "icon": "/game/specs/17040020.webp"
+  },
+  {
+   "id": 17040030,
+   "skillId": 17040000,
+   "skillName": "Judgment Thunder",
+   "requiredSkillLevel": 8,
+   "effect": "-10% enemy Combat Speed for 5s on landing [Divine Punishment]",
+   "icon": "/game/specs/17040030.webp"
+  },
+  {
+   "id": 17080010,
+   "skillId": 17080000,
+   "skillName": "Debilitating Mark",
+   "requiredSkillLevel": 8,
+   "effect": "Removes MP Consumed and restores 150 MP",
+   "icon": "/game/specs/17080010.webp"
+  },
+  {
+   "id": 17080020,
+   "skillId": 17080000,
+   "skillName": "Debilitating Mark",
+   "requiredSkillLevel": 8,
+   "effect": "-15% target Defense for duration of Damage over Time",
+   "icon": "/game/specs/17080020.webp"
+  },
+  {
+   "id": 17080030,
+   "skillId": 17080000,
+   "skillName": "Debilitating Mark",
+   "requiredSkillLevel": 8,
+   "effect": "Has a 20% chance to inflict Stun on the target for 3s",
+   "icon": "/game/specs/17080030.webp"
+  },
+  {
+   "id": 17150010,
+   "skillId": 17150000,
+   "skillName": "Divine Aura",
+   "requiredSkillLevel": 8,
+   "effect": "-40% Move Speed for 3s to up to 4 enemies within 4m of the Aura",
+   "icon": "/game/specs/17150010.webp"
+  },
+  {
+   "id": 17150020,
+   "skillId": 17150000,
+   "skillName": "Divine Aura",
+   "requiredSkillLevel": 8,
+   "effect": "Changes to AoE Skill",
+   "icon": "/game/specs/17150020.webp"
+  },
+  {
+   "id": 17150030,
+   "skillId": 17150000,
+   "skillName": "Divine Aura",
+   "requiredSkillLevel": 8,
+   "effect": "+50% [Divine Aura] attacking speed",
+   "icon": "/game/specs/17150030.webp"
+  },
+  {
+   "id": 17070010,
+   "skillId": 17070000,
+   "skillName": "Chain of Torment",
+   "requiredSkillLevel": 8,
+   "effect": "Slows target for 5s",
+   "icon": "/game/specs/17070010.webp"
+  },
+  {
+   "id": 17070020,
+   "skillId": 17070000,
+   "skillName": "Chain of Torment",
+   "requiredSkillLevel": 8,
+   "effect": "+3s Damage over Time",
+   "icon": "/game/specs/17070020.webp"
+  },
+  {
+   "id": 17070030,
+   "skillId": 17070000,
+   "skillName": "Chain of Torment",
+   "requiredSkillLevel": 8,
+   "effect": "Has a 20% chance to inflict Knockdown on the target for 3s",
+   "icon": "/game/specs/17070030.webp"
+  },
+  {
+   "id": 17370010,
+   "skillId": 17370000,
+   "skillName": "Lightning Strike Scattershot",
+   "requiredSkillLevel": 8,
+   "effect": "Absorbs 500, 500% HP",
+   "icon": "/game/specs/17370010.webp"
+  },
+  {
+   "id": 17370020,
+   "skillId": 17370000,
+   "skillName": "Lightning Strike Scattershot",
+   "requiredSkillLevel": 8,
+   "effect": "Restores 120 MP",
+   "icon": "/game/specs/17370020.webp"
+  },
+  {
+   "id": 17370030,
+   "skillId": 17370000,
+   "skillName": "Lightning Strike Scattershot",
+   "requiredSkillLevel": 8,
+   "effect": "Changes to mobile skill",
+   "icon": "/game/specs/17370030.webp"
+  },
+  {
+   "id": 17090010,
+   "skillId": 17090000,
+   "skillName": "Light of Regeneration",
+   "requiredSkillLevel": 8,
+   "effect": "+5% Defense while healing",
+   "icon": "/game/specs/17090010.webp"
+  },
+  {
+   "id": 17090020,
+   "skillId": 17090000,
+   "skillName": "Light of Regeneration",
+   "requiredSkillLevel": 8,
+   "effect": "+20% amount healed when HP is 50% or less",
+   "icon": "/game/specs/17090020.webp"
+  },
+  {
+   "id": 17090030,
+   "skillId": 17090000,
+   "skillName": "Light of Regeneration",
+   "requiredSkillLevel": 8,
+   "effect": "+5% Incoming Heal during healing",
+   "icon": "/game/specs/17090030.webp"
+  },
+  {
+   "id": 17350010,
+   "skillId": 17350000,
+   "skillName": "Condemnation",
+   "requiredSkillLevel": 8,
+   "effect": "Restores 100 MP on hit",
+   "icon": "/game/specs/17350010.webp"
+  },
+  {
+   "id": 17350020,
+   "skillId": 17350000,
+   "skillName": "Condemnation",
+   "requiredSkillLevel": 8,
+   "effect": "Up to +12% damage when less targets hit",
+   "icon": "/game/specs/17350020.webp"
+  },
+  {
+   "id": 17350030,
+   "skillId": 17350000,
+   "skillName": "Condemnation",
+   "requiredSkillLevel": 8,
+   "effect": "20% chance to inflict Root for 3s",
+   "icon": "/game/specs/17350030.webp"
+  },
+  {
+   "id": 17100010,
+   "skillId": 17100000,
+   "skillName": "Healing Light",
+   "requiredSkillLevel": 8,
+   "effect": "+2 consecutive uses",
+   "icon": "/game/specs/17100010.webp"
+  },
+  {
+   "id": 17100020,
+   "skillId": 17100000,
+   "skillName": "Healing Light",
+   "requiredSkillLevel": 8,
+   "effect": "+20% amount healed when HP is 50% or less",
+   "icon": "/game/specs/17100020.webp"
+  },
+  {
+   "id": 17100030,
+   "skillId": 17100000,
+   "skillName": "Healing Light",
+   "requiredSkillLevel": 8,
+   "effect": "50% chance to remove 1 debuff",
+   "icon": "/game/specs/17100030.webp"
+  },
+  {
+   "id": 17120010,
+   "skillId": 17120000,
+   "skillName": "Radiant Recovery",
+   "requiredSkillLevel": 8,
+   "effect": "Removes up to 2 debuffs",
+   "icon": "/game/specs/17120010.webp"
+  },
+  {
+   "id": 17120020,
+   "skillId": 17120000,
+   "skillName": "Radiant Recovery",
+   "requiredSkillLevel": 8,
+   "effect": "+1 consecutive use",
+   "icon": "/game/specs/17120020.webp"
+  },
+  {
+   "id": 17120030,
+   "skillId": 17120000,
+   "skillName": "Radiant Recovery",
+   "requiredSkillLevel": 8,
+   "effect": "-3s cooldown",
+   "icon": "/game/specs/17120030.webp"
+  },
+  {
+   "id": 17060010,
+   "skillId": 17060000,
+   "skillName": "Bolt",
+   "requiredSkillLevel": 8,
+   "effect": "30% chance to inflict Stun for 3s when fully charged",
+   "icon": "/game/specs/17060010.webp"
+  },
+  {
+   "id": 17060020,
+   "skillId": 17060000,
+   "skillName": "Bolt",
+   "requiredSkillLevel": 8,
+   "effect": "+300 Skill Accuracy",
+   "icon": "/game/specs/17060020.webp"
+  },
+  {
+   "id": 17060030,
+   "skillId": 17060000,
+   "skillName": "Bolt",
+   "requiredSkillLevel": 8,
+   "effect": "+30% Skill Speed",
+   "icon": "/game/specs/17060030.webp"
+  },
+  {
+   "id": 17240010,
+   "skillId": 17240000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 8,
+   "effect": "Adds [Blessing of Regeneration] Chain Skill",
+   "icon": "/game/specs/17240010.webp"
+  },
+  {
+   "id": 17240020,
+   "skillId": 17240000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 8,
+   "effect": "Restores 1,000 Stamina on using [Defiance]",
+   "icon": "/game/specs/17240020.webp"
+  },
+  {
+   "id": 17240030,
+   "skillId": 17240000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 8,
+   "effect": "Restores 10% HP on using [Defiance]",
+   "icon": "/game/specs/17240030.webp"
+  },
+  {
+   "id": 17010040,
+   "skillId": 17010000,
+   "skillName": "Earth's Retribution",
+   "requiredSkillLevel": 12,
+   "effect": "-7s [Bolt] cooldown on landing [Discharge]",
+   "icon": "/game/specs/17010040.webp"
+  },
+  {
+   "id": 17040040,
+   "skillId": 17040000,
+   "skillName": "Judgment Thunder",
+   "requiredSkillLevel": 12,
+   "effect": "10% chance to inflict Root for 2s on landing [Divine Punishment]",
+   "icon": "/game/specs/17040040.webp"
+  },
+  {
+   "id": 17080040,
+   "skillId": 17080000,
+   "skillName": "Debilitating Mark",
+   "requiredSkillLevel": 12,
+   "effect": "+10% PvE Damage Boost reduction and +5% PvP Damage Boost reduction",
+   "icon": "/game/specs/17080040.webp"
+  },
+  {
+   "id": 17150040,
+   "skillId": 17150000,
+   "skillName": "Divine Aura",
+   "requiredSkillLevel": 12,
+   "effect": "+3s [Divine Aura] duration",
+   "icon": "/game/specs/17150040.webp"
+  },
+  {
+   "id": 17070040,
+   "skillId": 17070000,
+   "skillName": "Chain of Torment",
+   "requiredSkillLevel": 12,
+   "effect": "+10% PvE Damage Tolerance reduction and +5% PvP Damage Tolerance reduction",
+   "icon": "/game/specs/17070040.webp"
+  },
+  {
+   "id": 17370040,
+   "skillId": 17370000,
+   "skillName": "Lightning Strike Scattershot",
+   "requiredSkillLevel": 12,
+   "effect": "Multi-Hit on hit",
+   "icon": "/game/specs/17370040.webp"
+  },
+  {
+   "id": 17090040,
+   "skillId": 17090000,
+   "skillName": "Light of Regeneration",
+   "requiredSkillLevel": 12,
+   "effect": "+5% Move Speed during healing",
+   "icon": "/game/specs/17090040.webp"
+  },
+  {
+   "id": 17350040,
+   "skillId": 17350000,
+   "skillName": "Condemnation",
+   "requiredSkillLevel": 12,
+   "effect": "Resets cooldown on landing a Critical Hit with [Condemnation]",
+   "icon": "/game/specs/17350040.webp"
+  },
+  {
+   "id": 17100040,
+   "skillId": 17100000,
+   "skillName": "Healing Light",
+   "requiredSkillLevel": 12,
+   "effect": "+2% HP restored",
+   "icon": "/game/specs/17100040.webp"
+  },
+  {
+   "id": 17120040,
+   "skillId": 17120000,
+   "skillName": "Radiant Recovery",
+   "requiredSkillLevel": 12,
+   "effect": "+10% Incoming Heal for 10s",
+   "icon": "/game/specs/17120040.webp"
+  },
+  {
+   "id": 17060040,
+   "skillId": 17060000,
+   "skillName": "Bolt",
+   "requiredSkillLevel": 12,
+   "effect": "Up to +20% damage when less targets hit",
+   "icon": "/game/specs/17060040.webp"
+  },
+  {
+   "id": 17240040,
+   "skillId": 17240000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 12,
+   "effect": "+2s Tenacity duration",
+   "icon": "/game/specs/17240040.webp"
+  },
+  {
+   "id": 17010050,
+   "skillId": 17010000,
+   "skillName": "Earth's Retribution",
+   "requiredSkillLevel": 16,
+   "effect": "Ignores Block and Evasion",
+   "icon": "/game/specs/17010050.webp"
+  },
+  {
+   "id": 17040050,
+   "skillId": 17040000,
+   "skillName": "Judgment Thunder",
+   "requiredSkillLevel": 16,
+   "effect": "Activates [Divine Punishment] 1 extra time",
+   "icon": "/game/specs/17040050.webp"
+  },
+  {
+   "id": 17080050,
+   "skillId": 17080000,
+   "skillName": "Debilitating Mark",
+   "requiredSkillLevel": 16,
+   "effect": "Ignores Block and Evasion and reduces Damage over Time interval by 50%",
+   "icon": "/game/specs/17080050.webp"
+  },
+  {
+   "id": 17150050,
+   "skillId": 17150000,
+   "skillName": "Divine Aura",
+   "requiredSkillLevel": 16,
+   "effect": "-10s cooldown",
+   "icon": "/game/specs/17150050.webp"
+  },
+  {
+   "id": 17070050,
+   "skillId": 17070000,
+   "skillName": "Chain of Torment",
+   "requiredSkillLevel": 16,
+   "effect": "Ignores Block and Evasion and reduces Damage over Time interval by 50%",
+   "icon": "/game/specs/17070050.webp"
+  },
+  {
+   "id": 17370050,
+   "skillId": 17370000,
+   "skillName": "Lightning Strike Scattershot",
+   "requiredSkillLevel": 16,
+   "effect": "-1s all skill cooldowns on hit",
+   "icon": "/game/specs/17370050.webp"
+  },
+  {
+   "id": 17090050,
+   "skillId": 17090000,
+   "skillName": "Light of Regeneration",
+   "requiredSkillLevel": 16,
+   "effect": "+5% PvE Damage Tolerance and +2.5% PvP Damage Tolerance during healing",
+   "icon": "/game/specs/17090050.webp"
+  },
+  {
+   "id": 17350050,
+   "skillId": 17350000,
+   "skillName": "Condemnation",
+   "requiredSkillLevel": 16,
+   "effect": "Multi-Hit on hit",
+   "icon": "/game/specs/17350050.webp"
+  },
+  {
+   "id": 17100050,
+   "skillId": 17100000,
+   "skillName": "Healing Light",
+   "requiredSkillLevel": 16,
+   "effect": "-2s cooldown",
+   "icon": "/game/specs/17100050.webp"
+  },
+  {
+   "id": 17120050,
+   "skillId": 17120000,
+   "skillName": "Radiant Recovery",
+   "requiredSkillLevel": 16,
+   "effect": "+5% HP restored",
+   "icon": "/game/specs/17120050.webp"
+  },
+  {
+   "id": 17060050,
+   "skillId": 17060000,
+   "skillName": "Bolt",
+   "requiredSkillLevel": 16,
+   "effect": "Critical Hit on hit",
+   "icon": "/game/specs/17060050.webp"
+  },
+  {
+   "id": 17240050,
+   "skillId": 17240000,
+   "skillName": "Defiance",
+   "requiredSkillLevel": 16,
+   "effect": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration",
+   "icon": "/game/specs/17240050.webp"
+  }
+ ],
+ "meta": {
+  "topPlayersTracked": 1560,
+  "medianCombatPower": 55881,
+  "top10CombatPower": 69974,
+  "avgItemLevel": 1149,
+  "daevanion": {
+   "boards": [
+    {
+     "board": "Nezekan",
+     "commonNodes": 61,
+     "totalNodes": 88
+    },
+    {
+     "board": "Zikel",
+     "commonNodes": 63,
+     "totalNodes": 88
+    },
+    {
+     "board": "Vaizel",
+     "commonNodes": 55,
+     "totalNodes": 88
+    },
+    {
+     "board": "Triniel",
+     "commonNodes": 31,
+     "totalNodes": 116
+    },
+    {
+     "board": "Azphel",
+     "commonNodes": 2,
+     "totalNodes": 152
+    }
+   ],
+   "topSkillNodes": [
+    {
+     "skill": "Light of Regeneration",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 98
+    },
+    {
+     "skill": "Condemnation",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 95
+    },
+    {
+     "skill": "Judgment Thunder",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 93
+    },
+    {
+     "skill": "Earth's Retribution",
+     "bonus": 1,
+     "board": "Zikel",
+     "pickRate": 92
+    },
+    {
+     "skill": "Empyrean Lord's Grace",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 91
+    },
+    {
+     "skill": "Empyrean Lord's Grace",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 91
+    },
+    {
+     "skill": "Judgment Thunder",
+     "bonus": 1,
+     "board": "Zikel",
+     "pickRate": 91
+    },
+    {
+     "skill": "Chain of Torment",
+     "bonus": 1,
+     "board": "Nezekan",
+     "pickRate": 90
+    }
+   ]
+  },
+  "gear": {
+   "Main hand": [
+    {
+     "slug": "spiritforged-mace",
+     "name": "Spiritforged Mace",
+     "icon": "/game/items/icon_wp_ma_0078_t05.webp",
+     "pickRate": 43,
+     "avgEnchant": 9.3
+    },
+    {
+     "slug": "spiritforged-mace",
+     "name": "Spiritforged Mace",
+     "icon": "/game/items/icon_wp_ma_0078_t05.webp",
+     "pickRate": 30,
+     "avgEnchant": 8.4
+    },
+    {
+     "slug": "aulamus-mace",
+     "name": "Aulamus Mace",
+     "icon": "/game/items/icon_wp_ma_0028_t05.webp",
+     "pickRate": 15,
+     "avgEnchant": 9.8
+    }
+   ],
+   "Off-hand": [
+    {
+     "slug": "spiritforged-guard",
+     "name": "Spiritforged Guard",
+     "icon": "/game/items/icon_weapon_guarder_l_001.webp",
+     "pickRate": 46,
+     "avgEnchant": 8.4
+    },
+    {
+     "slug": "spiritforged-guard",
+     "name": "Spiritforged Guard",
+     "icon": "/game/items/icon_weapon_guarder_l_001.webp",
+     "pickRate": 36,
+     "avgEnchant": 7.8
+    },
+    {
+     "slug": "vakron-guard",
+     "name": "Vakron Guard",
+     "icon": "/game/items/icon_weapon_guarder_u_003.webp",
+     "pickRate": 9.9,
+     "avgEnchant": 8.9
+    }
+   ],
+   "Helmet": [
+    {
+     "slug": "divine-canyon-helm",
+     "name": "Divine Canyon Helm",
+     "icon": "/game/items/icon_gm_0072_t05_helmet.webp",
+     "pickRate": 21,
+     "avgEnchant": 2.9
+    },
+    {
+     "slug": "vakron-helm",
+     "name": "Vakron Helm",
+     "icon": "/game/items/icon_gm_0028_t05_helmet.webp",
+     "pickRate": 21,
+     "avgEnchant": 7
+    },
+    {
+     "slug": "bakarma-helm",
+     "name": "Bakarma Helm",
+     "icon": "/game/items/icon_gm_0059_t05_helmet.webp",
+     "pickRate": 15,
+     "avgEnchant": 4.9
+    }
+   ],
+   "Shoulders": [
+    {
+     "slug": "divine-canyon-pauldrons",
+     "name": "Divine Canyon Pauldrons",
+     "icon": "/game/items/icon_gm_0072_t05_shoulder.webp",
+     "pickRate": 28,
+     "avgEnchant": 2.2
+    },
+    {
+     "slug": "vakron-pauldrons",
+     "name": "Vakron Pauldrons",
+     "icon": "/game/items/icon_gm_0028_t05_shoulder.webp",
+     "pickRate": 21,
+     "avgEnchant": 6.4
+    },
+    {
+     "slug": "bakarma-pauldrons",
+     "name": "Bakarma Pauldrons",
+     "icon": "/game/items/icon_gm_0059_t05_shoulder.webp",
+     "pickRate": 11,
+     "avgEnchant": 6
+    }
+   ],
+   "Chest": [
+    {
+     "slug": "bakarma-breastplate",
+     "name": "Bakarma Breastplate",
+     "icon": "/game/items/icon_gm_0059_t05_torso.webp",
+     "pickRate": 36,
+     "avgEnchant": 6.3
+    },
+    {
+     "slug": "vakron-breastplate",
+     "name": "Vakron Breastplate",
+     "icon": "/game/items/icon_gm_0028_t05_torso.webp",
+     "pickRate": 26,
+     "avgEnchant": 6.9
+    },
+    {
+     "slug": "divine-canyon-breastplate",
+     "name": "Divine Canyon Breastplate",
+     "icon": "/game/items/icon_gm_0072_t05_torso.webp",
+     "pickRate": 13,
+     "avgEnchant": 2.5
+    }
+   ],
+   "Legs": [
+    {
+     "slug": "vakron-greaves",
+     "name": "Vakron Greaves",
+     "icon": "/game/items/icon_gm_0028_t05_pants.webp",
+     "pickRate": 23,
+     "avgEnchant": 7
+    },
+    {
+     "slug": "bakarma-greaves",
+     "name": "Bakarma Greaves",
+     "icon": "/game/items/icon_gm_0059_t05_pants.webp",
+     "pickRate": 21,
+     "avgEnchant": 5.6
+    },
+    {
+     "slug": "divine-canyon-greaves",
+     "name": "Divine Canyon Greaves",
+     "icon": "/game/items/icon_gm_0072_t05_pants.webp",
+     "pickRate": 20,
+     "avgEnchant": 2.3
+    }
+   ],
+   "Gloves": [
+    {
+     "slug": "bakarma-gloves",
+     "name": "Bakarma Gloves",
+     "icon": "/game/items/icon_gm_0059_t05_gloves.webp",
+     "pickRate": 23,
+     "avgEnchant": 5.3
+    },
+    {
+     "slug": "vakron-gloves",
+     "name": "Vakron Gloves",
+     "icon": "/game/items/icon_gm_0028_t05_gloves.webp",
+     "pickRate": 23,
+     "avgEnchant": 6.2
+    },
+    {
+     "slug": "divine-canyon-gloves",
+     "name": "Divine Canyon Gloves",
+     "icon": "/game/items/icon_gm_0072_t05_gloves.webp",
+     "pickRate": 17,
+     "avgEnchant": 2.4
+    }
+   ],
+   "Boots": [
+    {
+     "slug": "divine-canyon-boots",
+     "name": "Divine Canyon Boots",
+     "icon": "/game/items/icon_gm_0072_t05_boots.webp",
+     "pickRate": 25,
+     "avgEnchant": 2.2
+    },
+    {
+     "slug": "vakron-boots",
+     "name": "Vakron Boots",
+     "icon": "/game/items/icon_gm_0028_t05_boots.webp",
+     "pickRate": 21,
+     "avgEnchant": 6.8
+    },
+    {
+     "slug": "bakarma-boots",
+     "name": "Bakarma Boots",
+     "icon": "/game/items/icon_gm_0059_t05_boots.webp",
+     "pickRate": 13,
+     "avgEnchant": 5
+    }
+   ],
+   "Cape": [
+    {
+     "slug": "vakron-cloak",
+     "name": "Vakron Cloak",
+     "icon": "/game/items/icon_gm_0028_t05_cape.webp",
+     "pickRate": 25,
+     "avgEnchant": 5.8
+    },
+    {
+     "slug": "divine-canyon-cloak",
+     "name": "Divine Canyon Cloak",
+     "icon": "/game/items/icon_gm_0072_t05_cape.webp",
+     "pickRate": 19,
+     "avgEnchant": 1.7
+    },
+    {
+     "slug": "bakarma-cloak",
+     "name": "Bakarma Cloak",
+     "icon": "/game/items/icon_gm_0059_t05_cape.webp",
+     "pickRate": 14,
+     "avgEnchant": 4.6
+    }
+   ],
+   "Necklace": [
+    {
+     "slug": "aulamus-necklace",
+     "name": "Aulamus Necklace",
+     "icon": "/game/items/icon_acc_nl_0072.webp",
+     "pickRate": 28,
+     "avgEnchant": 6.2
+    },
+    {
+     "slug": "liberator-necklace",
+     "name": "Liberator Necklace",
+     "icon": "/game/items/icon_acc_nl_0071.webp",
+     "pickRate": 26,
+     "avgEnchant": 3.6
+    },
+    {
+     "slug": "berk-necklace",
+     "name": "Berk Necklace",
+     "icon": "/game/items/icon_acc_nl_0066.webp",
+     "pickRate": 19,
+     "avgEnchant": 7.4
+    }
+   ],
+   "Earring": [
+    {
+     "slug": "liberator-earrings",
+     "name": "Liberator Earrings",
+     "icon": "/game/items/icon_acc_er_0071.webp",
+     "pickRate": 44,
+     "avgEnchant": 4.1
+    },
+    {
+     "slug": "aulamus-earrings",
+     "name": "Aulamus Earrings",
+     "icon": "/game/items/icon_acc_er_0072.webp",
+     "pickRate": 40,
+     "avgEnchant": 6.2
+    },
+    {
+     "slug": "pilgrim-earrings",
+     "name": "Pilgrim Earrings",
+     "icon": "/game/items/icon_acc_er_0071.webp",
+     "pickRate": 28,
+     "avgEnchant": 4.2
+    }
+   ],
+   "Ring": [
+    {
+     "slug": "aulamus-ring",
+     "name": "Aulamus Ring",
+     "icon": "/game/items/icon_acc_ring_0072.webp",
+     "pickRate": 38,
+     "avgEnchant": 6.4
+    },
+    {
+     "slug": "liberator-ring",
+     "name": "Liberator Ring",
+     "icon": "/game/items/icon_acc_ring_0071.webp",
+     "pickRate": 34,
+     "avgEnchant": 4.2
+    },
+    {
+     "slug": "berk-ring",
+     "name": "Berk Ring",
+     "icon": "/game/items/icon_acc_ring_0066.webp",
+     "pickRate": 25,
+     "avgEnchant": 5.7
+    }
+   ],
+   "Bracelet": [
+    {
+     "slug": "ascension-bracelet",
+     "name": "Ascension Bracelet",
+     "icon": "/game/items/icon_acc_bracelet_r_027.webp",
+     "pickRate": 58,
+     "avgEnchant": 8.7
+    },
+    {
+     "slug": "liberator-bracelet",
+     "name": "Liberator Bracelet",
+     "icon": "/game/items/icon_acc_bracelet_0071.webp",
+     "pickRate": 58,
+     "avgEnchant": 5.9
+    },
+    {
+     "slug": "ascension-bracelet",
+     "name": "Ascension Bracelet",
+     "icon": "/game/items/icon_acc_bracelet_r_027.webp",
+     "pickRate": 42,
+     "avgEnchant": 8.1
+    }
+   ],
+   "Belt": [
+    {
+     "slug": "noble-belt",
+     "name": "Noble Belt",
+     "icon": "/game/items/icon_acc_belt_c_022.webp",
+     "pickRate": 68,
+     "avgEnchant": 0.3
+    },
+    {
+     "slug": "noble-belt-legend",
+     "name": "Noble Belt",
+     "icon": "/game/items/icon_acc_belt_c_021.webp",
+     "pickRate": 30,
+     "avgEnchant": 3.5
+    },
+    {
+     "slug": "noble-belt-rare",
+     "name": "Noble Belt",
+     "icon": "/game/items/icon_acc_belt_c_018.webp",
+     "pickRate": 0.7,
+     "avgEnchant": 0
+    }
+   ],
+   "Amulet": [
+    {
+     "slug": "revelation-amulet",
+     "name": "Revelation Amulet",
+     "icon": "/game/items/icon_item_craft_conversion_crystal_l_lv5_01.webp",
+     "pickRate": 92,
+     "avgEnchant": 0.4
+    },
+    {
+     "slug": "revelation-amulet-legend",
+     "name": "Revelation Amulet",
+     "icon": "/game/items/icon_item_craft_conversion_crystal_l_lv4_01.webp",
+     "pickRate": 6,
+     "avgEnchant": 3.2
+    },
+    {
+     "slug": "fierce-battle-amulet-rare",
+     "name": "Fierce Battle Amulet",
+     "icon": "/game/items/icon_equip_eb_emblemd_mi_abyssshop_l_u_001.webp",
+     "pickRate": 1.3,
+     "avgEnchant": 2
+    }
+   ],
+   "Rune": [
+    {
+     "slug": "clash-rune",
+     "name": "Clash Rune",
+     "icon": "/game/items/icon_equip_acc_rune_r_002.webp",
+     "pickRate": 99,
+     "avgEnchant": 2.4
+    }
+   ]
+  },
+  "enchants": {
+   "Main hand": {
+    "avg": 9.3,
+    "most": 10,
+    "mostShare": 63
+   },
+   "Off-hand": {
+    "avg": 8.2,
+    "most": 10,
+    "mostShare": 56
+   },
+   "Helmet": {
+    "avg": 4.4,
+    "most": 5,
+    "mostShare": 28
+   },
+   "Shoulders": {
+    "avg": 4,
+    "most": 5,
+    "mostShare": 30
+   },
+   "Chest": {
+    "avg": 5.1,
+    "most": 5,
+    "mostShare": 33
+   },
+   "Legs": {
+    "avg": 4.3,
+    "most": 0,
+    "mostShare": 28
+   },
+   "Gloves": {
+    "avg": 4.1,
+    "most": 5,
+    "mostShare": 31
+   },
+   "Boots": {
+    "avg": 4,
+    "most": 5,
+    "mostShare": 31
+   },
+   "Cape": {
+    "avg": 4,
+    "most": 5,
+    "mostShare": 29
+   },
+   "Necklace": {
+    "avg": 5,
+    "most": 5,
+    "mostShare": 32
+   },
+   "Earring": {
+    "avg": 4.7,
+    "most": 5,
+    "mostShare": 34
+   },
+   "Ring": {
+    "avg": 4.9,
+    "most": 5,
+    "mostShare": 39
+   },
+   "Bracelet": {
+    "avg": 7.1,
+    "most": 10,
+    "mostShare": 43
+   },
+   "Belt": {
+    "avg": 1.3,
+    "most": 0,
+    "mostShare": 70
+   },
+   "Amulet": {
+    "avg": 0.6,
+    "most": 0,
+    "mostShare": 79
+   },
+   "Rune": {
+    "avg": 2.4,
+    "most": 3,
+    "mostShare": 35
+   }
+  },
+  "manastones": [],
+  "arcana": {
+   "Arcana slot 1": [
+    {
+     "slug": "chalice-of-vigor-common",
+     "name": "Chalice of Vigor",
+     "icon": "/game/items/icon_arcana_card_grail_u_pveset2.webp",
+     "pickRate": 9.3
+    },
+    {
+     "slug": "chalice-of-magic-common",
+     "name": "Chalice of Magic",
+     "icon": "/game/items/icon_arcana_card_grail_u_defenceset2.webp",
+     "pickRate": 6.6
+    }
+   ],
+   "Arcana slot 2": [
+    {
+     "slug": "parchment-of-vigor-common",
+     "name": "Parchment of Vigor",
+     "icon": "/game/items/icon_arcana_card_parchment_u_pveset2.webp",
+     "pickRate": 5.3
+    },
+    {
+     "slug": "parchment-of-magic-rare",
+     "name": "Parchment of Magic",
+     "icon": "/game/items/icon_arcana_card_parchment_u_defenceset2.webp",
+     "pickRate": 3.3
+    }
+   ],
+   "Arcana slot 3": [
+    {
+     "slug": "compass-of-vigor-common",
+     "name": "Compass of Vigor",
+     "icon": "/game/items/icon_arcana_card_compass_u_pveset2.webp",
+     "pickRate": 7.3
+    },
+    {
+     "slug": "compass-of-magic-common",
+     "name": "Compass of Magic",
+     "icon": "/game/items/icon_arcana_card_compass_u_defenceset2.webp",
+     "pickRate": 5.3
+    }
+   ],
+   "Arcana slot 4": [
+    {
+     "slug": "bell-of-vigor-common",
+     "name": "Bell of Vigor",
+     "icon": "/game/items/icon_arcana_card_bell_u_pveset2.webp",
+     "pickRate": 6
+    },
+    {
+     "slug": "bell-of-magic-common",
+     "name": "Bell of Magic",
+     "icon": "/game/items/icon_arcana_card_bell_u_defenceset2.webp",
+     "pickRate": 4.6
+    }
+   ],
+   "Arcana slot 5": [
+    {
+     "slug": "mirror-of-magic-common",
+     "name": "Mirror of Magic",
+     "icon": "/game/items/icon_arcana_card_mirror_u_defenceset2.webp",
+     "pickRate": 5.3
+    },
+    {
+     "slug": "mirror-of-vigor-rare",
+     "name": "Mirror of Vigor",
+     "icon": "/game/items/icon_arcana_card_mirror_u_pveset2.webp",
+     "pickRate": 4
+    }
+   ]
+  },
+  "wings": [
+   {
+    "name": "Ultimate Daeva Wings",
+    "icon": "/game/wings/icon_wingb_001a.webp",
+    "pickRate": 50
+   },
+   {
+    "name": "Forest Spirit Wings",
+    "icon": "/game/wings/icon_winga_010.webp",
+    "pickRate": 2
+   },
+   {
+    "name": "Superior Daeva Wings",
+    "icon": "/game/wings/icon_wingb_007c.webp",
+    "pickRate": 2
+   }
+  ],
+  "pets": [
+   {
+    "name": "Pagati",
+    "icon": "/game/pets/1204.webp",
+    "pickRate": 62
+   },
+   {
+    "name": "Black Dragon",
+    "icon": "/game/pets/1001.webp",
+    "pickRate": 6.6
+   },
+   {
+    "name": "Papis",
+    "icon": "/game/pets/1066.webp",
+    "pickRate": 5.3
+   },
+   {
+    "name": "Magic Gravi",
+    "icon": "/game/pets/1051.webp",
+    "pickRate": 2
+   },
+   {
+    "name": "Tog",
+    "icon": "/game/pets/1072.webp",
+    "pickRate": 1.3
+   }
+  ],
+  "primaryStats": [
+   {
+    "stat": "Might",
+    "avg": 21.5
+   },
+   {
+    "stat": "Dexterity",
+    "avg": 4.5
+   },
+   {
+    "stat": "Constitution",
+    "avg": 4.2
+   },
+   {
+    "stat": "Willpower",
+    "avg": 3.7
+   },
+   {
+    "stat": "Precision",
+    "avg": 1.2
+   },
+   {
+    "stat": "Intelligence",
+    "avg": 0.9
+   }
+  ],
+  "deityStats": [
+   {
+    "stat": "Time [Siel]",
+    "avg": 39
+   },
+   {
+    "stat": "Justice [Nezekan]",
+    "avg": 38.9
+   },
+   {
+    "stat": "Death [Triniel]",
+    "avg": 34.2
+   },
+   {
+    "stat": "Freedom [Vaizel]",
+    "avg": 24.2
+   },
+   {
+    "stat": "Space [Israphel]",
+    "avg": 17.4
+   },
+   {
+    "stat": "Life [Yustiel]",
+    "avg": 8.7
+   },
+   {
+    "stat": "Destiny [Marchutan]",
+    "avg": 8.5
+   },
+   {
+    "stat": "Destruction [Zikel]",
+    "avg": 5.3
+   },
+   {
+    "stat": "Illusion [Kaisinel]",
+    "avg": 5.2
+   },
+   {
+    "stat": "Wisdom [Lumiel]",
+    "avg": 5
+   }
+  ]
+ },
+ "pointsTable": [
+  {
+   "level": 4,
+   "skillPoints": 1,
+   "stigmaPoints": 0,
+   "stigmaSlots": 0
+  },
+  {
+   "level": 10,
+   "skillPoints": 16,
+   "stigmaPoints": 0,
+   "stigmaSlots": 0
+  },
+  {
+   "level": 20,
+   "skillPoints": 61,
+   "stigmaPoints": 0,
+   "stigmaSlots": 0
+  },
+  {
+   "level": 22,
+   "skillPoints": 71,
+   "stigmaPoints": 0,
+   "stigmaSlots": 1
+  },
+  {
+   "level": 27,
+   "skillPoints": 96,
+   "stigmaPoints": 5,
+   "stigmaSlots": 2
+  },
+  {
+   "level": 30,
+   "skillPoints": 111,
+   "stigmaPoints": 8,
+   "stigmaSlots": 2
+  },
+  {
+   "level": 32,
+   "skillPoints": 123,
+   "stigmaPoints": 10,
+   "stigmaSlots": 3
+  },
+  {
+   "level": 37,
+   "skillPoints": 153,
+   "stigmaPoints": 15,
+   "stigmaSlots": 4
+  },
+  {
+   "level": 40,
+   "skillPoints": 171,
+   "stigmaPoints": 19,
+   "stigmaSlots": 4
+  },
+  {
+   "level": 45,
+   "skillPoints": 203,
+   "stigmaPoints": 29,
+   "stigmaSlots": 4
+  }
+ ],
+ "source": "https://metabot.gg/en/aion-2/classes/cleric/build"
+}

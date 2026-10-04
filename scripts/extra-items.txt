@@ -1,0 +1,13 @@
+# Slugs metabot.gg d'objets à ajouter au catalogue (une ligne par slug).
+# Utile quand un build référence une pièce absente des listes "top" : ajoutez-la puis `npm run data:sync`.
+rupture-claymore
+aulamus-greatsword
+enraged-kromede-claymore
+bakarma-guard
+vakron-guard
+nuakum-guard
+ludras-blade-of-extinction
+ludras-heart
+heavenbound-staff
+kaira-helm
+high-commander-lagta-breastplate
