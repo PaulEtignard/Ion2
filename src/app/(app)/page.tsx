@@ -69,7 +69,7 @@ export default async function DashboardPage() {
         </Card>
       )}
 
-      <section className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+      <section className="grid grid-cols-1 gap-4 @xl/main:grid-cols-2 @6xl/main:grid-cols-3">
         {rows.map(({ player, progress, recommendations, dailyRatio, weeklyRatio }) => {
           const cls = getClass(player.classId as ClassIdT);
           const info = CLASS_INFO[player.classId as ClassIdT];

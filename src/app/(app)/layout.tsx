@@ -24,13 +24,14 @@ export default async function AppLayout({ children }: { children: React.ReactNod
   return (
     <SidebarProvider defaultOpen={defaultOpen}>
       <AppSidebar member={member} players={players.map(lite)} current={current ? lite(current) : null} syncedAt={GAME_META.syncedAt.slice(0, 10)} />
-      <SidebarInset className="app-backdrop">
+      <SidebarInset className="app-backdrop min-w-0">
         <header className="bg-background/70 sticky top-0 z-30 flex h-14 shrink-0 items-center gap-2 border-b px-4 backdrop-blur">
           <SidebarTrigger className="-ml-1" />
           <Separator orientation="vertical" className="mr-2 data-[orientation=vertical]:h-4" />
           <PageTitle />
         </header>
-        <div className="mx-auto w-full max-w-7xl flex-1 p-4 md:p-8">{children}</div>
+        {/* @container/main : les pages s'adaptent à la largeur réelle du contenu (écran vertical, barre latérale ouverte…) */}
+        <div className="@container/main mx-auto w-full max-w-7xl min-w-0 flex-1 p-4 md:p-8">{children}</div>
       </SidebarInset>
     </SidebarProvider>
   );

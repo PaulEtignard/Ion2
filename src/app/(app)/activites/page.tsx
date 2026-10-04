@@ -96,7 +96,7 @@ export default async function ActivitiesPage() {
       {table("daily")}
       {table("weekly")}
 
-      <div className="grid gap-4 lg:grid-cols-2">
+      <div className="grid grid-cols-1 gap-4 @4xl/main:grid-cols-2">
         <Card>
           <CardHeader>
             <CardTitle>Échelle d&apos;équipement</CardTitle>
@@ -167,7 +167,7 @@ export default async function ActivitiesPage() {
             Chaque boss a 10 paliers. Le 2e étage s&apos;ouvre quand les boss d&apos;ouverture sont au palier 10 ; le boss final de couche ouvre la couche suivante.
           </CardDescription>
         </CardHeader>
-        <CardContent className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+        <CardContent className="grid grid-cols-1 gap-3 @2xl/main:grid-cols-2 @6xl/main:grid-cols-4">
           {NIGHTMARE_LAYERS.map((l) => (
             <div key={l.layer} className="rounded-lg border bg-black/15 p-3 text-sm">
               <div className="mb-1 font-semibold">
@@ -187,7 +187,7 @@ export default async function ActivitiesPage() {
         <CardHeader>
           <CardTitle>Donjons de groupe et raids</CardTitle>
         </CardHeader>
-        <CardContent className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+        <CardContent className="grid grid-cols-1 gap-3 @xl/main:grid-cols-2 @6xl/main:grid-cols-4">
           {party.map((d) => (
             <div key={d.slug} className="overflow-hidden rounded-lg border bg-black/20">
               {d.image && (

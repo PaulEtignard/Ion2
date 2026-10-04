@@ -97,6 +97,18 @@
   }
 }
 
+/* Écrans étroits / verticaux : une carte placée dans une grille doit pouvoir rétrécir
+   (sinon un tableau large l'élargit au lieu de défiler), et les onglets défilent au lieu de déborder. */
+[data-slot="card"] {
+  min-width: 0;
+}
+[data-slot="tabs-list"] {
+  max-width: 100%;
+  overflow-x: auto;
+  justify-content: flex-start;
+  scrollbar-width: none;
+}
+
 /* Halo discret derrière le contenu principal */
 .app-backdrop {
   background-image:

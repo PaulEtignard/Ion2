@@ -84,7 +84,7 @@ export default async function ClassPage({ params }: { params: Promise<{ id: stri
           <SkillGrid title={`Stigmas (${c.stigmas.length}) — 4 emplacements aux niveaux 22, 27, 32 et 37`} skills={c.stigmas} />
         </TabsContent>
 
-        <TabsContent value="specs" className="grid gap-4 md:grid-cols-2">
+        <TabsContent value="specs" className="grid grid-cols-1 gap-4 @2xl/main:grid-cols-2">
           {actives.map((s) => (
             <Card key={s.id} className="gap-3">
               <CardHeader>
@@ -104,7 +104,7 @@ export default async function ClassPage({ params }: { params: Promise<{ id: stri
         </TabsContent>
 
         <TabsContent value="meta" className="space-y-4">
-          <div className="grid gap-3 sm:grid-cols-4">
+          <div className="grid grid-cols-1 gap-3 @xl/main:grid-cols-4">
             <MetaStat label="Meilleurs joueurs suivis" value={formatNumber(c.meta.topPlayersTracked)} />
             <MetaStat label="Puissance médiane" value={formatNumber(c.meta.medianCombatPower)} />
             <MetaStat label="Top 10 % dès" value={formatNumber(c.meta.top10CombatPower)} />
@@ -116,7 +116,7 @@ export default async function ClassPage({ params }: { params: Promise<{ id: stri
               <CardTitle>Équipement le plus porté</CardTitle>
               <CardDescription>Par emplacement, avec l&apos;enchantement moyen. Source : profils officiels des meilleurs joueurs du serveur global.</CardDescription>
             </CardHeader>
-            <CardContent className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+            <CardContent className="grid grid-cols-1 gap-3 @xl/main:grid-cols-2 @6xl/main:grid-cols-3">
               {Object.entries(c.meta.gear).map(([slot, picks]) => (
                 <div key={slot} className="rounded-lg border bg-black/15 p-3">
                   <div className="mb-2 flex items-center justify-between text-xs">
@@ -137,7 +137,7 @@ export default async function ClassPage({ params }: { params: Promise<{ id: stri
             </CardContent>
           </Card>
 
-          <div className="grid gap-4 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 @4xl/main:grid-cols-3">
             <Card className="gap-3">
               <CardHeader>
                 <CardTitle className="text-base">Pierres de mana</CardTitle>
@@ -200,7 +200,7 @@ function SkillGrid({ title, skills }: { title: string; skills: Skill[] }) {
       <CardHeader>
         <CardTitle className="text-base">{title}</CardTitle>
       </CardHeader>
-      <CardContent className="grid gap-3 md:grid-cols-2">
+      <CardContent className="grid grid-cols-1 gap-3 @2xl/main:grid-cols-2">
         {skills.map((s) => (
           <div key={s.id} className="flex gap-3 rounded-lg border bg-black/15 p-3">
             <SkillIcon id={s.id} size={44} />

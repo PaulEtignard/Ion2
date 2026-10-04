@@ -47,9 +47,9 @@ export function SpecIcon({ id, size = 32, showText }: { id: number; size?: numbe
   );
   if (!showText) return icon;
   return (
-    <span className="inline-flex items-center gap-2">
+    <span className="flex min-w-0 items-center gap-2">
       {icon}
-      <span className="text-sm">
+      <span className="min-w-0 text-sm">
         {s.effect} <span className="text-muted-foreground text-xs">(niv. {s.requiredSkillLevel})</span>
       </span>
     </span>

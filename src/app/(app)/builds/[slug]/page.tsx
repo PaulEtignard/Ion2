@@ -7,7 +7,6 @@ import { ClassIcon, ItemIcon, ItemName, SkillIcon, SpecIcon } from "@/components
 import { Badge } from "@/components/ui/badge";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { STIGMA_SLOT_LEVELS, DAEVANION_BOARD_LEVELS } from "@/data/activities";
 import { GEAR_SLOT_LABELS, GEAR_SLOTS, type BuildData, type ClassIdT } from "@/lib/build-schema";
 import { isTeamMember } from "@/lib/auth";
@@ -66,19 +65,20 @@ export default async function BuildPage({ params }: { params: Promise<{ slug: st
               <Link href={`/builds?classe=${classId}`}>{info.fr}</Link>
             </BreadcrumbLink>
           </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
+          {/* le titre est déjà affiché juste en dessous : inutile de le répéter sur écran étroit */}
+          <BreadcrumbSeparator className="hidden @2xl/main:list-item" />
+          <BreadcrumbItem className="hidden @2xl/main:inline-flex">
             <BreadcrumbPage>{build.title}</BreadcrumbPage>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
 
       {/* ------------------------------------------------------------ en-tête */}
-      <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
-        <div className="flex gap-4">
-          <ClassIcon classId={classId} size={72} />
-          <div className="space-y-2">
-            <h1 className="font-display text-3xl font-bold">{build.title}</h1>
+      <div className="flex flex-col gap-4 @2xl/main:flex-row @2xl/main:items-start @2xl/main:justify-between">
+        <div className="flex min-w-0 flex-col gap-3 @xl/main:flex-row @xl/main:gap-4">
+          <ClassIcon classId={classId} size={64} className="shrink-0" />
+          <div className="min-w-0 space-y-2">
+            <h1 className="font-display text-2xl font-bold text-balance break-words @2xl/main:text-3xl">{build.title}</h1>
             <div className="flex flex-wrap gap-1.5">
               <Badge>{MODE_LABEL[build.mode]}</Badge>
               <Badge variant="secondary">{build.role ?? info.role}</Badge>
@@ -109,11 +109,11 @@ export default async function BuildPage({ params }: { params: Promise<{ slug: st
       </nav>
 
       {/* ------------------------------------------------------------ aperçu */}
-      <section id="apercu" className="grid scroll-mt-28 gap-4 lg:grid-cols-3">
-        <Card className="lg:col-span-2">
+      <section id="apercu" className="grid grid-cols-1 scroll-mt-28 gap-4 @4xl/main:grid-cols-3">
+        <Card className="@4xl/main:col-span-2">
           <CardHeader>
             <CardTitle>Style de jeu</CardTitle>
-            <CardDescription className="flex items-center gap-1">
+            <CardDescription className="flex flex-wrap items-center gap-1">
               Difficulté
               {Array.from({ length: 5 }, (_, i) => (
                 <Star key={i} className={cn("size-3.5", i < data.overview.difficulty ? "fill-primary text-primary" : "text-muted")} />
@@ -123,7 +123,7 @@ export default async function BuildPage({ params }: { params: Promise<{ slug: st
           </CardHeader>
           <CardContent className="space-y-4">
             <p className="leading-relaxed">{data.overview.playstyle}</p>
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="grid grid-cols-1 gap-4 @xl/main:grid-cols-2">
               <ProsCons title="Points forts" items={data.overview.strengths} icon={<ThumbsUp className="size-4 text-emerald-400" />} />
               <ProsCons title="Points faibles" items={data.overview.weaknesses} icon={<ThumbsDown className="size-4 text-rose-400" />} />
             </div>
@@ -176,7 +176,7 @@ export default async function BuildPage({ params }: { params: Promise<{ slug: st
       {/* ------------------------------------------------------------ stigmas */}
       <section id="stigmas" className="scroll-mt-28 space-y-4">
         <SectionTitle title="Stigmas" subtitle="Un emplacement s'ouvre aux niveaux 22, 27, 32 et 37. Le niveau 5 débloque la première spécialisation du stigma." />
-        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 @xl/main:grid-cols-2 @6xl/main:grid-cols-4">
           {[1, 2, 3, 4].map((slot) => {
             const st = stigmas.find((s) => s.slot === slot);
             const sk = st && getSkill(st.stigmaId);
@@ -245,7 +245,7 @@ export default async function BuildPage({ params }: { params: Promise<{ slug: st
       {data.rotation.length > 0 && (
         <section id="rotation" className="scroll-mt-28 space-y-4">
           <SectionTitle title="Rotations" subtitle="Survole une icône pour voir le détail de la compétence." />
-          <div className="grid gap-4 lg:grid-cols-2">
+          <div className="grid grid-cols-1 gap-4 @4xl/main:grid-cols-2">
             {data.rotation.map((r, i) => (
               <Card key={i} className="gap-3">
                 <CardHeader>
@@ -275,7 +275,7 @@ export default async function BuildPage({ params }: { params: Promise<{ slug: st
       {/* ------------------------------------------------------------ daevanion */}
       <section id="daevanion" className="scroll-mt-28 space-y-4">
         <SectionTitle title="Daevanion" subtitle="Les nœuds ronds ajoutent +1 niveau à une compétence (+4 max), au-delà du niveau 10." />
-        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 @2xl/main:grid-cols-2 @6xl/main:grid-cols-3">
           {data.daevanion.boards.map((b) => (
             <Card key={b.board} className="gap-3">
               <CardHeader>
@@ -310,7 +310,7 @@ export default async function BuildPage({ params }: { params: Promise<{ slug: st
       {/* ------------------------------------------------------------ équipement */}
       <section id="equipement" className="scroll-mt-28 space-y-4">
         <SectionTitle title="Équipement" subtitle="Pièce visée par emplacement, enchantement cible et où l'obtenir. Survole les icônes pour les stats." />
-        <div className="grid gap-3 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-3 @2xl/main:grid-cols-2">
           {GEAR_SLOTS.filter((s) => gearBySlot.has(s)).map((slot) => {
             const g = gearBySlot.get(slot)!;
             return (
@@ -335,7 +335,7 @@ export default async function BuildPage({ params }: { params: Promise<{ slug: st
           })}
         </div>
 
-        <div className="grid gap-4 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 @4xl/main:grid-cols-3">
           {data.manastones.length > 0 && (
             <Card className="gap-3">
               <CardHeader>
@@ -489,51 +489,45 @@ function SkillTable({ title, rows, withSpecs }: { title: string; rows: BuildData
         <CardTitle className="text-base">{title}</CardTitle>
       </CardHeader>
       <CardContent>
-        <Table>
-          <TableHeader>
-            <TableRow>
-              <TableHead className="w-10">#</TableHead>
-              <TableHead>Compétence</TableHead>
-              <TableHead className="w-20 text-center">Niveau</TableHead>
-              {withSpecs && <TableHead>Spécialisations</TableHead>}
-              <TableHead className="hidden lg:table-cell">Pourquoi</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {rows.map((s) => {
-              const sk = getSkill(s.skillId);
-              return (
-                <TableRow key={s.skillId}>
-                  <TableCell className="text-primary font-semibold tabular-nums">{s.priority}</TableCell>
-                  <TableCell>
-                    <div className="flex items-center gap-2">
-                      <SkillIcon id={s.skillId} size={40} />
-                      <div>
-                        <div className="font-medium">{sk?.name}</div>
-                        <div className="text-muted-foreground text-xs">
-                          Niv. {sk?.unlockLevel}
-                          {sk?.cooldown && ` · ${sk.cooldown}`}
-                        </div>
-                      </div>
+        {/* Liste adaptative : ligne unique sur grand écran, blocs empilés sur écran étroit/vertical */}
+        <ol className="divide-y">
+          {rows.map((s) => {
+            const sk = getSkill(s.skillId);
+            return (
+              <li
+                key={s.skillId}
+                className="grid grid-cols-[1.75rem_minmax(0,1fr)_auto] items-start gap-x-3 gap-y-2 py-3 first:pt-0 last:pb-0 @4xl/main:grid-cols-[1.75rem_minmax(0,15rem)_4.5rem_minmax(0,1fr)]"
+              >
+                <span className="text-primary pt-2.5 font-semibold tabular-nums">{s.priority}</span>
+                <div className="flex min-w-0 items-center gap-2">
+                  <SkillIcon id={s.skillId} size={40} />
+                  <div className="min-w-0">
+                    <div className="truncate font-medium">{sk?.name}</div>
+                    <div className="text-muted-foreground text-xs">
+                      Niv. {sk?.unlockLevel}
+                      {sk?.cooldown && ` · ${sk.cooldown}`}
                     </div>
-                  </TableCell>
-                  <TableCell className="text-center font-semibold tabular-nums">{s.targetLevel}</TableCell>
-                  {withSpecs && (
-                    <TableCell>
-                      <div className="flex flex-col gap-1.5">
-                        {s.specializations.map((id) => (
-                          <SpecIcon key={id} id={id} size={28} showText />
-                        ))}
-                        {!s.specializations.length && <span className="text-muted-foreground text-xs">—</span>}
-                      </div>
-                    </TableCell>
+                  </div>
+                </div>
+                <div className="pt-1.5 text-right @4xl/main:text-center">
+                  <Badge variant="secondary" className="tabular-nums">
+                    niv. {s.targetLevel}
+                  </Badge>
+                </div>
+                <div className="col-span-2 col-start-2 min-w-0 space-y-2 @4xl/main:col-span-1 @4xl/main:col-start-auto">
+                  {withSpecs && s.specializations.length > 0 && (
+                    <div className="flex flex-col gap-1.5">
+                      {s.specializations.map((id) => (
+                        <SpecIcon key={id} id={id} size={26} showText />
+                      ))}
+                    </div>
                   )}
-                  <TableCell className="text-muted-foreground hidden max-w-sm text-sm whitespace-normal lg:table-cell">{s.note}</TableCell>
-                </TableRow>
-              );
-            })}
-          </TableBody>
-        </Table>
+                  {s.note && <p className="text-muted-foreground text-sm">{s.note}</p>}
+                </div>
+              </li>
+            );
+          })}
+        </ol>
       </CardContent>
     </Card>
   );

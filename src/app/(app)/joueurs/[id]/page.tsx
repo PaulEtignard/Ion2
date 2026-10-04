@@ -97,7 +97,7 @@ export default async function PlayerPage({ params }: { params: Promise<{ id: str
 
   return (
     <div className="space-y-6">
-      <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+      <div className="flex flex-col gap-4 @2xl/main:flex-row @2xl/main:items-center @2xl/main:justify-between">
         <div className="flex items-center gap-4">
           <ClassIcon classId={classId} size={64} />
           <div>
@@ -127,8 +127,8 @@ export default async function PlayerPage({ params }: { params: Promise<{ id: str
         </div>
       )}
 
-      <div className="grid gap-6 xl:grid-cols-5">
-        <Card className="xl:col-span-3">
+      <div className="grid grid-cols-1 gap-6 @6xl/main:grid-cols-5">
+        <Card className="@6xl/main:col-span-3">
           <CardHeader>
             <CardTitle>Que faire maintenant ?</CardTitle>
             <CardDescription>Ordonné par impact sur ta progression. Mets ton état des lieux à jour pour affiner.</CardDescription>
@@ -138,7 +138,7 @@ export default async function PlayerPage({ params }: { params: Promise<{ id: str
           </CardContent>
         </Card>
 
-        <div className="space-y-6 xl:col-span-2">
+        <div className="space-y-6 @6xl/main:col-span-2">
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">

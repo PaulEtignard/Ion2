@@ -47,7 +47,7 @@ export default async function BuildsPage({ searchParams }: { searchParams: Promi
           </CardHeader>
         </Card>
       ) : (
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 @2xl/main:grid-cols-2">
           {builds.map((b) => {
             const data = b.data as BuildData;
             const core = [...data.skills].sort((x, y) => x.priority - y.priority).slice(0, 5);

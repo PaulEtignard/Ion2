@@ -44,12 +44,12 @@ export function AddPlayerForm() {
   }, [state]);
 
   return (
-    <form ref={formRef} action={action} className="grid gap-4 sm:grid-cols-2">
-      <div className="grid gap-2">
+    <form ref={formRef} action={action} className="grid grid-cols-1 gap-4 @xl/main:grid-cols-2">
+      <div className="grid grid-cols-1 gap-2">
         <Label htmlFor="name">Pseudo en jeu</Label>
         <Input id="name" name="name" required minLength={2} />
       </div>
-      <div className="grid gap-2">
+      <div className="grid grid-cols-1 gap-2">
         <Label>Classe</Label>
         <Select name="classId" defaultValue="gladiator">
           <SelectTrigger className="w-full">
@@ -67,7 +67,7 @@ export function AddPlayerForm() {
           </SelectContent>
         </Select>
       </div>
-      <div className="grid gap-2">
+      <div className="grid grid-cols-1 gap-2">
         <Label>Faction</Label>
         <Select name="faction" defaultValue="ELYOS">
           <SelectTrigger className="w-full">
@@ -79,11 +79,11 @@ export function AddPlayerForm() {
           </SelectContent>
         </Select>
       </div>
-      <div className="grid gap-2">
+      <div className="grid grid-cols-1 gap-2">
         <Label htmlFor="server">Serveur (optionnel)</Label>
         <Input id="server" name="server" placeholder="ex. Israphel" />
       </div>
-      <div className="sm:col-span-2">
+      <div className="@xl/main:col-span-2">
         <Button type="submit" disabled={pending}>
           {pending ? "Ajout…" : "Ajouter"}
         </Button>

@@ -64,7 +64,7 @@ export function ProgressForm(props: ProgressFormProps) {
 
         {/* forceMount : les champs des onglets cachés restent dans le formulaire */}
         <TabsContent value="general" forceMount className="data-[state=inactive]:hidden">
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-4 @xl/main:grid-cols-2 @4xl/main:grid-cols-4">
             <Field label="Niveau" name="level" defaultValue={initial.level} min={1} max={60} />
             <Field label="Item level (total)" name="itemLevel" defaultValue={initial.itemLevel} min={0} />
             <Field label="Puissance de combat" name="combatPower" defaultValue={initial.combatPower} min={0} />
@@ -81,7 +81,7 @@ export function ProgressForm(props: ProgressFormProps) {
               options={[{ value: "none", label: "Aucun" }, ...props.builds.map((b) => ({ value: b.id, label: b.title }))]}
             />
             <Field label="Couche du Cauchemar atteinte" name="nightmare.layer" defaultValue={initial.nightmareLayer} min={0} max={4} />
-            <div className="space-y-2 sm:col-span-2">
+            <div className="space-y-2 @xl/main:col-span-2">
               <Label htmlFor="notes">Notes</Label>
               <Textarea id="notes" name="notes" defaultValue={initial.notes} placeholder="Objectifs perso, rappels…" />
             </div>
@@ -90,7 +90,7 @@ export function ProgressForm(props: ProgressFormProps) {
 
         <TabsContent value="gear" forceMount className="data-[state=inactive]:hidden">
           <p className="text-muted-foreground mb-3 text-sm">Nom de l&apos;objet (autocomplétion depuis le catalogue), son item level et son enchantement.</p>
-          <div className="grid gap-x-6 gap-y-3 lg:grid-cols-2">
+          <div className="grid grid-cols-1 gap-x-6 gap-y-3 @4xl/main:grid-cols-2">
             {props.gearSlots.map((g) => {
               const cur = initial.gear[g.slot];
               const listId = `items-${g.slot}`;
@@ -124,7 +124,7 @@ export function ProgressForm(props: ProgressFormProps) {
         <TabsContent value="boards" forceMount className="space-y-5 data-[state=inactive]:hidden">
           <div>
             <p className="mb-2 text-sm font-medium">Points investis par plateau Daevanion</p>
-            <div className="grid gap-3 sm:grid-cols-5">
+            <div className="grid grid-cols-1 gap-3 @xl/main:grid-cols-5">
               {BOARDS.map(([key, name, lvl, total]) => (
                 <Field key={key} label={`${name} (niv. ${lvl}, ${total} pts)`} name={`daevanion.${key}`} defaultValue={initial.daevanion[key] ?? ""} min={0} max={total} />
               ))}
@@ -132,7 +132,7 @@ export function ProgressForm(props: ProgressFormProps) {
           </div>
           <div>
             <p className="mb-2 text-sm font-medium">Meilleur palier de Transcendance réussi</p>
-            <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-5">
+            <div className="grid grid-cols-1 gap-3 @xl/main:grid-cols-3 @4xl/main:grid-cols-5">
               {props.transcendence.map((t) => (
                 <FormSelect
                   key={t.slug}
@@ -162,7 +162,7 @@ export function ProgressForm(props: ProgressFormProps) {
 /** Select shadcn branché sur le formulaire (Radix rend un <select> natif caché portant `name`) */
 function FormSelect({ label, name, defaultValue, options }: { label: string; name: string; defaultValue: string; options: { value: string; label: string }[] }) {
   return (
-    <div className="grid gap-2">
+    <div className="grid grid-cols-1 gap-2">
       <Label className="text-xs">{label}</Label>
       <Select name={name} defaultValue={defaultValue}>
         <SelectTrigger className="w-full">
@@ -195,7 +195,7 @@ function SkillInputs({ title, prefix, items, values, max }: { title: string; pre
   return (
     <div>
       <p className="mb-2 text-sm font-medium">{title}</p>
-      <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="grid grid-cols-1 gap-2 @xl/main:grid-cols-2 @4xl/main:grid-cols-3 @6xl/main:grid-cols-4">
         {items.map((s) => {
           const v = values[String(s.id)];
           const behind = s.target != null && (v ?? 0) < s.target;

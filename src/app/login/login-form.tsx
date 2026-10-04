@@ -11,9 +11,9 @@ import { Label } from "@/components/ui/label";
 export function LoginForm({ next }: { next: string }) {
   const [state, action, pending] = useActionState(login, null);
   return (
-    <form action={action} className="grid gap-4">
+    <form action={action} className="grid grid-cols-1 gap-4">
       <input type="hidden" name="next" value={next} />
-      <div className="grid gap-2">
+      <div className="grid grid-cols-1 gap-2">
         <Label htmlFor="password">Mot de passe de la team</Label>
         <Input id="password" name="password" type="password" autoFocus required autoComplete="current-password" />
       </div>

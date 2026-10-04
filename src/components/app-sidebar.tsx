@@ -84,7 +84,7 @@ export function AppSidebar({
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src="/icon.svg" alt="" className="size-8 rounded-lg" />
                 </div>
-                <div className="grid flex-1 text-left leading-tight">
+                <div className="grid grid-cols-1 flex-1 text-left leading-tight">
                   <span className="font-display text-primary truncate font-bold">Team AION 2</span>
                   <span className="text-muted-foreground truncate text-xs">Serveur global</span>
                 </div>
@@ -157,7 +157,7 @@ function PlayerMenu({ players, current }: { players: PlayerLite[]; current: Play
           <DropdownMenuTrigger asChild>
             <SidebarMenuButton size="lg" disabled={pending} className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground">
               <ClassAvatar classId={current?.classId} name={current?.name ?? "?"} />
-              <div className="grid flex-1 text-left text-sm leading-tight">
+              <div className="grid grid-cols-1 flex-1 text-left text-sm leading-tight">
                 <span className="truncate font-medium">{current?.name ?? "Choisir mon perso"}</span>
                 <span className="text-muted-foreground truncate text-xs">{current ? current.classFr : "Je suis…"}</span>
               </div>

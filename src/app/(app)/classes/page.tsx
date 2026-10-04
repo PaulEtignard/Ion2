@@ -13,7 +13,7 @@ export default function ClassesPage() {
         <h1 className="font-display text-3xl font-bold">Classes</h1>
         <p className="text-muted-foreground">Toutes les compétences, stigmas et spécialisations du client global, et ce que jouent les meilleurs joueurs.</p>
       </div>
-      <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+      <div className="grid grid-cols-1 gap-4 @xl/main:grid-cols-2 @6xl/main:grid-cols-4">
         {allClasses().map((c) => {
           const info = CLASS_INFO[c.id];
           return (
