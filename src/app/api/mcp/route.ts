@@ -408,14 +408,16 @@ const authError = (status: number, message: string) =>
   Response.json({ jsonrpc: "2.0", id: null, error: { code: -32001, message } }, { status });
 
 async function authed(req: Request) {
-  // tolère les espaces et guillemets collés par erreur dans la variable Vercel
-  const expected = process.env.MCP_API_KEY?.trim().replace(/^["']|["']$/g, "");
-  if (!expected) return authError(500, "MCP_API_KEY n'est pas configuré sur le serveur (variables d'environnement Vercel).");
+  // Clés acceptées : MCP_API_KEY si définie, sinon/et AUTH_SECRET (une seule variable à gérer sur Vercel).
+  // On tolère les espaces et guillemets collés par erreur dans les variables.
+  const clean = (v?: string) => v?.trim().replace(/^["']|["']$/g, "") || undefined;
+  const accepted = [clean(process.env.MCP_API_KEY), clean(process.env.AUTH_SECRET)].filter((k): k is string => !!k);
+  if (!accepted.length) return authError(500, "Ni MCP_API_KEY ni AUTH_SECRET ne sont configurés sur le serveur.");
   const header = req.headers.get("authorization")?.match(/^Bearer\s+(.+)$/i)?.[1]?.trim();
   const query = new URL(req.url).searchParams.get("key")?.trim();
   const token = header ?? query;
   if (!token) return authError(401, "Clé MCP manquante : en-tête Authorization: Bearer <clé> ou ?key=<clé>.");
-  if (!safeEqual(token, expected)) return authError(401, "Clé MCP invalide.");
+  if (!accepted.some((k) => safeEqual(token, k))) return authError(401, "Clé MCP invalide.");
   return handler(req);
 }
 
