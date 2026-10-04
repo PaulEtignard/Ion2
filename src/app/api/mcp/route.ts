@@ -408,7 +408,8 @@ const authError = (status: number, message: string) =>
   Response.json({ jsonrpc: "2.0", id: null, error: { code: -32001, message } }, { status });
 
 async function authed(req: Request) {
-  const expected = process.env.MCP_API_KEY;
+  // tolère les espaces et guillemets collés par erreur dans la variable Vercel
+  const expected = process.env.MCP_API_KEY?.trim().replace(/^["']|["']$/g, "");
   if (!expected) return authError(500, "MCP_API_KEY n'est pas configuré sur le serveur (variables d'environnement Vercel).");
   const header = req.headers.get("authorization")?.match(/^Bearer\s+(.+)$/i)?.[1]?.trim();
   const query = new URL(req.url).searchParams.get("key")?.trim();
